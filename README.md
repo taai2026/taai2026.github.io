@@ -11,4 +11,4 @@
 
 - Organizers: Taiwanese Association for Artificial Intelligence; National Taipei University
 
-- Website: [https://taai2026.github.io/] (https://taai2026.github.io/)
+- Website: [https://taai2026.github.io/](https://taai2026.github.io/)
