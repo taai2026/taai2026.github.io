@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAAI 2026 — Agentic AI & Physical AI for Sustainable Innovation</title>
+  <meta name="description" content="The 31st International Conference on Technologies and Applications of Artificial Intelligence. November 20–21, 2026. The Great Roots Forestry Spa Resort, New Taipei City, Taiwan." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="TAAI 2026" />
+        <span class="brand-text">
+          TAAI 2026
+          <small>31st Annual Conference</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="cfp.html">Call for Papers</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="committee.html">Committee</a></li>
+          <li><a href="registration.html" class="nav-cta">Register →</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="spine left"></div>
+    <div class="spine right"></div>
+
+    <!-- Decorative background SVG: circuit meets leaf -->
+    <svg class="hero-bg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="spine" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"  stop-color="#1865c9" stop-opacity="0.7"/>
+          <stop offset="50%" stop-color="#4aa6e8" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#7bb93f" stop-opacity="0.7"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#7bb93f" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#7bb93f" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- Ambient glow -->
+      <circle cx="1100" cy="280" r="340" fill="url(#glow)"/>
+      <circle cx="260"  cy="680" r="280" fill="url(#glow)" opacity="0.6"/>
+
+      <!-- Organic flowing lines (circuit → leaf veins) -->
+      <g fill="none" stroke="url(#spine)" stroke-width="1.2" opacity="0.55">
+        <path d="M -50 420 Q 280 280 560 440 T 1100 380 T 1500 520"/>
+        <path d="M -50 500 Q 320 680 640 500 T 1200 580 T 1500 440"/>
+        <path d="M -50 340 Q 360 180 700 320 T 1300 240"/>
+        <path d="M 200 900 Q 260 620 440 580 T 760 500 T 1060 420 T 1400 320"/>
+      </g>
+      <!-- Circuit nodes -->
+      <g fill="#1865c9" opacity="0.6">
+        <circle cx="280"  cy="430" r="3"/>
+        <circle cx="560"  cy="440" r="4"/>
+        <circle cx="860"  cy="400" r="3"/>
+        <circle cx="1100" cy="380" r="5"/>
+        <circle cx="440"  cy="580" r="3"/>
+        <circle cx="760"  cy="500" r="4"/>
+      </g>
+    </svg>
+
+    <div class="wrap hero-inner">
+      <div class="hero-meta reveal">
+        <span><b>TAAI</b> · 31st Edition</span>
+        <span>20–21 Nov <b>2026</b></span>
+        <span>Sanxia · New Taipei</span>
+      </div>
+
+      <h1 class="hero-title reveal d1">
+        <span class="line">Agentic AI</span>
+        <span class="line">meets <em class="grad-text">physical</em></span>
+        <span class="line">intelligence.</span>
+      </h1>
+
+      <div class="hero-stack">
+        <div>
+          <p class="lede reveal d2">
+            Two days. One forest. Where the world's most anticipated ideas in
+            agentic systems, embodied intelligence, and sustainable innovation
+            converge — surrounded by hot springs and phytoncide-scented pines.
+          </p>
+          <div class="hero-ctas reveal d3">
+            <a href="registration.html" class="btn btn-primary">Register now <span class="arrow">→</span></a>
+            <a href="cfp.html" class="btn btn-ghost">Submit a paper</a>
+          </div>
+        </div>
+
+        <div class="reveal d4">
+          <p class="eyebrow mb-1">Countdown to TAAI 2026</p>
+          <div id="countdown" class="countdown"></div>
+          <p class="mt-1" style="font-family: var(--f-mono); font-size: 0.75rem; color: var(--ink-soft); letter-spacing: 0.08em;">
+            Opening · 9:00 AM · 20 Nov 2026 · Asia/Taipei
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Agentic AI</span><em>✦</em>
+      <span>Physical AI</span><em>✦</em>
+      <span>Cross-Domain Innovation</span><em>✦</em>
+      <span>Green Finance</span><em>✦</em>
+      <span>Tech Ethics</span><em>✦</em>
+      <span>Embodied Intelligence</span><em>✦</em>
+      <span>Sustainable Futures</span><em>✦</em>
+      <span>Agentic AI</span><em>✦</em>
+      <span>Physical AI</span><em>✦</em>
+      <span>Cross-Domain Innovation</span><em>✦</em>
+      <span>Green Finance</span><em>✦</em>
+      <span>Tech Ethics</span><em>✦</em>
+      <span>Embodied Intelligence</span><em>✦</em>
+      <span>Sustainable Futures</span><em>✦</em>
+    </div>
+  </div>
+
+  <!-- ================= THREE HIGHLIGHTS ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">1 / Highlights</span>
+        <h2>Three reasons this<br/>will be the AI event of the year.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature reveal d1">
+          <div class="num">◦ I</div>
+          <h3>Cutting-edge themes</h3>
+          <p>Laser-focused on the two defining currents of the moment —
+          <strong>agentic AI</strong> that reasons and acts, and <strong>physical AI</strong>
+          that learns through its body in the world.</p>
+        </article>
+
+        <article class="feature reveal d2">
+          <div class="num">◦ II</div>
+          <h3>Cross-disciplinary dialogue</h3>
+          <p>Sustainable innovation across fields — <strong>green finance</strong>,
+          <strong>tech ethics</strong>, and industrial applications — in the same room,
+          speaking to one another.</p>
+        </article>
+
+        <article class="feature reveal d3">
+          <div class="num">◦ III</div>
+          <h3>AI × nature</h3>
+          <p>Recharge intellect and spirit alike at <strong>The Great Roots
+          Forestry Spa Resort</strong>, where academia meets mountain air,
+          moss, and mineral springs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VENUE TEASER ================= -->
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">2 / Venue</span>
+          <h2 class="mt-1">
+            A conference <em class="grad-text">among the pines.</em>
+          </h2>
+          <p class="lede mt-2">
+            Step away from the city. We're gathering in a forest hot-spring
+            retreat in Sanxia District — a place where phytoncides clear the
+            head and cutting-edge dialogue runs late into the evening.
+          </p>
+          <a href="venue.html" class="btn btn-ghost mt-2">Explore the venue <span class="arrow">→</span></a>
+        </div>
+
+        <aside class="venue-card reveal d2">
+          <span class="eyebrow on-dark">The Great Roots</span>
+          <h3>Forestry Spa<br/>Resort, Sanxia</h3>
+          <p style="margin-top:1rem;">
+            Tucked into the mountains of New Taipei,
+            surrounded by protected forest. Mineral hot-spring pools,
+            canopy walks, and ceremonial Taiwanese hospitality —
+            a fitting backdrop for ideas about nature, intelligence,
+            and what comes next.
+          </p>
+          <dl class="info-card" style="background: rgba(245,241,232,0.08); border-color: rgba(123,185,63,0.3); margin-top: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 110px 1fr; gap: 0.5rem 1rem; font-size: 0.9rem;">
+              <dt style="font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--leaf);">Address</dt>
+              <dd style="margin:0; color: rgba(245,241,232,0.85);">Sanxia District, New Taipei City 237, Taiwan</dd>
+              <dt style="font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--leaf);">Transit</dt>
+              <dd style="margin:0; color: rgba(245,241,232,0.85);">≈ 50 min from Taipei Main Station</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THEME STATEMENT ================= -->
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label" style="color: var(--leaf);">3 / Theme</span>
+        <h2 style="font-variation-settings: 'opsz' 144, 'SOFT' 60;">
+          <em style="font-style: italic; color: var(--leaf);">Cross-disciplinary</em>
+          sustainable innovation with agentic and physical AI.
+        </h2>
+      </div>
+
+      <div class="split">
+        <p class="lede reveal d1" style="color: rgba(245,241,232,0.85);">
+          What sparks will fly when agentic AI meets physical,
+          embodied intelligence — and both are asked to serve a world
+          that has to last?
+        </p>
+        <p class="reveal d2" style="color: rgba(245,241,232,0.7); font-size: 1.02rem;">
+          TAAI 2026 is jointly hosted by the <strong style="color: var(--paper);">Taiwanese Association for Artificial Intelligence</strong>
+          and <strong style="color: var(--paper);">National Taipei University</strong>.
+          This year we're inviting researchers, practitioners, and policy minds
+          to step off the usual circuit and into a forest — to look hard at
+          what cross-domain, sustainable AI actually looks like when you
+          build it, deploy it, and live with its consequences.
+          <br/><br/>
+          <a href="about.html" class="btn btn-primary" style="background: var(--leaf); color: var(--ink); margin-top: 1rem;">
+            Read the full theme <span class="arrow">→</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IMPORTANT DATES PREVIEW ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">4 / Key Dates</span>
+        <h2>Mark your calendar.</h2>
+      </div>
+
+      <div class="timeline reveal d1">
+        <div class="timeline-row">
+          <span class="timeline-date">July 10, 2026</span>
+          <span class="timeline-title">Special Session Proposal Deadline</span>
+          <span class="timeline-tag hot">Open</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">July 10, 2026</span>
+          <span class="timeline-title">Tutorial / Workshop Proposal Deadline</span>
+          <span class="timeline-tag hot">Open</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">August 30, 2026</span>
+          <span class="timeline-title">Paper Submission Deadline</span>
+          <span class="timeline-tag hot">Open</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">October 16, 2026</span>
+          <span class="timeline-title">Notification of Paper Acceptance</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">October 30, 2026</span>
+          <span class="timeline-title">Camera-Ready Deadline</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">October 30, 2026</span>
+          <span class="timeline-title">Early-bird registration Deadline</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">November 13, 2026</span>
+          <span class="timeline-title">Regular Registration Deadline</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">November 20–21, 2026</span>
+          <span class="timeline-title">Conference in New Taipei City</span>
+          <span class="timeline-tag hot">Flagship</span>
+        </div>
+      </div>
+
+      <div class="tc mt-3 reveal d2">
+        <a href="cfp.html" class="btn btn-ghost">Full call for papers <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>TAAI 2026<br/><em style="font-style: italic; color: var(--leaf); font-size: 1.2rem;">31st edition.</em></h3>
+          <p>The 31st International Conference on Technologies and Applications of Artificial Intelligence. Where agentic intelligence, embodied systems, and sustainable innovation meet — in a Taiwanese forest.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Conference</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="cfp.html">Call for papers</a></li>
+            <li><a href="committee.html">Committee</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Attend</h4>
+          <ul>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="venue.html">Venue & travel</a></li>
+            <li><a href="venue.html#hotels">Accommodation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Organizers</h4>
+          <ul>
+            <li>Taiwanese Association for AI</li>
+            <li>National Taipei University</li>
+            <li><a href="https://taai2026.github.io/" target="_blank" rel="noopener">taai2026.github.io ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© <span data-year></span> TAAI · All rights reserved</span>
+        <span>20–21 Nov · Sanxia · New Taipei · Taiwan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
