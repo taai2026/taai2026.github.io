@@ -893,6 +893,13 @@ section { padding: clamp(4rem, 10vw, 7rem) 0; position: relative; }
   .footer-brand { grid-column: 1 / -1; }
 }
 
+.footer-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .footer-brand h3 {
   font-family: var(--f-display);
   font-size: 1.45rem;
