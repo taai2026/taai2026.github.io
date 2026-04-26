@@ -1272,3 +1272,239 @@ section { padding: clamp(4rem, 10vw, 7rem) 0; position: relative; }
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================================================
+   Academic conference theme — AI Tech Blue (top) → Sustainable Green (bottom)
+   ========================================================================== */
+
+/* Page-wide gradient flow: blue at the top, green at the bottom.
+   Soft, muted, conference-appropriate — never dark, never black. */
+body {
+  background:
+    linear-gradient(180deg,
+      #e9f1fb 0%,
+      #f1f3ec 32%,
+      var(--paper) 55%,
+      #ecf3e5 82%,
+      #dfecd9 100%);
+  background-attachment: fixed;
+}
+
+/* Soften the navigation chrome; replace ink with deep azure */
+.nav {
+  background: rgba(247, 250, 254, 0.84);
+  border-bottom: 1px solid rgba(13, 74, 158, 0.10);
+}
+.nav-cta {
+  border-color: var(--azure-deep);
+  color: var(--azure-deep);
+}
+.nav-cta:hover {
+  background: linear-gradient(135deg, var(--azure-deep) 0%, var(--moss) 100%);
+  border-color: transparent;
+  color: #ffffff !important;
+}
+.nav-toggle {
+  border-color: var(--azure-deep);
+  color: var(--azure-deep);
+}
+.btn-ghost {
+  border-color: rgba(13, 74, 158, 0.32);
+}
+.btn-ghost:hover {
+  border-color: var(--azure-deep);
+  background: rgba(13, 74, 158, 0.06);
+}
+
+/* Replace any solid dark-ink block with the blue→green gradient */
+.tier.featured {
+  background: linear-gradient(140deg, var(--azure-deep) 0%, #1f7a86 55%, var(--moss) 100%) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+.tier.featured .tier-name { color: rgba(255, 255, 255, 0.82) !important; }
+.tier.featured .tier-price { color: #ffffff !important; }
+.tier.featured .tier-price small { color: rgba(255, 255, 255, 0.7) !important; }
+.tier.featured ul li { border-bottom-color: rgba(255, 255, 255, 0.16) !important; }
+.tier.featured ul li::before { color: var(--leaf) !important; }
+
+.day-head { border-bottom-color: var(--azure-deep); }
+
+/* Page hero — AI Tech Blue */
+.page-hero {
+  background:
+    radial-gradient(ellipse at 18% 8%, rgba(24, 101, 201, 0.18), transparent 58%),
+    radial-gradient(ellipse at 88% 4%, rgba(74, 166, 232, 0.16), transparent 60%),
+    linear-gradient(180deg, rgba(232, 242, 255, 0.55) 0%, transparent 100%);
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(13, 74, 158, 0.28), transparent);
+  pointer-events: none;
+}
+.page-hero .spine.left,
+.page-hero .spine.right {
+  background: linear-gradient(180deg, rgba(13, 74, 158, 0.42) 0%, rgba(13, 74, 158, 0.04) 100%);
+}
+.page-hero .eyebrow { color: var(--azure-deep); }
+.page-hero .breadcrumb a:hover { color: var(--azure-deep); }
+
+/* Footer — Sustainable Green */
+.footer {
+  background: linear-gradient(180deg, #ecf3e6 0%, #dde9d8 100%);
+  border-top: 1px solid rgba(95, 143, 79, 0.30);
+}
+.footer::before {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(95, 143, 79, 0.42), transparent);
+}
+.footer-col h4 { color: var(--moss); }
+.footer-base { border-top-color: rgba(95, 143, 79, 0.22); }
+
+/* Section divider rule shifts subtly toward green when used between sections */
+hr.rule {
+  background: linear-gradient(90deg, transparent, rgba(13, 74, 158, 0.22), rgba(95, 143, 79, 0.22), transparent);
+  height: 1px;
+}
+
+
+/* ==========================================================================
+   Committee — flat, traditional academic list
+   ========================================================================== */
+
+.committee-section {
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+  padding-bottom: clamp(4rem, 9vw, 7rem);
+}
+
+.committee-section .section-head {
+  border-bottom-color: rgba(13, 74, 158, 0.18);
+}
+
+.committee-list {
+  display: block;
+}
+
+/* Default tone for any standalone block */
+.committee-block {
+  --tone:      #0d4a9e;
+  --tone-soft: rgba(13, 74, 158, 0.10);
+  --tone-mid:  rgba(13, 74, 158, 0.32);
+  --tone-bg:   rgba(13, 74, 158, 0.04);
+
+  margin-bottom: clamp(1.6rem, 3vw, 2.25rem);
+  padding-left: 1.15rem;
+  border-left: 2px solid var(--tone-mid);
+  position: relative;
+}
+
+/* Subtle blue → green progression across the flat list (21 blocks).
+   The list reads as one continuous committee, but the accent shifts
+   gently from AI tech blue at the top to sustainable green at the bottom. */
+.committee-list .committee-block:nth-child(n+5) {
+  --tone:      #1865c9;
+  --tone-soft: rgba(24, 101, 201, 0.10);
+  --tone-mid:  rgba(24, 101, 201, 0.32);
+  --tone-bg:   rgba(24, 101, 201, 0.04);
+}
+.committee-list .committee-block:nth-child(n+9) {
+  --tone:      #1f8788;
+  --tone-soft: rgba(31, 135, 136, 0.10);
+  --tone-mid:  rgba(31, 135, 136, 0.32);
+  --tone-bg:   rgba(31, 135, 136, 0.05);
+}
+.committee-list .committee-block:nth-child(n+13) {
+  --tone:      #4e9344;
+  --tone-soft: rgba(78, 147, 68, 0.10);
+  --tone-mid:  rgba(78, 147, 68, 0.34);
+  --tone-bg:   rgba(78, 147, 68, 0.05);
+}
+.committee-list .committee-block:nth-child(n+17) {
+  --tone:      #2f7a3a;
+  --tone-soft: rgba(47, 122, 58, 0.10);
+  --tone-mid:  rgba(47, 122, 58, 0.36);
+  --tone-bg:   rgba(47, 122, 58, 0.05);
+}
+.committee-block h3 {
+  font-family: var(--f-display);
+  font-size: clamp(1.02rem, 1.5vw, 1.18rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.committee-block h3::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tone);
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px var(--tone-bg);
+}
+
+/* Tighter, more uniform grid for academic presentation */
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 0.8rem;
+}
+
+/* Person card — restrained, formal, tone-accented */
+.person {
+  padding: 0.95rem 1.1rem 1.05rem;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid var(--tone-soft);
+  border-radius: 10px;
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    background 0.25s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.person::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--tone);
+  opacity: 0.35;
+  transition: opacity 0.25s var(--ease);
+}
+.person:hover {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: var(--tone-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -20px var(--tone-mid);
+}
+.person:hover::before { opacity: 1; }
+
+/* The role meta is already conveyed by the parent h3 — keep cards clean */
+.person .role { display: none; }
+.person .name {
+  font-family: var(--f-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.2rem;
+}
+.person .affil {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .committee-grid { grid-template-columns: 1fr; }
+  .committee-group-head { flex-wrap: wrap; gap: 0.5rem 1rem; }
+}
