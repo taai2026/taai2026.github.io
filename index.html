@@ -18,10 +18,11 @@
         <span class="brand-text">
           TAAI 2026
           <small>November 20-21, 2026</small>
+          <small>NTPU, Taipei, Taiwan</small>
         </span>
       </a>
-      <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
-      <nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -37,64 +38,19 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-    <div class="spine left"></div>
-    <div class="spine right"></div>
-
-    <!-- Decorative background SVG: circuit meets leaf -->
-    <svg class="hero-bg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <defs>
-        <linearGradient id="spine" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%"  stop-color="#1865c9" stop-opacity="0.7"/>
-          <stop offset="50%" stop-color="#4aa6e8" stop-opacity="0.5"/>
-          <stop offset="100%" stop-color="#7bb93f" stop-opacity="0.7"/>
-        </linearGradient>
-        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#7bb93f" stop-opacity="0.35"/>
-          <stop offset="100%" stop-color="#7bb93f" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-
-      <!-- Ambient glow -->
-      <circle cx="1100" cy="280" r="340" fill="url(#glow)"/>
-      <circle cx="260"  cy="680" r="280" fill="url(#glow)" opacity="0.6"/>
-
-      <!-- Organic flowing lines (circuit → leaf veins) -->
-      <g fill="none" stroke="url(#spine)" stroke-width="1.2" opacity="0.55">
-        <path d="M -50 420 Q 280 280 560 440 T 1100 380 T 1500 520"/>
-        <path d="M -50 500 Q 320 680 640 500 T 1200 580 T 1500 440"/>
-        <path d="M -50 340 Q 360 180 700 320 T 1300 240"/>
-        <path d="M 200 900 Q 260 620 440 580 T 760 500 T 1060 420 T 1400 320"/>
-      </g>
-      <!-- Circuit nodes -->
-      <g fill="#1865c9" opacity="0.6">
-        <circle cx="280"  cy="430" r="3"/>
-        <circle cx="560"  cy="440" r="4"/>
-        <circle cx="860"  cy="400" r="3"/>
-        <circle cx="1100" cy="380" r="5"/>
-        <circle cx="440"  cy="580" r="3"/>
-        <circle cx="760"  cy="500" r="4"/>
-      </g>
-    </svg>
-
     <div class="wrap hero-inner">
-      <div class="hero-meta reveal">
-        <span>TAAI 2026</span>
-        <span>November 20-21, 2026</span>
-        <span>NTPU, New Taipei City, Taiwan</span>
-      </div>
+      <figure class="hero-banner reveal">
+        <img src="assets/taai2026_banner.jpg"
+             alt="TAAI 2026 — The 31st International Conference on Technologies and Applications of Artificial Intelligence. November 20-21, 2026, NTPU, New Taipei City, Taiwan." />
+      </figure>
 
-      <h1 class="hero-title reveal d1">
-        <span class="line"><em class="grad-text">TAAI 2026</em></span>
-        <span class="line"><em class="grad-text">Agentic AI</em> meets </span>
-        <span class="line"><em class="grad-text">Physical</em> intelligence</span>
-      </h1>
-
-      <div class="hero-stack">
-        <div>
-          <p class="lede reveal d2">  
-            The 31st International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2026)
-          </p>
-          <p class="lede reveal d2">  
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="eyebrow reveal">Conference Theme</span>
+          <h1 class="hero-title reveal d1">
+            <em class="grad-text">Agentic AI</em> meets <em class="grad-text">Physical</em> intelligence.
+          </h1>
+          <p class="lede reveal d2">
             Two days. One forest. Where the world's most anticipated ideas in
             agentic systems, embodied intelligence, and sustainable innovation
             converge — surrounded by hot springs and phytoncide-scented pines.
@@ -105,13 +61,11 @@
           </div>
         </div>
 
-        <div class="reveal d4">
-          <p class="eyebrow mb-1">Countdown to TAAI 2026</p>
+        <aside class="hero-countdown reveal d4">
+          <span class="eyebrow on-light">Countdown to TAAI 2026</span>
           <div id="countdown" class="countdown"></div>
-          <p class="mt-1" style="font-family: var(--f-mono); font-size: 0.75rem; color: var(--ink-soft); letter-spacing: 0.08em;">
-            Opening · 9:00 AM · 20 Nov 2026 · Asia/Taipei
-          </p>
-        </div>
+          <p class="countdown-note">Opening · 9:00 AM · 20 Nov 2026 · Asia/Taipei</p>
+        </aside>
       </div>
     </div>
   </section>
