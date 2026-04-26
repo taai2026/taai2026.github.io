@@ -8,21 +8,28 @@
   /* ---- Mobile nav toggle ---- */
   const toggle = document.querySelector('.nav-toggle');
   const links  = document.querySelector('.nav-links');
+  const setMenu = (open) => {
+    links.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.textContent = open ? 'Close' : 'Menu';
+  };
   if (toggle && links) {
     toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.textContent = open ? 'Close' : 'Menu';
-      document.body.style.overflow = open ? 'hidden' : '';
+      setMenu(!links.classList.contains('open'));
     });
     // Close on link click (mobile)
     links.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        if (window.innerWidth <= 900) {
-          links.classList.remove('open');
-          toggle.textContent = 'Menu';
-          document.body.style.overflow = '';
-        }
+        if (window.innerWidth <= 900) setMenu(false);
       });
+    });
+    // Close on Escape, and reset state when resizing back to desktop
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && links.classList.contains('open')) setMenu(false);
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900 && links.classList.contains('open')) setMenu(false);
     });
   }
 
