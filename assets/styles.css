@@ -976,3 +976,62 @@ section {
     transition: none;
   }
 }
+
+/* Program at a glance */
+.glance-scroll {
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.glance {
+  width: 100%;
+  min-width: 880px;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.glance th,
+.glance td {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--line);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.glance thead th {
+  color: #fff;
+  background: var(--blue);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.glance .g-time {
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  white-space: nowrap;
+}
+
+.glance small {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.glance .g-plenary { background: rgba(13, 74, 158, 0.1); font-weight: 700; }
+.glance .g-break   { background: rgba(232, 168, 56, 0.12); color: var(--ink-soft); }
+.glance .g-social  { background: rgba(232, 168, 56, 0.22); font-weight: 700; }
+.glance .g-oral    { background: rgba(74, 144, 226, 0.1); }
+.glance .g-poster  { background: rgba(123, 185, 63, 0.16); }
+.glance .g-special { background: rgba(184, 92, 58, 0.1); }
+.glance .g-online  { background: rgba(47, 122, 58, 0.08); }
+
+.glance-note {
+  margin-top: 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
