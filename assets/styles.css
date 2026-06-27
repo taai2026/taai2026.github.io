@@ -153,6 +153,10 @@ strong {
   letter-spacing: 0.12em;
 }
 
+.num-label {
+  font-size: 0.92rem;
+}
+
 .eyebrow,
 .num-label,
 .breadcrumb .sep,
@@ -548,6 +552,106 @@ section {
 .info-card dd,
 .venue-info-card dd {
   margin: 0;
+  color: var(--ink-soft);
+}
+
+/* Fee tables */
+.table-wrap {
+  margin-top: 1.4rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  -webkit-overflow-scrolling: touch;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  font-size: 1.05rem;
+}
+
+.fee-table caption {
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+  font-weight: 800;
+  color: var(--blue);
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid var(--line);
+}
+
+.fee-table th,
+.fee-table td {
+  padding: 0.7rem 1.1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.fee-table thead th {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+.fee-table .th-sub {
+  display: block;
+  max-width: 26ch;
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+.fee-table tbody th {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.fee-table .group-row th {
+  color: var(--blue);
+  background: rgba(13, 74, 158, 0.06);
+  font-weight: 800;
+}
+
+.fee-table td {
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.fee-table tr:last-child th,
+.fee-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fee-note {
+  margin: 1.1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+.fee-note li {
+  margin-bottom: 0.35rem;
+}
+
+.policy-block {
+  margin-top: 1.6rem;
+}
+
+.policy-block h3 {
+  margin-bottom: 0.4rem;
+}
+
+.policy-block p {
+  margin-top: 0;
   color: var(--ink-soft);
 }
 
