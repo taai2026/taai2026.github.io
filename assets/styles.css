@@ -76,6 +76,11 @@ a:hover {
   word-break: break-word;
 }
 
+.info-card a.btn-primary {
+  color: #fff;
+  text-decoration: none;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid rgba(13, 74, 158, 0.38);
@@ -154,7 +159,7 @@ strong {
 }
 
 .num-label {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
 }
 
 .eyebrow,
@@ -210,7 +215,7 @@ strong {
 
 section {
   position: relative;
-  padding: 4.5rem 0;
+  padding: 3rem 0;
 }
 
 .section-soft,
@@ -423,16 +428,16 @@ section {
 }
 
 .page-banner {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .page-hero {
-  padding: 3rem 0 3.5rem;
+  padding: 2rem 0 2.25rem;
   background: rgba(255, 255, 255, 0.28);
 }
 
 .page-banner + .page-hero {
-  padding-top: 2.25rem;
+  padding-top: 1.5rem;
 }
 
 .hero-banner,
@@ -476,8 +481,9 @@ section {
 }
 
 .breadcrumb {
-  margin: 0 0 1.35rem;
+  margin: 0 0 0.9rem;
   color: var(--ink-soft);
+  font-size: 0.95rem;
 }
 
 .breadcrumb .sep {
@@ -510,7 +516,7 @@ section {
 .feature .num {
   margin-bottom: 0.9rem;
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
 }
 
@@ -592,7 +598,7 @@ section {
 .fee-table thead th {
   color: var(--green);
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.04em;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.5);
@@ -629,6 +635,18 @@ section {
 .fee-table tr:last-child th,
 .fee-table tr:last-child td {
   border-bottom: none;
+}
+
+.fee-table td small {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.fee-table td.td-wrap {
+  min-width: 30ch;
+  white-space: normal;
 }
 
 .fee-note {
@@ -774,6 +792,7 @@ section {
 
 .submit-note {
   color: var(--ink-soft);
+  font-size: 0.95rem;
 }
 
 /* CFP, registration, committee */
@@ -829,11 +848,15 @@ section {
   line-height: 1;
 }
 
+.tier-name {
+  font-size: 0.95rem;
+}
+
 .tier-price small {
   margin-left: 0.35rem;
   color: var(--ink-soft);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -976,7 +999,7 @@ section {
   h4 { font-size: 1rem; }
 
   section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
 
   .section-head,
