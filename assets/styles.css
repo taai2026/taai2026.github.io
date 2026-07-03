@@ -573,6 +573,7 @@ section {
 
 .fee-table {
   width: 100%;
+  min-width: 720px;
   border-collapse: collapse;
   background: var(--panel);
   font-size: 1.05rem;
@@ -593,6 +594,7 @@ section {
   text-align: left;
   border-bottom: 1px solid var(--line);
   vertical-align: top;
+  line-height: 1.45;
 }
 
 .fee-table thead th {
@@ -617,6 +619,7 @@ section {
 }
 
 .fee-table tbody th {
+  min-width: 18ch;
   font-weight: 700;
   color: var(--ink);
 }
@@ -647,6 +650,24 @@ section {
 .fee-table td.td-wrap {
   min-width: 30ch;
   white-space: normal;
+}
+
+@media (max-width: 640px) {
+  .table-wrap {
+    margin-inline: calc(var(--gutter) * -0.5);
+    border-radius: 0;
+  }
+
+  .fee-table {
+    min-width: 760px;
+    font-size: 0.95rem;
+  }
+
+  .fee-table caption {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 .fee-note {
