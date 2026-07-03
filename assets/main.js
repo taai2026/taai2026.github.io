@@ -10,7 +10,7 @@
   const links = document.querySelector('.nav-links');
   if (toggle && links) {
     const navInner = toggle.closest('.nav-inner');
-    const isMobile = () => window.matchMedia('(max-width: 900px)').matches;
+    const isMobile = () => window.matchMedia('(max-width: 960px)').matches;
     const setMenu = (open) => {
       links.classList.toggle('open', open);
       document.body.classList.toggle('menu-open', open);
