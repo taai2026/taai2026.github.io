@@ -65,8 +65,7 @@
   <section class="section-soft">
     <div class="wrap">
       <p class="reveal">
-        所有時間均為臺北時間（UTC+8）。
-        場次名稱、地點與時間皆為暫定，將於論文錄取通知後正式公布。
+        所有時間均為臺北時間（UTC+8）。場次名稱、地點與時間皆為暫定，將於論文錄取通知後正式公布。
       </p>
 
       <div id="day1" class="day-head reveal">
@@ -74,8 +73,11 @@
         <h3>2026 年 11 月 20 日（週五）(會場：大板根森林溫泉酒店)</h3>
       </div>
 
-      <div class="glance-scroll reveal">
+      <p class="table-hint">可左右滑動查看所有會議室。</p>
+
+      <div class="glance-scroll reveal" aria-describedby="program-table-note">
         <table class="glance">
+          <caption class="sr-only">第一天依時間與會議室排列的研討會議程</caption>
           <thead>
             <tr>
               <th scope="col">時間</th>
@@ -160,8 +162,11 @@
         <h3>2026 年 11 月 21 日（週六）(會場：大板根森林溫泉酒店)</h3>
       </div>
 
-      <div class="glance-scroll reveal">
+      <p class="table-hint">可左右滑動查看所有會議室。</p>
+
+      <div class="glance-scroll reveal" aria-describedby="program-table-note">
         <table class="glance">
+          <caption class="sr-only">第二天依時間與會議室排列的研討會議程</caption>
           <thead>
             <tr>
               <th scope="col">時間</th>
@@ -245,7 +250,7 @@
         </table>
       </div>
 
-      <p class="glance-note reveal">
+      <p id="program-table-note" class="glance-note reveal">
         * 暫定議程，正式議程與場次、地點安排確認後將於本頁公布。
       </p>
     </div>
