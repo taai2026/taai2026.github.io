@@ -18,7 +18,7 @@
   --sun: #e8a838;
   --radius: 8px;
   --shadow: 0 18px 42px -34px rgba(12, 31, 42, 0.42);
-  --container: 1180px;
+  --container: 1320px;
   --gutter: 2rem;
   --nav-height: 72px;
   --font-body: 'Manrope', system-ui, sans-serif;
@@ -123,7 +123,7 @@ h4 {
   letter-spacing: 0;
 }
 
-h1 { font-size: 3.5rem; }
+h1 { font-size: 3rem; }
 h2 { font-size: 2.35rem; }
 h3 { font-size: 1.35rem; }
 h4 { font-size: 1rem; }
@@ -215,7 +215,7 @@ strong {
 
 section {
   position: relative;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .section-soft,
@@ -230,7 +230,7 @@ section {
   gap: 1.5rem;
   align-items: start;
   padding-bottom: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -328,6 +328,7 @@ section {
 }
 
 .nav-links a,
+.nav-drop-btn,
 .nav-toggle,
 .btn {
   display: inline-flex;
@@ -383,6 +384,92 @@ section {
   cursor: pointer;
 }
 
+/* Dropdown navigation groups */
+.nav-group {
+  position: relative;
+}
+
+.nav-drop-btn {
+  gap: 0.45rem;
+  padding: 0 0.72rem;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.caret {
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.16s ease;
+}
+
+.nav-group:hover > .nav-drop-btn .caret,
+.nav-group:focus-within > .nav-drop-btn .caret,
+.nav-group.open > .nav-drop-btn .caret {
+  margin-top: 3px;
+  transform: rotate(225deg);
+}
+
+.nav-drop {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 50%;
+  z-index: 10;
+  min-width: 240px;
+  margin: 0;
+  padding: 0.45rem;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(13, 74, 158, 0.16);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 56px -30px rgba(12, 31, 42, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -6px);
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+/* invisible bridge so the pointer can travel from button to panel */
+.nav-drop::before {
+  content: '';
+  position: absolute;
+  inset: -0.6rem 0 auto;
+  height: 0.6rem;
+}
+
+.nav-group:hover .nav-drop,
+.nav-group:focus-within .nav-drop,
+.nav-group.open .nav-drop {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-group:hover > .nav-drop-btn,
+.nav-group:focus-within > .nav-drop-btn,
+.nav-group.open > .nav-drop-btn,
+.nav-drop-btn.active {
+  color: var(--blue);
+  background: rgba(13, 74, 158, 0.07);
+}
+
+.nav-drop a {
+  width: 100%;
+  justify-content: flex-start;
+  min-height: 42px;
+  padding: 0 0.85rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
 /* Buttons and links */
 .btn {
   gap: 0.6rem;
@@ -420,15 +507,15 @@ section {
 /* Heroes and banners */
 .hero,
 .page-banner {
-  padding-top: 1.25rem;
+  padding-top: 0.75rem;
 }
 
 .hero {
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 .page-banner {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .page-hero {
@@ -437,7 +524,7 @@ section {
 }
 
 .page-banner + .page-hero {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .hero-banner,
@@ -450,7 +537,7 @@ section {
 }
 
 .hero-banner {
-  margin-bottom: 2rem;
+  margin-bottom: 0.9rem;
 }
 
 
@@ -464,7 +551,7 @@ section {
 
 .hero-title {
   max-width: 100%;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   font-size: clamp(2rem, 1.2vw + 1.7rem, 2.6rem);
 }
 
@@ -479,7 +566,7 @@ section {
 
 .page-hero h1 {
   max-width: 18ch;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
 }
 
 .page-hero h1.h1-compact {
@@ -512,6 +599,13 @@ section {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+
+.feature p:last-child,
+.venue-card p:last-child,
+.info-card p:last-child,
+.about-info-panel p:last-child {
+  margin-bottom: 0;
 }
 
 .feature .num,
@@ -765,7 +859,7 @@ section {
   grid-template-columns: 180px minmax(0, 1fr) auto;
   gap: 1.5rem;
   align-items: baseline;
-  padding: 1.15rem 0;
+  padding: 0.85rem 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -798,8 +892,8 @@ section {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  padding: 1.2rem 0 0.9rem;
-  margin-top: 1rem;
+  padding: 0.9rem 0 0.7rem;
+  margin-top: 0.75rem;
   border-bottom: 2px solid var(--blue);
 }
 
@@ -914,7 +1008,7 @@ section {
 }
 
 .committee-section {
-  padding-top: 3.5rem;
+  padding-top: 2.5rem;
 }
 
 .committee-block {
@@ -936,7 +1030,7 @@ section {
 
 /* Footer and utilities */
 .footer {
-  padding: 2.7rem 0 1rem;
+  padding: 1.75rem 0 1rem;
   background: rgba(236, 243, 230, 0.82);
   border-top: 1px solid rgba(47, 122, 58, 0.18);
 }
@@ -970,7 +1064,8 @@ section {
 }
 
 .footer-col li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
 }
 
 .footer-base {
@@ -978,7 +1073,7 @@ section {
   gap: 0.25rem;
   justify-items: center;
   padding-top: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   text-align: center;
   border-top: 1px solid rgba(47, 122, 58, 0.16);
 }
@@ -1013,7 +1108,7 @@ section {
 
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
-.mt-3 { margin-top: 3rem; }
+.mt-3 { margin-top: 2rem; }
 .mb-0 { margin-bottom: 0; }
 .tc { text-align: center; }
 .max-60 { max-width: 60ch; }
@@ -1023,7 +1118,8 @@ section {
 
 /* Responsive */
 @media (max-width: 1100px) {
-  .nav-links a {
+  .nav-links a,
+  .nav-drop-btn {
     padding-inline: 0.56rem;
     font-size: 0.88rem;
   }
@@ -1036,6 +1132,12 @@ section {
 @media (max-width: 960px) {
   .nav-toggle {
     display: inline-flex;
+  }
+
+  /* .nav-links goes position:fixed below, leaving its <nav> wrapper as an
+     empty flex item that pushes the toggle away from the right edge */
+  .nav-inner nav {
+    display: contents;
   }
 
   .nav-links {
@@ -1069,6 +1171,52 @@ section {
     border-radius: var(--radius);
   }
 
+  /* dropdown groups flatten into labelled sections in the mobile panel */
+  .nav-group {
+    display: grid;
+    gap: 0.1rem;
+  }
+
+  .nav-drop-btn {
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    padding: 0 0.8rem;
+    border-radius: var(--radius);
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .nav-group .caret {
+    display: none;
+  }
+
+  .nav-drop,
+  .nav-group:hover .nav-drop,
+  .nav-group.open .nav-drop {
+    position: static;
+    min-width: 0;
+    margin-left: 0.75rem;
+    padding: 0 0 0 0.65rem;
+    background: none;
+    border: 0;
+    border-left: 2px solid rgba(13, 74, 158, 0.16);
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    transition: none;
+  }
+
+  .nav-drop::before {
+    display: none;
+  }
+
   .nav-cta {
     margin-top: 0.35rem;
   }
@@ -1086,11 +1234,19 @@ section {
   h4 { font-size: 1rem; }
 
   section {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .hero {
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .page-hero {
+    padding: 1.5rem 0 1.75rem;
+  }
+
+  .committee-section {
+    padding-top: 2rem;
   }
 
   .section-head,
@@ -1104,24 +1260,51 @@ section {
     grid-template-columns: 1fr;
   }
 
+  /* two-column grids collapse to one column here; the desktop
+     column gap is too tall as a vertical gap */
+  .split,
+  .hero-content,
+  .about-hero-grid,
+  .about-organizer-grid {
+    gap: 1.5rem;
+  }
+
   .section-head {
     gap: 0.6rem;
-    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .mt-2 { margin-top: 1.25rem; }
+  .mt-3 { margin-top: 1.75rem; }
+
+  .footer {
+    padding: 1.5rem 0 1rem;
+  }
+
+  .footer-grid {
+    gap: 1rem;
   }
 
   .hero-banner {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-title,
   .page-hero h1 {
     max-width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .page-banner + .page-hero {
+    padding-top: 1rem;
   }
 
   .timeline-row,
   .session {
     grid-template-columns: 1fr;
-    gap: 0.35rem;
+    gap: 0.3rem;
+    padding: 0.7rem 0;
   }
 
   .about-summary .kv,
@@ -1141,6 +1324,27 @@ section {
   .footer-base {
     justify-items: start;
     text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.7rem; }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .page-hero h1.h1-compact {
+    font-size: 1.6rem;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+  }
+
+  .countdown .n {
+    font-size: 1.6rem;
   }
 }
 

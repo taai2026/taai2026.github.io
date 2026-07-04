@@ -45,12 +45,66 @@
     });
   }
 
+  /* ---- Dropdown nav groups ---- */
+  const groups = document.querySelectorAll('.nav-group');
+  if (groups.length) {
+    const mobileQuery = window.matchMedia('(max-width: 960px)');
+
+    const closeGroups = (except) => {
+      groups.forEach(g => {
+        if (g === except) return;
+        g.classList.remove('open');
+        const btn = g.querySelector('.nav-drop-btn');
+        if (btn && !mobileQuery.matches) btn.setAttribute('aria-expanded', 'false');
+      });
+    };
+
+    // In the mobile panel the group children are always visible
+    const syncMode = () => {
+      groups.forEach(g => {
+        g.classList.remove('open');
+        const btn = g.querySelector('.nav-drop-btn');
+        if (btn) btn.setAttribute('aria-expanded', mobileQuery.matches ? 'true' : 'false');
+      });
+    };
+    syncMode();
+    mobileQuery.addEventListener('change', syncMode);
+
+    groups.forEach(g => {
+      const btn = g.querySelector('.nav-drop-btn');
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        if (mobileQuery.matches) return;
+        const open = !g.classList.contains('open');
+        closeGroups(g);
+        g.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (![...groups].some(g => g.contains(e.target))) closeGroups();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeGroups();
+    });
+  }
+
   /* ---- Active nav state (by pathname) ---- */
   const path = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
     const href = a.getAttribute('href');
     if (href === path || (path === '' && href === 'index.html')) {
       a.classList.add('active');
+    }
+  });
+
+  // Highlight the group button when one of its children is the current page
+  groups.forEach(g => {
+    if (g.querySelector('a.active')) {
+      const btn = g.querySelector('.nav-drop-btn');
+      if (btn) btn.classList.add('active');
     }
   });
 
