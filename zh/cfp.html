@@ -22,7 +22,10 @@
           <small>臺灣新北市</small>
         </span>
       </a>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">選單</button>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav" data-label-open="開啟選單" data-label-close="關閉選單" data-text-open="選單" data-text-close="關閉">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="nav-toggle-text">選單</span>
+      </button>
       <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">首頁</a></li>
@@ -45,7 +48,7 @@
             </ul>
           </li>
           <li><a href="sponsorship.html">贊助方案</a></li>
-          <li><a href="../cfp.html" class="lang-switch" lang="en" hreflang="en">English</a></li>
+          <li><a href="../cfp.html" class="lang-switch" lang="en" hreflang="en" aria-label="切換語言為 English" title="切換語言為 English"><span class="lang-switch-icon" aria-hidden="true">🌐</span><span class="lang-switch-text">English</span></a></li>
         </ul>
       </nav>
     </div>
