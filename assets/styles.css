@@ -1171,33 +1171,49 @@ section {
     border-radius: var(--radius);
   }
 
-  /* dropdown groups flatten into labelled sections in the mobile panel */
+  /* dropdown groups collapse into tap-to-expand accordion rows on mobile */
   .nav-group {
     display: grid;
     gap: 0.1rem;
   }
 
   .nav-drop-btn {
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
-    min-height: 40px;
+    min-height: 46px;
     padding: 0 0.8rem;
     border-radius: var(--radius);
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 0.9rem;
   }
 
-  .nav-group .caret {
-    display: none;
+  /* hover/focus must not reveal or rotate anything on touch — only .open */
+  .nav-group:hover > .nav-drop-btn .caret,
+  .nav-group:focus-within > .nav-drop-btn .caret {
+    margin-top: -3px;
+    transform: rotate(45deg);
+  }
+
+  .nav-group.open > .nav-drop-btn .caret {
+    margin-top: 3px;
+    transform: rotate(225deg);
+  }
+
+  .nav-group:hover > .nav-drop-btn,
+  .nav-group:focus-within > .nav-drop-btn {
+    color: var(--ink);
+    background: none;
+  }
+
+  .nav-group.open > .nav-drop-btn,
+  .nav-drop-btn.active {
+    color: var(--blue);
+    background: rgba(13, 74, 158, 0.07);
   }
 
   .nav-drop,
   .nav-group:hover .nav-drop,
-  .nav-group.open .nav-drop {
+  .nav-group:focus-within .nav-drop {
+    display: none;
     position: static;
     min-width: 0;
     margin-left: 0.75rem;
@@ -1211,6 +1227,11 @@ section {
     pointer-events: auto;
     transform: none;
     transition: none;
+  }
+
+  .nav-group.open .nav-drop {
+    display: block;
+    transform: none;
   }
 
   .nav-drop::before {
