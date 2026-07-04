@@ -21,7 +21,10 @@
           <small>New Taipei City, Taiwan</small>
         </span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav" data-label-open="Open menu" data-label-close="Close menu" data-text-open="Menu" data-text-close="Close">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
       <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -44,7 +47,7 @@
             </ul>
           </li>
           <li><a href="sponsorship.html">Sponsorship</a></li>
-          <li><a href="zh/about.html" class="lang-switch" lang="zh-Hant" hreflang="zh-Hant">中文</a></li>
+          <li><a href="zh/about.html" class="lang-switch" lang="zh-Hant" hreflang="zh-Hant" aria-label="Switch language to Traditional Chinese" title="Switch language to Traditional Chinese"><span class="lang-switch-icon" aria-hidden="true">🌐</span><span class="lang-switch-text">中文</span></a></li>
         </ul>
       </nav>
     </div>
