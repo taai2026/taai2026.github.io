@@ -364,6 +364,7 @@ section {
 }
 
 .nav-links .lang-switch {
+  gap: 0.4rem;
   padding: 0 0.85rem;
   color: var(--blue);
   border: 1px solid rgba(13, 74, 158, 0.32);
@@ -374,14 +375,85 @@ section {
   background: rgba(13, 74, 158, 0.07);
 }
 
+.nav-links .lang-switch:focus-visible {
+  outline: 3px solid rgba(13, 74, 158, 0.38);
+  outline-offset: 3px;
+}
+
+.lang-switch-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .nav-toggle {
   display: none;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  min-width: 48px;
+  min-height: 48px;
   padding: 0 0.95rem;
   color: var(--blue);
   background: #fff;
   border: 1px solid rgba(13, 74, 158, 0.42);
   font-family: var(--font-body);
+  font-size: 0.9rem;
   cursor: pointer;
+}
+
+.nav-toggle:hover {
+  background: rgba(13, 74, 158, 0.07);
+}
+
+.nav-toggle:focus-visible {
+  outline: 3px solid rgba(13, 74, 158, 0.38);
+  outline-offset: 3px;
+}
+
+.nav-toggle-text {
+  white-space: nowrap;
+}
+
+/* hamburger icon: middle bar is the span, outer bars are pseudo-elements */
+.nav-toggle-icon {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: background 0.16s ease;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.16s ease;
+}
+
+.nav-toggle-icon::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggle-icon::after {
+  transform: translateY(6px);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::after {
+  transform: rotate(-45deg);
 }
 
 /* Dropdown navigation groups */
@@ -1123,15 +1195,30 @@ section {
     padding-inline: 0.56rem;
     font-size: 0.88rem;
   }
-
-  .brand-text small:last-child {
-    display: none;
-  }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .nav-toggle {
     display: inline-flex;
+  }
+
+  /* dimmed, blurred backdrop behind the slide-out drawer */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(12, 31, 42, 0.38);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease;
+  }
+
+  body.menu-open::before {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   /* .nav-links goes position:fixed below, leaving its <nav> wrapper as an
@@ -1140,27 +1227,34 @@ section {
     display: contents;
   }
 
+  /* right-side slide-out drawer under the fixed navbar */
   .nav-links {
     position: fixed;
-    top: calc(var(--nav-height) + 0.6rem);
-    left: 50%;
+    top: var(--nav-height);
+    right: 0;
+    left: auto;
     display: grid;
-    width: min(520px, calc(100vw - 1.5rem));
-    padding: 0.55rem;
-    background: #fff;
-    border: 1px solid rgba(13, 74, 158, 0.18);
-    border-radius: var(--radius);
-    box-shadow: 0 24px 56px -34px rgba(12, 31, 42, 0.42);
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -0.5rem);
-    transition: opacity 0.18s ease, transform 0.18s ease;
+    align-content: start;
+    gap: 0.15rem;
+    width: min(360px, 88vw);
+    height: calc(100vh - var(--nav-height));
+    height: calc(100dvh - var(--nav-height));
+    padding: 0.9rem 0.9rem calc(1.5rem + env(safe-area-inset-bottom));
+    overflow-y: auto;
+    background: rgba(247, 250, 254, 0.92);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    border-left: 1px solid rgba(13, 74, 158, 0.18);
+    box-shadow: -28px 0 56px -34px rgba(12, 31, 42, 0.45);
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.24s ease, visibility 0s linear 0.24s;
   }
 
   .nav-links.open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, 0);
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.24s ease;
   }
 
   .nav-links a {
@@ -1169,6 +1263,11 @@ section {
     min-height: 46px;
     padding: 0 0.8rem;
     border-radius: var(--radius);
+  }
+
+  /* keep the globe icon next to its text inside the drawer */
+  .nav-links .lang-switch {
+    justify-content: flex-start;
   }
 
   /* dropdown groups collapse into tap-to-expand accordion rows on mobile */
@@ -1369,6 +1468,27 @@ section {
   }
 }
 
+/* Very narrow screens: hide the toggle text visually but keep it for
+   screen readers so the navbar never overflows */
+@media (max-width: 344px) {
+  .nav-toggle {
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-toggle-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1378,6 +1498,18 @@ section {
   *::before,
   *::after {
     animation: none;
+    transition: none;
+  }
+
+  /* mobile drawer, backdrop, dropdown and caret snap instead of animating */
+  .nav-links,
+  .nav-links.open,
+  body::before,
+  .nav-drop,
+  .caret,
+  .nav-toggle-icon,
+  .nav-toggle-icon::before,
+  .nav-toggle-icon::after {
     transition: none;
   }
 }
