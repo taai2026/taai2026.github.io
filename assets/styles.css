@@ -576,6 +576,19 @@ section {
   justify-content: center;
 }
 
+.url-note {
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.url-note a {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  overflow-wrap: anywhere;
+}
+
 /* Heroes and banners */
 .hero,
 .page-banner {
