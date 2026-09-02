@@ -195,6 +195,45 @@
     setInterval(tick, 1000);
   }
 
+  /* ---- Timeline status tags: auto-update from data-deadline / data-event ----
+     <div class="timeline-row" data-deadline="2026-09-14">            deadline: Open → Closed
+     <div class="timeline-row" data-deadline="…" data-opens="…">     Upcoming until data-opens, then Open → Closed
+     <div class="timeline-row" data-event="2026-10-16">               Upcoming → Completed
+     Optional data-tz="+08:00" (default is AoE, UTC-12). Rows without these attributes keep their static tag. */
+  const timelineRows = document.querySelectorAll('.timeline-row[data-deadline], .timeline-row[data-event]');
+  if (timelineRows.length) {
+    const zhPage = /^zh/i.test(document.documentElement.lang || '') || /\/zh\//.test(location.pathname);
+    const LABELS = zhPage
+      ? { upcoming: '即將到來', open: '開放中', closed: '已截止', done: '已完成' }
+      : { upcoming: 'Upcoming', open: 'Open', closed: 'Closed', done: 'Completed' };
+    const CLASSES = { upcoming: 'timeline-tag', open: 'timeline-tag hot', closed: 'timeline-tag closed', done: 'timeline-tag closed' };
+    const at = (ymd, time, tz) => {
+      const t = new Date(`${ymd}T${time}${tz || '-12:00'}`).getTime();
+      return Number.isNaN(t) ? null : t;
+    };
+    const now = Date.now();
+
+    timelineRows.forEach(row => {
+      const tag = row.querySelector('.timeline-tag');
+      if (!tag) return;
+      const tz = row.dataset.tz;
+      let state;
+      if (row.dataset.event) {
+        const end = at(row.dataset.event, '23:59:59', tz);
+        if (end === null) return;
+        state = now > end ? 'done' : 'upcoming';
+      } else {
+        const end = at(row.dataset.deadline, '23:59:59', tz);
+        if (end === null) return;
+        const opens = row.dataset.opens ? at(row.dataset.opens, '00:00:00', tz) : null;
+        state = now > end ? 'closed' : (opens !== null && now < opens) ? 'upcoming' : 'open';
+      }
+      tag.className = CLASSES[state];
+      tag.textContent = LABELS[state];
+      row.dataset.status = state;
+    });
+  }
+
   /* ---- Current year in footer ---- */
   document.querySelectorAll('[data-year]').forEach(el => {
     el.textContent = new Date().getFullYear();

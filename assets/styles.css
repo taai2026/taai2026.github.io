@@ -973,6 +973,11 @@ section {
   background: rgba(184, 92, 58, 0.12);
 }
 
+.timeline-tag.closed {
+  color: var(--ink-soft);
+  background: rgba(107, 114, 128, 0.12);
+}
+
 .day-head {
   display: flex;
   align-items: baseline;
