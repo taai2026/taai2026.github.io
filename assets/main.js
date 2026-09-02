@@ -195,6 +195,23 @@
     setInterval(tick, 1000);
   }
 
+  /* ---- Conference phase (drives hero CTAs and start-here cards) ----
+     submission → until Sep 14 23:59 AoE · earlybird → until Oct 30 23:59 GMT+8
+     regular → until Nov 13 23:59 GMT+8 · conference → afterwards.
+     Any element with data-phase="a b" is shown only in those phases. */
+  const PHASES = [
+    ['submission', '2026-09-14T23:59:59-12:00'],
+    ['earlybird', '2026-10-30T23:59:59+08:00'],
+    ['regular', '2026-11-13T23:59:59+08:00'],
+    ['conference', null]
+  ];
+  const phaseNow = (PHASES.find(([, end]) => !end || Date.now() <= Date.parse(end)) || PHASES[PHASES.length - 1])[0];
+  document.documentElement.dataset.phase = phaseNow;
+  document.querySelectorAll('[data-phase]').forEach(el => {
+    if (el === document.documentElement) return;
+    el.hidden = !el.dataset.phase.split(/\s+/).includes(phaseNow);
+  });
+
   /* ---- Timeline status tags: auto-update from data-deadline / data-event ----
      <div class="timeline-row" data-deadline="2026-09-14">            deadline: Open → Closed
      <div class="timeline-row" data-deadline="…" data-opens="…">     Upcoming until data-opens, then Open → Closed

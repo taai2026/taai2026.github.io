@@ -1627,3 +1627,51 @@ section {
   color: var(--ink-soft);
   font-size: 0.95rem;
 }
+
+
+/* ==========================================================================
+   Phase-aware CTAs, start-here cards, announcements, track table
+   ========================================================================== */
+[hidden] { display: none !important; }
+
+.hero-deadline {
+  margin-top: 1.4rem;
+  color: var(--clay);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.hero-secondary {
+  margin-top: 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.hero-secondary a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.start-here .feature .btn { margin-top: 1rem; }
+
+.announce-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.announce-list time {
+  flex: 0 0 auto;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.track-compare th,
+.track-compare td { vertical-align: top; white-space: normal; }
+
+.track-compare { min-width: 860px; }
+
+.track-compare tbody th { white-space: nowrap; }
