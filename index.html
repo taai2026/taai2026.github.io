@@ -47,6 +47,7 @@
       <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -168,11 +169,17 @@
         <span class="num-label">Announcements</span>
         <h2>Latest updates</h2>
       </div>
-      <ul class="info-list announce-list reveal">
-        <li><time datetime="2026-09-02">2026-09-02</time><span>Domestic Track Word templates (full paper, extended abstract, paper abstract, copyright form) are available. <a href="cfp.html#templates">Download templates</a></span></li>
-        <li><time datetime="2026-09-01">2026-09-01</time><span>Registration is open. Early-bird rates apply until October 30, 2026. <a href="registration.html">Register</a></span></li>
-        <li><time datetime="2026-07-10">2026-07-10</time><span>Special session and tutorial/workshop proposal submissions have closed.</span></li>
-      </ul>
+      <div id="news-home-mount" class="reveal" data-locale="en" data-data-base="assets/data" data-archive-href="news.html"></div>
+      <noscript>
+        <ul class="info-list announce-list">
+          <li><time datetime="2026-09-02">2026-09-02</time><span>Domestic Track Word templates (full paper, extended abstract, paper abstract, copyright form) are available. <a href="cfp.html#templates">Download templates</a></span></li>
+          <li><time datetime="2026-09-01">2026-09-01</time><span>Registration is open. Early-bird rates apply until October 30, 2026. <a href="registration.html">Register</a></span></li>
+          <li><time datetime="2026-07-10">2026-07-10</time><span>Special session and tutorial/workshop proposal submissions have closed.</span></li>
+        </ul>
+      </noscript>
+      <div class="tc mt-3 reveal">
+        <a href="news.html" class="btn btn-ghost">View all news <span class="arrow">→</span></a>
+      </div>
     </div>
   </section>
 
@@ -414,5 +421,6 @@
   </footer>
 
   <script src="assets/main.js" defer></script>
+  <script type="module" src="assets/js/news-home.js"></script>
 </body>
 </html>
