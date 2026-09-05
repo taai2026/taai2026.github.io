@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>最新消息 — TAAI 2026</title>
+  <meta name="description" content="TAAI 2026 所有公告：截止日期、報名、議程更新、後勤資訊與合作活動。" />
+  <link rel="icon" href="../assets/logo.png" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="canonical" href="https://taai2026.github.io/zh/news.html" />
+  <link rel="alternate" hreflang="en" href="https://taai2026.github.io/news.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://taai2026.github.io/zh/news.html" />
+  <link rel="alternate" hreflang="x-default" href="https://taai2026.github.io/news.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TAAI 2026" />
+  <meta property="og:title" content="最新消息 — TAAI 2026" />
+  <meta property="og:description" content="TAAI 2026 所有公告：截止日期、報名、議程更新、後勤資訊與合作活動。" />
+  <meta property="og:url" content="https://taai2026.github.io/zh/news.html" />
+  <meta property="og:image" content="https://taai2026.github.io/assets/taai2026_banner.jpg" />
+  <meta property="og:locale" content="zh_TW" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳至主要內容</a>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="../assets/logo.png" alt="" width="44" height="44" decoding="async" aria-hidden="true" />
+        <span class="brand-text">
+          TAAI 2026
+          <small>2026 年 11 月 20-21 日</small>
+          <small>臺灣新北市</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav" data-label-open="開啟選單" data-label-close="關閉選單" data-text-open="選單" data-text-close="關閉">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="nav-toggle-text">選單</span>
+      </button>
+      <nav id="primary-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="news.html">最新消息</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="cfp.html">論文徵稿</a></li>
+              <li><a href="cfphss.html">高中生特別場次</a></li>
+              <li><a href="keydates.html">重要日期</a></li>
+            </ul>
+          </li>
+          <li><a href="program.html">議程</a></li>
+          <li><a href="registration.html">報名</a></li>
+          <li><a href="venue.html">會場</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">關於<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="about.html">關於大會</a></li>
+              <li><a href="committee.html">委員會</a></li>
+            </ul>
+          </li>
+          <li><a href="sponsorship.html">贊助方案</a></li>
+          <li><a href="../news.html" class="lang-switch" lang="en" hreflang="en" aria-label="切換語言為 English" title="切換語言為 English"><span class="lang-switch-icon" aria-hidden="true">🌐</span><span class="lang-switch-text">English</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEAD ================= -->
+  <section id="main-content" tabindex="-1">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">最新消息</span>
+        <h2>TAAI 2026 所有公告</h2>
+      </div>
+      <p class="lede">
+        截止日期、報名、議程與後勤更新，以及與 TAAI 2026 有關的合作活動。可使用下方搜尋或分類篩選找到特定消息。
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= NEWS ARCHIVE ================= -->
+  <section>
+    <div class="wrap">
+      <div id="news-archive" data-locale="zh" data-data-base="../assets/data">
+        <div class="news-controls">
+          <div class="news-search-row">
+            <div class="news-search-field">
+              <label for="news-search-input">搜尋消息</label>
+              <input type="search" id="news-search-input" data-news-search placeholder="搜尋標題、標籤或摘要…" />
+            </div>
+            <div class="news-type-field">
+              <label for="news-type-select">類型</label>
+              <select id="news-type-select" data-news-type></select>
+            </div>
+          </div>
+          <div class="news-chips-row" data-news-chips role="group" aria-label="依分類篩選"></div>
+          <div class="news-toolbar">
+            <span class="news-count" data-news-count></span>
+            <button type="button" class="news-clear-btn" data-news-clear>清除篩選</button>
+          </div>
+        </div>
+        <div data-news-results></div>
+        <noscript>
+          <p>此頁面需要 JavaScript 才能載入與搜尋 TAAI 2026 消息。請參閱<a href="index.html">首頁</a>取得最新消息，或至投稿與報名頁面查看目前的截止日期。</p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/logo.png" class="footer-logo" alt="TAAI 2026 logo" width="72" height="72" loading="lazy" decoding="async">
+          <h3>TAAI 2026</h3>
+          <p>第 31 屆人工智慧技術與應用國際研討會。</p>
+        </div>
+        <div class="footer-col">
+          <h4>會議</h4>
+          <ul>
+            <li><a href="about.html">關於大會</a></li>
+            <li><a href="program.html">議程</a></li>
+            <li><a href="cfp.html">論文徵稿</a></li>
+            <li><a href="keydates.html">重要日期</a></li>
+            <li><a href="committee.html">委員會</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>參加</h4>
+          <ul>
+            <li><a href="registration.html">報名</a></li>
+            <li><a href="venue.html">會場與交通</a></li>
+            <li><a href="venue.html#hotels">住宿</a></li>
+            <li><a href="sponsorship.html">贊助方案</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>主辦單位</h4>
+          <ul>
+            <li><a href="https://www.taai.org.tw/" target="_blank" rel="noopener noreferrer">台灣人工智慧學會 (TAAI)</a></li>
+            <li><a href="https://new.ntpu.edu.tw/" target="_blank" rel="noopener noreferrer">國立臺北大學 (NTPU)</a></li>
+            <li>Email: <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>TAAI 2026 · 2026 年 11 月 20–21 日 · 大板根森林溫泉酒店，臺灣新北市</span>
+        <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
+        <span data-updated>最後更新：<time datetime="2026-09-05">2026-09-05</time></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/main.js" defer></script>
+  <script type="module" src="../assets/js/news-page.js"></script>
+</body>
+</html>
