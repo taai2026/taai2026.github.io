@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://taai2026.github.io/assets/data/news.schema.json",
+  "title": "TAAI 2026 News",
+  "type": "object",
+  "required": ["version", "items"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/newsItem" }
+    }
+  },
+  "definitions": {
+    "i18nEntry": {
+      "type": "object",
+      "required": ["title", "summary"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "linkLabel": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "milestone": {
+      "type": "object",
+      "required": ["id", "at", "i18n"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "kind": {
+          "type": "string",
+          "enum": ["deadline", "event", "announcement", "workshop", "submission", "result"]
+        },
+        "at": { "type": "string", "format": "date-time" },
+        "i18n": {
+          "type": "object",
+          "properties": {
+            "zh": { "type": "string" },
+            "en": { "type": "string" }
+          }
+        }
+      }
+    },
+    "newsItem": {
+      "type": "object",
+      "required": ["id", "type", "category", "publishedAt", "status", "priority", "i18n"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "type": {
+          "type": "string",
+          "enum": ["conference-update", "deadline", "program-update", "logistics", "partner-event", "urgent"]
+        },
+        "category": {
+          "type": "string",
+          "enum": ["general", "submission", "acceptance", "camera-ready", "registration", "competition", "program", "speaker", "workshop", "venue", "transportation", "conference", "important"]
+        },
+        "publishedAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": ["string", "null"], "format": "date-time" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "scheduled", "published", "archived", "cancelled"]
+        },
+        "priority": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "featured": { "type": "boolean" },
+        "urgent": { "type": "boolean" },
+        "deadlineRef": { "type": "string" },
+        "i18n": {
+          "type": "object",
+          "required": ["zh", "en"],
+          "properties": {
+            "zh": { "$ref": "#/definitions/i18nEntry" },
+            "en": { "$ref": "#/definitions/i18nEntry" }
+          }
+        },
+        "links": {
+          "type": "object",
+          "properties": {
+            "zh": { "type": "string" },
+            "en": { "type": "string" }
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": ["type", "name"],
+          "properties": {
+            "type": { "type": "string", "enum": ["official", "external"] },
+            "name": { "type": "string" },
+            "officialUrl": { "type": "string", "format": "uri" }
+          }
+        },
+        "relationship": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": ["official", "co-organized", "partner-event", "co-located", "related"]
+            },
+            "taai2026": { "type": "boolean" }
+          }
+        },
+        "event": {
+          "type": "object",
+          "properties": {
+            "start": { "type": "string", "format": "date-time" },
+            "end": { "type": ["string", "null"], "format": "date-time" },
+            "venue": {
+              "type": "object",
+              "properties": {
+                "zh": { "type": "string" },
+                "en": { "type": "string" }
+              }
+            }
+          }
+        },
+        "milestones": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/milestone" }
+        },
+        "homepage": {
+          "type": "object",
+          "required": ["enabled"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "from": { "type": "string", "format": "date-time" },
+            "until": { "type": "string", "format": "date-time" }
+          }
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["all", "author", "international-author", "domestic-author", "high-school", "student", "graduate-student", "attendee", "speaker", "committee", "sponsor"]
+          }
+        }
+      }
+    }
+  }
+}

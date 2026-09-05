@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "paper-submission-deadline",
+      "type": "deadline",
+      "category": "submission",
+      "publishedAt": "2026-09-05T09:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "論文投稿截止：2026 年 9 月 14 日（國際論文組與國內論文組）",
+          "summary": "國際論文組與國內論文組的論文投稿截止日為 2026 年 9 月 14 日 23:59 AoE，請儘早完成投稿。",
+          "linkLabel": "查看投稿須知",
+          "tags": ["投稿截止", "國際論文組", "國內論文組", "deadline", "AoE"]
+        },
+        "en": {
+          "title": "Paper Submission Deadline: September 14, 2026 (International & Domestic Tracks)",
+          "summary": "Paper submissions for both the International and Domestic Tracks are due September 14, 2026, 23:59 AoE. Submitting ahead of the deadline is recommended.",
+          "linkLabel": "View submission guidelines",
+          "tags": ["submission deadline", "international track", "domestic track", "deadline", "AoE"]
+        }
+      },
+
+      "links": {
+        "zh": "cfp.html",
+        "en": "cfp.html"
+      },
+
+      "deadlineRef": "paperSubmission",
+
+      "priority": 90,
+      "featured": true,
+      "urgent": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-05T09:00:00+08:00",
+        "until": "2026-09-14T23:59:59-12:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
+      "id": "domestic-templates-available",
+      "type": "conference-update",
+      "category": "submission",
+      "publishedAt": "2026-09-02T09:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "國內論文組 Word 範本已上線",
+          "summary": "完整論文、擴充摘要、論文摘要與著作權授權書範本已釋出，歡迎下載使用。",
+          "linkLabel": "下載範本",
+          "tags": ["範本", "投稿", "國內論文組", "著作權", "template"]
+        },
+        "en": {
+          "title": "Domestic Track Word Templates Are Now Available",
+          "summary": "Templates for the full paper, extended abstract, paper abstract, and copyright form have been published.",
+          "linkLabel": "Download templates",
+          "tags": ["templates", "submission", "domestic track", "copyright"]
+        }
+      },
+
+      "links": {
+        "zh": "cfp.html#templates",
+        "en": "cfp.html#templates"
+      },
+
+      "priority": 65,
+      "featured": false,
+      "urgent": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-02T09:00:00+08:00",
+        "until": "2026-09-14T23:59:59-12:00"
+      },
+
+      "audience": ["author", "domestic-author"]
+    },
+
+    {
+      "id": "registration-open",
+      "type": "conference-update",
+      "category": "registration",
+      "publishedAt": "2026-09-01T09:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 報名正式開放",
+          "summary": "線上報名已開放，早鳥優惠適用至 2026 年 10 月 30 日。",
+          "linkLabel": "前往報名",
+          "tags": ["報名", "早鳥", "registration", "early bird"]
+        },
+        "en": {
+          "title": "TAAI 2026 Registration Is Now Open",
+          "summary": "Online registration is now available. Early-bird rates apply until October 30, 2026.",
+          "linkLabel": "Register now",
+          "tags": ["registration", "early bird", "early-bird"]
+        }
+      },
+
+      "links": {
+        "zh": "registration.html",
+        "en": "registration.html"
+      },
+
+      "deadlineRef": "earlyBirdRegistration",
+
+      "priority": 80,
+      "featured": true,
+      "urgent": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-01T09:00:00+08:00",
+        "until": "2026-11-13T23:59:59+08:00"
+      },
+
+      "audience": ["attendee", "author"]
+    },
+
+    {
+      "id": "napai-agentic-ai-campus-competition",
+      "type": "partner-event",
+      "category": "competition",
+      "publishedAt": "2026-09-05T09:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "NAPAI Agentic AI 校園落地創新應用競賽",
+          "summary": "合作活動：NAPAI Agentic AI 校園落地創新應用競賽決賽將於 TAAI 2026 會期同步舉行。完整競賽辦法、報名方式與最新公告請以競賽官方網站為準。",
+          "linkLabel": "前往競賽網站",
+          "tags": ["NAPAI", "Agentic AI", "競賽", "校園創新", "學生競賽", "合作活動", "TAAI 2026", "報名截止", "工作坊", "初賽", "決賽"]
+        },
+        "en": {
+          "title": "NAPAI Agentic AI Campus Innovation Competition",
+          "summary": "Partner event: the NAPAI Agentic AI Campus Innovation Competition final is co-located with TAAI 2026. Full rules, registration, and the latest updates are announced through the competition's own official website.",
+          "linkLabel": "Competition website",
+          "tags": ["NAPAI", "Agentic AI", "competition", "campus innovation", "student competition", "partner event", "TAAI 2026", "registration deadline", "workshop", "preliminary", "final"]
+        }
+      },
+
+      "links": {
+        "zh": "https://napaincu.github.io/aaic2026/",
+        "en": "https://napaincu.github.io/aaic2026/"
+      },
+
+      "source": {
+        "type": "external",
+        "name": "NAPAI",
+        "officialUrl": "https://napaincu.github.io/aaic2026/"
+      },
+
+      "relationship": {
+        "role": "partner-event",
+        "taai2026": true
+      },
+
+      "event": {
+        "start": "2026-11-21T13:00:00+08:00",
+        "end": "2026-11-21T15:30:00+08:00",
+        "venue": {
+          "zh": "大板根森林溫泉酒店",
+          "en": "The Great Roots Forestry Spa Resort, New Taipei City"
+        }
+      },
+
+      "milestones": [
+        {
+          "id": "registration",
+          "kind": "deadline",
+          "at": "2026-09-11T23:59:00+08:00",
+          "i18n": {
+            "zh": "線上報名截止",
+            "en": "Registration deadline"
+          }
+        },
+        {
+          "id": "workshop",
+          "kind": "workshop",
+          "at": "2026-09-18T14:00:00+08:00",
+          "i18n": {
+            "zh": "說明會暨增能工作坊（14:00–16:00）",
+            "en": "Information session and workshop (14:00–16:00)"
+          }
+        },
+        {
+          "id": "preliminary-submission",
+          "kind": "submission",
+          "at": "2026-10-16T23:59:00+08:00",
+          "i18n": {
+            "zh": "初賽繳件截止",
+            "en": "Preliminary submission deadline"
+          }
+        },
+        {
+          "id": "finalists-announced",
+          "kind": "announcement",
+          "at": "2026-11-06T12:00:00+08:00",
+          "i18n": {
+            "zh": "入圍名單公告",
+            "en": "Finalists announced"
+          }
+        },
+        {
+          "id": "final-materials-deadline",
+          "kind": "deadline",
+          "at": "2026-11-13T23:59:00+08:00",
+          "i18n": {
+            "zh": "決賽資料截止",
+            "en": "Final-round materials deadline"
+          }
+        },
+        {
+          "id": "final-session-1",
+          "kind": "event",
+          "at": "2026-11-21T13:00:00+08:00",
+          "i18n": {
+            "zh": "決賽暨成果發表 — 場次一（TAAI 2026 議程 Day 2）",
+            "en": "Final and showcase — Session 1 (TAAI 2026 Day 2 program)"
+          }
+        },
+        {
+          "id": "final-session-2",
+          "kind": "event",
+          "at": "2026-11-21T14:40:00+08:00",
+          "i18n": {
+            "zh": "決賽暨成果發表 — 場次二（TAAI 2026 議程 Day 2）",
+            "en": "Final and showcase — Session 2 (TAAI 2026 Day 2 program)"
+          }
+        }
+      ],
+
+      "priority": 85,
+      "featured": true,
+      "urgent": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-05T09:00:00+08:00",
+        "until": "2026-11-21T18:00:00+08:00"
+      },
+
+      "audience": ["student", "graduate-student"]
+    },
+
+    {
+      "id": "napaicp-competition-platform-launch",
+      "type": "partner-event",
+      "category": "competition",
+      "publishedAt": "2026-09-05T21:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "NAPAI Agentic AI 競賽採用 NAPAICP 平台受理報名、繳件與決選公告",
+          "summary": "NAPAI Agentic AI 校園落地創新應用競賽採用 NAPAICP 競賽平台受理報名、作品繳交與決選公告，由教育部前瞻 AI 人培－智慧代理及實體 AI 課程推動計畫與國立臺北大學跨域人工智慧前瞻研究中心（NTPU AI4X）共同合作開發。",
+          "linkLabel": "前往 NAPAICP 報名",
+          "tags": ["NAPAI", "NAPAICP", "報名", "作品繳交", "決選公告", "競賽平台", "NTPU AI4X"]
+        },
+        "en": {
+          "title": "NAPAI Competition Now Uses the NAPAICP Platform for Registration, Submission, and Results",
+          "summary": "The NAPAI Agentic AI Campus Innovation Competition now handles registration, work submission, and finalist/result announcements through the NAPAICP competition platform. It is jointly developed by the National Agentic & Physical AI Initiative (NAPAI), Ministry of Education and the Advanced Research Center for Cross-Disciplinary AI (NTPU AI4X) at National Taipei University.",
+          "linkLabel": "Register on NAPAICP",
+          "tags": ["NAPAI", "NAPAICP", "registration", "submission", "results", "competition platform", "NTPU AI4X"]
+        }
+      },
+
+      "links": {
+        "zh": "https://aicp.ntpu.ai/",
+        "en": "https://aicp.ntpu.ai/"
+      },
+
+      "source": {
+        "type": "external",
+        "name": "NAPAI / NTPU AI4X",
+        "officialUrl": "https://aicp.ntpu.ai/"
+      },
+
+      "relationship": {
+        "role": "partner-event",
+        "taai2026": true
+      },
+
+      "priority": 60,
+      "featured": false,
+      "urgent": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-05T21:00:00+08:00",
+        "until": "2026-10-16T23:59:00+08:00"
+      },
+
+      "audience": ["student", "graduate-student"]
+    }
+  ]
+}
