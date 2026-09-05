@@ -47,7 +47,7 @@ export async function createSearcher(records) {
   try {
     const { default: Fuse } = await import(/* webpackIgnore: true */ FUSE_URL);
     const fuse = new Fuse(records, FUSE_OPTIONS);
-    return query => fuse.search(query).map(result => result.item);
+    return query => fuse.search(query).map(result => result.item.item);
   } catch (error) {
     console.error("[news] Fuse.js unavailable; using substring fallback", error);
     return query => {
