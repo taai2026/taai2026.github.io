@@ -256,4 +256,32 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* ---- FAQ expand all / collapse all ---- */
+  const faqToggleAll = document.getElementById('faq-toggle-all');
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqToggleAll && faqItems.length) {
+    const labelExpand = faqToggleAll.dataset.labelExpand || faqToggleAll.textContent;
+    const labelCollapse = faqToggleAll.dataset.labelCollapse || labelExpand;
+    faqToggleAll.addEventListener('click', () => {
+      const shouldExpand = [...faqItems].some(item => !item.open);
+      faqItems.forEach(item => { item.open = shouldExpand; });
+      faqToggleAll.textContent = shouldExpand ? labelCollapse : labelExpand;
+    });
+  }
+
+  /* ---- Deep-link to a single FAQ item (e.g. cfp.html#faq-q3) ---- */
+  const openFaqFromHash = () => {
+    const id = decodeURIComponent(location.hash || '').slice(1);
+    if (!id) return;
+    const item = document.getElementById(id);
+    if (item && item.classList.contains('faq-item')) {
+      item.open = true;
+      item.scrollIntoView({ block: 'start' });
+    }
+  };
+  if (document.querySelector('.faq-item')) {
+    openFaqFromHash();
+    window.addEventListener('hashchange', openFaqFromHash);
+  }
+
 })();
