@@ -3,24 +3,24 @@
   "items": [
     {
       "id": "paper-submission-deadline",
-      "type": "deadline",
+      "type": "urgent",
       "category": "submission",
       "publishedAt": "2026-09-05T09:00:00+08:00",
-      "updatedAt": null,
+      "updatedAt": "2026-09-14T09:00:00+08:00",
       "status": "published",
 
       "i18n": {
         "zh": {
-          "title": "論文投稿截止：2026 年 9 月 14 日（國際論文組與國內論文組）",
-          "summary": "國際論文組與國內論文組的論文投稿截止日為 2026 年 9 月 14 日 23:59 AoE，請儘早完成投稿。",
+          "title": "投稿截止延後：論文投稿截止時間由 2026 年 9 月 14 日延後至 9 月 21 日（國際論文組與國內論文組）",
+          "summary": "國際論文組與國內論文組的論文投稿截止時間，原訂 2026 年 9 月 14 日，現已延後至 2026 年 9 月 21 日 23:59 AoE（UTC 2026 年 9 月 22 日 11:59；台北時間 2026 年 9 月 22 日 19:59），請把握延長時間儘早完成投稿。",
           "linkLabel": "查看投稿須知",
-          "tags": ["投稿截止", "國際論文組", "國內論文組", "deadline", "AoE"]
+          "tags": ["投稿截止", "國際論文組", "國內論文組", "deadline", "AoE", "延期"]
         },
         "en": {
-          "title": "Paper Submission Deadline: September 14, 2026 (International & Domestic Tracks)",
-          "summary": "Paper submissions for both the International and Domestic Tracks are due September 14, 2026, 23:59 AoE. Submitting ahead of the deadline is recommended.",
+          "title": "Submission Deadline Extended: September 14, 2026 to September 21, 2026 (International & Domestic Tracks)",
+          "summary": "The paper submission deadline for both the International and Domestic Tracks has been extended from September 14, 2026 to September 21, 2026, 23:59 AoE (September 22, 2026, 11:59 UTC; Taipei time: September 22, 2026, 19:59). Submitting ahead of the new deadline is still recommended.",
           "linkLabel": "View submission guidelines",
-          "tags": ["submission deadline", "international track", "domestic track", "deadline", "AoE"]
+          "tags": ["submission deadline", "international track", "domestic track", "deadline", "AoE", "extended"]
         }
       },
 
@@ -31,14 +31,14 @@
 
       "deadlineRef": "paperSubmission",
 
-      "priority": 90,
+      "priority": 95,
       "featured": true,
-      "urgent": false,
+      "urgent": true,
 
       "homepage": {
         "enabled": true,
         "from": "2026-09-05T09:00:00+08:00",
-        "until": "2026-09-14T23:59:59-12:00"
+        "until": "2026-09-21T23:59:59-12:00"
       },
 
       "audience": ["author"]
