@@ -26,6 +26,7 @@ export function localizeNews(item, locale) {
     priority: item.priority ?? 50,
     featured: Boolean(item.featured),
     urgent: Boolean(item.urgent),
+    pinned: Boolean(item.pinned),
     deadlineRef: item.deadlineRef ?? null,
     milestones: item.milestones ?? null,
     homepage: item.homepage ?? null,
@@ -107,10 +108,14 @@ export function getUrgencyScore(localized, conference, now) {
 }
 
 /** Deterministic ranking tuple, descending, per SDD-NEWS.md §10.4:
- *  urgent > featured > urgencyScore > priority > publishedAt > id (tie-break). */
+ *  urgent > pinned > featured > urgencyScore > priority > publishedAt > id
+ *  (tie-break). `pinned` is a manual editorial override for temporary top
+ *  placement — unlike `urgent` it carries no badge and doesn't bypass the
+ *  homepage item limit; use it sparingly and remove once no longer needed. */
 function rankTuple(localized, conference, now) {
   return [
     localized.urgent ? 1 : 0,
+    localized.pinned ? 1 : 0,
     localized.featured ? 1 : 0,
     getUrgencyScore(localized, conference, now),
     localized.priority ?? 50,
