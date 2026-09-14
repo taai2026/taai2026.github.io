@@ -3,10 +3,10 @@
   "items": [
     {
       "id": "paper-submission-deadline",
-      "type": "urgent",
+      "type": "deadline",
       "category": "submission",
-      "publishedAt": "2026-09-05T09:00:00+08:00",
-      "updatedAt": "2026-09-14T09:00:00+08:00",
+      "publishedAt": "2026-09-14T09:00:00+08:00",
+      "updatedAt": null,
       "status": "published",
 
       "i18n": {
@@ -33,11 +33,12 @@
 
       "priority": 95,
       "featured": true,
-      "urgent": true,
+      "urgent": false,
+      "pinned": true,
 
       "homepage": {
         "enabled": true,
-        "from": "2026-09-05T09:00:00+08:00",
+        "from": "2026-09-14T09:00:00+08:00",
         "until": "2026-09-21T23:59:59-12:00"
       },
 

@@ -63,6 +63,7 @@
         "priority": { "type": "integer", "minimum": 0, "maximum": 100 },
         "featured": { "type": "boolean" },
         "urgent": { "type": "boolean" },
+        "pinned": { "type": "boolean" },
         "deadlineRef": { "type": "string" },
         "i18n": {
           "type": "object",
