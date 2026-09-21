@@ -2,6 +2,50 @@
   "version": 1,
   "items": [
     {
+      "id": "paper-submission-final-extension",
+      "type": "deadline",
+      "category": "submission",
+      "publishedAt": "2026-09-21T09:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "投稿截止日期最後延長至 2026 年 9 月 28 日（國際論文組與國內論文組）",
+          "summary": "國際論文組與國內論文組投稿截止日期最後延長至 2026 年 9 月 28 日 23:59 AoE（UTC 2026 年 9 月 29 日 11:59；台北時間 2026 年 9 月 29 日 19:59）。此次為最後一次延長，敬請把握投稿機會。",
+          "linkLabel": "查看投稿須知",
+          "tags": ["投稿截止", "國際論文組", "國內論文組", "deadline", "AoE", "最後延長"]
+        },
+        "en": {
+          "title": "Final Extension: Submission Deadline Now September 28, 2026 (International & Domestic Tracks)",
+          "summary": "The paper submission deadline for both the International and Domestic Tracks has been extended, for the last time, from September 21, 2026 to September 28, 2026, 23:59 AoE (September 29, 2026, 11:59 UTC; Taipei time: September 29, 2026, 19:59). Please make use of the remaining time to submit.",
+          "linkLabel": "View submission guidelines",
+          "tags": ["submission deadline", "international track", "domestic track", "deadline", "AoE", "final extension"]
+        }
+      },
+
+      "links": {
+        "zh": "cfp.html",
+        "en": "cfp.html"
+      },
+
+      "deadlineRef": "paperSubmission",
+
+      "priority": 95,
+      "featured": true,
+      "urgent": false,
+      "pinned": true,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-21T09:00:00+08:00",
+        "until": "2026-09-28T23:59:59-12:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
       "id": "paper-submission-deadline",
       "type": "deadline",
       "category": "submission",
@@ -34,12 +78,12 @@
       "priority": 95,
       "featured": true,
       "urgent": false,
-      "pinned": true,
+      "pinned": false,
 
       "homepage": {
         "enabled": true,
         "from": "2026-09-14T09:00:00+08:00",
-        "until": "2026-09-21T23:59:59-12:00"
+        "until": "2026-09-21T09:00:00+08:00"
       },
 
       "audience": ["author"]
