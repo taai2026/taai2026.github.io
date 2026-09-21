@@ -196,11 +196,11 @@
   }
 
   /* ---- Conference phase (drives hero CTAs and start-here cards) ----
-     submission → until Sep 21 23:59 AoE · earlybird → until Oct 30 23:59 GMT+8
+     submission → until Sep 28 23:59 AoE · earlybird → until Oct 30 23:59 GMT+8
      regular → until Nov 13 23:59 GMT+8 · conference → afterwards.
      Any element with data-phase="a b" is shown only in those phases. */
   const PHASES = [
-    ['submission', '2026-09-21T23:59:59-12:00'],
+    ['submission', '2026-09-28T23:59:59-12:00'],
     ['earlybird', '2026-10-30T23:59:59+08:00'],
     ['regular', '2026-11-13T23:59:59+08:00'],
     ['conference', null]
