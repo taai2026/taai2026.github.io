@@ -2,6 +2,50 @@
   "version": 1,
   "items": [
     {
+      "id": "paper-submission-closed",
+      "type": "conference-update",
+      "category": "submission",
+      "publishedAt": "2026-09-29T21:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "投稿截止：感謝踴躍投稿，錄取通知預計 10 月 16 日公布",
+          "summary": "國際論文組與國內論文組投稿已於 2026 年 9 月 28 日 23:59 AoE（台北時間 2026 年 9 月 29 日 19:59）截止，感謝所有投稿者。審稿結果預計於 2026 年 10 月 16 日公布，請留意信箱通知。",
+          "linkLabel": "查看重要日期",
+          "tags": ["投稿截止", "國際論文組", "國內論文組", "已截止", "錄取通知"]
+        },
+        "en": {
+          "title": "Submissions Closed: Notifications Expected October 16",
+          "summary": "The paper submission deadline for both the International and Domestic Tracks closed on September 28, 2026, 23:59 AoE (Taipei time: September 29, 2026, 19:59). Thank you to everyone who submitted. Review results are expected to be announced on October 16, 2026 — please watch your inbox.",
+          "linkLabel": "View important dates",
+          "tags": ["submission deadline", "international track", "domestic track", "closed", "notification"]
+        }
+      },
+
+      "links": {
+        "zh": "keydates.html",
+        "en": "keydates.html"
+      },
+
+      "deadlineRef": "notification",
+
+      "priority": 90,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-09-29T21:00:00+08:00",
+        "until": "2026-10-16T23:59:59+08:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
       "id": "paper-submission-final-extension",
       "type": "deadline",
       "category": "submission",
