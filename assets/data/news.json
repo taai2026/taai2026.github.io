@@ -2,23 +2,67 @@
   "version": 1,
   "items": [
     {
-      "id": "paper-submission-closed",
+      "id": "notification-postponed",
       "type": "conference-update",
       "category": "submission",
-      "publishedAt": "2026-09-29T21:00:00+08:00",
+      "publishedAt": "2026-10-15T12:00:00+08:00",
       "updatedAt": null,
       "status": "published",
 
       "i18n": {
         "zh": {
-          "title": "投稿截止：感謝踴躍投稿，錄取通知預計 10 月 16 日公布",
-          "summary": "國際論文組與國內論文組投稿已於 2026 年 9 月 28 日 23:59 AoE（台北時間 2026 年 9 月 29 日 19:59）截止，感謝所有投稿者。審稿結果預計於 2026 年 10 月 16 日公布，請留意信箱通知。",
+          "title": "論文錄取通知延後一週至 2026 年 10 月 23 日",
+          "summary": "為確保審查品質，國際論文組與國內論文組的論文錄取通知由原訂 2026 年 10 月 16 日延後一週，改於 2026 年 10 月 23 日寄發。完稿截止日期仍為 2026 年 10 月 30 日，請作者留意信箱通知。",
+          "linkLabel": "查看重要日期",
+          "tags": ["錄取通知", "延後", "國際論文組", "國內論文組"]
+        },
+        "en": {
+          "title": "Paper Notification Postponed by One Week to October 23, 2026",
+          "summary": "Notifications of paper acceptance for the International and Domestic Tracks, originally scheduled for October 16, 2026, are postponed by one week and will be sent on October 23, 2026. The camera-ready deadline remains October 30, 2026. Please watch your inbox.",
+          "linkLabel": "View important dates",
+          "tags": ["notification", "postponed", "international track", "domestic track"]
+        }
+      },
+
+      "links": {
+        "zh": "keydates.html",
+        "en": "keydates.html"
+      },
+
+      "deadlineRef": "notification",
+
+      "priority": 95,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-10-15T12:00:00+08:00",
+        "until": "2026-10-23T23:59:59+08:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
+      "id": "paper-submission-closed",
+      "type": "conference-update",
+      "category": "submission",
+      "publishedAt": "2026-09-29T21:00:00+08:00",
+      "updatedAt": "2026-10-15T12:00:00+08:00",
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "投稿截止：感謝踴躍投稿，錄取通知預計 10 月 23 日公布",
+          "summary": "國際論文組與國內論文組投稿已於 2026 年 9 月 28 日 23:59 AoE（台北時間 2026 年 9 月 29 日 19:59）截止，感謝所有投稿者。審稿結果預計於 2026 年 10 月 23 日公布，請留意信箱通知。",
           "linkLabel": "查看重要日期",
           "tags": ["投稿截止", "國際論文組", "國內論文組", "已截止", "錄取通知"]
         },
         "en": {
-          "title": "Submissions Closed: Notifications Expected October 16",
-          "summary": "The paper submission deadline for both the International and Domestic Tracks closed on September 28, 2026, 23:59 AoE (Taipei time: September 29, 2026, 19:59). Thank you to everyone who submitted. Review results are expected to be announced on October 16, 2026 — please watch your inbox.",
+          "title": "Submissions Closed: Notifications Expected October 23",
+          "summary": "The paper submission deadline for both the International and Domestic Tracks closed on September 28, 2026, 23:59 AoE (Taipei time: September 29, 2026, 19:59). Thank you to everyone who submitted. Review results are expected to be announced on October 23, 2026 — please watch your inbox.",
           "linkLabel": "View important dates",
           "tags": ["submission deadline", "international track", "domestic track", "closed", "notification"]
         }
@@ -37,9 +81,9 @@
       "pinned": false,
 
       "homepage": {
-        "enabled": true,
+        "enabled": false,
         "from": "2026-09-29T21:00:00+08:00",
-        "until": "2026-10-16T23:59:59+08:00"
+        "until": "2026-10-23T23:59:59+08:00"
       },
 
       "audience": ["author"]
