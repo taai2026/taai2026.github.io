@@ -215,7 +215,7 @@
   /* ---- Timeline status tags: auto-update from data-deadline / data-event ----
      <div class="timeline-row" data-deadline="2026-09-14">            deadline: Open → Closed
      <div class="timeline-row" data-deadline="…" data-opens="…">     Upcoming until data-opens, then Open → Closed
-     <div class="timeline-row" data-event="2026-10-16">               Upcoming → Completed
+     <div class="timeline-row" data-event="2026-10-23">               Upcoming → Completed
      Optional data-tz="+08:00" (default is AoE, UTC-12). Rows without these attributes keep their static tag. */
   const timelineRows = document.querySelectorAll('.timeline-row[data-deadline], .timeline-row[data-event]');
   if (timelineRows.length) {
