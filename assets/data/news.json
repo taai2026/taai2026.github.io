@@ -2,6 +2,50 @@
   "version": 1,
   "items": [
     {
+      "id": "acceptance-notifications-sent",
+      "type": "conference-update",
+      "category": "camera-ready",
+      "publishedAt": "2026-10-25T17:50:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "論文錄取通知已寄出，請於 10 月 31 日前完成完稿與報名",
+          "summary": "國際論文組與國內論文組的論文審查結果通知已寄出，寄件者為 TAAI 2026 <taai2026-notifications@openreview.net>，請查看信箱（含垃圾郵件匣）與 OpenReview 上的錄取決定。錄取論文的作者請登入 OpenReview、開啟論文後點選 Edit > Camera Ready Revision 繳交完稿；完稿與發表作者的報名繳費截止日期皆為 2026 年 10 月 31 日 23:59 AoE（台北時間 11 月 1 日 19:59）。",
+          "linkLabel": "查看完稿說明",
+          "tags": ["錄取通知", "完稿", "OpenReview", "報名", "國際論文組", "國內論文組"]
+        },
+        "en": {
+          "title": "Acceptance Notifications Sent: Camera-Ready and Registration Due October 31",
+          "summary": "Review result notifications for the International and Domestic Tracks have been sent from TAAI 2026 <taai2026-notifications@openreview.net>; please check your inbox (including spam) and the decision on OpenReview. Authors of accepted papers should log in to OpenReview, open their paper, and click Edit > Camera Ready Revision. Camera-ready submission and presenting-author registration and payment are both due October 31, 2026, 23:59 AoE (November 1, 2026, 19:59 Taipei time).",
+          "linkLabel": "View camera-ready instructions",
+          "tags": ["acceptance", "camera-ready", "OpenReview", "registration", "international track", "domestic track"]
+        }
+      },
+
+      "links": {
+        "zh": "camera-ready.html",
+        "en": "camera-ready.html"
+      },
+
+      "deadlineRef": "cameraReady",
+
+      "priority": 98,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-10-25T17:50:00+08:00",
+        "until": "2026-10-31T23:59:59-12:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
       "id": "notification-postponed",
       "type": "conference-update",
       "category": "submission",
@@ -39,7 +83,7 @@
       "homepage": {
         "enabled": true,
         "from": "2026-10-15T12:00:00+08:00",
-        "until": "2026-10-24T23:59:59-12:00"
+        "until": "2026-10-25T17:50:00+08:00"
       },
 
       "audience": ["author"]
@@ -83,7 +127,7 @@
       "homepage": {
         "enabled": false,
         "from": "2026-09-29T21:00:00+08:00",
-        "until": "2026-10-24T23:59:59-12:00"
+        "until": "2026-10-25T17:50:00+08:00"
       },
 
       "audience": ["author"]
