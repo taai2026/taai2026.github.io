@@ -14,7 +14,13 @@ const STRINGS = {
       "domestic-full": "Domestic full paper",
       "domestic-abstract": "Extended abstract",
       "high-school": "High School Session",
-      examples: "Examples"
+      examples: "Examples",
+      deadlines: "Deadlines",
+      format: "Format & length",
+      copyright: "Copyright & forms",
+      registration: "Registration",
+      submission: "How to submit",
+      changes: "Changes & corrections"
     },
     searchLabel: "Search FAQ",
     searchPlaceholder: "Search questions and answers…",
@@ -31,7 +37,13 @@ const STRINGS = {
       "domestic-full": "國內完整論文",
       "domestic-abstract": "延伸摘要",
       "high-school": "高中生專題組",
-      examples: "範例總結"
+      examples: "範例總結",
+      deadlines: "截止日期",
+      format: "格式與頁數",
+      copyright: "授權書與表單",
+      registration: "報名",
+      submission: "繳交方式",
+      changes: "更正與變更"
     },
     searchLabel: "搜尋 FAQ",
     searchPlaceholder: "搜尋題目與答案…",
@@ -42,7 +54,7 @@ const STRINGS = {
   }
 };
 
-const TAG_ORDER = ["concepts", "publish", "international", "domestic-full", "domestic-abstract", "high-school", "examples"];
+const TAG_ORDER = ["concepts", "deadlines", "publish", "format", "copyright", "registration", "submission", "changes", "international", "domestic-full", "domestic-abstract", "high-school", "examples"];
 
 function debounce(fn, wait) {
   let timer = null;
