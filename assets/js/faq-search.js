@@ -20,7 +20,13 @@ const STRINGS = {
       copyright: "Copyright & forms",
       registration: "Registration",
       submission: "How to submit",
-      changes: "Changes & corrections"
+      changes: "Changes & corrections",
+      authors: "Presenting authors",
+      fees: "Fees",
+      payment: "Payment",
+      refund: "Cancellation & refund",
+      onsite: "On-site registration",
+      students: "Students"
     },
     searchLabel: "Search FAQ",
     searchPlaceholder: "Search questions and answers…",
@@ -43,7 +49,13 @@ const STRINGS = {
       copyright: "授權書與表單",
       registration: "報名",
       submission: "繳交方式",
-      changes: "更正與變更"
+      changes: "更正與變更",
+      authors: "發表作者",
+      fees: "費用",
+      payment: "繳費",
+      refund: "取消與退費",
+      onsite: "現場報名",
+      students: "學生"
     },
     searchLabel: "搜尋 FAQ",
     searchPlaceholder: "搜尋題目與答案…",
@@ -54,7 +66,7 @@ const STRINGS = {
   }
 };
 
-const TAG_ORDER = ["concepts", "deadlines", "publish", "format", "copyright", "registration", "submission", "changes", "international", "domestic-full", "domestic-abstract", "high-school", "examples"];
+const TAG_ORDER = ["concepts", "deadlines", "publish", "format", "copyright", "registration", "submission", "changes", "international", "domestic-full", "domestic-abstract", "high-school", "examples", "authors", "fees", "payment", "refund", "onsite", "students"];
 
 function debounce(fn, wait) {
   let timer = null;
