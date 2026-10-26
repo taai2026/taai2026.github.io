@@ -2,6 +2,48 @@
   "version": 1,
   "items": [
     {
+      "id": "remote-presentation-and-visa-letters",
+      "type": "conference-update",
+      "category": "conference",
+      "publishedAt": "2026-10-26T13:55:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "無法前往的作者可事先申請遠距發表；提供簽證邀請函",
+          "summary": "作者若因正當理由無法前往現場（例如簽證被拒，並有文件佐證），可事先來信申請以遠距或預錄影片方式發表，經大會同意後視為完成發表，不影響論文集的出版資格；仍須於 2026 年 10 月 31 日 23:59 AoE 前完成發表作者報名與繳費。申請截止日為 2026 年 11 月 10 日 23:59 AoE，影片繳交期限為 2026 年 11 月 16 日 23:59 AoE，影片規格請見報名頁 FAQ。我們也提供簽證邀請函，請來信 taai2026org@gmail.com 並附上護照全名、國籍、服務單位、論文編號與行程日期。",
+          "linkLabel": "查看報名頁 FAQ",
+          "tags": ["遠距發表", "預錄影片", "簽證", "邀請函", "報名"]
+        },
+        "en": {
+          "title": "Remote Presentation Available by Prior Approval; Visa Invitation Letters",
+          "summary": "Authors who cannot travel for a justified reason (for example, a visa refusal supported by documentation) may apply in advance to present remotely or with a pre-recorded video. A paper presented remotely with approval is treated as presented, and publication eligibility in the proceedings is unchanged. Presenting-author registration and payment are still due by October 31, 2026, 23:59 AoE. Applications are due by November 10, 2026, 23:59 AoE and videos by November 16, 2026, 23:59 AoE; video requirements are in the Registration FAQ. Visa invitation letters are also available: email taai2026org@gmail.com with your passport name, nationality, affiliation, paper ID, and travel dates.",
+          "linkLabel": "View the Registration FAQ",
+          "tags": ["remote presentation", "pre-recorded video", "visa", "invitation letter", "registration"]
+        }
+      },
+
+      "links": {
+        "zh": "registration.html#reg-q24",
+        "en": "registration.html#reg-q24"
+      },
+
+      "priority": 94,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-10-26T13:55:00+08:00",
+        "until": "2026-11-13T23:59:59-12:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
       "id": "poster-papers-camera-ready-length",
       "type": "conference-update",
       "category": "camera-ready",
