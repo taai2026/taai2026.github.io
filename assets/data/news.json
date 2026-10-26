@@ -2,6 +2,50 @@
   "version": 1,
   "items": [
     {
+      "id": "poster-papers-camera-ready-length",
+      "type": "conference-update",
+      "category": "camera-ready",
+      "publishedAt": "2026-10-26T12:56:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "被接受為 Poster 的國際論文組作者：完稿頁數與付費加頁說明",
+          "summary": "國際論文組被接受為 Poster Presentation 的論文，若選擇正式出版，將以短篇論文形式收錄：基本 6–11 頁，可付費增加最多 2 頁（每頁 NT$1,500），最多 13 頁（含參考文獻與附錄）。投稿時為 12–13 頁的稿件可繳交加頁費後提交；14–15 頁的稿件須縮減至 13 頁內，或選擇 Presentation Only（不出版，不受頁數限制，仍須完成發表作者報名）。加頁費須於 2026 年 10 月 31 日 23:59 AoE 前，並與報名費一併在線上報名系統繳費。",
+          "linkLabel": "查看頁數與加頁費政策",
+          "tags": ["完稿", "Poster", "短篇論文", "加頁費", "國際論文組"]
+        },
+        "en": {
+          "title": "Page Length and Paid Extra Pages for International Track Papers Accepted as Poster",
+          "summary": "International Track papers accepted as Poster Presentation are published, if you choose Publish, as Short Papers: base length 6–11 pages, with up to 2 extra pages at NT$1,500 per page, for a maximum of 13 pages including references and appendices. Papers of 12–13 pages can be submitted after paying the extra-page fee; papers of 14–15 pages must be shortened to 13 pages or fewer, or you may choose Presentation Only (not published; no page limit; presenting-author registration still required). The extra-page fee is due by October 31, 2026, 23:59 AoE, paid together with the registration fee in the online registration system.",
+          "linkLabel": "View the page length and extra page fee policy",
+          "tags": ["camera-ready", "poster", "short paper", "additional page fee", "international track"]
+        }
+      },
+
+      "links": {
+        "zh": "camera-ready.html#page-policy",
+        "en": "camera-ready.html#page-policy"
+      },
+
+      "deadlineRef": "cameraReady",
+
+      "priority": 96,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-10-26T12:56:00+08:00",
+        "until": "2026-10-31T23:59:59-12:00"
+      },
+
+      "audience": ["author"]
+    },
+
+    {
       "id": "acceptance-notifications-sent",
       "type": "conference-update",
       "category": "camera-ready",
