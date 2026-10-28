@@ -2109,3 +2109,34 @@ section {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+.fee-table.shuttle-table {
+  min-width: 0;
+}
+
+.fee-table.shuttle-table td {
+  white-space: normal;
+}
+
+.fee-table.shuttle-table td:last-child {
+  white-space: nowrap;
+}
+
+.fee-table.shuttle-table tbody th {
+  min-width: 0;
+}
+
+.fee-table.shuttle-table thead th {
+  white-space: normal;
+}
+
+@media (max-width: 640px) {
+  .fee-table.shuttle-table {
+    font-size: 0.92rem;
+  }
+
+  .fee-table.shuttle-table th,
+  .fee-table.shuttle-table td {
+    padding: 0.6rem 0.5rem;
+  }
+}
