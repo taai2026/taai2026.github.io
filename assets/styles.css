@@ -14,6 +14,7 @@
   --blue-2: #4a90e2;
   --green: #2f7a3a;
   --green-2: #7bb93f;
+  --violet: #6e56b4;
   --clay: #b85c3a;
   --sun: #e8a838;
   --radius: 8px;
@@ -1790,7 +1791,8 @@ section {
 .glance .g-oral    { background: rgba(74, 144, 226, 0.1); }
 .glance .g-poster  { background: rgba(123, 185, 63, 0.16); }
 .glance .g-special { background: rgba(184, 92, 58, 0.1); }
-.glance .g-online  { background: rgba(47, 122, 58, 0.08); }
+.glance .g-room-c  { background: rgba(23, 138, 148, 0.18); }
+.glance .g-room-d  { background: rgba(110, 86, 180, 0.2); }
 
 .glance-note {
   margin-top: 0.9rem;
@@ -2089,7 +2091,7 @@ section {
   .faq-toolbar-row { flex-direction: column; align-items: flex-start; }
 }
 
-/* Online-activity callout (program page): green accent matches .g-online cells */
+/* Online-activity callout (program page): violet accent matches .g-room-d cells */
 .online-callout {
   display: flex;
   flex-wrap: wrap;
@@ -2100,7 +2102,7 @@ section {
   padding: 1.1rem 1.4rem;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-left: 5px solid var(--green);
+  border-left: 5px solid var(--violet);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
