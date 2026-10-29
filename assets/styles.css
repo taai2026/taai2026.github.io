@@ -1748,6 +1748,18 @@ section {
   font-size: 0.82rem;
 }
 
+.glance thead th small {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.glance thead th small a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .table-hint {
   margin: 0.4rem 0 0.8rem;
   color: var(--ink-soft);
@@ -2110,6 +2122,27 @@ section {
   line-height: 1.5;
 }
 
+.room-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-align: left;
+}
+
+.room-cell a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.room-photo {
+  flex: none;
+  width: 120px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .fee-table.shuttle-table {
   min-width: 0;
 }
@@ -2139,4 +2172,69 @@ section {
   .fee-table.shuttle-table td {
     padding: 0.6rem 0.5rem;
   }
+}
+
+/* Venue photos */
+.venue-hero,
+.stay-photo {
+  margin: 0 0 2rem;
+}
+
+.stay-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0;
+}
+
+.stay-photo { margin: 0; }
+
+.stay-photo img { aspect-ratio: 3 / 2; object-fit: cover; }
+
+.venue-hero img,
+.stay-photo img,
+.room-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.venue-hero img { aspect-ratio: 2 / 1; object-fit: cover; }
+
+.venue-hero figcaption,
+.stay-photo figcaption,
+.photo-credit {
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.room-gallery-head { margin-top: 3rem; }
+
+.room-gallery-head p { color: var(--ink-soft); }
+
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.room-card { margin: 0; }
+
+.room-card img { aspect-ratio: 3 / 2; object-fit: cover; }
+
+.room-card figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.room-card figcaption a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
