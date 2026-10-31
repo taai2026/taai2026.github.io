@@ -55,14 +55,30 @@
               <li><a href="keydates.html">重要日期</a></li>
             </ul>
           </li>
-          <li><a href="program.html">議程</a></li>
-          <li><a href="registration.html">報名</a></li>
-          <li><a href="venue.html">會場</a></li>
+          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">議程<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="program.html">議程總覽</a></li>
+              <li><a href="program.html#keynotes">主題演講</a></li>
+              <li><a href="program.html#room-guide">會議廳對照表</a></li>
+              <li><a href="program.html#poster-guidelines">海報發表規範</a></li>
+            </ul>
+          </li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">會場<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="venue.html">會場介紹</a></li>
+              <li><a href="venue.html#getting-here">如何抵達</a></li>
+              <li><a href="venue.html#hotels">住宿選擇</a></li>
+            </ul>
+          </li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">關於<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
               <li><a href="about.html">關於大會</a></li>
               <li><a href="committee.html">委員會</a></li>
+              <li><a href="index.html#partners">合作夥伴</a></li>
             </ul>
           </li>
           <li><a href="sponsorship.html">贊助方案</a></li>
@@ -158,7 +174,7 @@
   <section class="about-organizers-section">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="num-label">2 / 主辦單位</span>
+        <span class="num-label">2 / 主辦與合作單位</span>
         <h2>由 <em class="grad-text">TAAI</em> 與 <em class="grad-text">NTPU</em> 共同主辦</h2>
       </div>
 
@@ -177,6 +193,257 @@
             NTPU 橫跨資訊科學、資料科學、商學與法律的師資陣容，為本屆跨領域議程奠定基礎，確保對話超越任一單一系所的範疇。
           </p>
         </article>
+      </div>
+
+      <div class="mt-3 reveal">
+        <div class="partner-wall">
+          <div class="partner-group">
+            <h3 class="partner-group-title">指導單位</h3>
+            <ul class="partner-list">
+              <li class="partner">
+                <a class="partner-card" href="https://www.nstc.gov.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nstc.png" alt="" width="879" height="135" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國家科學及技術委員會（國科會）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/moe-emblem.png" alt="" width="290" height="288" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">教育部<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://depart.moe.edu.tw/ED2700/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/moe-ite.png" alt="" width="820" height="144" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">教育部資訊及科技教育司<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="partner-group">
+            <h3 class="partner-group-title">主辦單位</h3>
+            <ul class="partner-list">
+              <li class="partner">
+                <a class="partner-card" href="https://www.taai.org.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/taai.png" alt="" width="652" height="94" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">中華民國人工智慧學會（TAAI）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://new.ntpu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ntpu.png" alt="" width="700" height="128" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺北大學（NTPU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="partner-group">
+            <h3 class="partner-group-title">協辦單位</h3>
+            <ul class="partner-list">
+              <li class="partner">
+                <a class="partner-card" href="https://www.sinica.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/academia-sinica.png" alt="" width="1000" height="246" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">中央研究院<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.citi.sinica.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/citi-sinica.png" alt="" width="528" height="118" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">中央研究院資訊科技創新研究中心<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.iis.sinica.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/iis-sinica.png" alt="" width="1000" height="182" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">中央研究院資訊科學研究所<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.itri.org.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/itri.jpg" alt="" width="721" height="167" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">工業技術研究院（工研院）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="partner-group">
+            <h3 class="partner-group-title">贊助單位</h3>
+            <div class="partner-tiers">
+              <div class="partner-tier partner-tier--gold">
+                <p class="partner-tier-title">金級贊助</p>
+                <ul class="partner-list">
+                  <li class="partner">
+                    <a class="partner-card" href="https://www.deltaww.com/" target="_blank" rel="noopener noreferrer">
+                      <span class="partner-logo"><img src="../assets/images/partners/delta.svg" alt="" width="340" height="105" loading="lazy" decoding="async"></span>
+                      <span class="partner-name">台達機器人創新研究院<span class="partner-ext" aria-hidden="true">↗</span></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="partner-tier partner-tier--bronze">
+                <p class="partner-tier-title">銅級贊助</p>
+                <ul class="partner-list">
+                  <li class="partner">
+                    <a class="partner-card" href="https://aiacademy.tw/" target="_blank" rel="noopener noreferrer">
+                      <span class="partner-logo"><img src="../assets/images/partners/taiwan-ai-academy.png" alt="" width="800" height="201" loading="lazy" decoding="async"></span>
+                      <span class="partner-name">台灣人工智慧學校<span class="partner-ext" aria-hidden="true">↗</span></span>
+                    </a>
+                  </li>
+                  <li class="partner">
+                    <a class="partner-card" href="https://www.wavenet.com.tw/" target="_blank" rel="noopener noreferrer">
+                      <span class="partner-logo"><img src="../assets/images/partners/wavenet.png" alt="" width="800" height="262" loading="lazy" decoding="async"></span>
+                      <span class="partner-name">潮網科技<span class="partner-ext" aria-hidden="true">↗</span></span>
+                    </a>
+                    <span class="partner-note">高中生註冊費指定贊助</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="partner-group">
+            <h3 class="partner-group-title">合作單位</h3>
+            <ul class="partner-list">
+              <li class="partner">
+                <a class="partner-card" href="https://www.ntu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ntu.svg" alt="" width="442" height="69" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺灣大學（NTU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ncu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ncu.png" alt="" width="562" height="128" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立中央大學（NCU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nthu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nthu.png" alt="" width="668" height="128" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立清華大學（NTHU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nycu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nycu.png" alt="" width="389" height="99" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立陽明交通大學（NYCU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ncku.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ncku.png" alt="" width="768" height="199" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立成功大學（NCKU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nuk.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nuk.png" alt="" width="1000" height="172" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立高雄大學（NUK）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.cgu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/cgu.png" alt="" width="287" height="54" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">長庚大學（CGU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ncnu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ncnu.png" alt="" width="1000" height="170" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立暨南國際大學（NCNU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nii.ac.jp/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nii.png" alt="" width="489" height="93" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">日本國立情報學研究所（NII）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.tmu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/tmu.png" alt="" width="567" height="170" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">臺北醫學大學（TMU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nutn.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nutn.png" alt="" width="553" height="129" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺南大學（NUTN）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ntut.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ntut.png" alt="" width="344" height="54" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺北科技大學（Taipei Tech）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.naer.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/naer.svg" alt="" width="447" height="34" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國家教育研究院（NAER）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.cyut.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/cyut.svg" alt="" width="700" height="123" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">朝陽科技大學（CYUT）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ntust.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ntust.png" alt="" width="401" height="64" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺灣科技大學（NTUST）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.ndhu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ndhu.png" alt="" width="897" height="233" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立東華大學（NDHU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.fju.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/fju.jpg" alt="" width="225" height="95" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">輔仁大學（FJU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.cycu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/cycu.png" alt="" width="1000" height="232" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">中原大學（CYCU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://www.nchu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/nchu.png" alt="" width="335" height="79" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立中興大學（NCHU）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://tw.systex.com/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/systex.svg" alt="" width="1100" height="116" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">精誠資訊股份有限公司<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://ai3.cloud/about/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ai3.png" alt="" width="766" height="264" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">Ai3人工智能股份有限公司<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://napaincu.github.io/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/napai.png" alt="" width="416" height="160" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">教育部前瞻AI人培－智慧代理及實體AI課程推動計畫（NAPAI）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+              <li class="partner">
+                <a class="partner-card" href="https://ai4x.ntpu.edu.tw/" target="_blank" rel="noopener noreferrer">
+                  <span class="partner-logo"><img src="../assets/images/partners/ai4x.png" alt="" width="480" height="480" loading="lazy" decoding="async"></span>
+                  <span class="partner-name">國立臺北大學跨域人工智慧前瞻研究中心（NTPU AI4X）<span class="partner-ext" aria-hidden="true">↗</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -354,7 +621,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-09-02">2026-09-02</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
       </div>
     </div>
   </footer>
