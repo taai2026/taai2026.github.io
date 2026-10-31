@@ -2240,3 +2240,124 @@ section {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* Keynote speeches (program page) */
+.glance .g-plenary a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.glance .g-talk {
+  display: block;
+  max-width: 60ch;
+  margin: 0.15rem auto 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.keynote-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.keynote-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  border-left: 5px solid var(--blue);
+}
+
+.keynote-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.keynote-meta {
+  margin: 0 0 0.5rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.keynote-no {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.keynote-card h3 {
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.keynote-speaker {
+  margin: 0;
+  font-weight: 800;
+}
+
+.keynote-affil {
+  margin: 0 0 0.6rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.keynote-more {
+  border-top: 1px solid var(--line);
+}
+
+.keynote-more summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.keynote-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.keynote-more summary::after {
+  content: "+";
+  flex: none;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+}
+
+.keynote-more[open] summary::after {
+  content: "\2212";
+}
+
+.keynote-more summary:focus-visible {
+  outline: 3px solid rgba(13, 74, 158, 0.38);
+  outline-offset: 3px;
+}
+
+.keynote-more p {
+  margin: 0 0 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .keynote-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .keynote-photo {
+    width: 120px;
+  }
+}
