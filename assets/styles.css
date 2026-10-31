@@ -364,6 +364,17 @@ section {
   box-shadow: 0 10px 22px -18px rgba(13, 74, 158, 0.55);
 }
 
+/* keep the gradient on hover and on the registration page itself */
+.nav-links a.nav-cta:hover,
+.nav-links a.nav-cta.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--green));
+}
+
+.nav-links a.nav-cta:hover {
+  filter: brightness(1.08);
+}
+
 .nav-links .lang-switch {
   gap: 0.4rem;
   padding: 0 0.85rem;
@@ -988,6 +999,13 @@ section {
   border-bottom: 2px solid var(--blue);
 }
 
+.day-head h3 a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
 .session {
   grid-template-columns: 160px minmax(0, 1fr);
 }
@@ -1269,6 +1287,210 @@ section {
   font-weight: 800;
 }
 
+/* Partner logos */
+.partner-wall {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.partner-group {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.partner-group + .partner-group {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.partner-group-title {
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.partner {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.45rem;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 96px;
+  padding: 0.9rem 1.2rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.partner-card {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 260px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.partner-card:hover .partner-logo,
+a.partner-card:focus-visible .partner-logo {
+  border-color: rgba(13, 74, 158, 0.4);
+}
+
+a.partner-card:hover .partner-name {
+  color: var(--blue);
+}
+
+.partner-logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner-name {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.partner-ext {
+  margin-left: 0.2rem;
+  font-size: 0.8em;
+}
+
+.partner-logo-text {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.partner-note {
+  max-width: 260px;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Sponsor logos are sized by tier, as promised in the sponsorship packages;
+   silver and bronze keep the standard tile size, higher tiers get larger tiles */
+.partner-tiers {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.partner-tier-title {
+  margin: 0 0 0.6rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.partner-tier--diamond .partner-card,
+.partner-tier--diamond .partner-logo {
+  width: 500px;
+}
+
+.partner-tier--diamond .partner-logo {
+  height: 184px;
+}
+
+.partner-tier--platinum .partner-card,
+.partner-tier--platinum .partner-logo {
+  width: 440px;
+}
+
+.partner-tier--platinum .partner-logo {
+  height: 162px;
+}
+
+.partner-tier--gold .partner-card,
+.partner-tier--gold .partner-logo {
+  width: 380px;
+}
+
+.partner-tier--gold .partner-logo {
+  height: 140px;
+}
+
+@media (max-width: 640px) {
+  .partner-group {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .partner-group-title {
+    min-height: 0;
+  }
+
+  .partner-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .partner-card,
+  .partner-logo {
+    width: 100%;
+  }
+
+  .partner-logo {
+    height: 76px;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .partner-logo-text,
+  .partner-name {
+    font-size: 0.8rem;
+  }
+
+  .partner-tier--diamond .partner-list,
+  .partner-tier--platinum .partner-list,
+  .partner-tier--gold .partner-list {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-tier .partner-card,
+  .partner-tier .partner-logo {
+    width: 100%;
+  }
+
+  .partner-tier--diamond .partner-logo {
+    height: 150px;
+  }
+
+  .partner-tier--platinum .partner-logo {
+    height: 132px;
+  }
+
+  .partner-tier--gold .partner-logo {
+    height: 115px;
+  }
+}
+
 /* Footer and utilities */
 .footer {
   padding: 1.75rem 0 1rem;
@@ -1366,6 +1588,32 @@ section {
 .rate-note { margin-top: 0.75rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--ink-soft); }
 
 /* Responsive */
+.nav-links a,
+.nav-drop-btn {
+  white-space: nowrap;
+}
+
+/* narrow desktops: tighten the full menu so it stays on one line */
+@media (min-width: 1101px) and (max-width: 1280px) {
+  .nav-links {
+    gap: 0.1rem;
+  }
+
+  .nav-links a,
+  .nav-drop-btn {
+    padding-inline: 0.5rem;
+    font-size: 0.86rem;
+  }
+
+  .nav-links .nav-cta {
+    padding-inline: 0.8rem;
+  }
+
+  .nav-links .lang-switch {
+    padding-inline: 0.6rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .nav-links a,
   .nav-drop-btn {
@@ -1413,7 +1661,7 @@ section {
     display: grid;
     align-content: start;
     gap: 0.15rem;
-    width: min(360px, 88vw);
+    width: min(280px, 80vw);
     height: calc(100vh - var(--nav-height));
     height: calc(100dvh - var(--nav-height));
     padding: 0.9rem 0.9rem calc(1.5rem + env(safe-area-inset-bottom));
