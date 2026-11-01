@@ -2048,6 +2048,12 @@ a.partner-card:hover .partner-name {
   font-size: 0.95rem;
 }
 
+.glance-note a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 
 /* ==========================================================================
    Phase-aware CTAs, start-here cards, announcements, track table
@@ -2490,7 +2496,8 @@ a.partner-card:hover .partner-name {
 }
 
 /* Keynote speeches (program page) */
-.glance .g-plenary a {
+.glance .g-plenary a,
+.glance .g-social a {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -2608,4 +2615,271 @@ a.partner-card:hover .partner-name {
   .keynote-photo {
     width: 120px;
   }
+}
+
+/* Paper sessions (program page): colors follow the timetable's .g-oral / .g-poster cells */
+.ps-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.ps-notes h4 {
+  margin: 0 0 0.35rem;
+}
+
+.ps-status {
+  margin: 0 0 1.5rem;
+  color: var(--clay);
+  font-size: 0.95rem;
+}
+
+.ps-day {
+  margin-bottom: 2.5rem;
+}
+
+.ps-slot-head {
+  margin: 1.5rem 0 0.75rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ps-slot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.ps-session {
+  padding: 1.1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--blue-2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+.ps-session.ps-domestic-oral { border-top-color: var(--blue); }
+.ps-session.ps-poster { border-top-color: var(--green-2); }
+
+.ps-session-meta {
+  margin: 0 0 0.3rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.ps-code {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.ps-session-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.ps-session-title a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.ps-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.5rem;
+}
+
+.ps-topic {
+  padding: 0.1rem 0.55rem;
+  color: var(--green);
+  background: rgba(47, 122, 58, 0.1);
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.ps-chair {
+  margin: 0 0 0.6rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.ps-papers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ps-paper {
+  display: grid;
+  grid-template-columns: 3.6rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
+}
+
+.ps-paper-when {
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.ps-board-label {
+  display: block;
+  font-size: 0.7rem;
+}
+
+.ps-paper-when strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.ps-paper-body p {
+  margin: 0;
+}
+
+.ps-paper-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.ps-paper-authors {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.ps-paper-keywords {
+  margin-top: 0.15rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.ps-kw-label {
+  font-weight: 700;
+}
+
+.ps-author[role="button"],
+.ps-kw[role="button"],
+.ps-paper-topic[role="button"] {
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.ps-author[role="button"]:hover,
+.ps-kw[role="button"]:hover,
+.ps-paper-topic[role="button"]:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ps-author[role="button"]:focus-visible,
+.ps-kw[role="button"]:focus-visible,
+.ps-paper-topic[role="button"]:focus-visible {
+  outline: 2px solid rgba(13, 74, 158, 0.5);
+  outline-offset: 1px;
+}
+
+#program-sessions .news-type-field {
+  min-width: 150px;
+}
+
+@media (max-width: 640px) {
+  #program-sessions .news-type-field {
+    flex: 1 1 100%;
+  }
+}
+
+.ps-paper-meta {
+  margin-top: 0.15rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.ps-paper-id {
+  color: var(--blue);
+  font-family: var(--font-mono);
+}
+
+.ps-paper-id:hover {
+  text-decoration: underline;
+}
+
+.ps-target {
+  outline: 3px solid rgba(232, 168, 56, 0.7);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+@media print {
+  #program-sessions [data-ps-controls] { display: none !important; }
+  .ps-session { box-shadow: none; break-inside: avoid; }
+}
+
+/* Awards (program page) */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.award-card {
+  border-top: 5px solid var(--sun);
+}
+
+.award-group + .award-group {
+  margin-top: 2rem;
+}
+
+.award-group h3 {
+  margin: 0 0 0.25rem;
+}
+
+.award-when {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.award-when a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.award-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.award-card h4 small {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.award-note {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+.award-ctas {
+  margin: 0 0 1.75rem;
 }
