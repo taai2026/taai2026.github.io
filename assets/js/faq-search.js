@@ -26,7 +26,12 @@ const STRINGS = {
       payment: "Payment",
       refund: "Cancellation & refund",
       onsite: "On-site registration",
-      students: "Students"
+      students: "Students",
+      program: "Program",
+      presentation: "Presentations",
+      poster: "Posters",
+      awards: "Awards",
+      venue: "Venue & travel"
     },
     searchLabel: "Search FAQ",
     searchPlaceholder: "Search questions and answers…",
@@ -55,7 +60,12 @@ const STRINGS = {
       payment: "繳費",
       refund: "取消與退費",
       onsite: "現場報名",
-      students: "學生"
+      students: "學生",
+      program: "議程",
+      presentation: "發表方式",
+      poster: "海報",
+      awards: "獎項",
+      venue: "會場與交通"
     },
     searchLabel: "搜尋 FAQ",
     searchPlaceholder: "搜尋題目與答案…",
@@ -66,7 +76,7 @@ const STRINGS = {
   }
 };
 
-const TAG_ORDER = ["concepts", "deadlines", "publish", "format", "copyright", "registration", "submission", "changes", "international", "domestic-full", "domestic-abstract", "high-school", "examples", "authors", "fees", "payment", "refund", "onsite", "students"];
+const TAG_ORDER = ["concepts", "deadlines", "publish", "format", "copyright", "registration", "submission", "changes", "international", "domestic-full", "domestic-abstract", "high-school", "examples", "authors", "fees", "payment", "refund", "onsite", "students", "program", "presentation", "poster", "awards", "venue"];
 
 function debounce(fn, wait) {
   let timer = null;
@@ -84,6 +94,10 @@ async function init() {
 
   const locale = root.dataset.locale === "zh" ? "zh" : "en";
   const strings = STRINGS[locale];
+  // URL keys are configurable so the FAQ can share a page with another
+  // search (the program page uses ?q= for paper search).
+  const qKey = root.dataset.urlQ || "q";
+  const tagsKey = root.dataset.urlTags || "tags";
 
   const controls = root.querySelector("[data-faq-controls]");
   const searchInput = root.querySelector("[data-faq-search]");
@@ -146,10 +160,10 @@ async function init() {
 
   function writeUrl() {
     const params = new URLSearchParams(window.location.search);
-    if (state.q) params.set("q", state.q);
-    else params.delete("q");
-    if (state.tags.length) params.set("tags", state.tags.join(","));
-    else params.delete("tags");
+    if (state.q) params.set(qKey, state.q);
+    else params.delete(qKey);
+    if (state.tags.length) params.set(tagsKey, state.tags.join(","));
+    else params.delete(tagsKey);
     const query = params.toString();
     const url = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
     window.history.replaceState(state, "", url);
@@ -157,8 +171,8 @@ async function init() {
 
   function readUrl() {
     const params = new URLSearchParams(window.location.search);
-    state.q = params.get("q") || "";
-    const tagsParam = params.get("tags") || "";
+    state.q = params.get(qKey) || "";
+    const tagsParam = params.get(tagsKey) || "";
     state.tags = tagsParam ? tagsParam.split(",").filter(t => tagsPresent.includes(t)) : [];
   }
 
