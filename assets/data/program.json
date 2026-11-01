@@ -1,0 +1,3446 @@
+{
+  "schemaVersion": 1,
+  "status": "tentative",
+  "timezone": "Asia/Taipei",
+  "utcOffset": "+08:00",
+  "generatedAt": "2026-11-02T05:28+08:00",
+  "presentation": {
+    "oralMinutes": 10,
+    "oralTalkMinutes": 8,
+    "oralQaMinutes": 2
+  },
+  "sessions": [
+    {
+      "id": "io1",
+      "kind": "oral",
+      "track": "international",
+      "number": 1,
+      "day": 1,
+      "start": "2026-11-20T10:40+08:00",
+      "end": "2026-11-20T12:00+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "optimization",
+          "count": 4
+        },
+        {
+          "topic": "speech",
+          "count": 2
+        },
+        {
+          "topic": "games",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 148,
+          "title": "Score-Based Voting for Diverse Game-AI Teams: Bridging Optimistic and Plurality Voting",
+          "authors": [
+            "Shogo Takeuchi"
+          ],
+          "topic": "games",
+          "keywords": [
+            "Voting",
+            "Game",
+            "Caibration"
+          ],
+          "order": 1,
+          "start": "2026-11-20T10:40+08:00",
+          "end": "2026-11-20T10:50+08:00"
+        },
+        {
+          "id": 194,
+          "title": "Distributed Bandit Learning toward Social Optimum in Congestion Games: Nonlinear Costs and Convergence Analysis",
+          "authors": [
+            "Zih-Cheng Lyu",
+            "Shu-Ting Chang",
+            "張以琳",
+            "Kuan-Hsu Lo"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Congestion games",
+            "Distributed bandit learning",
+            "Social optimum",
+            "Quadratic costs",
+            "Gradient estimation"
+          ],
+          "order": 2,
+          "start": "2026-11-20T10:50+08:00",
+          "end": "2026-11-20T11:00+08:00"
+        },
+        {
+          "id": 26,
+          "title": "EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments",
+          "authors": [
+            "Zih-Sian Yang",
+            "Yi-Hao Chen",
+            "Yu-Te Kuan",
+            "Chuang-Chieh Lin",
+            "Po-An Chen"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Fairness",
+            "Envy-freeness up to one good (EF1)",
+            "Nash social welfare",
+            "Deep reinforcement learning",
+            "Prospective action masking",
+            "Online streaming"
+          ],
+          "order": 3,
+          "start": "2026-11-20T11:00+08:00",
+          "end": "2026-11-20T11:10+08:00"
+        },
+        {
+          "id": 87,
+          "title": "DEPO: Dual-module Evaluator for Few-shot Prompt Optimization",
+          "authors": [
+            "Chun-Pai Yang",
+            "Ying-Chun Lai",
+            "Shou-De Lin"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Prompt optimization",
+            "Large language models",
+            "Few-shot learning"
+          ],
+          "order": 4,
+          "start": "2026-11-20T11:10+08:00",
+          "end": "2026-11-20T11:20+08:00"
+        },
+        {
+          "id": 207,
+          "title": "Phase-wise Economic Policy Optimization for Auto-Battler Games using Evolutionary Algorithms",
+          "authors": [
+            "CHING-TING CHEN",
+            "Yi-En Dong",
+            "Yi-Ruei Chen",
+            "Chuan-Kang Ting"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "auto-battler game",
+            "game strategy optimization",
+            "evolutionary computation",
+            "genetic algorithm",
+            "evolution strategies"
+          ],
+          "order": 5,
+          "start": "2026-11-20T11:20+08:00",
+          "end": "2026-11-20T11:30+08:00"
+        },
+        {
+          "id": 153,
+          "title": "Contextual Biasing for Streaming ASR via CTC-based Word Spotting",
+          "authors": [
+            "Kai-Chen Tsai",
+            "Tien-Hong Lo",
+            "Yun-Ting Sun",
+            "Hsueh-Wei Liao",
+            "Berlin Chen"
+          ],
+          "topic": "speech",
+          "keywords": [
+            "Contextual biasing",
+            "Streaming ASR",
+            "CTC",
+            "RNN-T",
+            "Keyword Spotting"
+          ],
+          "order": 6,
+          "start": "2026-11-20T11:30+08:00",
+          "end": "2026-11-20T11:40+08:00"
+        },
+        {
+          "id": 195,
+          "title": "SpokenWait: A Benchmark for Real-Time Voice Agents Awaiting Tool Results",
+          "authors": [
+            "Bo-Xuan Zheng",
+            "Yu-Kai Guo",
+            "Ho-Lam Chung",
+            "Hung-yi Lee"
+          ],
+          "topic": "speech",
+          "keywords": [
+            "real-time voice agents",
+            "asynchronous tool use",
+            "spoken interaction",
+            "response latency",
+            "benchmarking"
+          ],
+          "order": 7,
+          "start": "2026-11-20T11:40+08:00",
+          "end": "2026-11-20T11:50+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do1",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 1,
+      "day": 1,
+      "start": "2026-11-20T10:40+08:00",
+      "end": "2026-11-20T12:00+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "data-mining",
+          "count": 3
+        },
+        {
+          "topic": "games",
+          "count": 2
+        },
+        {
+          "topic": "optimization",
+          "count": 1
+        },
+        {
+          "topic": "security",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 83,
+          "title": "Lightweight Dual-Stream Temporal Decoupling for Behavior Cloning in Minecraft's Hybrid Action Space",
+          "authors": [
+            "JIN-WEI JHANG",
+            "Yi-Ting Huang"
+          ],
+          "topic": "games",
+          "keywords": [
+            "Minecraft",
+            "behavior cloning",
+            "dual-stream Transformer",
+            "hybrid action space",
+            "feature decoupling"
+          ],
+          "order": 1,
+          "start": "2026-11-20T10:40+08:00",
+          "end": "2026-11-20T10:50+08:00"
+        },
+        {
+          "id": 189,
+          "title": "一個整合深度強化學習與蒙地卡羅模擬之混合式台灣麻將丟牌策略架構",
+          "authors": [
+            "Kuo-Chan Huang",
+            "Po-Yi Liu"
+          ],
+          "topic": "games",
+          "keywords": [
+            "台灣麻將",
+            "丟牌處理",
+            "深度學習",
+            "蒙地卡羅模擬",
+            "強化學習"
+          ],
+          "order": 2,
+          "start": "2026-11-20T10:50+08:00",
+          "end": "2026-11-20T11:00+08:00"
+        },
+        {
+          "id": 199,
+          "title": "CoRe-QCNN：基於跨解析度學習的樣本自適應量子影像分類",
+          "authors": [
+            "Ru-Jheng Li",
+            "Ching-Ting Tu",
+            "YA-SHU WANG"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "量子機器學習",
+            "量子卷積神經網路",
+            "跨解析度學習",
+            "樣本自適應參數生成",
+            "遙測影像"
+          ],
+          "order": 3,
+          "start": "2026-11-20T11:00+08:00",
+          "end": "2026-11-20T11:10+08:00"
+        },
+        {
+          "id": 168,
+          "title": "基於隱式神經表示法與時空交叉注意力機制之高解析度 PM2.5 預報偏差修正",
+          "authors": [
+            "Che-Kai Kao",
+            "SHANG-WEN LIN",
+            "Ching-Ting Tu"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "PM₂.₅",
+            "預報偏差修正",
+            "隱式神經表示",
+            "交叉注意力",
+            "連續時空場"
+          ],
+          "order": 4,
+          "start": "2026-11-20T11:10+08:00",
+          "end": "2026-11-20T11:20+08:00"
+        },
+        {
+          "id": 108,
+          "title": "Enhanced API Recommendation using Community Question-Answering Information",
+          "authors": [
+            "Tong-Hua Lin",
+            "Liang-Chen Lu",
+            "Min-Hui Hsu",
+            "Chia-Li Chang",
+            "Guan-Lin Chen",
+            "Cheng-Zen Yang"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "API Recommendation",
+            "Community Question-Answering Information",
+            "Lexical Gaps",
+            "Semantic Mismatch"
+          ],
+          "order": 5,
+          "start": "2026-11-20T11:20+08:00",
+          "end": "2026-11-20T11:30+08:00"
+        },
+        {
+          "id": 112,
+          "title": "Revisiting Evaluation in Neural Weather Forecasting: Reporting Choices and Evidence Limits",
+          "authors": [
+            "Shao-Kang Huang",
+            "Yu-Xiang Liu",
+            "Ting-Yuan Wang",
+            "Lu-Hung Chen"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "Neural weather forecasting",
+            "neural operators",
+            "model evaluation",
+            "reproducibility",
+            "checkpoint selection"
+          ],
+          "order": 6,
+          "start": "2026-11-20T11:30+08:00",
+          "end": "2026-11-20T11:40+08:00"
+        },
+        {
+          "id": 117,
+          "title": "Graph-CKA：結合化學知識圖譜上下文之大型語言模型安全測試方法",
+          "authors": [
+            "陳廷鈞",
+            "謝文川",
+            "龔千芬"
+          ],
+          "topic": "security",
+          "keywords": [
+            "大型語言模型",
+            "安全測試",
+            "越獄攻擊",
+            "知識圖譜",
+            "自動化紅隊測試",
+            "Graph-CKA",
+            "化學安全"
+          ],
+          "order": 7,
+          "start": "2026-11-20T11:40+08:00",
+          "end": "2026-11-20T11:50+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps1",
+      "kind": "poster",
+      "track": "international",
+      "number": 1,
+      "day": 1,
+      "start": "2026-11-20T10:40+08:00",
+      "end": "2026-11-20T12:00+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "optimization",
+          "count": 3
+        },
+        {
+          "topic": "data-mining",
+          "count": 3
+        },
+        {
+          "topic": "health",
+          "count": 1
+        },
+        {
+          "topic": "nlp",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 190,
+          "title": "A multiobjective evolutionary algorithm with adaptive mating and environmental selection for dynamic economic emission dispatch",
+          "authors": [
+            "Mao-Ting Lee",
+            "Thammarsat Visutarrom",
+            "Tsung-Che Chiang"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Economic dispatch",
+            "Emissions",
+            "Evolutionary algorithm",
+            "Multiobjective",
+            "Adaptive selection"
+          ],
+          "board": "IP-01"
+        },
+        {
+          "id": 67,
+          "title": "Graph Neural Network-Driven Reinforcement Learning for Job-Shop Scheduling",
+          "authors": [
+            "Yang-Rui Li",
+            "Yi-An Chen",
+            "Ming-Yi Ju"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Job-shop scheduling",
+            "Graph neural network",
+            "Reinforcement learning",
+            "Proximal policy optimization",
+            "Size generalization"
+          ],
+          "board": "IP-02"
+        },
+        {
+          "id": 98,
+          "title": "A Comparative Study of n-Step Returns for State-Augmented Double DQN under Action Delays",
+          "authors": [
+            "Yi-Sheng Chen",
+            "Feng-Nan Hwang"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Double Deep Q-Network",
+            "Action delay",
+            "n-step retun",
+            "Reinforcement learning",
+            "State augmentation"
+          ],
+          "board": "IP-03"
+        },
+        {
+          "id": 36,
+          "title": "Development of a System for Estimating Mental-Physical States Based on Biological, Behavioral, and Environmental Data",
+          "authors": [
+            "Daisuke Kitakoshi",
+            "Ayano Kubo",
+            "Arao Funase",
+            "Kentarou Suzuki",
+            "Masato Suzuki"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "Mental-Physical States Estimation",
+            "Activity log",
+            "Preventive care"
+          ],
+          "board": "IP-04"
+        },
+        {
+          "id": 59,
+          "title": "A Shikakeology-Based Graphically Illustrated Recommendation System",
+          "authors": [
+            "Ying-Yu Chen",
+            "Hiroki Shibata",
+            "Lieu-Hen Chen",
+            "Yasufumi Takama"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "AI Recommendation",
+            "Image-based Recommendation",
+            "Shikakeology"
+          ],
+          "board": "IP-05"
+        },
+        {
+          "id": 53,
+          "title": "Playlist-Based Synthetic Dataset Generation for Context-Aware Music Recommendation",
+          "authors": [
+            "Masato Imamura",
+            "Hiroki Shibata",
+            "Yasufumi Takama"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "Synthetic data",
+            "Music recommendation",
+            "Session-based recommendation",
+            "Context-aware recommendation"
+          ],
+          "board": "IP-06"
+        },
+        {
+          "id": 111,
+          "title": "Performance-Based Evaluation of XAI Feature Rankings",
+          "authors": [
+            "KUO-WEI CHEN",
+            "Chih-Wei Hsu",
+            "Ying-Jia Lin"
+          ],
+          "topic": "health",
+          "keywords": [
+            "Explainable Artificial Intelligence",
+            "Feature Selection",
+            "Feature Ranking",
+            "XGBoost",
+            "LightGBM"
+          ],
+          "board": "IP-07"
+        },
+        {
+          "id": 62,
+          "title": "Effects of On-Screen Feedback Display on Error Repair in an LLM-Based Japanese Speaking-Practice System",
+          "authors": [
+            "NI YANGDI",
+            "SHAN JUNJIE",
+            "Megumi Yasuo",
+            "Yoko Nishihara"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Computer-assisted language learning",
+            "Large language models",
+            "Dialogue-hint feedback",
+            "Corrective feedback",
+            "Learner uptake",
+            "Japanese as a second language"
+          ],
+          "board": "IP-08"
+        }
+      ]
+    },
+    {
+      "id": "io2",
+      "kind": "oral",
+      "track": "international",
+      "number": 2,
+      "day": 1,
+      "start": "2026-11-20T13:00+08:00",
+      "end": "2026-11-20T14:20+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "data-mining",
+          "count": 3
+        },
+        {
+          "topic": "games",
+          "count": 2
+        },
+        {
+          "topic": "health",
+          "count": 2
+        },
+        {
+          "topic": "vision",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 137,
+          "title": "Analyzing Features of Natural Truncation and Branching Points in Shogi AI Principal Variations",
+          "authors": [
+            "Taisei Kikkawa",
+            "Takeshi Ito"
+          ],
+          "topic": "games",
+          "keywords": [
+            "shogi AI",
+            "principal variation",
+            "explainable artificial intelligence"
+          ],
+          "order": 1,
+          "start": "2026-11-20T13:00+08:00",
+          "end": "2026-11-20T13:10+08:00"
+        },
+        {
+          "id": 174,
+          "title": "Analysis of AI Game Outcome Distributions and Placement Features for 1,440 Point-Symmetric Initial Positions in 66 Shogi",
+          "authors": [
+            "Yoshimasa Yamaguchi",
+            "Takeshi Ito"
+          ],
+          "topic": "games",
+          "keywords": [
+            "66 Shogi",
+            "game AI",
+            "outcome distribution",
+            "NNUE",
+            "self-play",
+            "point-symmetric initial positions"
+          ],
+          "order": 2,
+          "start": "2026-11-20T13:10+08:00",
+          "end": "2026-11-20T13:20+08:00"
+        },
+        {
+          "id": 70,
+          "title": "Affective Representations for Conversation Derailment Forecasting",
+          "authors": [
+            "Retnani Latifah",
+            "Yi-Shin Chen"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "forecasting conversation derailment",
+            "affective signals",
+            "forecasting horizon"
+          ],
+          "order": 3,
+          "start": "2026-11-20T13:20+08:00",
+          "end": "2026-11-20T13:30+08:00"
+        },
+        {
+          "id": 135,
+          "title": "Disentangling Heterogeneous Traffic Dynamics for Multi-Step Traffic Forecasting via Adaptive Spectral Decomposition",
+          "authors": [
+            "Zijun Huang",
+            "Chenrui Fu",
+            "Wenhao Wang",
+            "Xiaochuan Gou",
+            "Chih-Chieh Hung",
+            "Guanyao Li"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "Traffic forecasting",
+            "Frequency-domain learning",
+            "Spectral decomposition"
+          ],
+          "order": 4,
+          "start": "2026-11-20T13:30+08:00",
+          "end": "2026-11-20T13:40+08:00"
+        },
+        {
+          "id": 209,
+          "title": "Calibrated Hierarchical Structured Decisions for SASB Compliance Evidence in Sustainability Reports",
+          "authors": [
+            "Wei-Chen Huang",
+            "Min-Yuh Day"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "SASB",
+            "Sustainability Reporting",
+            "Hierarchical Structured Decisions",
+            "Compliance Evidence Classification",
+            "Threshold Calibration"
+          ],
+          "order": 5,
+          "start": "2026-11-20T13:40+08:00",
+          "end": "2026-11-20T13:50+08:00"
+        },
+        {
+          "id": 138,
+          "title": "Changes in Self-Perceptions of Detecting AI-Generated News Comments Across Discrimination and Generation Tasks: A Preliminary Study",
+          "authors": [
+            "Nanase Mogi",
+            "Mitsunori Matsushita"
+          ],
+          "topic": "health",
+          "keywords": [
+            "online news comments",
+            "active inoculation",
+            "AI-generated text",
+            "authorship judgment",
+            "human-AI interaction"
+          ],
+          "order": 6,
+          "start": "2026-11-20T13:50+08:00",
+          "end": "2026-11-20T14:00+08:00"
+        },
+        {
+          "id": 129,
+          "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
+          "authors": [
+            "Hai Siong Tan",
+            "Kuancheng Wang"
+          ],
+          "topic": "health",
+          "keywords": [
+            "Uncertainty Quantification",
+            "Glaucoma Detection"
+          ],
+          "order": 7,
+          "start": "2026-11-20T14:00+08:00",
+          "end": "2026-11-20T14:10+08:00"
+        },
+        {
+          "id": 57,
+          "title": "Automatic Generation of Open-Vocabulary Descriptive Tags for Anime Cut Scenes Using Vision-Language Models and Syntactic Parsing",
+          "authors": [
+            "SHAN JUNJIE",
+            "Jianrui Yan",
+            "Yoko Nishihara",
+            "NI YANGDI",
+            "DUAN Zhenzhong"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Anime scene caption",
+            "Open-vocabulary image tagging",
+            "Vision–language model",
+            "Image captioning",
+            "Syntactic parsing"
+          ],
+          "order": 8,
+          "start": "2026-11-20T14:10+08:00",
+          "end": "2026-11-20T14:20+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do2",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 2,
+      "day": 1,
+      "start": "2026-11-20T13:00+08:00",
+      "end": "2026-11-20T14:20+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "health",
+          "count": 6
+        },
+        {
+          "topic": "nlp",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 139,
+          "title": "Gauge or Process? Attributing Location Shifts at a Single Inspection Station Using Bridging Re-inspection Pairs",
+          "authors": [
+            "Hubert Huang"
+          ],
+          "topic": "health",
+          "keywords": [
+            "measurement system analysis",
+            "statistical process control",
+            "change-point attribution",
+            "equivalence testing",
+            "smart manufacturing."
+          ],
+          "order": 1,
+          "start": "2026-11-20T13:00+08:00",
+          "end": "2026-11-20T13:10+08:00"
+        },
+        {
+          "id": 133,
+          "title": "A Compact and Biologically Reproducible Transcriptomic Signature for Cross Cohort LUAD and LUSC Classification",
+          "authors": [
+            "Muhammad Hussain",
+            "Najeeb Ullah",
+            "Hussain Abbas",
+            "Musawir Hussain",
+            "Hassan Abbas",
+            "Quang Thai Ho",
+            "Iqrar Hussain"
+          ],
+          "topic": "health",
+          "keywords": [
+            "LUAD · LUSC · transcriptomics · external validation · gene signature · machine learning"
+          ],
+          "order": 2,
+          "start": "2026-11-20T13:10+08:00",
+          "end": "2026-11-20T13:20+08:00"
+        },
+        {
+          "id": 25,
+          "title": "單一模型跨規格之可重構智慧面相位即時生成",
+          "authors": [
+            "顏俊儀",
+            "劉立頌",
+            "林士程",
+            "陳佑誠",
+            "黃信睿"
+          ],
+          "topic": "health",
+          "keywords": [
+            "可重構智慧面",
+            "條件式生成器",
+            "特徵線性調變",
+            "啟發式神經網路混合訓練",
+            "深度學習"
+          ],
+          "order": 3,
+          "start": "2026-11-20T13:20+08:00",
+          "end": "2026-11-20T13:30+08:00"
+        },
+        {
+          "id": 119,
+          "title": "基於跨模態知識蒸餾之輕量化腕戴式壓力辨識",
+          "authors": [
+            "Yu-Yung-Ting",
+            "LI-WEN-KAI",
+            "Ying Zhi Chen",
+            "Lin-Yi-Rui",
+            "Yu Chieh Hung",
+            "Chiang-Cheng-Hong"
+          ],
+          "topic": "health",
+          "keywords": [
+            "壓力辨識",
+            "穿戴式感測",
+            "知識蒸餾",
+            "跨模態學習",
+            "WESAD"
+          ],
+          "order": 4,
+          "start": "2026-11-20T13:30+08:00",
+          "end": "2026-11-20T13:40+08:00"
+        },
+        {
+          "id": 101,
+          "title": "兼顧高敏感度辨識與病人內檢索之多模態皮膚病灶風險排序",
+          "authors": [
+            "楊惟麟",
+            "施丞澤",
+            "翁政雄"
+          ],
+          "topic": "health",
+          "keywords": [
+            "ISIC 2024",
+            "皮膚癌檢測",
+            "多模態學習",
+            "風險排序",
+            "多模態表徵"
+          ],
+          "order": 5,
+          "start": "2026-11-20T13:40+08:00",
+          "end": "2026-11-20T13:50+08:00"
+        },
+        {
+          "id": 121,
+          "title": "基於模型微調式醫療命名實體識別與句子編碼之自動化胃腸科護理問診系統",
+          "authors": [
+            "Yu-Yao Lin",
+            "Lieu-Hen Chen",
+            "Hao-Ming Hung",
+            "Hsiao-Kuang Wu"
+          ],
+          "topic": "health",
+          "keywords": [
+            "胃腸科問診",
+            "醫療命名實體識別",
+            "句子編碼器",
+            "臨床摘要",
+            "臺灣醫療"
+          ],
+          "order": 6,
+          "start": "2026-11-20T13:50+08:00",
+          "end": "2026-11-20T14:00+08:00"
+        },
+        {
+          "id": 58,
+          "title": "隨拍、隨比、隨時學， AI 客語隨身教：結合電腦視覺與聲學評測之客語情境教學系統實作",
+          "authors": [
+            "吳怡臻",
+            "張育倫",
+            "黃璿羽",
+            "梁易軒",
+            "林守毅"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "AI 語音評測",
+            "情境化語言學習",
+            "客語數位教學",
+            "電腦視覺"
+          ],
+          "order": 7,
+          "start": "2026-11-20T14:00+08:00",
+          "end": "2026-11-20T14:10+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps2",
+      "kind": "poster",
+      "track": "domestic",
+      "number": 2,
+      "day": 1,
+      "start": "2026-11-20T13:00+08:00",
+      "end": "2026-11-20T14:20+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "health",
+          "count": 7
+        },
+        {
+          "topic": "data-mining",
+          "count": 3
+        },
+        {
+          "topic": "games",
+          "count": 1
+        },
+        {
+          "topic": "agents",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 183,
+          "title": "Rank-Conditioned Multimodal Move Prediction in Go: Fine-Tuning on Ten Skill Levels",
+          "authors": [
+            "YEN YU SHAN",
+            "Shi-Jim Yen"
+          ],
+          "topic": "games",
+          "keywords": [
+            "Go",
+            "move prediction",
+            "skill imitation",
+            "multimodal features",
+            "deep learning"
+          ],
+          "board": "DP-01"
+        },
+        {
+          "id": 144,
+          "title": "基於閘控路徑規劃網路之無人機路徑規劃方法",
+          "authors": [
+            "黃彥皓",
+            "陳冠佑",
+            "陳柏儒"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "無人機",
+            "路徑規劃",
+            "GPPN"
+          ],
+          "board": "DP-02"
+        },
+        {
+          "id": 191,
+          "title": "A Modular Autonomous Driving Framework with DQN-Based High-Level Decision Making",
+          "authors": [
+            "YAN-HAN CHEN",
+            "Wei-Chun Hsu",
+            "Ying-Jen Chen",
+            "Li Cho"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "autonomous driving",
+            "Dueling Double DQN",
+            "CARLA",
+            "lane selection",
+            "braking arbitration",
+            "recovery"
+          ],
+          "board": "DP-03"
+        },
+        {
+          "id": 84,
+          "title": "結合空間距離與建設生命週期特徵之房價溢價預測：基於CatBoost之實證研究",
+          "authors": [
+            "Chang-Hsi Wu",
+            "Jun-Yi Liao"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "CatBoost",
+            "相對溢價率",
+            "房價預測",
+            "空間外部性",
+            "重大建設生命週期"
+          ],
+          "board": "DP-04"
+        },
+        {
+          "id": 147,
+          "title": "A Study on Prompt Design in Generative AI for Buddhist Short Videos",
+          "authors": [
+            "Rou-Jen Lu",
+            "Meng-Chien Shih",
+            "Shi-Jim Yen"
+          ],
+          "topic": "health",
+          "keywords": [
+            "Generative AI",
+            "Prompt Design",
+            "Image Generation",
+            "Animation Generation"
+          ],
+          "board": "DP-05"
+        },
+        {
+          "id": 55,
+          "title": "From Approval to Execution: A Verifiable Governance Continuity Model for Enterprise AI Agents",
+          "authors": [
+            "Austin Hsieh"
+          ],
+          "topic": "health",
+          "keywords": [
+            "AI agents",
+            "governance continuity",
+            "authorization",
+            "governance events",
+            "evidence qualification"
+          ],
+          "board": "DP-06"
+        },
+        {
+          "id": 163,
+          "title": "An Offline On-Device Method for Citrus Pest and Disease Recognition with Grounded Diagnosis",
+          "authors": [
+            "CHENG-YAN Cai",
+            "Yuan-Chin Tu",
+            "YOU JIA HUANG",
+            "Chen-En Chien",
+            "Huan-Yu Chen"
+          ],
+          "topic": "health",
+          "keywords": [
+            "citrus pest and disease",
+            "object detection",
+            "edge AI",
+            "retrieval-augmented generation",
+            "small language model"
+          ],
+          "board": "DP-07"
+        },
+        {
+          "id": 118,
+          "title": "個人化雙耳節拍音樂誘導睡眠",
+          "authors": [
+            "蘇敬堯",
+            "陳思穎",
+            "林和宇",
+            "謝宗澔"
+          ],
+          "topic": "health",
+          "keywords": [
+            "雙耳節拍binaural beats",
+            "睡眠分期sleep staging",
+            "腦電圖electroencephalography",
+            "音樂治療music therapy",
+            "睡眠誘導sleep induction"
+          ],
+          "board": "DP-08"
+        },
+        {
+          "id": 76,
+          "title": "Effects of Aggressive Front-End Downsampling on Prediction Concentration in CNN-Based Radiographic Grading of Mandibular Third Molar Surgical Difficulty",
+          "authors": [
+            "WU TSUNG YU",
+            "Bo-Gang Chen",
+            "Chia-Yu Chiu",
+            "Tzer-En Nee",
+            "Jyh-Kwei CHEN"
+          ],
+          "topic": "health",
+          "keywords": [
+            "mandibular third molar",
+            "surgical difficulty grading",
+            "panoramic radiography",
+            "convolutional neural network",
+            "early downsampling",
+            "prediction collapse"
+          ],
+          "board": "DP-09"
+        },
+        {
+          "id": 78,
+          "title": "基於全同態加密並結合 HMAC 完整性驗證與密文域可逆資訊隱藏之隱私保護心臟病風險預測系統",
+          "authors": [
+            "Yeh Tsai Ying",
+            "SHEN YI HSIN",
+            "戴婕伊",
+            "Che-Wei Lee"
+          ],
+          "topic": "health",
+          "keywords": [
+            "全同態加密",
+            "CKKS",
+            "心臟病預測",
+            "完整性驗證",
+            "可逆資訊隱藏"
+          ],
+          "board": "DP-10"
+        },
+        {
+          "id": 151,
+          "title": "WGAN資料增強對常見機器學習與深度學習模型 於EEG神經退化性疾病分類效能之影響評估",
+          "authors": [
+            "鐘培嘉",
+            "曾金宏",
+            "蘇奕安",
+            "陳榮銘"
+          ],
+          "topic": "health",
+          "keywords": [
+            "腦電圖",
+            "神經退化性疾病分類",
+            "生成對抗網路",
+            "WGAN",
+            "資料增強"
+          ],
+          "board": "DP-11"
+        },
+        {
+          "id": 201,
+          "title": "ERP 交易限制下 LLM Agent 失敗恢復與驗證",
+          "authors": [
+            "Shu-Yi Wu",
+            "謝文川",
+            "林欣瑾"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "LLM 代理",
+            "失敗恢復",
+            "代理評估",
+            "企業資源規劃",
+            "執行軌跡"
+          ],
+          "board": "DP-12"
+        }
+      ]
+    },
+    {
+      "id": "io3",
+      "kind": "oral",
+      "track": "international",
+      "number": 3,
+      "day": 1,
+      "start": "2026-11-20T14:40+08:00",
+      "end": "2026-11-20T16:00+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 5
+        },
+        {
+          "topic": "health",
+          "count": 2
+        }
+      ],
+      "papers": [
+        {
+          "id": 213,
+          "title": "Quantum Computational Intelligence and Generative AI for Taiwanese-English-Japanese Language Co-Learning with STEM Education Applications",
+          "authors": [
+            "Chang-Shing Lee",
+            "Mei-Hui Wang",
+            "Hsin-Wei Chen",
+            "Chun-Chieh Tseng",
+            "Pin-Yen Shen",
+            "Naoyuki Kubota",
+            "CHU KIONG LOO"
+          ],
+          "topic": "health",
+          "keywords": [
+            "Quantum Computational Intelligence",
+            "Generative AI",
+            "Human–Machine Co-Learning",
+            "Fuzzy Inference",
+            "STEM Educational Applications"
+          ],
+          "order": 1,
+          "start": "2026-11-20T14:40+08:00",
+          "end": "2026-11-20T14:50+08:00"
+        },
+        {
+          "id": 215,
+          "title": "Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts",
+          "authors": [
+            "Jing-Tian Sung",
+            "Tsan-Yu Tsai",
+            "Daniel Liu"
+          ],
+          "topic": "health",
+          "keywords": [
+            "Behavioral testing",
+            "Question generation",
+            "Knowledge graphs",
+            "Adaptive sampling"
+          ],
+          "order": 2,
+          "start": "2026-11-20T14:50+08:00",
+          "end": "2026-11-20T15:00+08:00"
+        },
+        {
+          "id": 154,
+          "title": "What INT8 Post-Training Quantization Buys on a CPU: A Speedup, and a Code Path the Runtime Can Reprice",
+          "authors": [
+            "Yuan-Zhen Yang",
+            "Yi-Hsiang Chao"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Post-Training Quantization",
+            "INT8 Inference",
+            "CPU Inference",
+            "ONNX Runtime",
+            "Runtime Version Drift",
+            "Benchmark Validity",
+            "Reproducibility"
+          ],
+          "order": 3,
+          "start": "2026-11-20T15:00+08:00",
+          "end": "2026-11-20T15:10+08:00"
+        },
+        {
+          "id": 172,
+          "title": "Evidence-Grounded Dental Vision-Language Framework for Implant Detection and Marginal Bone Loss Assessment in Panoramic Radiographs",
+          "authors": [
+            "Wen-Ze Chen",
+            "Min-Yuh Day"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "dental implants",
+            "panoramic radiographs",
+            "vision-language model",
+            "keypoint localization",
+            "marginal bone loss",
+            "multimodal artificial intelligence"
+          ],
+          "order": 4,
+          "start": "2026-11-20T15:10+08:00",
+          "end": "2026-11-20T15:20+08:00"
+        },
+        {
+          "id": 126,
+          "title": "Video-Only Badminton Highlight Generation with Conservative Subtitle Control",
+          "authors": [
+            "Tsan-Tsung Yang",
+            "Kuang-Da Wang",
+            "Wen-Chih Peng"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Badminton highlights",
+            "Temporal localization",
+            "Subtitle grounding"
+          ],
+          "order": 5,
+          "start": "2026-11-20T15:20+08:00",
+          "end": "2026-11-20T15:30+08:00"
+        },
+        {
+          "id": 149,
+          "title": "Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints",
+          "authors": [
+            "Yutaka Morino"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Disaster informatics",
+            "Social media",
+            "information triage",
+            "Recall-constrained retrieval",
+            "Vision-language-model"
+          ],
+          "order": 6,
+          "start": "2026-11-20T15:30+08:00",
+          "end": "2026-11-20T15:40+08:00"
+        },
+        {
+          "id": 37,
+          "title": "Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models",
+          "authors": [
+            "Hsuan-Fu Wang",
+            "Hsuan-Tien Lin"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Diffusion models",
+            "Multi-object generation",
+            "Compositional generation",
+            "Training-free methods",
+            "Image editing and inpainting"
+          ],
+          "order": 7,
+          "start": "2026-11-20T15:40+08:00",
+          "end": "2026-11-20T15:50+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do3",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 3,
+      "day": 1,
+      "start": "2026-11-20T14:40+08:00",
+      "end": "2026-11-20T16:00+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 4
+        },
+        {
+          "topic": "health",
+          "count": 2
+        }
+      ],
+      "papers": [
+        {
+          "id": 89,
+          "title": "小規模資料下模型效能評估變異性之探討：以腦電圖失智症分類訓練資料取樣策略為例",
+          "authors": [
+            "蔡尹瑜",
+            "陳榮銘"
+          ],
+          "topic": "health",
+          "keywords": [
+            "腦電圖",
+            "失智症分類",
+            "小規模資料",
+            "模型效能評估變異性",
+            "訓練資料取樣策略"
+          ],
+          "order": 1,
+          "start": "2026-11-20T14:40+08:00",
+          "end": "2026-11-20T14:50+08:00"
+        },
+        {
+          "id": 130,
+          "title": "整合全域與局部基因模組之多視角遮罩自編碼器於單細胞 RNA 定序聚類之大規模跨資料驗證",
+          "authors": [
+            "彭姿穎",
+            "張乃文",
+            "陳榮銘"
+          ],
+          "topic": "health",
+          "keywords": [
+            "單細胞RNA定序",
+            "遮罩自編碼器",
+            "基因分群",
+            "特徵融合",
+            "細胞聚類"
+          ],
+          "order": 2,
+          "start": "2026-11-20T14:50+08:00",
+          "end": "2026-11-20T15:00+08:00"
+        },
+        {
+          "id": 178,
+          "title": "SMART PHOTOGRAPHER",
+          "authors": [
+            "Guan-Chang Li",
+            "Hung-Wei Wang",
+            "Yu-Hui Huang"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Pose retrieval",
+            "photography assistance",
+            "human  pose",
+            "voice guidance"
+          ],
+          "order": 3,
+          "start": "2026-11-20T15:00+08:00",
+          "end": "2026-11-20T15:10+08:00"
+        },
+        {
+          "id": 30,
+          "title": "A Comparative Study of Deep Learning Models for 3D Cardiac Muscle Segmentation: Accuracy–Efficiency Trade-offs from CNNs to Transformers",
+          "authors": [
+            "An-Yun Liu",
+            "Chien-Chang Chen"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "medical image segmentation",
+            "myocardium segmentation",
+            "deep learning",
+            "Transformer",
+            "model efficiency",
+            "accuracy-efficiency trade-off"
+          ],
+          "order": 4,
+          "start": "2026-11-20T15:10+08:00",
+          "end": "2026-11-20T15:20+08:00"
+        },
+        {
+          "id": 43,
+          "title": "LIPAML: A CROSS-BACKBONE LANGEVIN-INSPIRED PREPROCESSING FRAMEWORK FOR GRAPH-BASED ANTI-MONEY LAUNDERING",
+          "authors": [
+            "Hao-Yang Li",
+            "Berlin Chen"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "anti-money laundering",
+            "graph neural networks",
+            "transaction graphs",
+            "interpretable feature construction",
+            "behavioral representation"
+          ],
+          "order": 5,
+          "start": "2026-11-20T15:20+08:00",
+          "end": "2026-11-20T15:30+08:00"
+        },
+        {
+          "id": 187,
+          "title": "Multi-View Grasp Pose Generation Using the Diffusion Model",
+          "authors": [
+            "Tien-Yu Wu",
+            "En-Ti Lin",
+            "Hsin-Chung Yin",
+            "Jenn-Jier James Lien"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Robotic Grasping",
+            "SE(3)-Equivariance",
+            "Diffusion Models",
+            "Multi-View Perception"
+          ],
+          "order": 6,
+          "start": "2026-11-20T15:30+08:00",
+          "end": "2026-11-20T15:40+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "kind": "poster",
+      "track": "international",
+      "number": 3,
+      "day": 1,
+      "start": "2026-11-20T14:40+08:00",
+      "end": "2026-11-20T16:00+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 5
+        },
+        {
+          "topic": "nlp",
+          "count": 2
+        },
+        {
+          "topic": "agents",
+          "count": 1
+        },
+        {
+          "topic": "other",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 96,
+          "title": "Robust Obstacle Avoidance of Autonomous Nano-UAVs with Liquid neural Networks with Monocular Depth Estimation based on Optical Flow",
+          "authors": [
+            "Jheng-Lin Lin",
+            "Zong-Ying Shen",
+            "Chung-Chuan Lo",
+            "YA TANG YANG"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "nano drones",
+            "nano-UAVs",
+            "obstacle avoidance",
+            "optical flow",
+            "liquid neural networks",
+            "monocular depth estimation",
+            "decision tree"
+          ],
+          "board": "IP-11"
+        },
+        {
+          "id": 94,
+          "title": "Efficient Machine Unlearning for Vision Transformers via Weight Resetting Strategies",
+          "authors": [
+            "Zhe-Yu Lin",
+            "Wen-Hung Liao"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Machine Unlearning",
+            "Vision Transformer",
+            "Weight Resetting",
+            "Model Maintenance"
+          ],
+          "board": "IP-12"
+        },
+        {
+          "id": 45,
+          "title": "A Foul Classification Model for Basketball Layup Shots Based on Multi-View Image Fusion",
+          "authors": [
+            "Kenya Oba",
+            "Masayoshi Kanoh"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Basketball",
+            "Foul Classification",
+            "Multi-View Images",
+            "Deep Learning"
+          ],
+          "board": "IP-13"
+        },
+        {
+          "id": 23,
+          "title": "Video-Camera-Based Multi-Person Gaze Estimation System Using Facial Features",
+          "authors": [
+            "DUAN Zhenzhong",
+            "SHAN JUNJIE",
+            "Megumi Yasuo",
+            "Yoko Nishihara"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Gaze estimation",
+            "Multi-user interaction",
+            "Facial Features",
+            "Human-computer interaction"
+          ],
+          "board": "IP-14"
+        },
+        {
+          "id": 44,
+          "title": "Topological Analysis of Handwritten Japanese Characters Using Persistent Properties",
+          "authors": [
+            "Masato Suzuki",
+            "Daisuke Kitakoshi"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Persistent property",
+            "Extended persistence landscape",
+            "Persistent homology",
+            "Character recognition"
+          ],
+          "board": "IP-15"
+        },
+        {
+          "id": 102,
+          "title": "Script-Derived Index Expansion for Natural-Language Retrieval of Anime Production Assets",
+          "authors": [
+            "Hinata Kirayama",
+            "Ryosuke Yamanishi"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "anime production assets",
+            "information retrieval",
+            "index expansion",
+            "script context",
+            "dense retrieval"
+          ],
+          "board": "IP-16"
+        },
+        {
+          "id": 103,
+          "title": "Parameter-Efficient Knowledge Distillation with DoRA for Instruction-Following Language Models",
+          "authors": [
+            "Yi-Sin Chen",
+            "Min-Te Sun",
+            "Wei-Shinn Ku",
+            "Po-Wei Harn"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "large language models",
+            "knowledge distillation",
+            "parameter-efficient fine-tuning",
+            "DoRA",
+            "instruction-following models",
+            "model compression"
+          ],
+          "board": "IP-17"
+        },
+        {
+          "id": 66,
+          "title": "GuardianNet: An LLM-Assisted Multi-Agent Framework for Detecting Stealthy SDN Anomalies",
+          "authors": [
+            "Yuyang Huang",
+            "chirag jindal",
+            "Mochamad Fakhri Andian",
+            "Po-Yu Chen",
+            "Kippei Ando",
+            "Le Anh Kiet",
+            "Po-Wei Harn"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "Software-Defined Networking",
+            "Large Language Models",
+            "Multi-Agent Systems",
+            "Anomaly Detection",
+            "DDoS",
+            "Cybersecurity"
+          ],
+          "board": "IP-18"
+        },
+        {
+          "id": 113,
+          "title": "What a Decoder-Side Network Recovers from CRA5: Near-Surface versus Upper-Air Error over CONUS",
+          "authors": [
+            "Tong-Jen Wang",
+            "Chieh-An Chou",
+            "Lu-Hung Chen"
+          ],
+          "topic": "other",
+          "keywords": [
+            "Scientific data compression",
+            "Atmospheric reanalysis",
+            "Learned compression",
+            "Decoder-side residual prediction",
+            "ERA5"
+          ],
+          "board": "IP-19"
+        }
+      ]
+    },
+    {
+      "id": "io4",
+      "kind": "oral",
+      "track": "international",
+      "number": 4,
+      "day": 2,
+      "start": "2026-11-21T10:10+08:00",
+      "end": "2026-11-21T11:00+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 4
+        }
+      ],
+      "papers": [
+        {
+          "id": 211,
+          "title": "A Closer Look at Road Damage Detection on Imbalanced Multi-Country Data",
+          "authors": [
+            "Mirkamol Mirkamilov",
+            "Lematte Ahmed",
+            "Saydobid Khusanov",
+            "Yuan Zhou"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Road Damage Detection",
+            "Object Detection",
+            "Imbalanced Data",
+            "Benchmarks",
+            "Computer Vision"
+          ],
+          "order": 1,
+          "start": "2026-11-21T10:10+08:00",
+          "end": "2026-11-21T10:20+08:00"
+        },
+        {
+          "id": 56,
+          "title": "Environment Curriculum Generation via Vision-Language Models",
+          "authors": [
+            "Yu-Hsin Chou",
+            "Kuei-Chung Chen",
+            "Hsuan-Tien Lin"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Reinforcement Learning",
+            "Vision-Language Models",
+            "Unsupervised Environment Design"
+          ],
+          "order": 2,
+          "start": "2026-11-21T10:20+08:00",
+          "end": "2026-11-21T10:30+08:00"
+        },
+        {
+          "id": 127,
+          "title": "Multimodal Representation and Reformulation of Creative Intention in AI Video Generation",
+          "authors": [
+            "Chuei-Huei Kung"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Generative Video",
+            "Multimodal Representation",
+            "Agentic AI",
+            "Retrospective Case Analysis",
+            "Research through Design"
+          ],
+          "order": 3,
+          "start": "2026-11-21T10:30+08:00",
+          "end": "2026-11-21T10:40+08:00"
+        },
+        {
+          "id": 179,
+          "title": "Attack-Resilient Hierarchical Federated Intrusion Detection for Communication-Constrained Low-Altitude UAV Networks",
+          "authors": [
+            "Mao-Hsiu HSU",
+            "Po-Chia Chuang"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Federated learning · Hierarchical federated learning · Intrusion detection · UAV networks"
+          ],
+          "order": 4,
+          "start": "2026-11-21T10:40+08:00",
+          "end": "2026-11-21T10:50+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do4",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 4,
+      "day": 2,
+      "start": "2026-11-21T10:10+08:00",
+      "end": "2026-11-21T11:00+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 5
+        }
+      ],
+      "papers": [
+        {
+          "id": 208,
+          "title": "Mapping Intent: Agentic UAV Route Planning with Semantic Cost Maps",
+          "authors": [
+            "Jeng Wen Joshua Lean",
+            "Ting-Yu Yen",
+            "Kang-Chiao Lin",
+            "Xu-Peng He",
+            "Shih-Hsuan Hung",
+            "Hung-Kuo Chu"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "UAV path planning",
+            "vision-language models",
+            "agentic AI",
+            "semantic cost maps"
+          ],
+          "order": 1,
+          "start": "2026-11-21T10:10+08:00",
+          "end": "2026-11-21T10:20+08:00"
+        },
+        {
+          "id": 216,
+          "title": "基於姿態估計之個人化網球教練系統：揮拍特徵組合歸納與修正建議驗證架構",
+          "authors": [
+            "Hsiao-Tsung Chen",
+            "Yean-Fu Wen",
+            "Li-Wen Hsieh"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "姿態估計",
+            "網球",
+            "揮拍特徵",
+            "個人化回饋",
+            "教育科技"
+          ],
+          "order": 2,
+          "start": "2026-11-21T10:20+08:00",
+          "end": "2026-11-21T10:30+08:00"
+        },
+        {
+          "id": 79,
+          "title": "資料集特性分析於少樣本類別增量學習中的影響",
+          "authors": [
+            "賴瑋宥",
+            "劉立頌",
+            "劉育銨"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "少樣本類別增量學習",
+            "跨模態語義對齊",
+            "提示學習",
+            "CLIP",
+            "需求分析"
+          ],
+          "order": 3,
+          "start": "2026-11-21T10:30+08:00",
+          "end": "2026-11-21T10:40+08:00"
+        },
+        {
+          "id": 176,
+          "title": "基於 StressID 資料集之多模態與集成學習壓力辨識方法",
+          "authors": [
+            "李佳芸",
+            "黃芷婕",
+            "Minghsiang Su"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "壓力辨識",
+            "多模態情感運算",
+            "集成學習",
+            "SGKF",
+            "Transformer-BiLSTM"
+          ],
+          "order": 4,
+          "start": "2026-11-21T10:40+08:00",
+          "end": "2026-11-21T10:50+08:00"
+        },
+        {
+          "id": 47,
+          "title": "基於 YOLO11m 之真菌影像辨識與高風險警示系統",
+          "authors": [
+            "羅聿凱",
+            "洪承凱",
+            "鄭立德",
+            "周融聖"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "YOLO11",
+            "真菌辨識",
+            "物件偵測",
+            "深度學習",
+            "高風險警示"
+          ],
+          "order": 5,
+          "start": "2026-11-21T10:50+08:00",
+          "end": "2026-11-21T11:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps4",
+      "kind": "poster",
+      "track": "domestic",
+      "number": 4,
+      "day": 2,
+      "start": "2026-11-21T10:10+08:00",
+      "end": "2026-11-21T11:00+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "vision",
+          "count": 9
+        },
+        {
+          "topic": "speech",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 122,
+          "title": "Point-Supervised Weed Stem Candidate Localization Using U-Net Heatmaps for RealSense-Assisted Laser Weeding",
+          "authors": [
+            "PRADEEP MARIMUTHU",
+            "Yu-Sung Liu"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "weed detection",
+            "stem localization",
+            "U-Net",
+            "heatmap regression",
+            "point annotation",
+            "RealSense camera",
+            "laser weeding"
+          ],
+          "board": "DP-13"
+        },
+        {
+          "id": 161,
+          "title": "FRESHKG MISSION SUPERVISION WITH TRACKING AND ATTITUDE EVALUATION",
+          "authors": [
+            "Chun Shih Cheng",
+            "Yu Jie Tsai",
+            "Cheng You Lin",
+            "Zih Sian Yang"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "UAV mission supervision",
+            "information freshness",
+            "knowledge graph",
+            "waypoint tracking",
+            "attitude evaluation."
+          ],
+          "board": "DP-14"
+        },
+        {
+          "id": 171,
+          "title": "Hierarchical Specialist Networks and Few-Shot Language Reconstruction for Skeleton-Based Taiwanese Sign Language Recognition",
+          "authors": [
+            "Jhih-Shan Tsai",
+            "Pei-Hao Chen",
+            "Tou-Tou Wu",
+            "You-Yin Lin",
+            "Huan-Yu Chen"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Taiwanese Sign Language",
+            "skeleton features",
+            "hierarchical classification",
+            "few-shot prompting",
+            "LangChain"
+          ],
+          "board": "DP-15"
+        },
+        {
+          "id": 182,
+          "title": "Ego-Motion Compensated Adaptive Spatio-Temporal Difference Gating for UAV Edge Dynamic Object Detection",
+          "authors": [
+            "Ming Chien Ho",
+            "Yan Je Wang",
+            "Ting Ying Chien"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "UAV edge computing",
+            "camera ego-motion compensation",
+            "spatio-temporal gating",
+            "dynamic object detection",
+            "green AI"
+          ],
+          "board": "DP-16"
+        },
+        {
+          "id": 17,
+          "title": "結合PatchCore與視覺語言模型之可解釋工業異常檢測 (Explainable Industrial Anomaly Detection by Combining PatchCore and Vision Language Models)",
+          "authors": [
+            "Liao Wei-Syuan",
+            "Jiann-Chyu Rau"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "VLM",
+            "PatchCore",
+            "工業異常檢測",
+            "開放權重模型",
+            "可解釋人工智慧",
+            "VLM",
+            "PatchCore",
+            "Industrial Anomaly Detection",
+            "Open-Weight Model",
+            "Explainable AI"
+          ],
+          "board": "DP-17"
+        },
+        {
+          "id": 165,
+          "title": "基於 MCP 的使用者行為資料最小化與異常分析",
+          "authors": [
+            "金石開",
+            "袁佳慶"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "模型上下文協定",
+            "使用者行為資料蒐集",
+            "使用者行為分析",
+            "異常偵測",
+            "資料最小化"
+          ],
+          "board": "DP-18"
+        },
+        {
+          "id": 90,
+          "title": "探討不同多模態架構於黑色素瘤預測效能之比較",
+          "authors": [
+            "蔣典宸",
+            "YIYU WANG",
+            "吳芷瑩",
+            "陳映瑄",
+            "鄭秋艷",
+            "李彩儀",
+            "翁政雄"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "黑色素瘤分類",
+            "多模態深度學習",
+            "特徵融合",
+            "類別不平衡",
+            "焦點損失函數"
+          ],
+          "board": "DP-19"
+        },
+        {
+          "id": 100,
+          "title": "應用影像監控系統於海鱺性徵成熟度判定",
+          "authors": [
+            "謝易錚",
+            "蒙諺勳"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "深度學習",
+            "海鱺性徵成熟度分析",
+            "Openpose",
+            "FHRCNN"
+          ],
+          "board": "DP-20"
+        },
+        {
+          "id": 186,
+          "title": "組合料號電子零件內容之自動擷取",
+          "authors": [
+            "Tzung-Pei Hong"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "電子設計自動化",
+            "電子零件規格書",
+            "組合料號圖",
+            "物件偵測",
+            "深度學習"
+          ],
+          "board": "DP-21"
+        },
+        {
+          "id": 64,
+          "title": "Melody–Accompaniment Separation in Synthesized Solo Piano Audio Using Spectral U-Nets and a Composite Loss",
+          "authors": [
+            "KAO HAO CHUN",
+            "WANG CHAO ZONG",
+            "HUANG YU HAN"
+          ],
+          "topic": "speech",
+          "keywords": [
+            "Music Source Separation",
+            "Solo Piano",
+            "Melody–Accompaniment Separation",
+            "Spectral U-Net",
+            "Composite Loss"
+          ],
+          "board": "DP-22"
+        }
+      ]
+    },
+    {
+      "id": "io5",
+      "kind": "oral",
+      "track": "international",
+      "number": 5,
+      "day": 2,
+      "start": "2026-11-21T11:10+08:00",
+      "end": "2026-11-21T12:00+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "nlp",
+          "count": 2
+        },
+        {
+          "topic": "data-mining",
+          "count": 1
+        },
+        {
+          "topic": "vision",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 21,
+          "title": "Matching Digits or Quantities? A Controlled Diagnostic Benchmark for Cross-Source Verification of Traditional Chinese ESG Disclosures",
+          "authors": [
+            "Chenxuan Zhou",
+            "Jian Song",
+            "Christy Jie Liang"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "ESG disclosure",
+            "Green finance",
+            "Numeric verification",
+            "Diagnostic benchmark",
+            "Agent evaluation",
+            "Traditional Chinese"
+          ],
+          "order": 1,
+          "start": "2026-11-21T11:10+08:00",
+          "end": "2026-11-21T11:20+08:00"
+        },
+        {
+          "id": 68,
+          "title": "FUSE: A Fused Unified Synthetic-image Ensemble for AI-Generated Image Detection",
+          "authors": [
+            "Ping-Chen Chung",
+            "Huynh Phuoc Thien Nguyen",
+            "Pei-Hua Tsai",
+            "Hsuan-Cheng Chu",
+            "Po-Wei Harn"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "AI-generated image detection",
+            "deepfake forensics",
+            "ensemble learning",
+            "diffusion models",
+            "CLIP",
+            "frequency analysis."
+          ],
+          "order": 2,
+          "start": "2026-11-21T11:20+08:00",
+          "end": "2026-11-21T11:30+08:00"
+        },
+        {
+          "id": 210,
+          "title": "Direction Echo: Redirecting Attention Flow to Mitigate Length-Induced Representation Collapse in Repetition-Based Language Model Embeddings",
+          "authors": [
+            "Mu-Feng Tsai",
+            "Hung-Yu Kao"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "text embeddings",
+            "large language models",
+            "causal attention",
+            "echo embeddings",
+            "length collapse",
+            "attention masking",
+            "zero-shot learning"
+          ],
+          "order": 3,
+          "start": "2026-11-21T11:30+08:00",
+          "end": "2026-11-21T11:40+08:00"
+        },
+        {
+          "id": 104,
+          "title": "Reviewed Aspects in Video Games Released from the 1980s to the 2020s",
+          "authors": [
+            "Jotaro Tasaki",
+            "Kazushi Ikemachi",
+            "Ryosuke Yamanishi"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Video game reviews",
+            "Natural language processing",
+            "Dependency parsing"
+          ],
+          "order": 4,
+          "start": "2026-11-21T11:40+08:00",
+          "end": "2026-11-21T11:50+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do5",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 5,
+      "day": 2,
+      "start": "2026-11-21T11:10+08:00",
+      "end": "2026-11-21T12:00+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "nlp",
+          "count": 4
+        },
+        {
+          "topic": "vision",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 29,
+          "title": "Deepfake 偵測模型於多強度影像退化下之穩健性與方向性誤判分析",
+          "authors": [
+            "Yu-Chi Chang",
+            "Meng-Luen Wu"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "Deepfake 偵測",
+            "影像退化",
+            "穩健性",
+            "固定分類門檻",
+            "方向性誤判",
+            "Vision Transformer",
+            "CLIP"
+          ],
+          "order": 1,
+          "start": "2026-11-21T11:10+08:00",
+          "end": "2026-11-21T11:20+08:00"
+        },
+        {
+          "id": 145,
+          "title": "A Hybrid LLM–RL Framework for Army Tactical Decision Support: Evaluation in a Real-Time Strategy Simulation",
+          "authors": [
+            "YU RUI SHI",
+            "ZONG XIN LIN",
+            "YI SYUAN LU",
+            "CHENG SHUN LEE"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Reinforcement Learning",
+            "StarCraft II",
+            "Agent Training",
+            "Large Language Model"
+          ],
+          "order": 2,
+          "start": "2026-11-21T11:20+08:00",
+          "end": "2026-11-21T11:30+08:00"
+        },
+        {
+          "id": 52,
+          "title": "An Effective Spoken Language Understanding Approach Leveraging Query-Adaptive Intent Detection",
+          "authors": [
+            "Bing-Long Kuo",
+            "Yu-Hsuan Fang",
+            "Tien-Hong Lo",
+            "Hsueh-Wei Liao",
+            "Berlin Chen"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Spoken language understanding",
+            "large language models",
+            "in-context learning",
+            "prototype-guided retrieval",
+            "intent detection"
+          ],
+          "order": 3,
+          "start": "2026-11-21T11:30+08:00",
+          "end": "2026-11-21T11:40+08:00"
+        },
+        {
+          "id": 27,
+          "title": "PlainSCOTUS: A Sentence-Aligned Corpus for Legal Text Simplification",
+          "authors": [
+            "Yun-Mao Lo",
+            "Meng-Luen Wu"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "legal text simplification",
+            "sentence alignment",
+            "parallel corpus",
+            "comparable corpora",
+            "BGE-M3",
+            "margin-based scoring",
+            "dataset construction"
+          ],
+          "order": 4,
+          "start": "2026-11-21T11:40+08:00",
+          "end": "2026-11-21T11:50+08:00"
+        },
+        {
+          "id": 4,
+          "title": "應用變換式架構模型於華語轉換客家語",
+          "authors": [
+            "洪士程",
+            "王俊詠"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "變換式架構模型",
+            "華語",
+            "客家語",
+            "網路爬蟲",
+            "超參數優化",
+            "mt5模型"
+          ],
+          "order": 5,
+          "start": "2026-11-21T11:50+08:00",
+          "end": "2026-11-21T12:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps5",
+      "kind": "poster",
+      "track": "international",
+      "number": 5,
+      "day": 2,
+      "start": "2026-11-21T11:10+08:00",
+      "end": "2026-11-21T12:00+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "nlp",
+          "count": 5
+        },
+        {
+          "topic": "security",
+          "count": 2
+        },
+        {
+          "topic": "games",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 50,
+          "title": "Measuring and Repairing NLI Sensitivity to Emoji and Informal Markers",
+          "authors": [
+            "Avinash Goutham Aluguvelly"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Averages Conceal Where Accuracy Is Lost: Emoji Substitution and Appended Phrases in Natural Language Inference"
+          ],
+          "board": "IP-21"
+        },
+        {
+          "id": 131,
+          "title": "Humans and LLMs: Role Inference under Varying Information Availability in the Werewolf Game",
+          "authors": [
+            "Taiki Takiuchi",
+            "Takeshi Ito"
+          ],
+          "topic": "games",
+          "keywords": [
+            "Werewolf game",
+            "Large Language Models",
+            "Inference."
+          ],
+          "board": "IP-22"
+        },
+        {
+          "id": 38,
+          "title": "Agentic Workflow Automation for n8n: Prompt Engineering, Domain Fine-Tuning, and a Comparative Case Study",
+          "authors": [
+            "Zhi-Ying Wang",
+            "Liu Hsuan-Yu",
+            "Chun Yao Lin",
+            "Wen-Hsien Huang",
+            "Chia-Hui Chang"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Large Language Models",
+            "Workflow Automation",
+            "Agentic AI",
+            "Fine-tuning",
+            "n8n",
+            "Natural Language Programming"
+          ],
+          "board": "IP-23"
+        },
+        {
+          "id": 114,
+          "title": "Price Movement Prediction for High-frequency Trading by Leveraging Fine-tuned Large Language Model as Short-term Trend Indicator",
+          "authors": [
+            "FAN-YU PU",
+            "Shiou-Chi Li",
+            "Jen-Wei Huang"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Price movement prediction",
+            "High-frequency trading",
+            "Large language model",
+            "Deep learning model"
+          ],
+          "board": "IP-24"
+        },
+        {
+          "id": 155,
+          "title": "Structural Fidelity of Automated Multidimensional AI Judges for Earnings Call Argument Quality Assessment",
+          "authors": [
+            "Wei-Hsi Sun",
+            "Yi-Ting Liao",
+            "Yi-En Liu",
+            "Min-Yuh Day"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Structural Fidelity",
+            "LLM-as-a-Judge",
+            "Argument Quality Assessment",
+            "Multidimensional Evaluation",
+            "Earnings Calls"
+          ],
+          "board": "IP-25"
+        },
+        {
+          "id": 75,
+          "title": "Turning Books into SNS: Effects of Familiar Social Media-Style Reading Interfaces on Cognitive Load and Reading Performance",
+          "authors": [
+            "Konosuke Tada",
+            "SHAN JUNJIE",
+            "Megumi Yasuo",
+            "Yoko Nishihara"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Reading Support",
+            "Cognitive Load",
+            "Social Media Interface",
+            "Digital Natives",
+            "Reluctant Readers"
+          ],
+          "board": "IP-26"
+        },
+        {
+          "id": 173,
+          "title": "The Steepest Derivative: AI Neuro-Persuasion as a Compounding Cognitive-Security Risk",
+          "authors": [
+            "Aayush Gandhi"
+          ],
+          "topic": "security",
+          "keywords": [
+            "AI safety",
+            "cognitive security",
+            "neuro-persuasion",
+            "persuasion",
+            "technology ethics",
+            "responsible AI",
+            "model loyalty"
+          ],
+          "board": "IP-27"
+        },
+        {
+          "id": 110,
+          "title": "ShardedGold: Mitigating Gradient Mimicry Attack on Blockchain-Based Federated Learning",
+          "authors": [
+            "Patcharawit Wilaikaew",
+            "Wei-Zhe Xu",
+            "Min-Te Sun",
+            "Kazuya Sakai",
+            "Wei-Shinn Ku"
+          ],
+          "topic": "security",
+          "keywords": [
+            "Federated Learning",
+            "Blockchain",
+            "Gradient Mimicry Attack",
+            "Poisoning Defense",
+            "Gradient Sharding"
+          ],
+          "board": "IP-28"
+        }
+      ]
+    },
+    {
+      "id": "io6",
+      "kind": "oral",
+      "track": "international",
+      "number": 6,
+      "day": 2,
+      "start": "2026-11-21T13:00+08:00",
+      "end": "2026-11-21T14:20+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "nlp",
+          "count": 4
+        },
+        {
+          "topic": "agents",
+          "count": 3
+        }
+      ],
+      "papers": [
+        {
+          "id": 73,
+          "title": "A Comparative Analysis of Humor in Japanese Ogiri Responses Generated by an LLM and Humans",
+          "authors": [
+            "Bifu Ohishi",
+            "Megumi Yasuo",
+            "SHAN JUNJIE",
+            "Yoko Nishihara"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Large language model· Humor generation· Japanese Ogiri · Humor evaluation· Text analysis· AI Humor"
+          ],
+          "order": 1,
+          "start": "2026-11-21T13:00+08:00",
+          "end": "2026-11-21T13:10+08:00"
+        },
+        {
+          "id": 106,
+          "title": "Correspondence Between Repeated-Run LLM Variation and Human Disagreement in Sentence-Level News Annotation",
+          "authors": [
+            "Mai Sugimoto",
+            "Mitsunori Matsushita"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "LLM annotation",
+            "human annotation",
+            "annotation variation",
+            "human–LLM correspondence"
+          ],
+          "order": 2,
+          "start": "2026-11-21T13:10+08:00",
+          "end": "2026-11-21T13:20+08:00"
+        },
+        {
+          "id": 214,
+          "title": "Towards Reliable Chinese Spelling Correction: Consensus-Based Correction under Linguistic Variation",
+          "authors": [
+            "Cen-Chieh CHEN",
+            "Yu-Chen Hsu",
+            "Berlin Chen",
+            "Tao-Hsing Chang",
+            "Yao-Ting Sung"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Chinese Spelling Check",
+            "Consensus-based Models",
+            "Ensemble Learning",
+            "False Positive Reduction",
+            "Linguistic Variation",
+            "Pre-trained Language Models",
+            "Text Correction Reliability"
+          ],
+          "order": 3,
+          "start": "2026-11-21T13:20+08:00",
+          "end": "2026-11-21T13:30+08:00"
+        },
+        {
+          "id": 180,
+          "title": "LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law",
+          "authors": [
+            "Yu-Kai Guo",
+            "Wei-Cheng Lai",
+            "Chen-Wei Hsu",
+            "Hung-yi Lee"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Large language models",
+            "Multi-agent systems",
+            "Courtroom simulation",
+            "Legal argumentation",
+            "LLM-as-a-judge"
+          ],
+          "order": 4,
+          "start": "2026-11-21T13:30+08:00",
+          "end": "2026-11-21T13:40+08:00"
+        },
+        {
+          "id": 181,
+          "title": "FIVE: Fixed-Prefix Failure Prediction for Tool-Using LLM Agents from Visible Trajectory Evidence",
+          "authors": [
+            "Tomorn Soontornnapar",
+            "Marius Herzog",
+            "Tuchsanai Ploysuwan",
+            "Kay Rottmann"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "LLM Agents",
+            "Early Failure Prediction",
+            "Multi-Domain Evaluation"
+          ],
+          "order": 5,
+          "start": "2026-11-21T13:40+08:00",
+          "end": "2026-11-21T13:50+08:00"
+        },
+        {
+          "id": 82,
+          "title": "A Study on Synthetic Data Refinement through Agent Feedback",
+          "authors": [
+            "Takumi Miyazawa",
+            "Hiroki Shibata",
+            "Yasufumi Takama"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "Synthetic data",
+            "Collaborative filtering",
+            "Agent feedback"
+          ],
+          "order": 6,
+          "start": "2026-11-21T13:50+08:00",
+          "end": "2026-11-21T14:00+08:00"
+        },
+        {
+          "id": 85,
+          "title": "Resolving Knowledge Conflicts in Versioned Documents via Agentic Evidence Synthesis and Hierarchical Dual-Store Retrieval",
+          "authors": [
+            "CHAO-CHUN CHUANG",
+            "Chih-Min Yao",
+            "Tsui-Mei Lee",
+            "Yi-Ni Liu"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "Retrieval-Augmented Generation",
+            "Agentic AI",
+            "Knowledge Conflicts",
+            "Temporal Evidence Resolution",
+            "Multimodal Document Processing",
+            "Single Source of Truth"
+          ],
+          "order": 7,
+          "start": "2026-11-21T14:00+08:00",
+          "end": "2026-11-21T14:10+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do6",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 6,
+      "day": 2,
+      "start": "2026-11-21T13:00+08:00",
+      "end": "2026-11-21T14:20+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "agents",
+          "count": 3
+        },
+        {
+          "topic": "nlp",
+          "count": 2
+        },
+        {
+          "topic": "optimization",
+          "count": 1
+        },
+        {
+          "topic": "data-mining",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 42,
+          "title": "When Does a Two-Phase WEF1T Allocation Satisfy WEF1? Structured Experiments and Local Repair",
+          "authors": [
+            "Chi-Hsuan Wu",
+            "Chuang-Chieh Lin"
+          ],
+          "topic": "optimization",
+          "keywords": [
+            "Envy-freeness",
+            "Fair division",
+            "Social welfare."
+          ],
+          "order": 1,
+          "start": "2026-11-21T13:00+08:00",
+          "end": "2026-11-21T13:10+08:00"
+        },
+        {
+          "id": 7,
+          "title": "非獨立同分布數據對聯邦學習的影響分析",
+          "authors": [
+            "洪士程",
+            "賴胤佑"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "聯邦學習",
+            "CIFAR-10",
+            "CIFAR-100",
+            "預訓練",
+            "伺服器學習"
+          ],
+          "order": 2,
+          "start": "2026-11-21T13:10+08:00",
+          "end": "2026-11-21T13:20+08:00"
+        },
+        {
+          "id": 22,
+          "title": "程式設計課程中大型語言模型之對抗性測資生成",
+          "authors": [
+            "姜柏仰",
+            "吳宜鴻"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "大型語言模型",
+            "測資生成",
+            "擴展有限狀態機",
+            "擴展巴科斯範式"
+          ],
+          "order": 3,
+          "start": "2026-11-21T13:20+08:00",
+          "end": "2026-11-21T13:30+08:00"
+        },
+        {
+          "id": 80,
+          "title": "提示微調結合自訓練技術於少樣本情緒原因組合提取",
+          "authors": [
+            "簡瑋霆",
+            "吳宜鴻"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "情緒原因組合提取",
+            "自訓練",
+            "提示微調"
+          ],
+          "order": 4,
+          "start": "2026-11-21T13:30+08:00",
+          "end": "2026-11-21T13:40+08:00"
+        },
+        {
+          "id": 166,
+          "title": "Can We Trust LLM Agents as Playtesters? A Benchmark of Behavioral Diagnostics for Monetization Design",
+          "authors": [
+            "Szu-Yu Chou",
+            "Ting-Kang Wang",
+            "Yueh-Po Peng"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "multi-agents",
+            "LLM",
+            "IAP"
+          ],
+          "order": 5,
+          "start": "2026-11-21T13:40+08:00",
+          "end": "2026-11-21T13:50+08:00"
+        },
+        {
+          "id": 132,
+          "title": "基於階層式記憶與雙代理協同之個人化食譜推薦機制",
+          "authors": [
+            "郭馨妤",
+            "王佳佳",
+            "林其誼"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "LLM Agent",
+            "記憶機制",
+            "個人化推薦"
+          ],
+          "order": 6,
+          "start": "2026-11-21T13:50+08:00",
+          "end": "2026-11-21T14:00+08:00"
+        },
+        {
+          "id": 152,
+          "title": "導入語意之ERP Agent：基於 WebMCP 的跨文件流程",
+          "authors": [
+            "陳禹璋",
+            "謝文川"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "大型語言模型代理",
+            "企業資源規劃",
+            "WebMCP",
+            "企業語意"
+          ],
+          "order": 7,
+          "start": "2026-11-21T14:00+08:00",
+          "end": "2026-11-21T14:10+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps6",
+      "kind": "poster",
+      "track": "domestic",
+      "number": 6,
+      "day": 2,
+      "start": "2026-11-21T13:00+08:00",
+      "end": "2026-11-21T14:20+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "nlp",
+          "count": 10
+        },
+        {
+          "topic": "security",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 86,
+          "title": "Fusion Limitations and LLM-Assisted Decision Integration for Conversational Emotion Recognition",
+          "authors": [
+            "MELVIN LIEW LIP WEI",
+            "Cheng-Tso Chiang",
+            "Hao-Ming Hung",
+            "Lieu-Hen Chen"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "emotion recognition",
+            "multimodal fusion",
+            "modality complementarity",
+            "language models",
+            "candidate routing"
+          ],
+          "board": "DP-25"
+        },
+        {
+          "id": 72,
+          "title": "INTEGRATING LARGE LANGUAGE MODELS AND IOT SENSING FOR AN INTELLIGENT DECISION-SUPPORT SYSTEM IN MARINE CORAL RESTORATION",
+          "authors": [
+            "Shi-Jim Yen",
+            "Jia-Huei Wu",
+            "Yi-Hao Pai"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Large Language Model",
+            "Retrieval-Augmented Generation",
+            "Ocean Big Data",
+            "Intelligent Decision-Support System",
+            "IoT Sensing"
+          ],
+          "board": "DP-26"
+        },
+        {
+          "id": 197,
+          "title": "HMPA: A Neuro-Symbolic Framework for Natural-Language-Driven, Multi-Emotion Motion Generation on a Low-Cost Humanoid Robot",
+          "authors": [
+            "Zhi-Zhong Chen",
+            "Shih-Hung Wu"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Humanoid Robot",
+            "Large Language Model",
+            "Neuro-Symbolic AI",
+            "Inverse Kinematics",
+            "Emotional Motion Generation"
+          ],
+          "board": "DP-27"
+        },
+        {
+          "id": 198,
+          "title": "LLM Proposals and Deterministic Adjudication for Observable Decision Tracing in Quadruped Robots",
+          "authors": [
+            "Po-Yu Lu",
+            "Wei-Feng Tung"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Embodied AI",
+            "Quadruped Robot",
+            "LLM Safety",
+            "Human Robot Interaction",
+            "Observability"
+          ],
+          "board": "DP-28"
+        },
+        {
+          "id": 91,
+          "title": "An LLM- and Multi-Source Bibliographic API-Based Automated System for Academic Publication Registration",
+          "authors": [
+            "Ruei-Chen Wang",
+            "Wen-Hung Liao"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Publication Management",
+            "Bibliographic Metadata",
+            "LLM",
+            "Chrome Extension",
+            "ORCID"
+          ],
+          "board": "DP-29"
+        },
+        {
+          "id": 192,
+          "title": "通用語言模型 Embedding 至領域特定空間之遷移方法研究 ——以監督式 Embedding 適配於 UK 簽證法規語意分群為例",
+          "authors": [
+            "Shawn Chen",
+            "黃昭義"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "Domain-specific Embedding",
+            "Supervised Embedding Adaptation",
+            "Knowledge Graph",
+            "Semantic Clustering",
+            "Pseudo-labels"
+          ],
+          "board": "DP-30"
+        },
+        {
+          "id": 28,
+          "title": "台股加權指數波動度預測：新聞情緒特徵之穩健性驗證",
+          "authors": [
+            "林芳螢",
+            "黃文楨"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "realized volatility",
+            "news sentiment",
+            "walkforward validation",
+            "paired testing"
+          ],
+          "board": "DP-31"
+        },
+        {
+          "id": 136,
+          "title": "原生語言與翻譯語言作為語言模型訓練資料集之比較-以垃圾簡訊為例",
+          "authors": [
+            "Han-Yan Wu",
+            "楊翔丞",
+            "沈宏霖",
+            "劉嘉慶",
+            "黃詠浚"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "垃圾簡訊識別",
+            "BERT",
+            "機器翻譯",
+            "資源匱乏語言",
+            "語意分析"
+          ],
+          "board": "DP-32"
+        },
+        {
+          "id": 34,
+          "title": "基於修辭角色與語意一致性片段擾動之法律文本分類解釋研究",
+          "authors": [
+            "Bo-Xun Huang",
+            "Ming-Dao TU",
+            "Meng-Luen Wu"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "可解釋人工智慧",
+            "法律文本分類",
+            "修辭角色",
+            "LIME",
+            "語意片段擾動"
+          ],
+          "board": "DP-33"
+        },
+        {
+          "id": 46,
+          "title": "地表線型判釋、地表溫度異常預測與大型語言模型問答：地熱探勘之 GeoAI 應用與初步成果",
+          "authors": [
+            "林采蓁",
+            "鄭錦桐",
+            "黃瑞賢",
+            "陳亭佑",
+            "吳笙緯",
+            "蘇宗正",
+            "陳致言"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "地熱探勘",
+            "地理空間人工智慧",
+            "語意分割",
+            "梯度提升決策樹",
+            "檢索增強生成"
+          ],
+          "board": "DP-34"
+        },
+        {
+          "id": 169,
+          "title": "Automated Trust Management under LLM Monitoring Uncertainty: Adversarial Risk-Aware Deployment in a Decentralized Multi-Agent Network",
+          "authors": [
+            "Zong-Ye LI",
+            "Weiyang He",
+            "Chip Hong Chang"
+          ],
+          "topic": "security",
+          "keywords": [
+            "Decentralized Multi-Agent Systems",
+            "Trust Management",
+            "LLM Monitoring",
+            "Adversarial Robustness"
+          ],
+          "board": "DP-35"
+        }
+      ]
+    },
+    {
+      "id": "io7",
+      "kind": "oral",
+      "track": "international",
+      "number": 7,
+      "day": 2,
+      "start": "2026-11-21T14:40+08:00",
+      "end": "2026-11-21T15:30+08:00",
+      "room": "room-a",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "security",
+          "count": 3
+        },
+        {
+          "topic": "agents",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 69,
+          "title": "Bridging Static and Agentic RAG for Taiwanese Historical Question Answering",
+          "authors": [
+            "Kai-Hsin Chen",
+            "Wei-Yu Chen",
+            "Xuanjun Chen",
+            "Su-Ling Yeh",
+            "Jyh-Shing Roger Jang"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "Retrieval-Augmented Generation",
+            "Agentic RAG",
+            "Retrieval Orchestration",
+            "Historical Question Answering",
+            "Answer Selection"
+          ],
+          "order": 1,
+          "start": "2026-11-21T14:40+08:00",
+          "end": "2026-11-21T14:50+08:00"
+        },
+        {
+          "id": 88,
+          "title": "SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage",
+          "authors": [
+            "Mai Xuan Ha",
+            "Chanh Thanh Tin Le",
+            "Aquata Theodora Thyme",
+            "Po-Wei Harn"
+          ],
+          "topic": "security",
+          "keywords": [
+            "malware triage",
+            "large language models",
+            "agentic systems",
+            "sandbox analysis",
+            "ATT\\&CK",
+            "explainable security"
+          ],
+          "order": 2,
+          "start": "2026-11-21T14:50+08:00",
+          "end": "2026-11-21T15:00+08:00"
+        },
+        {
+          "id": 60,
+          "title": "DIAL-ROS: Defense-in-Depth Analysis of Layered ROS 2 Security",
+          "authors": [
+            "Hassan Abbas",
+            "Chinyang Henry Tseng",
+            "Po-Cheng Chen",
+            "Ke-Cheng Tan",
+            "Javad Ghofrani"
+          ],
+          "topic": "security",
+          "keywords": [
+            "ROS 2 security",
+            "SROS2",
+            "robot security",
+            "anomaly detection",
+            "firmware reverse engineering",
+            "defense-in-depth"
+          ],
+          "order": 3,
+          "start": "2026-11-21T15:00+08:00",
+          "end": "2026-11-21T15:10+08:00"
+        },
+        {
+          "id": 77,
+          "title": "V-ADAPT: A Verified Adversarial Discovery and Dual-Path Defense Framework for Hardening WAFs Against XSS",
+          "authors": [
+            "Hua-You chen",
+            "Po-Cheng Chen",
+            "Chinyang Henry Tseng"
+          ],
+          "topic": "security",
+          "keywords": [
+            "Web Application Firewall",
+            "Cross-Site Scripting",
+            "Double Deep Q-Network",
+            "Large Language Models",
+            "Adversarial Testing",
+            "Browser-Based Validation",
+            "Automated Rule Generation"
+          ],
+          "order": 4,
+          "start": "2026-11-21T15:10+08:00",
+          "end": "2026-11-21T15:20+08:00"
+        }
+      ]
+    },
+    {
+      "id": "do7",
+      "kind": "oral",
+      "track": "domestic",
+      "number": 7,
+      "day": 2,
+      "start": "2026-11-21T14:40+08:00",
+      "end": "2026-11-21T15:30+08:00",
+      "room": "room-b",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "education",
+          "count": 2
+        },
+        {
+          "topic": "agents",
+          "count": 1
+        },
+        {
+          "topic": "security",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 160,
+          "title": "迎向自主性大型語言模型代理與長程規劃時代：歐美比較法論我國 AI 安全規範、風險管控與責任歸責",
+          "authors": [
+            "Wei ju Chen"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "人工智慧代理人",
+            "長程規劃",
+            "人工智慧基本法",
+            "Agent Safety",
+            "Legal LLM Systems"
+          ],
+          "order": 1,
+          "start": "2026-11-21T14:40+08:00",
+          "end": "2026-11-21T14:50+08:00"
+        },
+        {
+          "id": 107,
+          "title": "語音對抗淨化之實證稽核：表徵混淆與自適應攻擊的梯度保真度",
+          "authors": [
+            "Guan-Ting Liu",
+            "Yi-Ting Huang"
+          ],
+          "topic": "security",
+          "keywords": [
+            "自動語音辨識",
+            "對抗樣本",
+            "生成式淨化",
+            "評估協定",
+            "梯度保真度"
+          ],
+          "order": 2,
+          "start": "2026-11-21T14:50+08:00",
+          "end": "2026-11-21T15:00+08:00"
+        },
+        {
+          "id": 61,
+          "title": "基於 LLM 與多代理人架構之國文會考適性學習平台：AI 國文會考備戰系統",
+          "authors": [
+            "Nien Tzu Ho",
+            "Hung Yung Yu",
+            "CHUN YU TSENG",
+            "Shi-Jim Yen"
+          ],
+          "topic": "education",
+          "keywords": [
+            "AI-Assisted Learning",
+            "Chinese Language Education",
+            "Adaptive Learning",
+            "Large Language Models",
+            "Multi-Agent Systems"
+          ],
+          "order": 3,
+          "start": "2026-11-21T15:00+08:00",
+          "end": "2026-11-21T15:10+08:00"
+        },
+        {
+          "id": 9,
+          "title": "邁向可解釋的智慧教育代理人： 基於測驗理論之大型語言模型認知對齊與異常行為評估",
+          "authors": [
+            "賴明如"
+          ],
+          "topic": "education",
+          "keywords": [
+            "大型語言模型",
+            "試題反應理論",
+            "逆向學習分析",
+            "認知診斷",
+            "可解釋性人工智慧",
+            "智慧代理人"
+          ],
+          "order": 4,
+          "start": "2026-11-21T15:10+08:00",
+          "end": "2026-11-21T15:20+08:00"
+        }
+      ]
+    },
+    {
+      "id": "ps7",
+      "kind": "poster",
+      "track": "domestic",
+      "number": 7,
+      "day": 2,
+      "start": "2026-11-21T14:40+08:00",
+      "end": "2026-11-21T15:30+08:00",
+      "room": "poster-area",
+      "title": null,
+      "chair": null,
+      "topics": [
+        {
+          "topic": "education",
+          "count": 3
+        },
+        {
+          "topic": "nlp",
+          "count": 2
+        },
+        {
+          "topic": "agents",
+          "count": 2
+        },
+        {
+          "topic": "other",
+          "count": 2
+        },
+        {
+          "topic": "health",
+          "count": 1
+        }
+      ],
+      "papers": [
+        {
+          "id": 140,
+          "title": "TAIDE醫療衛教RAG問答評估：人工評分與QCI&AI模糊推論",
+          "authors": [
+            "Yu-Yao Lin",
+            "Lieu-Hen Chen",
+            "Chun-Chieh Tseng",
+            "Hsin-Wei Chen",
+            "Chang-Shing Lee"
+          ],
+          "topic": "health",
+          "keywords": [
+            "醫療衛教",
+            "檢索增強生成",
+            "可信任人工智慧對話引擎",
+            "人工評估",
+            "QCI&AI"
+          ],
+          "board": "DP-37"
+        },
+        {
+          "id": 5,
+          "title": "混合專家模型之異質專家探索",
+          "authors": [
+            "洪士程",
+            "李耕維"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "混合專家模型",
+            "自然語言處理",
+            "大型語言模型",
+            "機器學習"
+          ],
+          "board": "DP-38"
+        },
+        {
+          "id": 49,
+          "title": "適性評量之多輪對話式提問生成",
+          "authors": [
+            "王柏甯",
+            "吳宜鴻"
+          ],
+          "topic": "nlp",
+          "keywords": [
+            "適性評量",
+            "大型語言模型",
+            "問題生成",
+            "誘答選項",
+            "診斷式追問"
+          ],
+          "board": "DP-39"
+        },
+        {
+          "id": 128,
+          "title": "A Source-Aware Agentic RAG Architecture for Study-Abroad Admissions Advising: Design and Evaluation",
+          "authors": [
+            "Po-Yuan Huang",
+            "Ting-Han Wu",
+            "Kai-Ting Chen"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "source-aware agentic RAG",
+            "study-abroad advising",
+            "text-to-SQL",
+            "hybrid retrieval",
+            "evidence verification"
+          ],
+          "board": "DP-40"
+        },
+        {
+          "id": 8,
+          "title": "具來源追溯與人工檢核之RAG數位證物對話線索整理流程",
+          "authors": [
+            "Yung-Sing Chen"
+          ],
+          "topic": "agents",
+          "keywords": [
+            "檢索增強生成",
+            "數位證物",
+            "來源追溯",
+            "人工檢核",
+            "負責任人工智慧"
+          ],
+          "board": "DP-41"
+        },
+        {
+          "id": 6,
+          "title": "應用Rapidminer和Optuna預測學生的學業表現",
+          "authors": [
+            "洪士程",
+            "李常遠"
+          ],
+          "topic": "education",
+          "keywords": [
+            "學生學業表現",
+            "決策樹",
+            "超參數優化",
+            "RapidMiner",
+            "Optuna"
+          ],
+          "board": "DP-42"
+        },
+        {
+          "id": 134,
+          "title": "基於強弱人工智慧決策差異驅動之適應式五子棋教學系統",
+          "authors": [
+            "蘇奇威",
+            "薛筑軒",
+            "簡暐哲"
+          ],
+          "topic": "education",
+          "keywords": [
+            "五子棋",
+            "蒙地卡羅樹搜尋",
+            "極小化極大演算法",
+            "適應式教學",
+            "大型語言模型"
+          ],
+          "board": "DP-43"
+        },
+        {
+          "id": 170,
+          "title": "整合程式評測與程式碼分析智慧出題之VS Code擴充套件設計與實作",
+          "authors": [
+            "黃筱婷",
+            "白文君",
+            "劉子安",
+            "吳宜鴻"
+          ],
+          "topic": "education",
+          "keywords": [
+            "程式評測",
+            "程式碼分析",
+            "VS Code Extension",
+            "抽象語法樹",
+            "智慧出題"
+          ],
+          "board": "DP-44"
+        },
+        {
+          "id": 99,
+          "title": "以效標關聯效度錨定之無人機操作員複合信任評分：設計科學研究 (A Validity-Anchored Composite Trust Score for Commercial UAS Operators: A Design Science Study)",
+          "authors": [
+            "CHIU EN CHING"
+          ],
+          "topic": "other",
+          "keywords": [
+            "無人機操作員",
+            "無人機飛手",
+            "信任評分",
+            "設計科學研究",
+            "效標關聯效度",
+            "非補償性計分"
+          ],
+          "board": "DP-45"
+        },
+        {
+          "id": 157,
+          "title": "基於題項關聯表徵與注意力導向資料擴增之親密暴力問卷深度分群",
+          "authors": [
+            "YEN-LING LIEN",
+            "I-Chia Li",
+            "Hsiu Yun Tseng",
+            "YA-SHU WANG",
+            "Ching-Ting Tu"
+          ],
+          "topic": "other",
+          "keywords": [
+            "親密暴力問卷",
+            "深度分群",
+            "題項關 聯矩陣",
+            "Grad-CAM",
+            "資料擴增"
+          ],
+          "board": "DP-46"
+        }
+      ]
+    }
+  ]
+}
