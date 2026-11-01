@@ -2067,6 +2067,12 @@ a.partner-card:hover .partner-name {
   font-weight: 700;
 }
 
+.hero-deadline a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .hero-secondary {
   margin-top: 0.9rem;
   color: var(--ink-soft);
@@ -2881,5 +2887,17 @@ a.partner-card:hover .partner-name {
 }
 
 .award-ctas {
+  margin: 0 0 1.75rem;
+}
+
+/* Program FAQ: venue quick links */
+.faq-venue-label {
+  margin: 0 0 0.4rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.faq-venue-links {
   margin: 0 0 1.75rem;
 }
