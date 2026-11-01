@@ -2,6 +2,47 @@
   "version": 1,
   "items": [
     {
+      "id": "program-paper-sessions-published",
+      "type": "program-update",
+      "category": "program",
+      "publishedAt": "2026-11-02T06:20:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 暫定議程與論文發表場次公布，請作者確認",
+          "summary": "TAAI 2026 暫定議程已公布，議程頁「論文發表場次」列出各論文的場次、地點與發表時段，可依論文編號、題目、作者或關鍵字搜尋。請作者確認論文題目、作者姓名、場次與發表時間（海報論文請確認看板編號）；如需更正，或找不到您的論文，請於 2026 年 11 月 9 日前來信 taai2026org@gmail.com 並註明論文編號。每篇錄取論文須至少有一位完成報名與繳費的發表作者，否則論文可能自議程中移除。場次與時間仍可能調整，請以本網站最新資訊為準。",
+          "linkLabel": "查看論文發表場次",
+          "tags": ["議程", "論文發表場次", "口頭發表", "海報發表", "program"]
+        },
+        "en": {
+          "title": "TAAI 2026 Tentative Program and Paper Sessions Published: Authors, Please Check",
+          "summary": "The TAAI 2026 tentative program is now available. Paper Sessions on the Program page lists each paper's session, room, and presentation slot, searchable by paper ID, title, author, or keyword. Authors, please check your paper title, author names, session, and presentation time (poster papers: also your board number). For corrections, or if you cannot find your paper, email taai2026org@gmail.com with your paper ID by November 9, 2026. Every accepted paper needs at least one presenting author who has completed registration and payment; otherwise the paper may be removed from the program. Sessions and times may still change; please refer to this website for the latest information.",
+          "linkLabel": "View Paper Sessions",
+          "tags": ["program", "paper sessions", "oral presentation", "poster presentation"]
+        }
+      },
+
+      "links": {
+        "zh": "program.html#paper-sessions",
+        "en": "program.html#paper-sessions"
+      },
+
+      "priority": 99,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-02T06:20:00+08:00",
+        "until": "2026-11-21T18:00:00+08:00"
+      },
+
+      "audience": ["author", "attendee"]
+    },
+    {
       "id": "remote-presentation-and-visa-letters",
       "type": "conference-update",
       "category": "conference",
