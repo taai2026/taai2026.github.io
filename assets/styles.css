@@ -2901,3 +2901,8 @@ a.partner-card:hover .partner-name {
 .faq-venue-links {
   margin: 0 0 1.75rem;
 }
+
+.shuttle-booking { margin: 1.5rem 0 0; }
+.shuttle-booking h3 { margin-bottom: .5rem; }
+.feature-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+.shuttle-caption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
