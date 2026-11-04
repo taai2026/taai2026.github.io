@@ -2405,6 +2405,22 @@ a.partner-card:hover .partner-name {
   border-radius: 6px;
 }
 
+.room-photos {
+  display: flex;
+  flex: none;
+  gap: 0.4rem;
+}
+
+.room-photos a {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.room-photos .room-photo {
+  width: 84px;
+}
+
 .fee-table.shuttle-table {
   min-width: 0;
 }
