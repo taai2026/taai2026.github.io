@@ -6,19 +6,19 @@
       "type": "program-update",
       "category": "speaker",
       "publishedAt": "2026-11-04T07:00:00+08:00",
-      "updatedAt": null,
+      "updatedAt": "2026-11-05T22:41:00+08:00",
       "status": "published",
 
       "i18n": {
         "zh": {
           "title": "TAAI 2026 四位主題演講講者：Philip S. Yu、曹昱、Ljiljana Trajkovic、Kazunori Komatani",
-          "summary": "TAAI 2026 邀請四位國際知名學者擔任主題演講講者。11 月 20 日：Prof. Philip S. Yu（美國伊利諾大學芝加哥分校）談 Riemannian 幾何與圖基礎模型，09:30–10:20；曹昱 研究員（中央研究院）談神經語音增強與評估，16:00–16:50。11 月 21 日：Prof. Ljiljana Trajkovic（加拿大西門菲莎大學）談 AI 驅動的網路流量異常偵測與資安，09:00–09:50；Prof. Kazunori Komatani（日本大阪大學）談對話系統的長短期使用者適應，15:40–16:30。地點為麗山廳 5 樓大會堂（時間為臺北時間 UTC+8）。講題摘要與講者簡介請見議程頁。",
+          "summary": "TAAI 2026 邀請四位國際知名學者擔任主題演講講者。11 月 20 日：Prof. Philip S. Yu（美國伊利諾大學芝加哥分校）談 Riemannian 幾何與圖基礎模型，09:30–10:20；曹昱 研究員（中央研究院）談神經語音增強與評估，16:10–17:00。11 月 21 日：Prof. Ljiljana Trajkovic（加拿大西門菲莎大學）談 AI 驅動的網路流量異常偵測與資安，09:00–09:50；Prof. Kazunori Komatani（日本大阪大學）談對話系統的長短期使用者適應，15:40–16:30。地點為麗山廳 5 樓大會堂（時間為臺北時間 UTC+8）。講題摘要與講者簡介請見議程頁。",
           "linkLabel": "查看主題演講講者與摘要",
           "tags": ["主題演講", "講者", "Philip S. Yu", "曹昱", "Ljiljana Trajkovic", "Kazunori Komatani", "議程"]
         },
         "en": {
           "title": "TAAI 2026 Keynote Speakers: Philip S. Yu, Yu Tsao, Ljiljana Trajkovic, and Kazunori Komatani",
-          "summary": "TAAI 2026 welcomes four distinguished keynote speakers. On November 20: Prof. Philip S. Yu (University of Illinois Chicago, USA) on Riemannian geometry for graph foundation models, 09:30–10:20; and Prof. Yu Tsao (Academia Sinica, Taiwan) on neural speech enhancement and assessment, 16:00–16:50. On November 21: Prof. Ljiljana Trajkovic (Simon Fraser University, Canada) on AI-driven network traffic analysis for anomaly detection and cybersecurity, 09:00–09:50; and Prof. Kazunori Komatani (The University of Osaka, Japan) on long- and short-term user adaptation in dialogue systems, 15:40–16:30. All keynotes are in the Plenary Hall (5F Lishan Hall); times are Asia/Taipei (UTC+8). Abstracts and biographies are on the Program page.",
+          "summary": "TAAI 2026 welcomes four distinguished keynote speakers. On November 20: Prof. Philip S. Yu (University of Illinois Chicago, USA) on Riemannian geometry for graph foundation models, 09:30–10:20; and Prof. Yu Tsao (Academia Sinica, Taiwan) on neural speech enhancement and assessment, 16:10–17:00. On November 21: Prof. Ljiljana Trajkovic (Simon Fraser University, Canada) on AI-driven network traffic analysis for anomaly detection and cybersecurity, 09:00–09:50; and Prof. Kazunori Komatani (The University of Osaka, Japan) on long- and short-term user adaptation in dialogue systems, 15:40–16:30. All keynotes are in the Plenary Hall (5F Lishan Hall); times are Asia/Taipei (UTC+8). Abstracts and biographies are on the Program page.",
           "linkLabel": "View keynote speakers and abstracts",
           "tags": ["keynote", "speakers", "Philip S. Yu", "Yu Tsao", "Ljiljana Trajkovic", "Kazunori Komatani", "program"]
         }
