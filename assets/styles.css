@@ -2549,6 +2549,19 @@ a.partner-card:hover .partner-name {
   border-left: 5px solid var(--blue);
 }
 
+.panel-card {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.panel-list {
+  margin: 0.2rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.panel-list li {
+  margin: 0.2rem 0;
+}
+
 .keynote-photo {
   width: 100%;
   height: auto;
@@ -2773,6 +2786,11 @@ a.partner-card:hover .partner-name {
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.4;
+}
+
+.ps-paper-title-alt {
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .ps-paper-authors {
