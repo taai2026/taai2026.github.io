@@ -2606,15 +2606,11 @@
       "topics": [
         {
           "topic": "nlp",
-          "count": 2
+          "count": 3
         },
         {
           "topic": "agents",
           "count": 2
-        },
-        {
-          "topic": "data-mining",
-          "count": 1
         },
         {
           "topic": "health",
@@ -2736,7 +2732,7 @@
             "Wei-Chen Huang",
             "Min-Yuh Day"
           ],
-          "topic": "data-mining",
+          "topic": "nlp",
           "keywords": [
             "SASB",
             "Sustainability Reporting",
