@@ -3,7 +3,7 @@
   "status": "tentative",
   "timezone": "Asia/Taipei",
   "utcOffset": "+08:00",
-  "generatedAt": "2026-11-05T21:49+08:00",
+  "generatedAt": "2026-11-09T12:00+08:00",
   "presentation": {
     "oralMinutes": 10,
     "oralTalkMinutes": 8,
@@ -565,11 +565,11 @@
       "chair": null,
       "topics": [
         {
-          "topic": "data-mining",
-          "count": 3
+          "topic": "games",
+          "count": 2
         },
         {
-          "topic": "games",
+          "topic": "data-mining",
           "count": 2
         },
         {
@@ -578,7 +578,7 @@
         },
         {
           "topic": "vision",
-          "count": 1
+          "count": 2
         }
       ],
       "papers": [
@@ -658,19 +658,21 @@
           "end": "2026-11-20T13:40+08:00"
         },
         {
-          "id": 209,
-          "title": "Calibrated Hierarchical Structured Decisions for SASB Compliance Evidence in Sustainability Reports",
+          "id": 204,
+          "title": "Historical Satellite Embedding Trajectories Provide Predictive Information About the Next Observed Embedding State",
           "authors": [
-            "Wei-Chen Huang",
-            "Min-Yuh Day"
+            "Vinicius Buri Lux"
           ],
-          "topic": "data-mining",
+          "topic": "vision",
           "keywords": [
-            "SASB",
-            "Sustainability Reporting",
-            "Hierarchical Structured Decisions",
-            "Compliance Evidence Classification",
-            "Threshold Calibration"
+            "Satellite Foundation Models",
+            "AlphaEarth",
+            "Geospatial Embeddings",
+            "Temporal Prediction",
+            "Trajectory Representation",
+            "Remote Sensing",
+            "Earth Observation",
+            "K-Nearest Neighbors"
           ],
           "order": 5,
           "start": "2026-11-20T13:40+08:00",
@@ -1826,7 +1828,7 @@
       "topics": [
         {
           "topic": "vision",
-          "count": 5
+          "count": 4
         }
       ],
       "papers": [
@@ -1911,27 +1913,6 @@
           "order": 4,
           "start": "2026-11-21T10:40+08:00",
           "end": "2026-11-21T10:50+08:00"
-        },
-        {
-          "id": 47,
-          "title": "基於 YOLO11m 之真菌影像辨識與高風險警示系統",
-          "authors": [
-            "羅聿凱",
-            "洪承凱",
-            "鄭立德",
-            "周融聖"
-          ],
-          "topic": "vision",
-          "keywords": [
-            "YOLO11",
-            "真菌辨識",
-            "物件偵測",
-            "深度學習",
-            "高風險警示"
-          ],
-          "order": 5,
-          "start": "2026-11-21T10:50+08:00",
-          "end": "2026-11-21T11:00+08:00"
         }
       ]
     },
@@ -2632,6 +2613,10 @@
           "count": 2
         },
         {
+          "topic": "data-mining",
+          "count": 1
+        },
+        {
           "topic": "health",
           "count": 1
         }
@@ -2743,6 +2728,25 @@
           "order": 5,
           "start": "2026-11-21T13:40+08:00",
           "end": "2026-11-21T13:50+08:00"
+        },
+        {
+          "id": 209,
+          "title": "Calibrated Hierarchical Structured Decisions for SASB Compliance Evidence in Sustainability Reports",
+          "authors": [
+            "Wei-Chen Huang",
+            "Min-Yuh Day"
+          ],
+          "topic": "data-mining",
+          "keywords": [
+            "SASB",
+            "Sustainability Reporting",
+            "Hierarchical Structured Decisions",
+            "Compliance Evidence Classification",
+            "Threshold Calibration"
+          ],
+          "order": 6,
+          "start": "2026-11-21T13:50+08:00",
+          "end": "2026-11-21T14:00+08:00"
         }
       ]
     },
