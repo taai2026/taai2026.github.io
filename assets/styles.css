@@ -885,6 +885,174 @@ section {
   }
 }
 
+/* Data tables on phones: each body row becomes a card and each cell shows
+   its column header (data-label, set by main.js). Header notes (.th-sub),
+   such as fee deadlines, are kept as a short legend above the cards. */
+@media (max-width: 640px) {
+  .table-wrap:has(> .stack-sm) {
+    margin-inline: 0;
+    border-radius: var(--radius);
+  }
+
+  .table-hint:has(+ .table-wrap > .stack-sm) {
+    display: none;
+  }
+
+  .fee-table.stack-sm {
+    min-width: 0;
+  }
+
+  .fee-table.stack-sm,
+  .stack-sm caption,
+  .stack-sm thead,
+  .stack-sm tbody,
+  .stack-sm tr,
+  .stack-sm th,
+  .stack-sm td {
+    display: block;
+  }
+
+  .fee-table.stack-sm caption,
+  .fee-table.stack-sm th:first-child,
+  .fee-table.stack-sm td:first-child {
+    position: static;
+    background: none;
+  }
+
+  .fee-table.stack-sm caption {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Without notes the header row only repeats the cell labels. */
+  .stack-sm thead {
+    display: none;
+  }
+
+  .stack-sm thead:has(.th-sub) {
+    display: block;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .fee-table.stack-sm thead th {
+    padding: 0.2rem 0;
+    border: 0;
+    background: none;
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+
+  .fee-table.stack-sm thead th:first-child {
+    display: none;
+  }
+
+  .fee-table.stack-sm .th-sub {
+    max-width: none;
+  }
+
+  .stack-sm tbody tr {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stack-sm tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .fee-table.stack-sm tbody th {
+    min-width: 0;
+    padding: 0 0 0.35rem;
+    border: 0;
+  }
+
+  .fee-table.stack-sm .group-row {
+    padding: 0;
+  }
+
+  .fee-table.stack-sm .group-row th {
+    padding: 0.55rem 1rem;
+  }
+
+  .fee-table.stack-sm td {
+    position: relative;
+    min-height: 1.6em;
+    padding: 0.3rem 0 0.3rem 44%;
+    border: 0;
+    color: var(--ink);
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .fee-table.stack-sm td.td-wrap {
+    min-width: 0;
+  }
+
+  .stack-sm td[data-label]::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0.3rem;
+    left: 0;
+    width: calc(44% - 0.75rem);
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+
+  .fee-table.stack-sm-top td {
+    padding: 0.5rem 0;
+  }
+
+  .fee-table.stack-sm-top td + td {
+    border-top: 1px dashed var(--line);
+  }
+
+  .stack-sm-top td[data-label]::before {
+    position: static;
+    display: block;
+    width: auto;
+    margin-bottom: 0.1rem;
+  }
+}
+
+/* Touch-sized filter chips and buttons (WCAG 2.5.5 / platform guidance). */
+@media (pointer: coarse) {
+  .news-chip-filter,
+  .faq-chip-filter,
+  .news-clear-btn,
+  .faq-clear-btn {
+    min-height: 44px;
+  }
+}
+
+/* Back to top — created by main.js on long pages. */
+.to-top {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .to-top:not([hidden]) {
+    position: fixed;
+    right: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    z-index: 40;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 10px 24px -12px rgba(12, 31, 42, 0.45);
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
 .fee-note {
   margin: 1.1rem 0 0;
   padding-left: 1.1rem;
@@ -2142,7 +2310,7 @@ a.partner-card:hover .partner-name {
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -2460,6 +2628,24 @@ a.partner-card:hover .partner-name {
 
   .room-cell > .room-photo {
     width: 72px;
+  }
+
+  .room-cell {
+    flex-wrap: wrap;
+  }
+
+  .room-photos {
+    flex-wrap: wrap;
+  }
+
+  .room-photos .room-photo {
+    width: 64px;
+  }
+
+  /* The room name already links to the same resort page. */
+  #room-guide .shuttle-table th:last-child,
+  #room-guide .shuttle-table td:last-child {
+    display: none;
   }
 }
 

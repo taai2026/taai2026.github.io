@@ -284,4 +284,60 @@
     window.addEventListener('hashchange', openFaqFromHash);
   }
 
+  /* ---- Data tables: label each cell with its column header so phones can
+     show rows as stacked cards (.stack-sm in styles.css). Without this
+     script the tables keep their horizontal scroll. ---- */
+  document.querySelectorAll('table.fee-table:not(.shuttle-table)').forEach(table => {
+    const head = table.tHead && table.tHead.rows[0];
+    if (!head) return;
+    const labels = [];
+    [...head.cells].forEach(th => {
+      const clone = th.cloneNode(true);
+      clone.querySelectorAll('.th-sub, .sr-only').forEach(n => n.remove());
+      const text = clone.textContent.replace(/\s+/g, ' ').trim();
+      for (let i = 0; i < th.colSpan; i++) labels.push(text);
+    });
+    let hasLongCell = false;
+    [...table.tBodies].forEach(body => [...body.rows].forEach(row => {
+      let col = 0;
+      [...row.cells].forEach(cell => {
+        if (cell.tagName === 'TD' && labels[col]) {
+          cell.dataset.label = labels[col];
+          if (cell.textContent.trim().length > 32) hasLongCell = true;
+        }
+        col += cell.colSpan;
+      });
+    }));
+    table.classList.add('stack-sm');
+    // Long answers read better with the label above the value.
+    if (hasLongCell) table.classList.add('stack-sm-top');
+  });
+
+  /* ---- Back to top (long pages, phones) ---- */
+  const main = document.getElementById('main-content');
+  if (main) {
+    const zh = (document.documentElement.lang || '').startsWith('zh');
+    const toTop = document.createElement('button');
+    toTop.type = 'button';
+    toTop.className = 'to-top';
+    toTop.setAttribute('aria-label', zh ? '回到頁首' : 'Back to top');
+    toTop.innerHTML = '<span aria-hidden="true">↑</span>';
+    toTop.hidden = true;
+    toTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0 });
+      main.focus({ preventScroll: true });
+    });
+    document.body.appendChild(toTop);
+    let ticking = false;
+    const updateToTop = () => {
+      ticking = false;
+      const longPage = document.documentElement.scrollHeight > window.innerHeight * 4;
+      toTop.hidden = !(longPage && window.scrollY > window.innerHeight * 2);
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(updateToTop); }
+    }, { passive: true });
+    updateToTop();
+  }
+
 })();
