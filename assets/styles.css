@@ -761,6 +761,9 @@ section {
 
 /* Fee tables */
 .table-wrap {
+  /* Containing block for .sr-only text inside the table, so it stays in
+     this scroller instead of widening the page on phones. */
+  position: relative;
   margin-top: 1.4rem;
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -2450,6 +2453,14 @@ a.partner-card:hover .partner-name {
   .fee-table.shuttle-table td {
     padding: 0.6rem 0.5rem;
   }
+
+  .room-cell {
+    gap: 0.6rem;
+  }
+
+  .room-cell > .room-photo {
+    width: 72px;
+  }
 }
 
 /* Venue photos */
@@ -2534,6 +2545,206 @@ a.partner-card:hover .partner-name {
   font-weight: 600;
   line-height: 1.4;
   white-space: normal;
+}
+
+/* Program at a glance — phones. The same table is restyled as a time-ordered
+   list of cards: each time slot is a sticky heading, each room cell a card
+   labelled with its room (data-room), and whole-conference breaks collapse
+   into a single line. Desktop and tablet keep the grid. */
+.glance-daynav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .program-glance {
+    --daynav-h: 3.75rem;
+  }
+
+  .glance-daynav {
+    position: sticky;
+    top: var(--nav-height);
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    height: var(--daynav-h);
+    padding: 0.45rem 0;
+    background: rgba(248, 247, 242, 0.96);
+    backdrop-filter: blur(6px);
+  }
+
+  .glance-daynav a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.4rem;
+    min-height: 44px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--blue);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .glance-daynav small {
+    color: var(--ink-soft);
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .program-glance .day-head {
+    scroll-margin-top: calc(var(--nav-height) + var(--daynav-h));
+  }
+
+  .program-glance .day-label {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .program-glance .table-hint {
+    display: none;
+  }
+
+  .glance-scroll {
+    overflow: visible;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .glance,
+  .glance tbody,
+  .glance tr,
+  .glance td {
+    display: block;
+  }
+
+  .glance {
+    width: auto;
+    min-width: 0;
+  }
+
+  .glance thead,
+  .glance .g-dup {
+    display: none;
+  }
+
+  .glance tr {
+    padding-bottom: 0.75rem;
+  }
+
+  .glance td,
+  .glance td:first-child {
+    position: relative;
+    padding: 0;
+    border: 0;
+    text-align: left;
+  }
+
+  .glance td.g-time {
+    position: sticky;
+    top: calc(var(--nav-height) + var(--daynav-h));
+    z-index: 2;
+    margin-bottom: 0.55rem;
+    padding: 0.5rem 0.15rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(248, 247, 242, 0.96);
+    backdrop-filter: blur(6px);
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .glance td:not(.g-time) {
+    --card-accent: var(--line);
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 0.9rem 0.75rem 1rem;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--card-accent);
+    border-radius: var(--radius);
+    background: #fff;
+  }
+
+  .glance td.g-plenary { --card-accent: var(--blue); background: #eef3fa; }
+  .glance td.g-social  { --card-accent: var(--sun);  background: #fdf3e2; }
+  .glance td.g-break   { --card-accent: var(--sun); }
+  .glance td.g-oral    { --card-accent: var(--blue-2); }
+  .glance td.g-poster  { --card-accent: var(--green-2); }
+  .glance td.g-special { --card-accent: var(--clay); }
+  .glance td.g-room-c  { --card-accent: #178a94; }
+  .glance td.g-room-d  { --card-accent: var(--violet); }
+
+  .glance td[data-room]::before {
+    content: attr(data-room);
+    display: block;
+    margin-bottom: 0.1rem;
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  /* Whole card is the tap target; the chevron marks cards that link. */
+  .glance td:not(.g-time):has(a) {
+    padding-right: 2.2rem;
+  }
+
+  .glance td:not(.g-time) a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  .glance td:not(.g-time):has(a)::after {
+    content: "›";
+    position: absolute;
+    top: 50%;
+    right: 0.85rem;
+    color: var(--blue);
+    font-size: 1.4rem;
+    line-height: 1;
+    transform: translateY(-50%);
+  }
+
+  .glance td:has(a:focus-visible) {
+    outline: 3px solid rgba(13, 74, 158, 0.38);
+    outline-offset: 2px;
+  }
+
+  .glance td a:focus-visible {
+    outline: none;
+  }
+
+  .glance .g-talk {
+    max-width: none;
+    margin: 0.2rem 0 0.15rem;
+  }
+
+  /* Slots that are one conference-wide break (check-in, coffee, lunch)
+     collapse to a single line instead of a heading plus an empty card. */
+  .glance tr:has(> td[colspan="6"]:not(.g-plenary):not(.g-social)) {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    margin-bottom: 0.75rem;
+    padding: 0.45rem 0.15rem;
+    border-bottom: 1px dashed var(--line);
+  }
+
+  .glance tr:has(> td[colspan="6"]:not(.g-plenary):not(.g-social)) > td {
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    backdrop-filter: none;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
 }
 
 .keynote-list {
