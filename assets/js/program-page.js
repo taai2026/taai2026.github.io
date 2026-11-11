@@ -659,9 +659,16 @@ async function init() {
     mineList.append(heading, list);
   }
 
+  // Shortcuts in the page hero: a search box and "My program". Both stay
+  // hidden without JavaScript, since the search tools they lead to need it.
+  const quickSearch = document.querySelector("[data-ps-quicksearch]");
+  const quickInput = quickSearch?.querySelector('input[name="q"]');
+  const quickMine = document.querySelector("[data-ps-quickmine]");
+
   const saveButtons = new Map();
   function syncSaved() {
     mineBtn.textContent = strings.mine(saved.size);
+    if (quickMine) quickMine.textContent = `★ ${strings.mine(saved.size)}`;
     exportBtn.disabled = saved.size === 0;
     saveButtons.forEach((button, id) => {
       const on = saved.has(id);
@@ -716,6 +723,27 @@ async function init() {
     if (events.length) downloadFile("taai2026-my-program.ics", buildIcs(events), "text/calendar;charset=utf-8");
   });
   syncSaved();
+
+  /** Jump from the hero to the search tools, leaving focus where typing continues. */
+  function goToSearch(focusEl) {
+    controls.scrollIntoView({ block: "start", behavior: "instant" });
+    focusEl.focus({ preventScroll: true });
+  }
+  quickSearch?.addEventListener("submit", event => {
+    event.preventDefault();
+    const q = quickInput.value.trim();
+    debouncedSearch.cancel();
+    showMine = false;
+    mineBtn.setAttribute("aria-pressed", "false");
+    mineList.hidden = true;
+    // A new search starts from the whole program, not from earlier filters.
+    if (q) setState({ q, in: "", day: "", type: "", topic: "" });
+    goToSearch(searchInput);
+  });
+  quickMine?.addEventListener("click", () => {
+    if (!showMine) mineBtn.click();
+    goToSearch(mineBtn);
+  });
 
   // ---------- Search beyond the paper list ----------
   const dateOf = d => (d === "1" ? "2026-11-20" : "2026-11-21");
@@ -859,8 +887,12 @@ async function init() {
   state = parseUrlState(window.location.search);
   syncControls();
   controls.hidden = false;
+  if (quickSearch) quickSearch.hidden = false;
+  if (quickMine) quickMine.hidden = false;
   await update();
   await revealHashTarget();
+  // #program-search was hidden when the browser tried to scroll to it.
+  if (window.location.hash === "#program-search") controls.scrollIntoView({ block: "start", behavior: "instant" });
 }
 
 // Pure helpers, exposed for tests.
