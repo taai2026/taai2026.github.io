@@ -2950,9 +2950,12 @@ a.partner-card:hover .partner-name {
   grid-template-columns: minmax(0, 1fr);
 }
 
+/* Same size and tone as the moderator line (.keynote-affil). */
 .panel-list {
   margin: 0.2rem 0 0;
   padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
 }
 
 .panel-list li {
@@ -3143,6 +3146,12 @@ a.partner-card:hover .partner-name {
   font-size: 0.85rem;
 }
 
+.ps-chair a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .ps-papers {
   margin: 0;
   padding: 0;
@@ -3252,6 +3261,351 @@ a.partner-card:hover .partner-name {
 
 .ps-paper-id:hover {
   text-decoration: underline;
+}
+
+/* Author affiliations on each paper card: numbered and listed once
+   (ACM/IEEE style), in a smaller grey line under the authors. */
+.ps-aff-ref,
+.ps-aff-item sup {
+  margin-left: 0.05em;
+  color: var(--ink-soft);
+  font-size: 0.68em;
+  line-height: 0;
+}
+
+.ps-paper-affils {
+  margin-top: 0.1rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.ps-aff-item {
+  display: inline-block; /* keep each number with its affiliation */
+  margin-right: 0.6rem;
+}
+
+.ps-aff-item:last-child {
+  margin-right: 0;
+}
+
+.ps-aff-item sup {
+  margin: 0 0.15em 0 0;
+}
+
+.ps-aff[role="button"] {
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.ps-aff[role="button"]:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ps-aff[role="button"]:focus-visible {
+  outline: 2px solid rgba(13, 74, 158, 0.5);
+  outline-offset: 1px;
+}
+
+/* Abstract: a 3-line preview that program-page.js can expand. Without
+   JavaScript (no .is-clamped) the whole abstract is shown. */
+.ps-abstract-box {
+  margin-top: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  border-left: 3px solid rgba(13, 74, 158, 0.22);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: rgba(13, 74, 158, 0.035);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.ps-paper-body .ps-abstract-label {
+  margin-bottom: 0.1rem;
+  color: var(--ink);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.ps-paper-body .ps-abstract {
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.ps-paper-body .ps-abstract:last-child {
+  margin-bottom: 0;
+}
+
+.ps-abstract-box.is-clamped .ps-abstract-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.ps-abstract-box.is-clamped .ps-abstract {
+  display: inline;
+}
+
+.ps-abstract-box.is-clamped .ps-abstract + .ps-abstract::before {
+  content: " ";
+}
+
+.ps-abstract-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 32px;
+  margin-top: 0.15rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--blue);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ps-abstract-toggle::after {
+  content: "▾";
+  transition: transform 0.15s ease;
+}
+
+.ps-abstract-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.ps-abstract-toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ps-abstract-toggle:focus-visible {
+  outline: 2px solid rgba(13, 74, 158, 0.5);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+@media (pointer: coarse) {
+  .ps-abstract-toggle {
+    min-height: 44px;
+  }
+}
+
+/* English page: Chinese author names followed by the author's own English spelling. */
+.ps-author-latin {
+  color: var(--ink-soft);
+}
+
+/* Phones: keep cards to title, authors and affiliations. Keywords move below
+   the abstract and appear when it is expanded (always shown without JS). */
+@media (max-width: 640px) {
+  .ps-paper-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ps-paper-body > .ps-abstract-box {
+    order: 4;
+  }
+
+  .ps-paper-body > .ps-paper-keywords {
+    order: 5;
+    margin-top: 0.4rem;
+  }
+
+  .ps-paper:has(.ps-abstract-box.is-clamped) .ps-paper-keywords {
+    display: none;
+  }
+}
+
+/* My program: save buttons, filter and calendar export. */
+.ps-save,
+.ps-session-ics {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--blue);
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.ps-save[aria-pressed="true"] {
+  border-color: var(--sun);
+  background: rgba(232, 168, 56, 0.16);
+  color: #8a5a00;
+}
+
+.ps-save:hover,
+.ps-session-ics:hover {
+  border-color: var(--blue);
+}
+
+.ps-save:focus-visible,
+.ps-session-ics:focus-visible {
+  outline: 2px solid rgba(13, 74, 158, 0.5);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .ps-save,
+  .ps-session-ics {
+    min-height: 36px;
+  }
+}
+
+.ps-mine-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.6rem;
+  margin: 0.6rem 0 0.2rem;
+}
+
+.ps-mine-toggle[aria-pressed="true"] {
+  color: #fff;
+  background: var(--sun);
+  border-color: var(--sun);
+}
+
+.ps-export-ics:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ps-mine-hint {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.ps-mine-list {
+  flex-basis: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(232, 168, 56, 0.45);
+  border-radius: var(--radius);
+  background: rgba(232, 168, 56, 0.07);
+  font-size: 0.86rem;
+}
+
+.ps-mine-list:empty {
+  display: none;
+}
+
+.ps-mine-list-title {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+}
+
+.ps-mine-list ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.ps-mine-list li {
+  margin: 0.35rem 0;
+  line-height: 1.45;
+}
+
+.ps-mine-when {
+  display: block;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.ps-mine-list a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.ps-mine-where {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+/* Search results outside the paper list (keynotes, invited talks, high-school
+   papers, partner events, timetable-only sessions). */
+.ps-other-results {
+  margin: 0.6rem 0 0.2rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(13, 74, 158, 0.25);
+  border-radius: var(--radius);
+  background: rgba(13, 74, 158, 0.04);
+  font-size: 0.86rem;
+}
+
+.ps-other-title {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+}
+
+.ps-other-results ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ps-other-results li {
+  margin: 0.5rem 0;
+  line-height: 1.45;
+}
+
+.ps-other-results a {
+  display: block;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.ps-other-kind {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: rgba(13, 74, 158, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.ps-other-results .ps-mine-when {
+  display: inline;
+}
+
+.ps-other-keynote { background: rgba(13, 74, 158, 0.14); }
+.ps-other-invited { background: rgba(23, 138, 148, 0.16); color: #0f6b73; }
+.ps-other-high-school { background: rgba(123, 185, 63, 0.2); color: var(--green); }
+.ps-other-partner { background: rgba(110, 86, 180, 0.16); color: var(--violet); }
+.ps-other-other { background: rgba(12, 31, 42, 0.08); color: var(--ink-soft); }
+
+@media print {
+  .ps-save, .ps-session-ics, .ps-mine-row { display: none !important; }
+}
+
+.ps-paper-title.ps-title-toggle {
+  cursor: pointer;
+}
+
+.ps-paper-title.ps-title-toggle:hover {
+  color: var(--blue);
+}
+
+@media print {
+  .ps-abstract-box.is-clamped .ps-abstract-text { display: block; overflow: visible; -webkit-line-clamp: unset; line-clamp: none; }
+  .ps-abstract-box.is-clamped .ps-abstract { display: block; }
+  .ps-abstract-toggle { display: none; }
 }
 
 .ps-target {
