@@ -1,0 +1,1420 @@
+{
+  "source": "Camera-ready PDFs (first page), checked 2026-11-11",
+  "note": "Authors and affiliations as printed on each camera-ready PDF. Applied on top of program.json and paper-details.json by build-program-json.py and build-paper-details.py, so regenerating from OpenReview keeps these corrections.",
+  "affiliationFixes": {
+    "National Tsinghua University": "National Tsing Hua University",
+    "Department of Computer Science, National Tsing Hua University, National Tsinghua University": "National Tsing Hua University",
+    "Dalian Martime University": "Dalian Maritime University",
+    "nutc": "National Taichung University of Science and Technology",
+    "Universiti Malaya": "University of Malaya",
+    "The University of Electro-Communications, Tokyo, University of Electro-Communications": "The University of Electro-Communications",
+    "University of Electro-Communications": "The University of Electro-Communications",
+    "Chao Yang University of Science and Technology": "Chaoyang University of Technology",
+    "Gryphon Center for A.I.": "Gryphon Center for Artificial Intelligence and Theoretical Sciences",
+    "Fachhochschule Stuttgart, Hochschule der Medien": "Hochschule der Medien",
+    "CMU, Carnegie Mellon University": "Carnegie Mellon University",
+    "National University of Tainan (NUTN)": "National University of Tainan",
+    "TaTung University": "Tatung University",
+    "Independent": "Independent Researcher"
+  },
+  "papers": {
+    "4": {
+      "authors": [
+        "洪士程",
+        "王俊詠"
+      ],
+      "affiliations": [
+        "朝陽科技大學資訊工程系",
+        "朝陽科技大學資訊工程系"
+      ]
+    },
+    "5": {
+      "authors": [
+        "洪士程",
+        "李耕維"
+      ],
+      "affiliations": [
+        "朝陽科技大學資訊工程系",
+        "朝陽科技大學資訊工程系"
+      ]
+    },
+    "6": {
+      "authors": [
+        "洪士程",
+        "李常遠"
+      ],
+      "affiliations": [
+        "朝陽科技大學資訊工程系",
+        "朝陽科技大學資訊工程系"
+      ]
+    },
+    "7": {
+      "authors": [
+        "洪士程",
+        "賴胤佑"
+      ],
+      "affiliations": [
+        "朝陽科技大學資訊工程系",
+        "朝陽科技大學資訊工程系"
+      ]
+    },
+    "8": {
+      "authors": [
+        "陳勇行",
+        "鄧皓允"
+      ],
+      "affiliations": [
+        "臺北市政府警察局刑事警察大隊科技犯罪偵查隊；國立中央大學資訊管理學系",
+        "內政部警政署刑事警察局"
+      ]
+    },
+    "9": {
+      "authors": [
+        "賴明如",
+        "劉安萱",
+        "林裕仁"
+      ],
+      "affiliations": [
+        "國立清華大學數理教育研究所",
+        "元培醫事科技大學",
+        "國立清華大學數理教育研究所"
+      ]
+    },
+    "17": {
+      "authors": [
+        "廖偉煊",
+        "饒建奇"
+      ],
+      "affiliations": [
+        "淡江大學電機工程學系人工智慧物聯網組",
+        "淡江大學電機工程學系"
+      ]
+    },
+    "20": {
+      "authors": [
+        "梁文瀚",
+        "潘欣泰"
+      ],
+      "affiliations": [
+        "國立高雄大學資訊工程學系",
+        "國立高雄大學資訊工程學系"
+      ]
+    },
+    "22": {
+      "authors": [
+        "姜柏仰",
+        "吳宜鴻"
+      ],
+      "affiliations": [
+        "中原大學資訊工程學系",
+        "中原大學資訊工程學系"
+      ]
+    },
+    "23": {
+      "authors": [
+        "Zhenzhong Duan",
+        "Junjie Shan",
+        "Megumi Yasuo",
+        "Yoko Nishihara"
+      ]
+    },
+    "25": {
+      "authors": [
+        "顏俊儀",
+        "劉立頌",
+        "林士程",
+        "陳佑誠",
+        "黃信睿"
+      ],
+      "affiliations": [
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所"
+      ]
+    },
+    "26": {
+      "authors": [
+        "Zih-Sian Yang",
+        "Yi-Hao Chen",
+        "Yu-Te Kuan",
+        "Cheng-Jui Wu",
+        "Chuang-Chieh Lin",
+        "Po-An Chen"
+      ],
+      "affiliations": [
+        "National Taiwan Ocean University",
+        "National Taiwan Ocean University",
+        "National Taiwan Ocean University",
+        "National Taiwan Ocean University",
+        "National Taiwan Ocean University",
+        "National Yang Ming Chiao Tung University"
+      ]
+    },
+    "28": {
+      "authors": [
+        "林芳螢",
+        "黃文楨"
+      ],
+      "affiliations": [
+        "國立高雄科技大學資訊管理所",
+        "國立高雄科技大學資訊管理所"
+      ]
+    },
+    "29": {
+      "authors": [
+        "張祐齊",
+        "吳孟倫"
+      ],
+      "affiliations": [
+        "淡江大學資訊工程學系",
+        "淡江大學資訊工程學系"
+      ]
+    },
+    "31": {
+      "authors": [
+        "黃嘉瑜",
+        "劉錦燕",
+        "吳茹婷",
+        "何浩瑋",
+        "黃健峯"
+      ],
+      "affiliations": [
+        "國立高雄大學資訊工程學系",
+        "國立高雄大學資訊工程學系",
+        "國立高雄大學資訊工程學系",
+        "亞馬遜公司",
+        "國立高雄大學資訊工程學系"
+      ]
+    },
+    "34": {
+      "authors": [
+        "黃柏熏",
+        "杜明道",
+        "吳孟倫"
+      ],
+      "affiliations": [
+        "淡江大學資訊工程學系",
+        "淡江大學資訊工程學系",
+        "淡江大學資訊工程學系"
+      ]
+    },
+    "36": {
+      "affiliations": [
+        "National Institute of Technology, Tokyo College",
+        "National Institute of Technology, Tokyo College",
+        "National Rehabilitation Center for Persons with Disabilities",
+        "Kyorin University",
+        "National Institute of Technology, Tokyo College"
+      ]
+    },
+    "37": {
+      "affiliations": [
+        "National Taiwan University",
+        "National Taiwan University"
+      ]
+    },
+    "38": {
+      "authors": [
+        "Zhi-Ying Wang",
+        "Hsuan-Yu Liu",
+        "Chun-Yao Lin",
+        "Wen-Hsien Huang",
+        "Chia-Hui Chang"
+      ],
+      "affiliations": [
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University"
+      ]
+    },
+    "46": {
+      "authors": [
+        "林采蓁",
+        "鄭錦桐",
+        "黃瑞賢",
+        "陳亭佑",
+        "吳笙緯",
+        "蘇宗正",
+        "陳致言"
+      ],
+      "affiliations": [
+        "興創知能股份有限公司",
+        "興創知能股份有限公司",
+        "興創知能股份有限公司",
+        "興創知能股份有限公司",
+        "興創知能股份有限公司",
+        "經濟部地質調查及礦業管理中心",
+        "經濟部地質調查及礦業管理中心"
+      ]
+    },
+    "49": {
+      "authors": [
+        "王柏甯",
+        "吳宜鴻"
+      ],
+      "affiliations": [
+        "中原大學資訊工程系",
+        "中原大學資訊工程系"
+      ]
+    },
+    "57": {
+      "authors": [
+        "Junjie Shan",
+        "Jianrui Yan",
+        "Yoko Nishihara",
+        "Yangdi Ni",
+        "Zhenzhong Duan"
+      ],
+      "affiliations": [
+        "Ritsumeikan University",
+        "Ritsumeikan University",
+        "Ritsumeikan University",
+        "Ritsumeikan University",
+        "Ritsumeikan University"
+      ]
+    },
+    "58": {
+      "authors": [
+        "吳怡臻",
+        "黃璿羽",
+        "梁易軒",
+        "張育倫",
+        "林守毅",
+        "李俊賢"
+      ],
+      "affiliations": [
+        "國立中央大學客家語文暨社會科學學系",
+        "國立中央大學客家語文暨社會科學學系",
+        "國立中央大學客家語文暨社會科學學系",
+        "國立中央大學企業管理學系",
+        "國立中央大學企業管理學系",
+        "國立中央大學資訊管理學系"
+      ]
+    },
+    "60": {
+      "affiliations": [
+        "National Taipei University",
+        "National Taipei University",
+        "Taichung Municipal Dongshan Senior High School",
+        "National Taipei University",
+        "Hochschule Bonn-Rhein-Sieg"
+      ]
+    },
+    "61": {
+      "authors": [
+        "何念慈",
+        "洪詠煜",
+        "曾俊諭",
+        "顏士淨"
+      ],
+      "affiliations": [
+        "國立東華大學資訊工程學系",
+        "國立東華大學資訊工程學系",
+        "國立東華大學資訊工程學系",
+        "國立東華大學資訊工程學系"
+      ]
+    },
+    "62": {
+      "authors": [
+        "Yangdi Ni",
+        "Junjie Shan",
+        "Megumi Yasuo",
+        "Yoko Nishihara"
+      ]
+    },
+    "64": {
+      "authors": [
+        "Hao Chun Kao",
+        "Chao Zong Wang",
+        "Yu Han Huang"
+      ]
+    },
+    "66": {
+      "authors": [
+        "Yu-Yang Huang",
+        "Chirag Jindal",
+        "Mochamad Fakhri Andian",
+        "Po-Yu Chen",
+        "Kippei Ando",
+        "Le Anh Kiet",
+        "Po-Wei Harn"
+      ],
+      "affiliations": [
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University"
+      ]
+    },
+    "67": {
+      "affiliations": [
+        "National University of Tainan",
+        "National University of Tainan",
+        "National University of Tainan"
+      ]
+    },
+    "68": {
+      "authors": [
+        "Ping-Chen Chung",
+        "Nguyen Huynh Phuoc Thien",
+        "Pei-Hua Tsai",
+        "Hsuan-Cheng Chu",
+        "Po-Wei Harn"
+      ],
+      "affiliations": [
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "National Central University"
+      ]
+    },
+    "69": {
+      "affiliations": [
+        "National Taiwan University",
+        "National Taiwan University",
+        "National Taiwan University",
+        "National Taiwan University",
+        "National Taiwan University"
+      ]
+    },
+    "72": {
+      "affiliations": [
+        "National Dong Hwa University",
+        "National Dong Hwa University",
+        "National Dong Hwa University"
+      ]
+    },
+    "73": {
+      "authors": [
+        "Bifu Ohishi",
+        "Megumi Yasuo",
+        "Junjie Shan",
+        "Yoko Nishihara"
+      ]
+    },
+    "75": {
+      "authors": [
+        "Konosuke Tada",
+        "Junjie Shan",
+        "Megumi Yasuo",
+        "Yoko Nishihara"
+      ]
+    },
+    "76": {
+      "authors": [
+        "Tsung-Yu Wu",
+        "Bo-Gang Chen",
+        "Chia-Yu Chiu",
+        "Tzer-En Nee",
+        "Jyh-Kwei CHEN"
+      ],
+      "affiliations": [
+        "Chang Gung University",
+        "Chang Gung University",
+        "Chang Gung University",
+        "Chang Gung University",
+        "Linkou Chang Gung Memorial Hospital"
+      ]
+    },
+    "77": {
+      "authors": [
+        "Hua-You Chen",
+        "Po-Cheng Chen",
+        "Chinyang Henry Tseng"
+      ]
+    },
+    "78": {
+      "authors": [
+        "沈奕昕",
+        "葉采瑩",
+        "戴婕伊",
+        "李哲瑋"
+      ],
+      "affiliations": [
+        "國立高雄師範大學軟體工程與管理學系",
+        "國立高雄師範大學軟體工程與管理學系",
+        "國立高雄師範大學軟體工程與管理學系",
+        "國立高雄師範大學軟體工程與管理學系"
+      ]
+    },
+    "79": {
+      "authors": [
+        "賴瑋宥",
+        "劉立頌",
+        "劉育銨"
+      ],
+      "affiliations": [
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所",
+        "國立中正大學電機工程研究所"
+      ]
+    },
+    "80": {
+      "authors": [
+        "簡瑋霆",
+        "吳宜鴻"
+      ],
+      "affiliations": [
+        "中原大學資訊工程學系",
+        "中原大學資訊工程學系"
+      ]
+    },
+    "83": {
+      "authors": [
+        "張晉瑋",
+        "黃意婷"
+      ],
+      "affiliations": [
+        "國立臺灣科技大學電機工程系",
+        "國立臺灣科技大學電機工程系"
+      ]
+    },
+    "84": {
+      "authors": [
+        "吳常熙",
+        "廖鈞義"
+      ],
+      "affiliations": [
+        "龍華科技大學電子工程系",
+        "龍華科技大學電子工程系"
+      ]
+    },
+    "85": {
+      "authors": [
+        "Chao-Chun Chuang",
+        "Chih-Min Yao",
+        "Tsui-Mei Lee",
+        "Yi-Ni Liu"
+      ],
+      "affiliations": [
+        "National Institutes of Applied Research",
+        "National Institutes of Applied Research",
+        "National Institutes of Applied Research",
+        "Chung Shan Medical University"
+      ]
+    },
+    "86": {
+      "authors": [
+        "Melvin Liew Lip Wei",
+        "Cheng-Tso Chiang",
+        "Hao-Ming Hung",
+        "Lieu-Hen Chen"
+      ]
+    },
+    "88": {
+      "authors": [
+        "Mai Xuan Ha",
+        "Le Chanh Thanh Tin",
+        "Aquata Theodora Thyme",
+        "Po-Wei Harn"
+      ]
+    },
+    "89": {
+      "authors": [
+        "蔡尹瑜",
+        "陳榮銘"
+      ],
+      "affiliations": [
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系"
+      ]
+    },
+    "90": {
+      "authors": [
+        "蔣典宸",
+        "王翊宇",
+        "吳芷瑩",
+        "陳映瑄",
+        "鄭秋艷",
+        "李彩儀",
+        "翁政雄"
+      ],
+      "affiliations": [
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系",
+        "國立彰化師範大學資訊管理學系"
+      ]
+    },
+    "94": {
+      "affiliations": [
+        "National Chengchi University",
+        "National Chengchi University"
+      ]
+    },
+    "96": {
+      "authors": [
+        "Jheng-Lin Lin",
+        "Zong-Ying Shen",
+        "Chung-Chuan Lo",
+        "Ya-Tang Yang"
+      ],
+      "affiliations": [
+        "National Tsing Hua University",
+        "National Tsing Hua University",
+        "National Tsing Hua University",
+        "National Tsing Hua University"
+      ]
+    },
+    "97": {
+      "authors": [
+        "Chien-Liang Liu",
+        "Bo-Jyun Wang",
+        "Shayan Kordi",
+        "Shu-Wei Huang",
+        "Yu-Chung Wang",
+        "Kwei-Jay Lin",
+        "Ying-Feng Chang"
+      ],
+      "affiliations": [
+        "Chang Gung University",
+        "Chang Gung University",
+        "Chang Gung University",
+        "New Taipei Municipal Tucheng Hospital",
+        "Chang Gung University",
+        "Chang Gung University",
+        "Chang Gung University"
+      ]
+    },
+    "99": {
+      "authors": [
+        "黃政傑",
+        "邱恩芹",
+        "林佑彬",
+        "彭進德"
+      ],
+      "affiliations": [
+        "偲愷動力股份有限公司",
+        "元智大學國企系",
+        "財團法人資訊工業策進會",
+        "偲愷動力股份有限公司"
+      ]
+    },
+    "100": {
+      "authors": [
+        "謝易錚",
+        "蒙諺勳"
+      ],
+      "affiliations": [
+        "國立臺灣科技大學電機工程系",
+        "國立臺灣科技大學電機工程系"
+      ]
+    },
+    "101": {
+      "authors": [
+        "翁政雄",
+        "楊惟麟",
+        "施丞澤"
+      ],
+      "affiliations": [
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊工程學系"
+      ]
+    },
+    "104": {
+      "affiliations": [
+        "Kansai University",
+        "Kansai University",
+        "Kansai University"
+      ]
+    },
+    "107": {
+      "authors": [
+        "劉冠廷",
+        "黃意婷"
+      ],
+      "affiliations": [
+        "國立臺灣科技大學電機工程系",
+        "國立臺灣科技大學電機工程系"
+      ]
+    },
+    "108": {
+      "affiliations": [
+        "Yuan Ze University",
+        "Yuan Ze University",
+        "Yuan Ze University",
+        "Yuan Ze University",
+        "Yuan Ze University",
+        "Yuan Ze University"
+      ]
+    },
+    "109": {
+      "authors": [
+        "許倖諴",
+        "季祖明",
+        "邱禹瑞",
+        "劉彥瑋",
+        "楊珮菁"
+      ],
+      "affiliations": [
+        "長榮大學資訊工程學系",
+        "長榮大學資訊工程學系",
+        "長榮大學資訊工程學系",
+        "長榮大學資訊工程學系",
+        "長榮大學資訊工程學系；長榮大學人工智慧研究中心"
+      ]
+    },
+    "110": {
+      "affiliations": [
+        "National Central University",
+        "National Central University",
+        "National Central University",
+        "Tokyo Metropolitan University",
+        "Auburn University"
+      ]
+    },
+    "112": {
+      "affiliations": [
+        "National Chung Hsing University",
+        "National Chung Hsing University",
+        "National Chung Hsing University",
+        "National Chung Hsing University"
+      ]
+    },
+    "114": {
+      "authors": [
+        "Fan-Yu Pu",
+        "Shiou-Chi Li",
+        "Jen-Wei Huang"
+      ]
+    },
+    "117": {
+      "authors": [
+        "陳廷鈞",
+        "謝文川",
+        "龔千芬"
+      ],
+      "affiliations": [
+        "國立高雄科技大學智慧商務系",
+        "國立高雄科技大學智慧商務系",
+        "國立高雄科技大學智慧商務系"
+      ]
+    },
+    "118": {
+      "authors": [
+        "蘇敬堯",
+        "陳思穎",
+        "林和宇",
+        "謝宗澔"
+      ],
+      "affiliations": [
+        "東海大學資訊工程學系",
+        "東海大學資訊工程學系",
+        "東海大學資訊工程學系",
+        "東海大學資訊工程學系"
+      ]
+    },
+    "119": {
+      "authors": [
+        "翁政雄",
+        "于永庭",
+        "林易叡",
+        "陳盈智",
+        "李文愷",
+        "洪煜傑",
+        "江承紘"
+      ],
+      "affiliations": [
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系",
+        "國立彰化師範大學資訊管理系"
+      ]
+    },
+    "121": {
+      "authors": [
+        "林鈺耀",
+        "陳履恒",
+        "洪晧銘",
+        "吳曉光"
+      ],
+      "affiliations": [
+        "國立暨南國際大學資訊工程學系",
+        "國立暨南國際大學資訊工程學系",
+        "國立暨南國際大學資訊工程學系",
+        "國立中央大學資訊工程學系"
+      ]
+    },
+    "122": {
+      "authors": [
+        "Pradeep Marimuthu",
+        "Yu-Sung Liu"
+      ]
+    },
+    "126": {
+      "affiliations": [
+        "National Yang Ming Chiao Tung University",
+        "National Yang Ming Chiao Tung University",
+        "National Yang Ming Chiao Tung University"
+      ]
+    },
+    "128": {
+      "affiliations": [
+        "National Chengchi University",
+        "National Chengchi University",
+        "National Chengchi University"
+      ]
+    },
+    "130": {
+      "authors": [
+        "彭姿穎",
+        "張乃文",
+        "陳榮銘"
+      ],
+      "affiliations": [
+        "國立臺南大學資訊工程學系",
+        "國立臺灣大學醫學院附設醫院醫學研究部",
+        "國立臺南大學資訊工程學系"
+      ]
+    },
+    "132": {
+      "authors": [
+        "郭馨妤",
+        "王佳佳",
+        "林其誼"
+      ],
+      "affiliations": [
+        "淡江大學資訊工程學系",
+        "淡江大學資訊工程學系",
+        "淡江大學資訊工程學系"
+      ]
+    },
+    "133": {
+      "affiliations": [
+        "Yuan Ze University",
+        "National Taipei University",
+        "National Taipei University of Nursing and Health Sciences",
+        "National Taipei University",
+        "National Taipei University",
+        "Yuan Ze University",
+        "National Sun Yat-sen University"
+      ]
+    },
+    "134": {
+      "authors": [
+        "蘇奇威",
+        "薛筑軒",
+        "簡暐哲"
+      ],
+      "affiliations": [
+        "國立東華大學",
+        "北陸先端科學技術大學院大學",
+        "國立東華大學"
+      ]
+    },
+    "135": {
+      "affiliations": [
+        "Beijing Normal-Hong Kong Baptist University",
+        "Beijing Normal-Hong Kong Baptist University",
+        "Beijing Normal-Hong Kong Baptist University",
+        "Dalian Maritime University",
+        "National Chung Hsing University",
+        "Beijing Normal-Hong Kong Baptist University"
+      ]
+    },
+    "136": {
+      "authors": [
+        "吳函諺",
+        "楊翔丞",
+        "沈宏霖",
+        "劉嘉慶",
+        "黃詠浚"
+      ],
+      "affiliations": [
+        "亞洲大學資訊工程學系",
+        "亞洲大學資訊工程學系",
+        "亞洲大學資訊工程學系",
+        "亞洲大學資訊工程學系",
+        "亞洲大學資訊工程學系"
+      ]
+    },
+    "140": {
+      "authors": [
+        "林鈺耀",
+        "陳履恒",
+        "曾俊杰",
+        "陳心瑋",
+        "李健興"
+      ],
+      "affiliations": [
+        "國立暨南國際大學資訊工程學系",
+        "國立暨南國際大學資訊工程學系",
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系"
+      ]
+    },
+    "144": {
+      "authors": [
+        "黃彥皓",
+        "陳冠佑",
+        "陳柏儒"
+      ],
+      "affiliations": [
+        "國立臺東大學綠能與資訊科技學系",
+        "國立臺東大學綠能與資訊科技學系",
+        "國立臺東大學綠能與資訊科技學系"
+      ]
+    },
+    "145": {
+      "authors": [
+        "Yu Rui Shi",
+        "Zong Xin Lin",
+        "Yi Syuan Lu",
+        "Cheng Shun Lee"
+      ],
+      "affiliations": [
+        "R.O.C. Military Academy",
+        "R.O.C. Military Academy",
+        "R.O.C. Military Academy",
+        "R.O.C. Military Academy; National Cheng Kung University"
+      ]
+    },
+    "150": {
+      "authors": [
+        "Quan-Quan Yang",
+        "Yu-Fu Huang",
+        "Yoke-Hou Tan"
+      ],
+      "affiliations": [
+        "Chung Yuan Christian University",
+        "Chung Yuan Christian University",
+        "Chung Yuan Christian University"
+      ]
+    },
+    "151": {
+      "authors": [
+        "鐘培嘉",
+        "曾金宏",
+        "蘇奕安",
+        "陳榮銘"
+      ],
+      "affiliations": [
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系",
+        "國立臺南大學資訊工程學系"
+      ]
+    },
+    "152": {
+      "authors": [
+        "陳禹璋",
+        "謝文川"
+      ],
+      "affiliations": [
+        "國立高雄科技大學智慧商務系",
+        "國立高雄科技大學智慧商務系"
+      ]
+    },
+    "157": {
+      "authors": [
+        "練姸伶",
+        "李翊嘉",
+        "曾秀雲",
+        "王雅書",
+        "凃瀞珽"
+      ],
+      "affiliations": [
+        "國立中興大學資料科學與資訊計算研究所",
+        "國立中興大學資料科學與資訊計算研究所",
+        "實踐大學社會工作學系",
+        "國立中興大學應用數學系",
+        "國立中興大學資料科學與資訊計算研究所"
+      ]
+    },
+    "160": {
+      "authors": [
+        "陳薇如"
+      ],
+      "affiliations": [
+        "東海大學法律學系"
+      ]
+    },
+    "161": {
+      "affiliations": [
+        "Chaoyang University of Technology",
+        "Chaoyang University of Technology",
+        "Chaoyang University of Technology",
+        "Chaoyang University of Technology"
+      ]
+    },
+    "163": {
+      "authors": [
+        "Cheng-Yan Cai",
+        "Yuan-Chin Tu",
+        "You-Jia Huang",
+        "Chen-En Chien",
+        "Huan-Yu Chen"
+      ],
+      "affiliations": [
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology"
+      ]
+    },
+    "165": {
+      "authors": [
+        "金石開",
+        "袁佳慶"
+      ],
+      "affiliations": [
+        "嶺東科技大學資訊科技系",
+        "嶺東科技大學資訊科技系"
+      ]
+    },
+    "166": {
+      "affiliations": [
+        "Gamania Digital Entertainment Co., Ltd.",
+        "Gamania Digital Entertainment Co., Ltd.",
+        "Gamania Digital Entertainment Co., Ltd."
+      ]
+    },
+    "168": {
+      "authors": [
+        "高哲凱",
+        "林上文",
+        "凃靜珽"
+      ],
+      "affiliations": [
+        "國立中興大學資料科學與資訊計算研究所",
+        "國立中興大學資料科學與資訊計算研究所",
+        "國立中興大學資料科學與資訊計算研究所"
+      ]
+    },
+    "169": {
+      "authors": [
+        "Zong-Ye Li",
+        "Weiyang He",
+        "Chip-Hong Chang"
+      ]
+    },
+    "170": {
+      "authors": [
+        "黃筱婷",
+        "白文君",
+        "劉子安",
+        "吳宜鴻"
+      ],
+      "affiliations": [
+        "中原大學資訊工程學系",
+        "中原大學資訊工程學系",
+        "中原大學資訊工程學系",
+        "中原大學資訊工程學系"
+      ]
+    },
+    "171": {
+      "affiliations": [
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology",
+        "National Taichung University of Science and Technology"
+      ]
+    },
+    "173": {
+      "affiliations": [
+        "DatumND"
+      ]
+    },
+    "176": {
+      "authors": [
+        "李佳芸",
+        "黃芷婕",
+        "蘇明祥"
+      ],
+      "affiliations": [
+        "東吳大學資料科學系",
+        "東吳大學資料科學系",
+        "東吳大學資料科學系"
+      ]
+    },
+    "179": {
+      "authors": [
+        "Mao-Hsiu Hsu",
+        "Po-Chia Chuang"
+      ],
+      "affiliations": [
+        "National Formosa University",
+        "National Formosa University"
+      ]
+    },
+    "181": {
+      "affiliations": [
+        "King Mongkut's Institute of Technology Ladkrabang",
+        "Hochschule der Medien",
+        "King Mongkut's Institute of Technology Ladkrabang",
+        "Hochschule der Medien"
+      ]
+    },
+    "183": {
+      "authors": [
+        "Yu-Shan Yen",
+        "Shi-Jim Yen"
+      ],
+      "affiliations": [
+        "National Taiwan Normal University",
+        "National Dong Hwa University"
+      ]
+    },
+    "185": {
+      "authors": [
+        "Nuwantha Senadhi Ranaweera",
+        "Savindu Dilshan Wickramasinghe",
+        "Thusith Wijewardena",
+        "H.W.P. Sandeepa"
+      ],
+      "affiliations": [
+        "University of Moratuwa",
+        "University of Moratuwa",
+        "University of Moratuwa",
+        "University of Moratuwa"
+      ]
+    },
+    "186": {
+      "authors": [
+        "洪宗貝",
+        "林義勳",
+        "卓恩綺",
+        "黃士峰",
+        "施宣妤",
+        "陳怡婷"
+      ],
+      "affiliations": [
+        "國立高雄大學資訊工程研究所",
+        "國立高雄大學資訊工程研究所",
+        "國立高雄大學應用數學研究所",
+        "國立中央大學統計研究所",
+        "富比庫股份有限公司",
+        "富比庫股份有限公司"
+      ]
+    },
+    "187": {
+      "affiliations": [
+        "National Cheng Kung University",
+        "National Cheng Kung University",
+        "National Cheng Kung University",
+        "National Cheng Kung University"
+      ]
+    },
+    "189": {
+      "authors": [
+        "劉柏毅",
+        "黃國展"
+      ],
+      "affiliations": [
+        "國立臺中教育大學資訊工程學系",
+        "國立臺中教育大學資訊工程學系"
+      ]
+    },
+    "190": {
+      "affiliations": [
+        "National Taiwan Normal University",
+        "National Taiwan Normal University",
+        "National Taiwan Normal University"
+      ]
+    },
+    "191": {
+      "authors": [
+        "Yan-Han Chen",
+        "Wei-Chun Hsu",
+        "Ying-Jen Chen",
+        "Li Cho"
+      ],
+      "affiliations": [
+        "Tatung University",
+        "Tatung University",
+        "Yuan Ze University",
+        "Tatung University"
+      ]
+    },
+    "192": {
+      "authors": [
+        "陳翔暐",
+        "黃昭義"
+      ],
+      "affiliations": [
+        "國立雲林科技大學資訊管理系",
+        "國立雲林科技大學資訊管理系"
+      ]
+    },
+    "194": {
+      "authors": [
+        "Shu-Ting Chang",
+        "Yi-Lin Chang",
+        "Kuan-Hsu Lo",
+        "Zih-Cheng Lyu"
+      ],
+      "affiliations": [
+        "National Yang Ming Chiao Tung University",
+        "National Yang Ming Chiao Tung University",
+        "National Yang Ming Chiao Tung University",
+        "National Yang Ming Chiao Tung University"
+      ]
+    },
+    "197": {
+      "affiliations": [
+        "Chaoyang University of Technology",
+        "Chaoyang University of Technology"
+      ]
+    },
+    "198": {
+      "affiliations": [
+        "Fu Jen Catholic University",
+        "Fu Jen Catholic University"
+      ]
+    },
+    "199": {
+      "authors": [
+        "李洳錚",
+        "凃瀞珽",
+        "王雅書"
+      ],
+      "affiliations": [
+        "國立中興大學應用數學系",
+        "國立中興大學資料科學與資訊計算研究所",
+        "國立中興大學應用數學系"
+      ]
+    },
+    "201": {
+      "authors": [
+        "吳書逸",
+        "謝文川",
+        "林欣瑾"
+      ],
+      "affiliations": [
+        "國立高雄科技大學智慧商務系",
+        "國立高雄科技大學智慧商務系",
+        "國立高雄科技大學智慧商務系"
+      ]
+    },
+    "204": {
+      "authors": [
+        "Vinicius Buri"
+      ]
+    },
+    "207": {
+      "authors": [
+        "Ching-Ting Chen",
+        "Yi-En Dong",
+        "Yi-Ruei Chen",
+        "Chuan-Kang Ting"
+      ],
+      "affiliations": [
+        "National Tsing Hua University",
+        "National Tsing Hua University",
+        "National Tsing Hua University",
+        "National Tsing Hua University"
+      ]
+    },
+    "208": {
+      "affiliations": [
+        "National Tsing Hua University",
+        "National Tsing Hua University",
+        "Industrial Technology Research Institute",
+        "Industrial Technology Research Institute",
+        "National Tsing Hua University",
+        "National Tsing Hua University"
+      ]
+    },
+    "213": {
+      "authors": [
+        "Chang-Shing Lee",
+        "Mei-Hui Wang",
+        "Hsin-Wei Chen",
+        "Chun-Chieh Tseng",
+        "Pin-Yen Shen",
+        "Naoyuki Kubota",
+        "Chu-Kiong Loo"
+      ],
+      "affiliations": [
+        "National University of Tainan",
+        "National University of Tainan",
+        "National University of Tainan",
+        "National University of Tainan",
+        "National University of Tainan",
+        "Tokyo Metropolitan University",
+        "University of Malaya"
+      ]
+    },
+    "214": {
+      "authors": [
+        "Cen-Chieh Chen",
+        "Yu-Chen Hsu",
+        "Berlin Chen",
+        "Tao-Hsing Chang",
+        "Yao-Ting Sung"
+      ],
+      "affiliations": [
+        "National Taiwan Normal University",
+        "National Kaohsiung University of Science and Technology",
+        "National Taiwan Normal University",
+        "National Kaohsiung University of Science and Technology",
+        "National Taiwan Normal University"
+      ]
+    },
+    "215": {
+      "affiliations": [
+        "Institute for Information Industry",
+        "Institute for Information Industry",
+        "Institute for Information Industry"
+      ]
+    },
+    "216": {
+      "authors": [
+        "陳孝宗",
+        "溫演福",
+        "謝立文"
+      ],
+      "affiliations": [
+        "國立臺北大學資訊管理研究所",
+        "國立臺北大學資訊管理研究所",
+        "國立臺北大學資訊管理研究所"
+      ]
+    }
+  },
+  "latinNames": {
+    "于永庭": "Yu-Yung-Ting",
+    "何念慈": "Nien Tzu Ho",
+    "凃瀞珽": "Ching-Ting Tu",
+    "凃靜珽": "Ching-Ting Tu",
+    "劉冠廷": "Guan-Ting Liu",
+    "劉柏毅": "Po-Yi Liu",
+    "吳函諺": "Han-Yan Wu",
+    "吳孟倫": "Meng-Luen Wu",
+    "吳常熙": "Chang-Hsi Wu",
+    "吳曉光": "Hsiao-Kuang Wu",
+    "吳書逸": "Shu-Yi Wu",
+    "廖偉煊": "Liao Wei-Syuan",
+    "廖鈞義": "Jun-Yi Liao",
+    "張晉瑋": "Jin-Wei Jhang",
+    "張祐齊": "Yu-Chi Chang",
+    "曾俊杰": "Chun-Chieh Tseng",
+    "曾俊諭": "Chun Yu Tseng",
+    "曾秀雲": "Hsiu Yun Tseng",
+    "李健興": "Chang-Shing Lee",
+    "李哲瑋": "Che-Wei Lee",
+    "李文愷": "Li-Wen-Kai",
+    "李洳錚": "Ru-Jheng Li",
+    "李翊嘉": "I-Chia Li",
+    "杜明道": "Ming-Dao Tu",
+    "林上文": "Shang-Wen Lin",
+    "林易叡": "Lin-Yi-Rui",
+    "林鈺耀": "Yu-Yao Lin",
+    "楊珮菁": "Pei-Ching Yang",
+    "江承紘": "Chiang-Cheng-Hong",
+    "沈奕昕": "Shen Yi Hsin",
+    "洪宗貝": "Tzung-Pei Hong",
+    "洪晧銘": "Hao-Ming Hung",
+    "洪煜傑": "Yu Chieh Hung",
+    "洪詠煜": "Hung Yung Yu",
+    "溫演福": "Yean-Fu Wen",
+    "潘欣泰": "Shing-Tai Pan",
+    "王翊宇": "Yiyu Wang",
+    "王雅書": "Ya-Shu Wang",
+    "練姸伶": "Yen-Ling Lien",
+    "葉采瑩": "Yeh Tsai Ying",
+    "蘇明祥": "Minghsiang Su",
+    "謝立文": "Li-Wen Hsieh",
+    "邱恩芹": "Chiu En Ching",
+    "陳勇行": "Yung-Sing Chen",
+    "陳孝宗": "Hsiao-Tsung Chen",
+    "陳履恒": "Lieu-Hen Chen",
+    "陳心瑋": "Hsin-Wei Chen",
+    "陳盈智": "Ying Zhi Chen",
+    "陳翔暐": "Shawn Chen",
+    "陳薇如": "Wei Ju Chen",
+    "顏士淨": "Shi-Jim Yen",
+    "饒建奇": "Jiann-Chyu Rau",
+    "高哲凱": "Che-Kai Kao",
+    "黃國展": "Kuo-Chan Huang",
+    "黃意婷": "Yi-Ting Huang",
+    "黃柏熏": "Bo-Xun Huang"
+  },
+  "latinNamesNote": "English spellings shown after Chinese names on the English program page, taken from each author's own OpenReview name.",
+  "affiliationCountries": {
+    "Algoverse AI Research": "USA",
+    "Aoyama Gakuin University": "Japan",
+    "Auburn University": "USA",
+    "Beijing Normal-Hong Kong Baptist University": "China",
+    "Chang Gung University": "Taiwan",
+    "Chaoyang University of Technology": "Taiwan",
+    "Chukyo University": "Japan",
+    "Chung Shan Medical University": "Taiwan",
+    "Chung Yuan Christian University": "Taiwan",
+    "City University of Hong Kong": "Hong Kong",
+    "Dalian Maritime University": "China",
+    "DatumND": "USA",
+    "Fu Jen Catholic University": "Taiwan",
+    "Gamania Digital Entertainment Co., Ltd.": "Taiwan",
+    "Gryphon Center for Artificial Intelligence and Theoretical Sciences": "Singapore",
+    "Hochschule Bonn-Rhein-Sieg": "Germany",
+    "Hochschule der Medien": "Germany",
+    "Independent Researcher": "Taiwan",
+    "Industrial Technology Research Institute": "Taiwan",
+    "Institute for Information Industry": "Taiwan",
+    "Kansai University": "Japan",
+    "King Mongkut's Institute of Technology Ladkrabang": "Thailand",
+    "Kochi University of Technology": "Japan",
+    "Kyorin University": "Japan",
+    "Linkou Chang Gung Memorial Hospital": "Taiwan",
+    "LuxVerso Research Initiative": "Brazil",
+    "Nanjing University of Information Science and Technology": "China",
+    "Nanyang Technological University": "Singapore",
+    "National Central University": "Taiwan",
+    "National Cheng Kung University": "Taiwan",
+    "National Chengchi University": "Taiwan",
+    "National Chi Nan University": "Taiwan",
+    "National Chung Hsing University": "Taiwan",
+    "National Dong Hwa University": "Taiwan",
+    "National Formosa University": "Taiwan",
+    "National Institute of Technology, Tokyo College": "Japan",
+    "National Institutes of Applied Research": "Taiwan",
+    "National Kaohsiung University of Science and Technology": "Taiwan",
+    "National Rehabilitation Center for Persons with Disabilities": "Japan",
+    "National Sun Yat-sen University": "Taiwan",
+    "National Taichung University of Science and Technology": "Taiwan",
+    "National Taipei University": "Taiwan",
+    "National Taipei University of Nursing and Health Sciences": "Taiwan",
+    "National Taiwan Normal University": "Taiwan",
+    "National Taiwan Ocean University": "Taiwan",
+    "National Taiwan University": "Taiwan",
+    "National Tsing Hua University": "Taiwan",
+    "National University of Tainan": "Taiwan",
+    "National Yang Ming Chiao Tung University": "Taiwan",
+    "New Taipei Municipal Tucheng Hospital": "Taiwan",
+    "R.O.C. Military Academy": "Taiwan",
+    "Realtek": "Taiwan",
+    "Ritsumeikan University": "Japan",
+    "Ryonix Labs": "Canada",
+    "Stanford University": "USA",
+    "Taichung Municipal Dongshan Senior High School": "Taiwan",
+    "Tamkang University": "Taiwan",
+    "Tatung University": "Taiwan",
+    "The University of Electro-Communications": "Japan",
+    "Tokyo Metropolitan University": "Japan",
+    "University of California, San Diego": "USA",
+    "University of Malaya": "Malaysia",
+    "University of Moratuwa": "Sri Lanka",
+    "University of Technology Sydney": "Australia",
+    "University of Texas at Austin": "USA",
+    "Yuan Ze University": "Taiwan"
+  },
+  "affiliationCountriesNote": "Country appended to English affiliations (\"Institution, Country\"), checked against the camera-ready PDFs; OpenReview country where the PDF gives none. Chinese-language affiliations are left as printed."
+}

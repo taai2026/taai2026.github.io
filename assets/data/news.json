@@ -491,8 +491,8 @@
           "tags": ["NAPAI", "Agentic AI", "競賽", "校園創新", "學生競賽", "合作活動", "TAAI 2026", "報名截止", "工作坊", "初賽", "決賽"]
         },
         "en": {
-          "title": "NAPAI Agentic AI Campus Innovation Competition",
-          "summary": "Partner event: the NAPAI Agentic AI Campus Innovation Competition final is co-located with TAAI 2026. Full rules, registration, and the latest updates are announced through the competition's own official website.",
+          "title": "NAPAI Agentic AI Innovation Competition for Campus Applications",
+          "summary": "Partner event: the NAPAI Agentic AI Innovation Competition for Campus Applications final is co-located with TAAI 2026. Full rules, registration, and the latest updates are announced through the competition's own official website.",
           "linkLabel": "Competition website",
           "tags": ["NAPAI", "Agentic AI", "competition", "campus innovation", "student competition", "partner event", "TAAI 2026", "registration deadline", "workshop", "preliminary", "final"]
         }
@@ -516,7 +516,7 @@
 
       "event": {
         "start": "2026-11-21T13:00:00+08:00",
-        "end": "2026-11-21T15:30:00+08:00",
+        "end": "2026-11-21T16:30:00+08:00",
         "venue": {
           "zh": "大板根森林溫泉酒店",
           "en": "The Great Roots Forestry Spa Resort, New Taipei City"
@@ -619,7 +619,7 @@
         },
         "en": {
           "title": "NAPAI Competition Now Uses the NAPAICP Platform for Registration, Submission, and Results",
-          "summary": "The NAPAI Agentic AI Campus Innovation Competition now handles registration, work submission, and finalist/result announcements through the NAPAICP competition platform. It is jointly developed by the National Agentic & Physical AI Initiative (NAPAI), Ministry of Education and the Advanced Research Center for Cross-Disciplinary AI (NTPU AI4X) at National Taipei University.",
+          "summary": "The NAPAI Agentic AI Innovation Competition for Campus Applications now handles registration, work submission, and finalist/result announcements through the NAPAICP competition platform. It is jointly developed by the National Agentic & Physical AI Initiative (NAPAI), Ministry of Education and the Advanced Research Center for Cross-Disciplinary AI (NTPU AI4X) at National Taipei University.",
           "linkLabel": "Register on NAPAICP",
           "tags": ["NAPAI", "NAPAICP", "registration", "submission", "results", "competition platform", "NTPU AI4X"]
         }

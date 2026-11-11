@@ -60,10 +60,10 @@
           "id": 194,
           "title": "Distributed Bandit Learning toward Social Optimum in Congestion Games: Nonlinear Costs and Convergence Analysis",
           "authors": [
-            "Zih-Cheng Lyu",
             "Shu-Ting Chang",
             "Yi-Lin Chang",
-            "Kuan-Hsu Lo"
+            "Kuan-Hsu Lo",
+            "Zih-Cheng Lyu"
           ],
           "topic": "optimization",
           "keywords": [
@@ -84,6 +84,7 @@
             "Zih-Sian Yang",
             "Yi-Hao Chen",
             "Yu-Te Kuan",
+            "Cheng-Jui Wu",
             "Chuang-Chieh Lin",
             "Po-An Chen"
           ],
@@ -122,7 +123,7 @@
           "id": 207,
           "title": "Phase-wise Economic Policy Optimization for Auto-Battler Games using Evolutionary Algorithms",
           "authors": [
-            "CHING-TING CHEN",
+            "Ching-Ting Chen",
             "Yi-En Dong",
             "Yi-Ruei Chen",
             "Chuan-Kang Ting"
@@ -236,8 +237,8 @@
           "id": 83,
           "title": "Lightweight Dual-Stream Temporal Decoupling for Behavior Cloning in Minecraft's Hybrid Action Space",
           "authors": [
-            "JIN-WEI JHANG",
-            "Yi-Ting Huang"
+            "張晉瑋",
+            "黃意婷"
           ],
           "topic": "games",
           "keywords": [
@@ -255,8 +256,8 @@
           "id": 189,
           "title": "一個整合深度強化學習與蒙地卡羅模擬之混合式台灣麻將丟牌策略架構",
           "authors": [
-            "Kuo-Chan Huang",
-            "Po-Yi Liu"
+            "劉柏毅",
+            "黃國展"
           ],
           "topic": "games",
           "keywords": [
@@ -274,9 +275,9 @@
           "id": 199,
           "title": "CoRe-QCNN：基於跨解析度學習的樣本自適應量子影像分類",
           "authors": [
-            "Ru-Jheng Li",
-            "Ching-Ting Tu",
-            "YA-SHU WANG"
+            "李洳錚",
+            "凃瀞珽",
+            "王雅書"
           ],
           "topic": "optimization",
           "keywords": [
@@ -294,9 +295,9 @@
           "id": 168,
           "title": "基於隱式神經表示法與時空交叉注意力機制之高解析度 PM2.5 預報偏差修正",
           "authors": [
-            "Che-Kai Kao",
-            "SHANG-WEN LIN",
-            "Ching-Ting Tu"
+            "高哲凱",
+            "林上文",
+            "凃靜珽"
           ],
           "topic": "data-mining",
           "keywords": [
@@ -534,8 +535,8 @@
           "id": 62,
           "title": "Effects of On-Screen Feedback Display on Error Repair in an LLM-Based Japanese Speaking-Practice System",
           "authors": [
-            "NI YANGDI",
-            "SHAN JUNJIE",
+            "Yangdi Ni",
+            "Junjie Shan",
             "Megumi Yasuo",
             "Yoko Nishihara"
           ],
@@ -661,7 +662,7 @@
           "id": 204,
           "title": "Historical Satellite Embedding Trajectories Provide Predictive Information About the Next Observed Embedding State",
           "authors": [
-            "Vinicius Buri Lux"
+            "Vinicius Buri"
           ],
           "topic": "vision",
           "keywords": [
@@ -717,11 +718,11 @@
           "id": 57,
           "title": "Automatic Generation of Open-Vocabulary Descriptive Tags for Anime Cut Scenes Using Vision-Language Models and Syntactic Parsing",
           "authors": [
-            "SHAN JUNJIE",
+            "Junjie Shan",
             "Jianrui Yan",
             "Yoko Nishihara",
-            "NI YANGDI",
-            "DUAN Zhenzhong"
+            "Yangdi Ni",
+            "Zhenzhong Duan"
           ],
           "topic": "vision",
           "keywords": [
@@ -823,12 +824,13 @@
           "id": 119,
           "title": "基於跨模態知識蒸餾之輕量化腕戴式壓力辨識",
           "authors": [
-            "Yu-Yung-Ting",
-            "LI-WEN-KAI",
-            "Ying Zhi Chen",
-            "Lin-Yi-Rui",
-            "Yu Chieh Hung",
-            "Chiang-Cheng-Hong"
+            "翁政雄",
+            "于永庭",
+            "林易叡",
+            "陳盈智",
+            "李文愷",
+            "洪煜傑",
+            "江承紘"
           ],
           "topic": "health",
           "keywords": [
@@ -846,9 +848,9 @@
           "id": 101,
           "title": "兼顧高敏感度辨識與病人內檢索之多模態皮膚病灶風險排序",
           "authors": [
+            "翁政雄",
             "楊惟麟",
-            "施丞澤",
-            "翁政雄"
+            "施丞澤"
           ],
           "topic": "health",
           "keywords": [
@@ -866,10 +868,10 @@
           "id": 121,
           "title": "基於模型微調式醫療命名實體識別與句子編碼之自動化胃腸科護理問診系統",
           "authors": [
-            "Yu-Yao Lin",
-            "Lieu-Hen Chen",
-            "Hao-Ming Hung",
-            "Hsiao-Kuang Wu"
+            "林鈺耀",
+            "陳履恒",
+            "洪晧銘",
+            "吳曉光"
           ],
           "topic": "health",
           "keywords": [
@@ -888,10 +890,11 @@
           "title": "隨拍、隨比、隨時學， AI 客語隨身教：結合電腦視覺與聲學評測之客語情境教學系統實作",
           "authors": [
             "吳怡臻",
-            "張育倫",
             "黃璿羽",
             "梁易軒",
-            "林守毅"
+            "張育倫",
+            "林守毅",
+            "李俊賢"
           ],
           "topic": "nlp",
           "keywords": [
@@ -940,7 +943,7 @@
           "id": 183,
           "title": "Rank-Conditioned Multimodal Move Prediction in Go: Fine-Tuning on Ten Skill Levels",
           "authors": [
-            "YEN YU SHAN",
+            "Yu-Shan Yen",
             "Shi-Jim Yen"
           ],
           "topic": "games",
@@ -973,7 +976,7 @@
           "id": 191,
           "title": "A Modular Autonomous Driving Framework with DQN-Based High-Level Decision Making",
           "authors": [
-            "YAN-HAN CHEN",
+            "Yan-Han Chen",
             "Wei-Chun Hsu",
             "Ying-Jen Chen",
             "Li Cho"
@@ -993,8 +996,8 @@
           "id": 84,
           "title": "結合空間距離與建設生命週期特徵之房價溢價預測：基於CatBoost之實證研究",
           "authors": [
-            "Chang-Hsi Wu",
-            "Jun-Yi Liao"
+            "吳常熙",
+            "廖鈞義"
           ],
           "topic": "data-mining",
           "keywords": [
@@ -1043,9 +1046,9 @@
           "id": 163,
           "title": "An Offline On-Device Method for Citrus Pest and Disease Recognition with Grounded Diagnosis",
           "authors": [
-            "CHENG-YAN Cai",
+            "Cheng-Yan Cai",
             "Yuan-Chin Tu",
-            "YOU JIA HUANG",
+            "You-Jia Huang",
             "Chen-En Chien",
             "Huan-Yu Chen"
           ],
@@ -1082,7 +1085,7 @@
           "id": 76,
           "title": "Effects of Aggressive Front-End Downsampling on Prediction Concentration in CNN-Based Radiographic Grading of Mandibular Third Molar Surgical Difficulty",
           "authors": [
-            "WU TSUNG YU",
+            "Tsung-Yu Wu",
             "Bo-Gang Chen",
             "Chia-Yu Chiu",
             "Tzer-En Nee",
@@ -1103,10 +1106,10 @@
           "id": 78,
           "title": "基於全同態加密並結合 HMAC 完整性驗證與密文域可逆資訊隱藏之隱私保護心臟病風險預測系統",
           "authors": [
-            "Yeh Tsai Ying",
-            "SHEN YI HSIN",
+            "沈奕昕",
+            "葉采瑩",
             "戴婕伊",
-            "Che-Wei Lee"
+            "李哲瑋"
           ],
           "topic": "health",
           "keywords": [
@@ -1141,7 +1144,7 @@
           "id": 201,
           "title": "ERP 交易限制下 LLM Agent 失敗恢復與驗證",
           "authors": [
-            "Shu-Yi Wu",
+            "吳書逸",
             "謝文川",
             "林欣瑾"
           ],
@@ -1193,7 +1196,7 @@
             "Chun-Chieh Tseng",
             "Pin-Yen Shen",
             "Naoyuki Kubota",
-            "CHU KIONG LOO"
+            "Chu-Kiong Loo"
           ],
           "topic": "health",
           "keywords": [
@@ -1487,7 +1490,7 @@
           "authors": [
             "Quan-Quan Yang",
             "Yu-Fu Huang",
-            "Tan Yoke Hou"
+            "Yoke-Hou Tan"
           ],
           "topic": "vision",
           "keywords": [
@@ -1541,7 +1544,7 @@
             "Jheng-Lin Lin",
             "Zong-Ying Shen",
             "Chung-Chuan Lo",
-            "YA TANG YANG"
+            "Ya-Tang Yang"
           ],
           "topic": "vision",
           "keywords": [
@@ -1591,8 +1594,8 @@
           "id": 23,
           "title": "Video-Camera-Based Multi-Person Gaze Estimation System Using Facial Features",
           "authors": [
-            "DUAN Zhenzhong",
-            "SHAN JUNJIE",
+            "Zhenzhong Duan",
+            "Junjie Shan",
             "Megumi Yasuo",
             "Yoko Nishihara"
           ],
@@ -1662,8 +1665,8 @@
           "id": 66,
           "title": "GuardianNet: An LLM-Assisted Multi-Agent Framework for Detecting Stealthy SDN Anomalies",
           "authors": [
-            "Yuyang Huang",
-            "chirag jindal",
+            "Yu-Yang Huang",
+            "Chirag Jindal",
             "Mochamad Fakhri Andian",
             "Po-Yu Chen",
             "Kippei Ando",
@@ -1784,7 +1787,7 @@
           "id": 179,
           "title": "Attack-Resilient Hierarchical Federated Intrusion Detection for Communication-Constrained Low-Altitude UAV Networks",
           "authors": [
-            "Mao-Hsiu HSU",
+            "Mao-Hsiu Hsu",
             "Po-Chia Chuang"
           ],
           "topic": "vision",
@@ -1801,7 +1804,7 @@
           "authors": [
             "Bifu Ohishi",
             "Megumi Yasuo",
-            "SHAN JUNJIE",
+            "Junjie Shan",
             "Yoko Nishihara"
           ],
           "topic": "nlp",
@@ -1858,9 +1861,9 @@
           "id": 216,
           "title": "基於姿態估計之個人化網球教練系統：揮拍特徵組合歸納與修正建議驗證架構",
           "authors": [
-            "Hsiao-Tsung Chen",
-            "Yean-Fu Wen",
-            "Li-Wen Hsieh"
+            "陳孝宗",
+            "溫演福",
+            "謝立文"
           ],
           "topic": "vision",
           "keywords": [
@@ -1900,7 +1903,7 @@
           "authors": [
             "李佳芸",
             "黃芷婕",
-            "Minghsiang Su"
+            "蘇明祥"
           ],
           "topic": "vision",
           "keywords": [
@@ -1930,7 +1933,7 @@
       "topics": [
         {
           "topic": "vision",
-          "count": 10
+          "count": 11
         },
         {
           "topic": "speech",
@@ -1942,7 +1945,7 @@
           "id": 122,
           "title": "Point-Supervised Weed Stem Candidate Localization Using U-Net Heatmaps for RealSense-Assisted Laser Weeding",
           "authors": [
-            "PRADEEP MARIMUTHU",
+            "Pradeep Marimuthu",
             "Yu-Sung Liu"
           ],
           "topic": "vision",
@@ -2018,8 +2021,8 @@
           "id": 17,
           "title": "結合PatchCore與視覺語言模型之可解釋工業異常檢測 (Explainable Industrial Anomaly Detection by Combining PatchCore and Vision Language Models)",
           "authors": [
-            "Liao Wei-Syuan",
-            "Jiann-Chyu Rau"
+            "廖偉煊",
+            "饒建奇"
           ],
           "topic": "vision",
           "keywords": [
@@ -2058,7 +2061,7 @@
           "title": "探討不同多模態架構於黑色素瘤預測效能之比較",
           "authors": [
             "蔣典宸",
-            "YIYU WANG",
+            "王翊宇",
             "吳芷瑩",
             "陳映瑄",
             "鄭秋艷",
@@ -2095,7 +2098,12 @@
           "id": 186,
           "title": "組合料號電子零件內容之自動擷取",
           "authors": [
-            "Tzung-Pei Hong"
+            "洪宗貝",
+            "林義勳",
+            "卓恩綺",
+            "黃士峰",
+            "施宣妤",
+            "陳怡婷"
           ],
           "topic": "vision",
           "keywords": [
@@ -2111,9 +2119,9 @@
           "id": 64,
           "title": "Melody–Accompaniment Separation in Synthesized Solo Piano Audio Using Spectral U-Nets and a Composite Loss",
           "authors": [
-            "KAO HAO CHUN",
-            "WANG CHAO ZONG",
-            "HUANG YU HAN"
+            "Hao Chun Kao",
+            "Chao Zong Wang",
+            "Yu Han Huang"
           ],
           "topic": "speech",
           "keywords": [
@@ -2135,7 +2143,7 @@
             "Shu-Wei Huang",
             "Yu-Chung Wang",
             "Kwei-Jay Lin",
-            "YFChang"
+            "Ying-Feng Chang"
           ],
           "topic": "vision",
           "keywords": [
@@ -2146,6 +2154,26 @@
             "domain adaptation"
           ],
           "board": "DP-23"
+        },
+        {
+          "id": 109,
+          "title": "基於 nnU-Net 之心臟電腦斷層影像多類別自動分割可行性研究",
+          "authors": [
+            "許倖諴",
+            "季祖明",
+            "邱禹瑞",
+            "劉彥瑋",
+            "楊珮菁"
+          ],
+          "topic": "vision",
+          "keywords": [
+            "nnU-Net",
+            "心臟電腦斷層",
+            "醫學影像分割",
+            "深度學習",
+            "Dice"
+          ],
+          "board": "DP-24"
         }
       ]
     },
@@ -2201,7 +2229,7 @@
           "title": "FUSE: A Fused Unified Synthetic-image Ensemble for AI-Generated Image Detection",
           "authors": [
             "Ping-Chen Chung",
-            "Huynh Phuoc Thien Nguyen",
+            "Nguyen Huynh Phuoc Thien",
             "Pei-Hua Tsai",
             "Hsuan-Cheng Chu",
             "Po-Wei Harn"
@@ -2286,8 +2314,8 @@
           "id": 29,
           "title": "Deepfake 偵測模型於多強度影像退化下之穩健性與方向性誤判分析",
           "authors": [
-            "Yu-Chi Chang",
-            "Meng-Luen Wu"
+            "張祐齊",
+            "吳孟倫"
           ],
           "topic": "vision",
           "keywords": [
@@ -2307,10 +2335,10 @@
           "id": 145,
           "title": "A Hybrid LLM–RL Framework for Army Tactical Decision Support: Evaluation in a Real-Time Strategy Simulation",
           "authors": [
-            "YU RUI SHI",
-            "ZONG XIN LIN",
-            "YI SYUAN LU",
-            "CHENG SHUN LEE"
+            "Yu Rui Shi",
+            "Zong Xin Lin",
+            "Yi Syuan Lu",
+            "Cheng Shun Lee"
           ],
           "topic": "nlp",
           "keywords": [
@@ -2446,8 +2474,8 @@
           "title": "Agentic Workflow Automation for n8n: Prompt Engineering, Domain Fine-Tuning, and a Comparative Case Study",
           "authors": [
             "Zhi-Ying Wang",
-            "Liu Hsuan-Yu",
-            "Chun Yao Lin",
+            "Hsuan-Yu Liu",
+            "Chun-Yao Lin",
             "Wen-Hsien Huang",
             "Chia-Hui Chang"
           ],
@@ -2466,7 +2494,7 @@
           "id": 114,
           "title": "Price Movement Prediction for High-frequency Trading by Leveraging Fine-tuned Large Language Model as Short-term Trend Indicator",
           "authors": [
-            "FAN-YU PU",
+            "Fan-Yu Pu",
             "Shiou-Chi Li",
             "Jen-Wei Huang"
           ],
@@ -2503,7 +2531,7 @@
           "title": "Turning Books into SNS: Effects of Familiar Social Media-Style Reading Interfaces on Cognitive Load and Reading Performance",
           "authors": [
             "Konosuke Tada",
-            "SHAN JUNJIE",
+            "Junjie Shan",
             "Megumi Yasuo",
             "Yoko Nishihara"
           ],
@@ -2575,10 +2603,10 @@
           "id": 185,
           "title": "When Extra Reliability Signals Hurt: Selective Activity Recognition under Unseen Fault Families",
           "authors": [
-            "Nuwantha senadhi Ranaweera",
-            "Thusith Wijewardena",
+            "Nuwantha Senadhi Ranaweera",
             "Savindu Dilshan Wickramasinghe",
-            "H.W. Prabhashana Sandeepa"
+            "Thusith Wijewardena",
+            "H.W.P. Sandeepa"
           ],
           "topic": "nlp",
           "keywords": [
@@ -2622,7 +2650,7 @@
           "id": 85,
           "title": "Resolving Knowledge Conflicts in Versioned Documents via Agentic Evidence Synthesis and Hierarchical Dual-Store Retrieval",
           "authors": [
-            "CHAO-CHUN CHUANG",
+            "Chao-Chun Chuang",
             "Chih-Min Yao",
             "Tsui-Mei Lee",
             "Yi-Ni Liu"
@@ -2665,7 +2693,7 @@
           "id": 214,
           "title": "Towards Reliable Chinese Spelling Correction: Consensus-Based Correction under Linguistic Variation",
           "authors": [
-            "Cen-Chieh CHEN",
+            "Cen-Chieh Chen",
             "Yu-Chen Hsu",
             "Berlin Chen",
             "Tao-Hsing Chang",
@@ -2929,7 +2957,7 @@
           "id": 86,
           "title": "Fusion Limitations and LLM-Assisted Decision Integration for Conversational Emotion Recognition",
           "authors": [
-            "MELVIN LIEW LIP WEI",
+            "Melvin Liew Lip Wei",
             "Cheng-Tso Chiang",
             "Hao-Ming Hung",
             "Lieu-Hen Chen"
@@ -3017,7 +3045,7 @@
           "id": 192,
           "title": "通用語言模型 Embedding 至領域特定空間之遷移方法研究 ——以監督式 Embedding 適配於 UK 簽證法規語意分群為例",
           "authors": [
-            "Shawn Chen",
+            "陳翔暐",
             "黃昭義"
           ],
           "topic": "nlp",
@@ -3050,7 +3078,7 @@
           "id": 136,
           "title": "原生語言與翻譯語言作為語言模型訓練資料集之比較-以垃圾簡訊為例",
           "authors": [
-            "Han-Yan Wu",
+            "吳函諺",
             "楊翔丞",
             "沈宏霖",
             "劉嘉慶",
@@ -3070,9 +3098,9 @@
           "id": 34,
           "title": "基於修辭角色與語意一致性片段擾動之法律文本分類解釋研究",
           "authors": [
-            "Bo-Xun Huang",
-            "Ming-Dao TU",
-            "Meng-Luen Wu"
+            "黃柏熏",
+            "杜明道",
+            "吳孟倫"
           ],
           "topic": "nlp",
           "keywords": [
@@ -3110,9 +3138,9 @@
           "id": 169,
           "title": "Automated Trust Management under LLM Monitoring Uncertainty: Adversarial Risk-Aware Deployment in a Decentralized Multi-Agent Network",
           "authors": [
-            "Zong-Ye LI",
+            "Zong-Ye Li",
             "Weiyang He",
-            "Chip Hong Chang"
+            "Chip-Hong Chang"
           ],
           "topic": "security",
           "keywords": [
@@ -3194,7 +3222,7 @@
           "title": "SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage",
           "authors": [
             "Mai Xuan Ha",
-            "Chanh Thanh Tin Le",
+            "Le Chanh Thanh Tin",
             "Aquata Theodora Thyme",
             "Po-Wei Harn"
           ],
@@ -3238,7 +3266,7 @@
           "id": 77,
           "title": "V-ADAPT: A Verified Adversarial Discovery and Dual-Path Defense Framework for Hardening WAFs Against XSS",
           "authors": [
-            "Hua-You chen",
+            "Hua-You Chen",
             "Po-Cheng Chen",
             "Chinyang Henry Tseng"
           ],
@@ -3292,7 +3320,7 @@
           "id": 160,
           "title": "迎向自主性大型語言模型代理與長程規劃時代：歐美比較法論我國 AI 安全規範、風險管控與責任歸責",
           "authors": [
-            "Wei ju Chen"
+            "陳薇如"
           ],
           "topic": "agents",
           "keywords": [
@@ -3310,8 +3338,8 @@
           "id": 107,
           "title": "語音對抗淨化之實證稽核：表徵混淆與自適應攻擊的梯度保真度",
           "authors": [
-            "Guan-Ting Liu",
-            "Yi-Ting Huang"
+            "劉冠廷",
+            "黃意婷"
           ],
           "topic": "security",
           "keywords": [
@@ -3329,10 +3357,10 @@
           "id": 61,
           "title": "基於 LLM 與多代理人架構之國文會考適性學習平台：AI 國文會考備戰系統",
           "authors": [
-            "Nien Tzu Ho",
-            "Hung Yung Yu",
-            "CHUN YU TSENG",
-            "Shi-Jim Yen"
+            "何念慈",
+            "洪詠煜",
+            "曾俊諭",
+            "顏士淨"
           ],
           "topic": "education",
           "keywords": [
@@ -3350,7 +3378,9 @@
           "id": 9,
           "title": "邁向可解釋的智慧教育代理人： 基於測驗理論之大型語言模型認知對齊與異常行為評估",
           "authors": [
-            "賴明如"
+            "賴明如",
+            "劉安萱",
+            "林裕仁"
           ],
           "topic": "education",
           "keywords": [
@@ -3369,8 +3399,8 @@
           "id": 20,
           "title": "基於自監督聲學表徵與大規模弱監督模型之病理語音辨識效能評估與範式對比",
           "authors": [
-            "Shing-Tai Pan",
-            "梁文瀚"
+            "梁文瀚",
+            "潘欣泰"
           ],
           "topic": "speech",
           "keywords": [
@@ -3424,11 +3454,11 @@
           "id": 140,
           "title": "TAIDE醫療衛教RAG問答評估：人工評分與QCI&AI模糊推論",
           "authors": [
-            "Yu-Yao Lin",
-            "Lieu-Hen Chen",
-            "Chun-Chieh Tseng",
-            "Hsin-Wei Chen",
-            "Chang-Shing Lee"
+            "林鈺耀",
+            "陳履恒",
+            "曾俊杰",
+            "陳心瑋",
+            "李健興"
           ],
           "topic": "health",
           "keywords": [
@@ -3495,7 +3525,8 @@
           "id": 8,
           "title": "具來源追溯與人工檢核之RAG數位證物對話線索整理流程",
           "authors": [
-            "Yung-Sing Chen"
+            "陳勇行",
+            "鄧皓允"
           ],
           "topic": "agents",
           "keywords": [
@@ -3565,7 +3596,10 @@
           "id": 99,
           "title": "以效標關聯效度錨定之無人機操作員複合信任評分：設計科學研究 (A Validity-Anchored Composite Trust Score for Commercial UAS Operators: A Design Science Study)",
           "authors": [
-            "CHIU EN CHING"
+            "黃政傑",
+            "邱恩芹",
+            "林佑彬",
+            "彭進德"
           ],
           "topic": "other",
           "keywords": [
@@ -3582,11 +3616,11 @@
           "id": 157,
           "title": "基於題項關聯表徵與注意力導向資料擴增之親密暴力問卷深度分群",
           "authors": [
-            "YEN-LING LIEN",
-            "I-Chia Li",
-            "Hsiu Yun Tseng",
-            "YA-SHU WANG",
-            "Ching-Ting Tu"
+            "練姸伶",
+            "李翊嘉",
+            "曾秀雲",
+            "王雅書",
+            "凃瀞珽"
           ],
           "topic": "other",
           "keywords": [
