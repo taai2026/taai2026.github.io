@@ -1750,11 +1750,11 @@ a.partner-card:hover .partner-name {
 .cta-heading { margin-inline: auto; }
 .venue-stay-title { margin-top: 1rem; }
 .hero-jump { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
-.rate-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.75rem; margin-top: 1.25rem; }
+.rate-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; margin-top: 1.25rem; }
 .rate-card { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.1rem; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 .rate-room { font-weight: 700; color: var(--ink); }
 .rate-meta { font-size: 0.85rem; color: var(--ink-soft); }
-.rate-price { margin-top: 0.5rem; font-size: 1.5rem; font-weight: 800; color: var(--green); line-height: 1.1; }
+.rate-price { margin-top: 0.5rem; white-space: nowrap; font-size: 1.5rem; font-weight: 800; color: var(--green); line-height: 1.1; }
 .rate-price small { font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); }
 .rate-note { margin-top: 0.75rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--ink-soft); }
 
@@ -2657,9 +2657,14 @@ a.partner-card:hover .partner-name {
 
 .stay-photos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin: 1.4rem 0;
+}
+
+@media (max-width: 640px) {
+  .stay-photos,
+  .rate-list { grid-template-columns: 1fr; }
 }
 
 .stay-photo { margin: 0; }
