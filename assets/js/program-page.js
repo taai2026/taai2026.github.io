@@ -767,7 +767,7 @@ async function init() {
       abstract: textOf(card, ".keynote-more p").join(" ")
     });
   });
-  [["#invited-sessions", "invited"], ["#high-school-sessions", "high-school"], ["#partner-events", "partner"]].forEach(([section, kind]) => {
+  [["#invited-sessions", "invited"], ["#high-school-sessions", "high-school"], ["#partner-events", "partner"], ["#awards-thesis", "other"]].forEach(([section, kind]) => {
     document.querySelectorAll(`${section} article.ps-session[id]`).forEach(article => {
       const talks = [...article.querySelectorAll(".ps-paper[id]")];
       if (!talks.length) {
