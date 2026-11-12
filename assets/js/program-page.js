@@ -566,7 +566,7 @@ async function init() {
     const heading = clean(card.querySelector("h3")?.textContent);
     addItem(card, {
       kind: "keynote", start, end,
-      title: card.id === "panel" ? heading : `${label}: ${heading}`,
+      title: `${label}: ${heading}`,
       people: clean(card.querySelector(".keynote-speaker")?.textContent),
       room: metaRoom(meta) || strings.plenaryRoom,
       anchor: meta
