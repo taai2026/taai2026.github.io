@@ -785,8 +785,8 @@ async function init() {
         addExtra(talk, kind, {
           title: [item.title, ...textOf(talk, ".ps-paper-title-alt")].join(" "),
           start: item.start, end: item.end, room: item.room,
-          people: textOf(talk, ".ps-speaker"),
-          affiliations: textOf(talk, ".ps-paper-meta")
+          people: textOf(talk, ".ps-author, .ps-speaker"),
+          affiliations: textOf(talk, ".ps-aff, .ps-paper-meta")
         });
       });
     });
