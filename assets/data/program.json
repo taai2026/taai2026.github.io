@@ -20,7 +20,10 @@
       "end": "2026-11-20T12:00+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "陳建彰 教授（淡江大學資訊工程學系）",
+        "en": "Prof. Chien-Chang Chen (Tamkang University)"
+      },
       "topics": [
         {
           "topic": "optimization",
@@ -213,7 +216,10 @@
       "end": "2026-11-20T12:00+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "林英嘉 教授（長庚大學人工智慧學系）",
+        "en": "Prof. Ying-Jia Lin (Chang Gung University)"
+      },
       "topics": [
         {
           "topic": "data-mining",
@@ -388,7 +394,10 @@
       "end": "2026-11-20T12:00+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "張詠淳 教授（臺北醫學大學）",
+        "en": "Prof. Yung-Chun Chang (Taipei Medical University)"
+      },
       "topics": [
         {
           "topic": "optimization",
@@ -563,7 +572,10 @@
       "end": "2026-11-20T14:20+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "謝易錚 教授（國立臺灣科技大學電機工程系）",
+        "en": "Prof. Yi-Zeng Hsieh (National Taiwan University of Science and Technology)"
+      },
       "topics": [
         {
           "topic": "games",
@@ -748,7 +760,10 @@
       "end": "2026-11-20T14:20+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "吳孟倫 教授（淡江大學資訊工程學系）",
+        "en": "Prof. Meng-Luen Wu (Tamkang University)"
+      },
       "topics": [
         {
           "topic": "health",
@@ -919,7 +934,10 @@
       "end": "2026-11-20T14:20+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "林英嘉 教授（長庚大學人工智慧學系）",
+        "en": "Prof. Ying-Jia Lin (Chang Gung University)"
+      },
       "topics": [
         {
           "topic": "health",
@@ -1170,7 +1188,10 @@
       "end": "2026-11-20T16:00+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "唐士傑 教授（國立成功大學工程科學系）",
+        "en": "Prof. Shih-Chieh Tang (National Cheng Kung University)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -1355,7 +1376,10 @@
       "end": "2026-11-20T16:00+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "謝易錚 教授（國立臺灣科技大學電機工程系）",
+        "en": "Prof. Yi-Zeng Hsieh (National Taiwan University of Science and Technology)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -1517,7 +1541,10 @@
       "end": "2026-11-20T16:00+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "吳孟倫 教授（淡江大學資訊工程學系）",
+        "en": "Prof. Meng-Luen Wu (Tamkang University)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -1714,7 +1741,10 @@
       "end": "2026-11-21T11:00+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "李健興 教授（國立臺南大學資訊工程學系）",
+        "en": "Prof. Jian-Xing Li (National University of Tainan)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -1827,7 +1857,10 @@
       "end": "2026-11-21T11:00+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "吳孟倫 教授（淡江大學資訊工程學系）",
+        "en": "Prof. Meng-Luen Wu (Tamkang University)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -1929,7 +1962,10 @@
       "end": "2026-11-21T11:00+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "潘令妍 教授（國立臺北大學資訊管理研究所）",
+        "en": "Prof. Ling-Yen Pan (National Taipei University)"
+      },
       "topics": [
         {
           "topic": "vision",
@@ -2187,7 +2223,10 @@
       "end": "2026-11-21T12:00+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "廖文宏 教授",
+        "en": "Prof. Wen-Hung Liao"
+      },
       "topics": [
         {
           "topic": "nlp",
@@ -2298,7 +2337,10 @@
       "end": "2026-11-21T12:00+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "蘇明祥 教授（東吳大學資料科學系）",
+        "en": "Prof. Minghsiang Su (Soochow University)"
+      },
       "topics": [
         {
           "topic": "nlp",
@@ -2426,7 +2468,10 @@
       "end": "2026-11-21T12:00+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "張詠淳 教授（臺北醫學大學）",
+        "en": "Prof. Yung-Chun Chang (Taipei Medical University)"
+      },
       "topics": [
         {
           "topic": "nlp",
@@ -2630,7 +2675,10 @@
       "end": "2026-11-21T14:20+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "黃國展 教授（國立臺中教育大學資訊工程學系）",
+        "en": "Prof. Kuo-Chan Huang (National Taichung University of Education)"
+      },
       "topics": [
         {
           "topic": "nlp",
@@ -2784,7 +2832,10 @@
       "end": "2026-11-21T14:20+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "潘欣泰 教授（國立高雄大學資訊工程學系）",
+        "en": "Prof. Shing-Tai Pan (National University of Kaohsiung)"
+      },
       "topics": [
         {
           "topic": "agents",
@@ -2941,7 +2992,10 @@
       "end": "2026-11-21T14:20+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "黃懷陞 教授（國立臺北大學資訊管理研究所）",
+        "en": "Prof. Huai-Sheng Huang (National Taipei University)"
+      },
       "topics": [
         {
           "topic": "nlp",
@@ -3183,7 +3237,10 @@
       "end": "2026-11-21T15:30+08:00",
       "room": "room-a",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "林莊傑 教授",
+        "en": "Prof. Chuang-Chieh Lin"
+      },
       "topics": [
         {
           "topic": "security",
@@ -3296,7 +3353,10 @@
       "end": "2026-11-21T15:30+08:00",
       "room": "room-b",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "徐茂修 教授",
+        "en": "Prof. Mao-Hsiu Hsu"
+      },
       "topics": [
         {
           "topic": "education",
@@ -3426,7 +3486,10 @@
       "end": "2026-11-21T15:30+08:00",
       "room": "poster-area",
       "title": null,
-      "chair": null,
+      "chair": {
+        "zh": "楊雅棠 教授",
+        "en": "Prof. Ya-Tang Yang"
+      },
       "topics": [
         {
           "topic": "education",
