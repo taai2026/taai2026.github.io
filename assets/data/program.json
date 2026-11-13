@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "status": "tentative",
+  "status": "final",
   "timezone": "Asia/Taipei",
   "utcOffset": "+08:00",
-  "generatedAt": "2026-11-09T12:00+08:00",
+  "generatedAt": "2026-11-14T06:38+08:00",
   "presentation": {
     "oralMinutes": 10,
     "oralTalkMinutes": 8,
