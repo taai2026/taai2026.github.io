@@ -3204,6 +3204,14 @@ a.partner-card:hover .partner-name {
   align-items: start;
 }
 
+/* Invited, high school and partner sessions stack full width, like the keynote cards, instead of side by side. */
+#invited-sessions .ps-slot,
+#high-school-sessions .ps-slot,
+#partner-events .ps-slot {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
 .ps-session {
   padding: 1.1rem 1.2rem;
   background: rgba(255, 255, 255, 0.82);
