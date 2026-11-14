@@ -47,7 +47,29 @@
       <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">首頁</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">議程<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="program.html">議程總覽</a></li>
+              <li><a href="program.html#paper-sessions">論文發表場次</a></li>
+              <li><a href="program.html#keynotes">主題演講</a></li>
+              <li><a href="program.html#handbook">大會手冊</a></li>
+              <li><a href="program.html#room-guide">會議廳對照表</a></li>
+              <li><a href="program.html#poster-guidelines">海報發表規範</a></li>
+              <li><a href="program.html#awards">論文獎項</a></li>
+            </ul>
+          </li>
           <li><a href="news.html">最新消息</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">會場<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="venue.html">會場介紹</a></li>
+              <li><a href="venue.html#getting-here">如何抵達</a></li>
+              <li><a href="venue.html#shuttle">接駁車時刻表</a></li>
+              <li><a href="venue.html#hotels">住宿選擇</a></li>
+            </ul>
+          </li>
+          <li><a href="registration.html" class="nav-cta">報名</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -55,27 +77,6 @@
               <li><a href="camera-ready.html">完稿與授權書</a></li>
               <li><a href="cfphss.html">高中生特別場次</a></li>
               <li><a href="keydates.html">重要日期</a></li>
-            </ul>
-          </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
-          <li class="nav-group">
-            <button type="button" class="nav-drop-btn" aria-expanded="false">議程<span class="caret" aria-hidden="true"></span></button>
-            <ul class="nav-drop">
-              <li><a href="program.html">議程總覽</a></li>
-              <li><a href="program.html#keynotes">主題演講</a></li>
-              <li><a href="program.html#paper-sessions">論文發表場次</a></li>
-              <li><a href="program.html#poster-guidelines">海報發表規範</a></li>
-              <li><a href="program.html#awards">論文獎項</a></li>
-              <li><a href="program.html#room-guide">會議廳對照表</a></li>
-              <li><a href="program.html#handbook">大會手冊</a></li>
-            </ul>
-          </li>
-          <li class="nav-group">
-            <button type="button" class="nav-drop-btn" aria-expanded="false">會場<span class="caret" aria-hidden="true"></span></button>
-            <ul class="nav-drop">
-              <li><a href="venue.html">會場介紹</a></li>
-              <li><a href="venue.html#getting-here">如何抵達</a></li>
-              <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
           <li class="nav-group">
@@ -116,7 +117,8 @@
             <p class="hero-deadline" data-phase="submission">國際／國內論文組投稿截止日期最後延長至 <strong>2026 年 9 月 28 日 23:59 AoE</strong>（台北時間 2026 年 9 月 29 日 19:59）。此次為最後一次延長，敬請把握投稿時間。</p>
             <p class="hero-deadline" data-phase="earlybird" hidden>早鳥報名將於 <strong>2026 年 10 月 31 日 23:59 AoE</strong>截止。論文錄取通知已寄出，錄取論文的作者須於同一截止日前完成完稿與發表作者報名。</p>
             <p class="hero-deadline" data-phase="regular" hidden>一般報名將於 <strong>2026 年 11 月 13 日 23:59 AoE</strong>截止。</p>
-            <p class="hero-deadline" data-phase="conference" hidden>TAAI 2026 將於 <strong>2026 年 11 月 20–21 日</strong>舉行，期待與您相見。</p>
+            <p class="hero-deadline" data-phase="conference" hidden>TAAI 2026 將於 <strong>2026 年 11 月 20–21 日</strong>舉行，議程與大會手冊已公布，期待與您相見。</p>
+            <p class="hero-deadline" data-phase="post" hidden>感謝您參與 TAAI 2026！議程、主題演講摘要與大會手冊仍可於本站查閱。</p>
 
             <div class="hero-ctas" data-phase="submission">
               <a href="https://openreview.net/group?id=TAAI.org/2026/Conference" target="_blank" rel="noopener" class="btn btn-primary">立即投稿 <span class="arrow">→</span></a>
@@ -124,16 +126,18 @@
             </div>
             <div class="hero-ctas" data-phase="earlybird regular" hidden>
               <a href="registration.html" class="btn btn-primary">立即報名 <span class="arrow">→</span></a>
-              <a href="camera-ready.html" class="btn btn-primary">完稿與著作授權書 <span class="arrow">→</span></a>
-              <a href="program.html" class="btn btn-ghost">查看議程</a>
-            </div>
-            <div class="hero-ctas" data-phase="conference" hidden>
               <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
-              <a href="venue.html" class="btn btn-ghost">會場與交通</a>
+              <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
+            </div>
+            <div class="hero-ctas" data-phase="conference post" hidden>
+              <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
+              <a href="program.html#handbook" class="btn btn-primary">下載大會手冊 <span class="arrow">→</span></a>
+              <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>會場與交通</a>
             </div>
 
             <p class="hero-secondary" data-phase="submission">已錄取或一般與會者？<a href="registration.html">前往報名</a> · <a href="keydates.html">重要日期</a> · <a href="sponsorship.html">成為贊助夥伴</a></p>
-            <p class="hero-secondary" data-phase="earlybird regular conference" hidden><a href="keydates.html">重要日期</a> · <a href="venue.html">會場與交通</a> · <a href="sponsorship.html">成為贊助夥伴</a></p>
+            <p class="hero-secondary" data-phase="conference" hidden><a href="program.html#paper-sessions">找我的論文</a> · <a href="venue.html#shuttle">接駁車時刻表</a> · <a href="registration.html">現場報名</a></p>
+            <p class="hero-secondary" data-phase="earlybird regular" hidden><a href="keydates.html">重要日期</a> · <a href="venue.html">會場與交通</a> · <a href="sponsorship.html">成為贊助夥伴</a></p>
           </div>
         </div>
 
@@ -155,7 +159,15 @@
       </div>
 
       <div class="feature-grid">
-        <article class="feature reveal">
+        <article class="feature reveal" data-phase="regular conference post" hidden>
+          <div class="num">◦ 1</div>
+          <h3>我是發表作者</h3>
+          <p>依論文編號、題目或作者姓名查詢您的場次、發表時間與海報看板編號。口頭發表每篇約 8 分鐘報告＋2 分鐘問答，請於場次開始前約 10 分鐘到場。</p>
+          <a href="program.html#paper-sessions" class="btn btn-primary">找我的論文 <span class="arrow">→</span></a>
+          <a href="program.html#poster-guidelines" class="btn btn-ghost">海報發表規範</a>
+        </article>
+
+        <article class="feature reveal" data-phase="submission earlybird">
           <div class="num">◦ 1</div>
           <h3>我要投稿</h3>
           <p data-phase="submission">國際論文組與國內論文組投稿截止日期最後延長至 <strong>2026 年 9 月 28 日 23:59 AoE</strong>（台北時間 2026 年 9 月 29 日 19:59）。此次為最後一次延長，敬請有意投稿者把握最後機會。</p>
@@ -167,14 +179,26 @@
 
         <article class="feature reveal">
           <div class="num">◦ 2</div>
-          <h3>我要參加</h3>
+          <h3 data-phase="submission earlybird regular conference">我要參加</h3>
+          <h3 data-phase="post" hidden>感謝參與</h3>
           <p data-phase="submission earlybird">報名已開放。早鳥優惠至 <strong>2026 年 10 月 31 日</strong>，一般報名至 <strong>2026 年 11 月 13 日</strong>。</p>
           <p data-phase="regular" hidden>一般報名至 <strong>2026 年 11 月 13 日 23:59 AoE</strong>，逾期將以現場報名辦理。</p>
-          <p data-phase="conference" hidden>線上報名已截止，可於現場報名。<strong>2026 年 11 月 20–21 日</strong>大板根森林溫泉酒店見。</p>
-          <a href="registration.html" class="btn btn-primary">報名資訊 <span class="arrow">→</span></a>
+          <p data-phase="conference" hidden>線上報名已截止，可於現場報名。兩天報到時間皆為 <strong>08:00–17:00</strong>，地點 5F 麗山廳開放中庭；免費接駁車需線上預約。</p>
+          <p data-phase="post" hidden>TAAI 2026 已圓滿落幕，感謝所有與會者、講者與主持人。</p>
+          <a href="registration.html" class="btn btn-primary" data-phase="submission earlybird regular">報名資訊 <span class="arrow">→</span></a>
+          <a href="venue.html#shuttle" class="btn btn-primary" data-phase="conference" hidden>接駁車與交通 <span class="arrow">→</span></a>
+          <a href="registration.html" class="btn btn-ghost" data-phase="conference" hidden>現場報名</a>
         </article>
 
-        <article class="feature reveal">
+        <article class="feature reveal" data-phase="regular conference post" hidden>
+          <div class="num">◦ 3</div>
+          <h3>下載大會手冊</h3>
+          <p>大會手冊（PDF）收錄議程總覽、主題演講摘要、論文發表場次與作者索引。為響應永續，本屆不提供紙本手冊。</p>
+          <a href="../assets/downloads/handbook/taai2026-conference-handbook-zh.pdf" class="btn btn-primary" target="_blank" rel="noopener">中文版 PDF <span class="arrow">↗</span><span class="sr-only">（另開新分頁）</span></a>
+          <a href="../assets/downloads/handbook/taai2026-conference-handbook-en.pdf" class="btn btn-ghost" lang="en" target="_blank" rel="noopener">English PDF<span class="sr-only">（另開新分頁）</span></a>
+        </article>
+
+        <article class="feature reveal" data-phase="submission earlybird">
           <div class="num">◦ 3</div>
           <h3>我是高中生</h3>
           <p data-phase="submission">高中生專題組：論文以 4 頁為限，以電子郵件投稿，截止 <strong>2026 年 9 月 30 日</strong>。</p>
