@@ -197,15 +197,20 @@
 
   /* ---- Conference phase (drives hero CTAs and start-here cards) ----
      submission → until Sep 28 23:59 AoE · earlybird → until Oct 31 23:59 AoE
-     regular → until Nov 13 23:59 AoE · conference → afterwards.
-     Any element with data-phase="a b" is shown only in those phases. */
+     regular → until Nov 13 23:59 AoE · conference → until the conference ends
+     (Nov 21 18:00 Taipei) · post → afterwards.
+     Any element with data-phase="a b" is shown only in those phases.
+     For previews, ?now=2026-11-22T09:00+08:00 renders the page at that instant. */
   const PHASES = [
     ['submission', '2026-09-28T23:59:59-12:00'],
     ['earlybird', '2026-10-31T23:59:59-12:00'],
     ['regular', '2026-11-13T23:59:59-12:00'],
-    ['conference', null]
+    ['conference', '2026-11-21T18:00:00+08:00'],
+    ['post', null]
   ];
-  const phaseNow = (PHASES.find(([, end]) => !end || Date.now() <= Date.parse(end)) || PHASES[PHASES.length - 1])[0];
+  const phaseAt = nowMs => (PHASES.find(([, end]) => !end || nowMs <= Date.parse(end)) || PHASES[PHASES.length - 1])[0];
+  const previewNow = Date.parse(new URLSearchParams(location.search).get('now') || '');
+  const phaseNow = phaseAt(Number.isNaN(previewNow) ? Date.now() : previewNow);
   document.documentElement.dataset.phase = phaseNow;
   document.querySelectorAll('[data-phase]').forEach(el => {
     if (el === document.documentElement) return;
