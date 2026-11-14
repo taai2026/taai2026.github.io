@@ -37,7 +37,9 @@ async function init() {
       fetchJson(`${dataBase}/news.json`)
     ]);
 
-    const now = Date.now();
+    // ?now=<ISO datetime> previews the homepage at another instant (same as main.js).
+    const previewNow = Date.parse(new URLSearchParams(location.search).get("now") || "");
+    const now = Number.isNaN(previewNow) ? Date.now() : previewNow;
     const items = getHomepageNews(news.items, conference, locale, now);
 
     mount.innerHTML = "";
