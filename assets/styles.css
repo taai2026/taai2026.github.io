@@ -2994,10 +2994,20 @@ a.partner-card:hover .partner-name {
     padding-right: 2.2rem;
   }
 
-  .glance td:not(.g-time) a::after {
+  /* Only the card's first in-page link (its session) is stretched over the
+     card. Further links — a second session, or an external venue link —
+     stay ordinary inline links layered above that overlay, so they can
+     never capture a tap meant for the session. */
+  .glance td:not(.g-time) > a[href^="#"]:first-of-type::after {
     content: "";
     position: absolute;
     inset: 0;
+  }
+
+  .glance td:not(.g-time) a:not(:first-of-type),
+  .glance td:not(.g-time) small a {
+    position: relative;
+    z-index: 1;
   }
 
   .glance td:not(.g-time):has(a)::after {
@@ -3045,6 +3055,12 @@ a.partner-card:hover .partner-name {
     backdrop-filter: none;
     color: var(--ink-soft);
     font-weight: 600;
+  }
+
+  /* These one-line rows are not cards: no chevron, and their venue link
+     stays inline (padding-right from the card rule is reset above). */
+  .glance tr:has(> td[colspan="6"]:not(.g-plenary):not(.g-social)) > td::after {
+    content: none;
   }
 }
 
