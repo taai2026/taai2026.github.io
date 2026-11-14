@@ -2,6 +2,111 @@
   "version": 1,
   "items": [
     {
+      "id": "final-program-and-handbook-published",
+      "type": "program-update",
+      "category": "program",
+      "publishedAt": "2026-11-14T08:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 正式議程與大會手冊公布",
+          "summary": "TAAI 2026 正式議程已公布，涵蓋四場主題演講、國際座談、Agentic AI 專題教學 1／2、Physical AI 專題教學、青年女性之星場次、產業軌道、跨域 AI 永續創新場次，以及 158 篇論文的口頭與海報發表場次，各場次主持人亦已列出。議程頁「論文發表場次」可依論文編號、題目、作者或關鍵字搜尋，並可將場次加入「我的議程」或行事曆。大會手冊（PDF，中文版與英文版）收錄議程總覽、主題演講摘要、論文發表場次與作者索引，可於議程頁下載；為響應永續，本屆不提供紙本手冊。時間均為臺北時間（UTC+8）。",
+          "linkLabel": "查看議程與下載大會手冊",
+          "tags": [
+            "議程",
+            "大會手冊",
+            "論文發表場次",
+            "場次主持人",
+            "專題教學",
+            "program",
+            "handbook"
+          ]
+        },
+        "en": {
+          "title": "TAAI 2026 Final Program and Conference Handbook Released",
+          "summary": "The final TAAI 2026 program is now available, covering four keynote speeches, the International Panel, Agentic AI Tutorials 1 and 2, the Physical AI Tutorial, the Young Woman Star Session, the Industrial Track, the Cross-Domain AI Sustainable Innovation sessions, and oral and poster sessions for 158 papers, with session chairs listed. Paper Sessions on the Program page is searchable by paper ID, title, author, or keyword, and sessions can be saved to My program or a calendar. The conference handbook (PDF, English and Chinese editions) includes the program at a glance, keynote abstracts, paper sessions, and an author index, and can be downloaded from the Program page; to support sustainability, no printed handbook is provided. Times are Asia/Taipei (UTC+8).",
+          "linkLabel": "View the program and download the handbook",
+          "tags": [
+            "program",
+            "handbook",
+            "paper sessions",
+            "session chairs",
+            "tutorials"
+          ]
+        }
+      },
+      "links": {
+        "zh": "program.html#handbook",
+        "en": "program.html#handbook"
+      },
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "pinned": true,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-14T08:00:00+08:00",
+        "until": "2026-12-31T23:59:59+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
+      "id": "onsite-check-in-and-shuttle",
+      "type": "logistics",
+      "category": "transportation",
+      "publishedAt": "2026-11-14T08:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "報到、現場報名與免費接駁車資訊",
+          "summary": "11 月 20–21 日兩天報到時間皆為 08:00–17:00，報到處位於大板根森林溫泉酒店 5F 麗山廳開放中庭。線上報名已於 11 月 13 日 23:59 AoE 截止，之後請於現場報名，適用現場費率，僅接受現金（新臺幣）及信用卡（Visa、MasterCard、JCB）。大會提供免費接駁車（需線上預約）：兩天早上由捷運臺北大學站（三鶯線）08:30 及板橋高鐵站 08:40 發車；回程第 1 天 20:20、第 2 天 17:20 由會場發車。完整時刻表與預約連結請見會場頁。",
+          "linkLabel": "查看接駁車時刻表",
+          "tags": [
+            "報到",
+            "現場報名",
+            "接駁車",
+            "交通",
+            "會場",
+            "shuttle"
+          ]
+        },
+        "en": {
+          "title": "Check-in, On-site Registration, and Free Shuttle",
+          "summary": "Check-in is open 08:00–17:00 on both November 20 and 21 at the 5F Lishan Hall open courtyard of The Great Roots Forestry Spa Resort. Online registration closed on November 13, 23:59 AoE; after that, please register on-site at the on-site rate, payable in cash (NTD) or by credit card (Visa, MasterCard, JCB). A free conference shuttle is available with online booking: on both mornings it departs from MRT Taipei University Station (Sanying Line) at 08:30 and Banqiao HSR Station at 08:40; return buses leave the venue at 20:20 on Day 1 and 17:20 on Day 2. See the Venue page for the full timetable and booking link.",
+          "linkLabel": "View the shuttle timetable",
+          "tags": [
+            "check-in",
+            "on-site registration",
+            "shuttle",
+            "transportation",
+            "venue"
+          ]
+        }
+      },
+      "links": {
+        "zh": "venue.html#shuttle",
+        "en": "venue.html#shuttle"
+      },
+      "priority": 98,
+      "featured": true,
+      "urgent": false,
+      "pinned": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-14T08:00:00+08:00",
+        "until": "2026-11-21T18:00:00+08:00"
+      },
+      "audience": [
+        "attendee",
+        "author",
+        "speaker"
+      ]
+    },
+    {
       "id": "keynote-speakers-announced",
       "type": "program-update",
       "category": "speaker",
@@ -79,7 +184,7 @@
       "homepage": {
         "enabled": true,
         "from": "2026-11-02T06:20:00+08:00",
-        "until": "2026-11-21T18:00:00+08:00"
+        "until": "2026-11-14T08:00:00+08:00"
       },
 
       "audience": ["author", "attendee"]
