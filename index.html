@@ -47,7 +47,29 @@
       <nav id="primary-nav">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">Program<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="program.html">Program Overview</a></li>
+              <li><a href="program.html#paper-sessions">Paper Sessions</a></li>
+              <li><a href="program.html#keynotes">Keynote Speeches</a></li>
+              <li><a href="program.html#handbook">Conference Handbook</a></li>
+              <li><a href="program.html#room-guide">Room Guide</a></li>
+              <li><a href="program.html#poster-guidelines">Poster Guidelines</a></li>
+              <li><a href="program.html#awards">Awards</a></li>
+            </ul>
+          </li>
           <li><a href="news.html">News</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">Venue<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="venue.html">Venue Overview</a></li>
+              <li><a href="venue.html#getting-here">Getting Here</a></li>
+              <li><a href="venue.html#shuttle">Shuttle timetable</a></li>
+              <li><a href="venue.html#hotels">Where to Stay</a></li>
+            </ul>
+          </li>
+          <li><a href="registration.html" class="nav-cta">Registration</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -55,27 +77,6 @@
               <li><a href="camera-ready.html">Camera-Ready</a></li>
               <li><a href="cfphss.html">High School Special Session</a></li>
               <li><a href="keydates.html">Important Dates</a></li>
-            </ul>
-          </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
-          <li class="nav-group">
-            <button type="button" class="nav-drop-btn" aria-expanded="false">Program<span class="caret" aria-hidden="true"></span></button>
-            <ul class="nav-drop">
-              <li><a href="program.html">Program Overview</a></li>
-              <li><a href="program.html#keynotes">Keynote Speeches</a></li>
-              <li><a href="program.html#paper-sessions">Paper Sessions</a></li>
-              <li><a href="program.html#poster-guidelines">Poster Guidelines</a></li>
-              <li><a href="program.html#awards">Awards</a></li>
-              <li><a href="program.html#room-guide">Room Guide</a></li>
-              <li><a href="program.html#handbook">Conference Handbook</a></li>
-            </ul>
-          </li>
-          <li class="nav-group">
-            <button type="button" class="nav-drop-btn" aria-expanded="false">Venue<span class="caret" aria-hidden="true"></span></button>
-            <ul class="nav-drop">
-              <li><a href="venue.html">Venue Overview</a></li>
-              <li><a href="venue.html#getting-here">Getting Here</a></li>
-              <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
           <li class="nav-group">
@@ -116,7 +117,8 @@
             <p class="hero-deadline" data-phase="submission">Paper submission (International &amp; Domestic Tracks) has been finally extended to <strong>September 28, 2026, 23:59 AoE</strong> (Taipei time: September 29, 2026, 19:59).</p>
             <p class="hero-deadline" data-phase="earlybird" hidden>Early-bird registration closes <strong>October 31, 2026, 23:59 AoE</strong>. Acceptance notifications have been sent; accepted authors must submit camera-ready papers and complete presenting-author registration by the same deadline.</p>
             <p class="hero-deadline" data-phase="regular" hidden>Regular registration closes <strong>November 13, 2026, 23:59 AoE</strong>.</p>
-            <p class="hero-deadline" data-phase="conference" hidden>See you at TAAI 2026, <strong>November 20–21, 2026</strong>.</p>
+            <p class="hero-deadline" data-phase="conference" hidden>The program and conference handbook are out. See you at TAAI 2026, <strong>November 20–21, 2026</strong>.</p>
+            <p class="hero-deadline" data-phase="post" hidden>Thank you for joining TAAI 2026! The program, keynote abstracts, and conference handbook remain available on this site.</p>
 
             <div class="hero-ctas" data-phase="submission">
               <a href="https://openreview.net/group?id=TAAI.org/2026/Conference" target="_blank" rel="noopener" class="btn btn-primary">Submit a paper <span class="arrow">→</span></a>
@@ -124,16 +126,18 @@
             </div>
             <div class="hero-ctas" data-phase="earlybird regular" hidden>
               <a href="registration.html" class="btn btn-primary">Register now <span class="arrow">→</span></a>
-              <a href="camera-ready.html" class="btn btn-primary">Camera-ready &amp; copyright form <span class="arrow">→</span></a>
-              <a href="program.html" class="btn btn-ghost">Program</a>
-            </div>
-            <div class="hero-ctas" data-phase="conference" hidden>
               <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
-              <a href="venue.html" class="btn btn-ghost">Venue &amp; travel</a>
+              <a href="program.html#handbook" class="btn btn-ghost">Conference handbook</a>
+            </div>
+            <div class="hero-ctas" data-phase="conference post" hidden>
+              <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
+              <a href="program.html#handbook" class="btn btn-primary">Download the handbook <span class="arrow">→</span></a>
+              <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>Venue &amp; travel</a>
             </div>
 
             <p class="hero-secondary" data-phase="submission">Accepted author or general attendee? <a href="registration.html">Go to registration</a> · <a href="keydates.html">Important dates</a> · <a href="sponsorship.html">Become a sponsor</a></p>
-            <p class="hero-secondary" data-phase="earlybird regular conference" hidden><a href="keydates.html">Important dates</a> · <a href="venue.html">Venue &amp; travel</a> · <a href="sponsorship.html">Become a sponsor</a></p>
+            <p class="hero-secondary" data-phase="conference" hidden><a href="program.html#paper-sessions">Find my paper</a> · <a href="venue.html#shuttle">Shuttle timetable</a> · <a href="registration.html">On-site registration</a></p>
+            <p class="hero-secondary" data-phase="earlybird regular" hidden><a href="keydates.html">Important dates</a> · <a href="venue.html">Venue &amp; travel</a> · <a href="sponsorship.html">Become a sponsor</a></p>
           </div>
         </div>
 
@@ -155,7 +159,15 @@
       </div>
 
       <div class="feature-grid">
-        <article class="feature reveal">
+        <article class="feature reveal" data-phase="regular conference post" hidden>
+          <div class="num">◦ 1</div>
+          <h3>I am a presenting author</h3>
+          <p>Look up your session, presentation time, and poster board number by paper ID, title, or author. Oral talks are about 8 minutes plus 2 minutes of Q&amp;A; please arrive about 10 minutes before your session starts.</p>
+          <a href="program.html#paper-sessions" class="btn btn-primary">Find my paper <span class="arrow">→</span></a>
+          <a href="program.html#poster-guidelines" class="btn btn-ghost">Poster guidelines</a>
+        </article>
+
+        <article class="feature reveal" data-phase="submission earlybird">
           <div class="num">◦ 1</div>
           <h3>I want to submit a paper</h3>
           <p data-phase="submission">International and Domestic Tracks. Deadline <strong>September 28, 2026, 23:59 AoE</strong> (originally September 21, 2026; final extension). Templates and rules on the Call for Papers page.</p>
@@ -166,14 +178,26 @@
 
         <article class="feature reveal">
           <div class="num">◦ 2</div>
-          <h3>I want to attend</h3>
+          <h3 data-phase="submission earlybird regular conference">I want to attend</h3>
+          <h3 data-phase="post" hidden>Thank you for joining</h3>
           <p data-phase="submission earlybird">Registration is open. Early-bird rates until <strong>October 31, 2026</strong>; regular registration until <strong>November 13, 2026</strong>.</p>
           <p data-phase="regular" hidden>Regular registration until <strong>November 13, 2026, 23:59 AoE</strong>. Later registrations are handled on-site.</p>
-          <p data-phase="conference" hidden>Registration closes on-site. Join us <strong>November 20–21, 2026</strong> at The Great Roots Forestry Spa Resort.</p>
-          <a href="registration.html" class="btn btn-primary">Registration <span class="arrow">→</span></a>
+          <p data-phase="conference" hidden>Online registration has closed; on-site registration is available. Check-in is open <strong>08:00–17:00</strong> on both days at the 5F Lishan Hall open courtyard. The free shuttle requires online booking.</p>
+          <p data-phase="post" hidden>TAAI 2026 has concluded. Thank you to all attendees, speakers, and session chairs.</p>
+          <a href="registration.html" class="btn btn-primary" data-phase="submission earlybird regular">Registration <span class="arrow">→</span></a>
+          <a href="venue.html#shuttle" class="btn btn-primary" data-phase="conference" hidden>Shuttle &amp; travel <span class="arrow">→</span></a>
+          <a href="registration.html" class="btn btn-ghost" data-phase="conference" hidden>On-site registration</a>
         </article>
 
-        <article class="feature reveal">
+        <article class="feature reveal" data-phase="regular conference post" hidden>
+          <div class="num">◦ 3</div>
+          <h3>Download the handbook</h3>
+          <p>The conference handbook (PDF) includes the program at a glance, keynote abstracts, paper sessions, and an author index. To support sustainability, no printed handbook is provided.</p>
+          <a href="assets/downloads/handbook/taai2026-conference-handbook-en.pdf" class="btn btn-primary" target="_blank" rel="noopener">English PDF <span class="arrow">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="assets/downloads/handbook/taai2026-conference-handbook-zh.pdf" class="btn btn-ghost" target="_blank" rel="noopener"><span lang="zh-Hant">中文版 PDF</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </article>
+
+        <article class="feature reveal" data-phase="submission earlybird">
           <div class="num">◦ 3</div>
           <h3>I am a high school student</h3>
           <p data-phase="submission">High School Session: papers up to 4 pages, submitted by email. Deadline <strong>September 30, 2026</strong>.</p>
