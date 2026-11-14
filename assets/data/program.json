@@ -395,8 +395,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "張詠淳 教授（臺北醫學大學）",
-        "en": "Prof. Yung-Chun Chang (Taipei Medical University)"
+        "zh": "張詠淳 教授（臺北醫學大學）、陳弘軒 教授（國立中央大學資訊工程學系）",
+        "en": "Prof. Yung-Chun Chang (Taipei Medical University); Prof. Hung-Hsuan Chen (National Central University)"
       },
       "topics": [
         {
@@ -935,8 +935,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "林英嘉 教授（長庚大學人工智慧學系）、宋經天（資訊工業策進會）",
-        "en": "Prof. Ying-Jia Lin (Chang Gung University); Jing-Tian Sung (Institute for Information Industry)"
+        "zh": "宋經天（資訊工業策進會）",
+        "en": "Jing-Tian Sung (Institute for Information Industry)"
       },
       "topics": [
         {
@@ -1377,8 +1377,8 @@
       "room": "room-b",
       "title": null,
       "chair": {
-        "zh": "謝易錚 教授（國立臺灣科技大學電機工程系）",
-        "en": "Prof. Yi-Zeng Hsieh (National Taiwan University of Science and Technology)"
+        "zh": "許子衡 教授（南臺科技大學資訊工程系）",
+        "en": "Prof. Tz-Heng Hsu (Southern Taiwan University of Science and Technology)"
       },
       "topics": [
         {
@@ -2469,8 +2469,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "張詠淳 教授（臺北醫學大學）",
-        "en": "Prof. Yung-Chun Chang (Taipei Medical University)"
+        "zh": "邱德泉 教授（國立清華大學資訊工程學系）",
+        "en": "Prof. Te-Chuan Chiu (National Tsing Hua University)"
       },
       "topics": [
         {
@@ -3487,8 +3487,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "楊雅棠 教授（國立清華大學電機工程學系）",
-        "en": "Prof. Ya-Tang Yang (National Tsing Hua University)"
+        "zh": "楊雅棠 教授（國立清華大學電機工程學系）、孫敏德 教授（國立中央大學資訊工程學系）",
+        "en": "Prof. Ya-Tang Yang (National Tsing Hua University); Prof. Min-Te Sun (National Central University)"
       },
       "topics": [
         {
