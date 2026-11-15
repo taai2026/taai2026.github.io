@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -113,10 +115,17 @@
         TAAI 2026 <em class="grad-text">贊助方案</em>
       </h1>
       <p class="lede reveal">
-        TAAI 2026 第 31 屆人工智慧與應用國際研討會，將匯聚 300 位以上的研究學者、碩博士生與產業技術人才，聚焦代理式 AI（Agentic AI）與實體 AI（Physical AI）的跨域永續創新。誠摯邀請 貴公司成為本屆大會的贊助夥伴，讓品牌站上台灣最重要的 AI 學術舞台。
+        TAAI 2026 第 31 屆人工智慧與應用國際研討會，將匯聚 400 位以上的研究學者、碩博士生與產業技術人才，聚焦代理式 AI（Agentic AI）與實體 AI（Physical AI）的跨域永續創新。誠摯邀請 貴公司成為本屆大會的贊助夥伴，讓品牌站上台灣最重要的 AI 學術舞台。
       </p>
       <p class="submit-note reveal">2026 年 11 月 20–21 日 · 大板根森林溫泉酒店（新北市三峽區） · 中華民國人工智慧學會 × 國立臺北大學 主辦</p>
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="conference" hidden><span class="chip">感謝</span> 感謝所有<a href="#partners">贊助與合作單位</a>的支持。贊助素材（2026 年 10 月 23 日）與贈送報名（2026 年 11 月 6 日）的期限皆已截止；贊助相關洽詢請來信 <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a>。11 月 20&ndash;21 日 TAAI 2026 見！</p>
+      <p class="lede hero-deadline reveal" data-phase="post" hidden><span class="chip">感謝</span> 感謝所有<a href="#partners">贊助與合作單位</a>對 TAAI 2026 的支持。</p>
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a class="btn btn-primary" href="#partners">贊助與合作單位</a>
+        <a class="btn btn-ghost" href="program.html">查看議程</a>
+        <a class="btn btn-ghost" href="mailto:taai2026org@gmail.com?subject=TAAI%202026%20%E8%B4%8A%E5%8A%A9%E6%B4%BD%E8%A9%A2">聯繫贊助小組</a>
+      </div>
+      <div data-phase="submission earlybird regular" class="hero-ctas reveal">
         <a class="btn btn-primary" href="#packages">查看贊助方案</a>
         <a class="btn btn-ghost" href="mailto:taai2026org@gmail.com?subject=TAAI%202026%20%E8%B4%8A%E5%8A%A9%E6%B4%BD%E8%A9%A2">聯繫贊助小組</a>
         <a class="btn btn-ghost" href="#partners">贊助與合作單位</a>
@@ -659,7 +668,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

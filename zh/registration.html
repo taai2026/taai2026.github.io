@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -113,14 +115,22 @@
         TAAI 2026 <em class="grad-text">報名註冊</em>
       </h1>
       <p class="lede reveal">
-        所有票種皆包含兩天研討會全程參與、主題演講與議程、咖啡與茶點時段、午餐，以及論文集存取。會議晚宴包含於<strong>全程報名</strong>；學生與陪同人員可加購晚宴票（NT$ 2,000）。住宿需另行預訂。
+        所有票種皆包含兩天研討會全程參與、主題演講與議程、咖啡與茶點時段、午餐，以及論文集存取。會議晚宴包含於<strong>全程報名</strong>；學生與陪同人員可加購晚宴票（NT$ 2,000）。住宿與溫泉設施使用不包含在報名費內，須另行向飯店預訂或購票。
       </p>
-      <p class="lede hero-deadline reveal"><span class="chip">議程</span> 暫定議程已公布，請見<a href="program.html#paper-sessions">論文發表場次</a>。每篇錄取論文須至少有一位完成報名與繳費的發表作者，否則論文可能自議程中移除。論文資訊如需更正，請於 <strong>2026 年 11 月 9 日</strong>前來信 <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a>。</p>
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="submission earlybird regular"><span class="chip">議程</span> 暫定議程已公布，請見<a href="program.html#paper-sessions">論文發表場次</a>。每篇錄取論文須至少有一位完成報名與繳費的發表作者，否則論文可能自議程中移除。論文資訊如需更正，請於 <strong>2026 年 11 月 9 日</strong>前來信 <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a>。</p>
+      <p class="lede hero-deadline reveal" data-phase="conference" hidden><span class="chip">現場報名</span> 線上一般報名已於 <strong>2026 年 11 月 13 日 23:59 AoE</strong> 截止。11 月 20–21 日仍可於 <strong>5F 麗山廳開放中庭</strong>報到處辦理現場報名（兩天皆 08:00–17:00），適用現場費率，接受現金（新臺幣）及信用卡（Visa、Mastercard、JCB）。</p>
+      <p class="lede hero-deadline reveal" data-phase="post" hidden><span class="chip">已截止</span> TAAI 2026 已圓滿結束，報名已截止，感謝您的參與。</p>
+      <div class="hero-ctas reveal" data-phase="conference" hidden>
+        <a href="#onsite-registration" class="btn btn-primary">現場報名 <span class="arrow">→</span></a>
+        <a href="program.html" class="btn btn-ghost">查看議程</a>
+        <a href="venue.html#shuttle" class="btn btn-ghost">接駁車與交通</a>
+        <a href="#faq" class="btn btn-ghost">常見問題</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">前往線上報名註冊系統 <span class="arrow">→</span></a>
         <a href="#faq" class="btn btn-ghost">常見問題 (FAQ)</a>
       </div>
-      <p class="url-note reveal">
+      <p class="url-note reveal" data-phase="submission earlybird regular">
         請務必透過官方<a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer">線上報名註冊系統</a>完成註冊：
         <a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer">https://taai2026-esunbank.taai.org.tw/</a>
       </p>
@@ -261,6 +271,7 @@
           <ul class="info-list">
             <li>所有學術會議場次及展覽的入場資格</li>
             <li>可參加開幕典禮與閉幕典禮</li>
+            <li>會議資料袋（含會議袋、識別證）；大會手冊及論文摘要集僅提供 PDF 數位版（不提供紙本）</li>
             <li>會議晚宴須加購</li>
             <li>會議期間茶點及午餐</li>
           </ul>
@@ -318,7 +329,7 @@
       </div>
 
       <div class="policy-block reveal">
-        <h3>現場報名</h3>
+        <h3 id="onsite-registration">現場報名</h3>
         <p>一般報名截止日期為 2026 年 11 月 13 日（發表作者須更早於完稿截止日前完成報名），逾期報名及繳費者將視為現場報名，並於現場辦理。現場報名僅接受現金（新臺幣）及信用卡（Visa、MasterCard 和 JCB）付款。</p>
       </div>
 
@@ -436,7 +447,7 @@
 <details class="info-card faq-item" id="reg-q11" data-faq-tags="fees">
           <summary>Q11. 報名費包含哪些項目？</summary>
           <div class="faq-body">
-            <p>所有票種皆包含兩天研討會全程參與、主題演講與議程、咖啡與茶點時段、午餐，以及論文集存取。全程報名與發表作者另含會議資料袋與社交活動（開幕與閉幕典禮、會議晚宴）。完整對照請見第 3 節（權益）。</p>
+            <p>所有票種皆包含兩天研討會全程參與、主題演講與議程、咖啡與茶點時段、午餐、論文集存取、會議資料袋，以及開幕與閉幕典禮。會議晚宴僅含於全程報名與發表作者；學生與陪同人員可加購晚宴票（NT$ 2,000）。住宿與溫泉設施使用不包含在報名費內（見 Q28）。完整對照請見第 3 節（權益）。</p>
           </div>
         </details>
 <details class="info-card faq-item" id="reg-q12" data-faq-tags="fees students">
@@ -576,9 +587,9 @@
         </details>
 
 <details class="info-card faq-item" id="reg-q28" data-faq-tags="fees">
-          <summary>Q28. 報名費包含住宿嗎？</summary>
+          <summary>Q28. 報名費包含住宿或溫泉嗎？</summary>
           <div class="faq-body">
-            <p>不包含，住宿需另行預訂。會議飯店與房價請見<a href="venue.html#hotels">會場與交通</a>。</p>
+            <p>不包含，住宿需另行預訂。會議飯店與房價請見<a href="venue.html#hotels">會場與交通</a>。報名費亦不包含溫泉設施使用，須向飯店購票；票價與開放時間以<a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">飯店官網<span class="sr-only">（外部網站，另開新分頁）</span></a>公告為準。</p>
           </div>
         </details>
 <details class="info-card faq-item" id="reg-q29" data-faq-tags="registration">
@@ -659,7 +670,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -115,13 +117,21 @@
         本頁整理論文錄取作者完稿時需要的全部資訊：應繳交的項目、需簽署的表單與適用的截止日期。請搭配<a href="cfp.html#publication-policy">出版政策</a>一併閱讀。
       </p>
 
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">議程</span> 完稿上傳已截止。<a href="program.html">正式議程</a>與<a href="program.html#handbook">大會手冊</a>已公布，請至<a href="program.html#paper-sessions">議程頁</a>確認您的場次、發表時間與地點（海報論文請確認看板編號）。</p>
       <p class="lede hero-deadline reveal"><span class="chip">截止日期</span> 國際／國內論文組完稿截止日期為 <strong>2026 年 10 月 31 日 23:59 AoE</strong>（台北時間 2026 年 11 月 1 日 19:59）。高中生專題組：<strong>2026 年 11 月 8 日 23:59 AoE</strong>。</p>
 
-      <p class="lede hero-deadline reveal"><span class="chip">議程</span> 暫定議程已公布。請至<a href="program.html#paper-sessions">論文發表場次</a>確認您論文的場次、發表時間與地點（海報論文請確認看板編號）。如需更正，或找不到您的論文，請於 <strong>2026 年 11 月 9 日</strong>前來信 <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> 並註明論文編號。</p>
+      <p class="lede hero-deadline reveal" data-phase="submission earlybird regular"><span class="chip">議程</span> 暫定議程已公布。請至<a href="program.html#paper-sessions">論文發表場次</a>確認您論文的場次、發表時間與地點（海報論文請確認看板編號）。如需更正，或找不到您的論文，請於 <strong>2026 年 11 月 9 日</strong>前來信 <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> 並註明論文編號。</p>
 
       <p class="lede hero-deadline reveal"><span class="chip">更新</span> 論文審查結果通知已寄出，寄件者為 <strong>TAAI 2026 &lt;taai2026-notifications@openreview.net&gt;</strong>（請一併檢查垃圾郵件匣），OpenReview 的 Camera Ready Revision 表單已開放。請登入 OpenReview、開啟您的論文，點選 <strong>Edit &gt; Camera Ready Revision</strong>。發表作者的報名與繳費須於同一截止日前完成。</p>
 
-      <div class="hero-ctas reveal">
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">查詢我的論文</a>
+        <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
+        <a href="#downloads" class="btn btn-ghost">格式範例與表單</a>
+        <a href="#faq" class="btn btn-ghost">常見問題 (FAQ)</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="#steps" class="btn btn-primary">步驟 <span class="arrow">→</span></a>
         <a href="#what-to-submit" class="btn btn-ghost">應繳交項目</a>
         <a href="#downloads" class="btn btn-ghost">格式範例與表單</a>
@@ -750,7 +760,7 @@
 <details class="info-card faq-item" id="cr-q54" data-faq-tags="format domestic-abstract">
           <summary>Q54. 在會議現場發表海報有哪些規定？</summary>
           <div class="faq-body">
-            <p>建議使用 A0 直式海報（84.1 cm &times; 118.9 cm）；較小尺寸（例如 A1）亦可，恕不接受橫式海報。內容須包含論文標題、作者、所屬機構、研究動機與目的、方法、結果與結論，以圖表為主，字體須能在 1&ndash;2 公尺外清楚閱讀。發表者須自行印製並攜帶海報；大會提供海報板與固定用品，每篇錄取的海報論文會分配展示位置。海報場次時間與看板編號請見<a href="program.html#paper-sessions">論文發表場次</a>；張貼與撤除時間將另行通知。請見<a href="program.html#poster-guidelines">海報發表規範</a>。</p>
+            <p>建議使用 A0 直式海報（84.1 cm &times; 118.9 cm）；較小尺寸（例如 A1）亦可，恕不接受橫式海報。內容須包含論文標題、作者、所屬機構、研究動機與目的、方法、結果與結論，以圖表為主，字體須能在 1&ndash;2 公尺外清楚閱讀。發表者須自行印製並攜帶海報；大會提供海報板與固定用品，每篇錄取的海報論文會分配展示位置。海報場次時間與看板編號請見<a href="program.html#paper-sessions">論文發表場次</a>；請於該場次開始前的休息時間張貼海報，並於場次結束後立即撤除。請見<a href="program.html#poster-guidelines">海報發表規範</a>。</p>
           </div>
         </details>
 
@@ -803,7 +813,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

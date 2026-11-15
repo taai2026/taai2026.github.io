@@ -67,7 +67,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -463,32 +465,32 @@
         <article class="feature reveal">
           <div class="num">◦ 主題演講</div>
           <h3>四場主題演講</h3>
-          <p>邀請來自代理式 AI、具身智慧與應用 AI 社群的講者。</p>
+          <p>Prof. Philip S. Yu、曹昱 研究員、Prof. Ljiljana Trajkovic 與 Prof. Kazunori Komatani，皆於大會廳舉行。<a href="program.html#keynotes">主題演講摘要</a></p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ 論文</div>
           <h3>同儕審查研究</h3>
-          <p>為錄取的完整論文、短篇論文與海報安排的技術議程。</p>
+          <p>國際與國內論文組共 158 篇論文的口頭與海報場次，另有產業與特別場次。<a href="program.html#paper-sessions">論文發表場次</a></p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ 座談</div>
-          <h3>跨領域座談</h3>
-          <p>研究者、產業實務工作者與政策聲音的直接對話。</p>
+          <h3>國際座談</h3>
+          <p><a href="program.html#panel">Adaptive AI in the Real World</a>：主題演講講者同台對談，第一天 17:00。</p>
         </article>
         <article class="feature reveal">
-          <div class="num">◦ 工作坊</div>
-          <h3>主題工作坊</h3>
-          <p>聚焦新興主題、學生研究與應用軌道的專場。</p>
+          <div class="num">◦ 專題教學</div>
+          <h3>專題教學</h3>
+          <p><a href="program.html#agentic-ai-tutorial">Agentic AI 專題教學 1、2</a> 與 <a href="program.html#physical-ai-tutorial">Physical AI 專題教學</a>。</p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ 社交</div>
-          <h3>森林晚宴</h3>
-          <p>在城市之外更寧靜的環境中共享餐點與非正式交流。</p>
+          <h3>歡迎晚宴</h3>
+          <p>第一天 18:00 於 1F 麗池廳舉行，並公布論文獎。<a href="program.html#awards">獎項</a></p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ 學生軌道</div>
           <h3>新銳研究者</h3>
-          <p>提供學生發表、交流並獲得回饋的機會。</p>
+          <p><a href="program.html#young-woman-star">青年女性之星場次</a>、TAAI 碩博士論文獎口頭報告，以及<a href="program.html#high-school-sessions">高中生口頭場次</a>。</p>
         </article>
       </div>
     </div>
@@ -575,10 +577,18 @@
   <section class="section-soft cta-section">
     <div class="wrap tc">
       <span class="eyebrow reveal">成為其中一員</span>
-      <h2 class="cta-heading mt-1 reveal">
+      <h2 class="cta-heading mt-1 reveal" data-phase="conference post" hidden>
+        以<em class="grad-text">正式議程</em>規劃您的兩天行程
+      </h2>
+      <h2 class="cta-heading mt-1 reveal" data-phase="submission earlybird regular">
         報名、投稿，或單純<em class="grad-text">前來聆聽</em>
       </h2>
-      <div class="hero-ctas cta-actions reveal">
+      <div class="hero-ctas cta-actions reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
+        <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
+        <a href="venue.html" class="btn btn-ghost">會場與交通</a>
+      </div>
+      <div class="hero-ctas cta-actions reveal" data-phase="submission earlybird regular">
         <a href="registration.html" class="btn btn-primary">報名 <span class="arrow">→</span></a>
         <a href="cfp.html" class="btn btn-ghost">投稿論文</a>
       </div>
@@ -625,7 +635,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

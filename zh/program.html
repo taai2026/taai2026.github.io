@@ -71,7 +71,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -4009,7 +4011,7 @@
           <li>每篇錄取的海報論文將分配一個海報展示位置。大會將提供張貼位置及必要的固定用品。</li>
           <li>請於指定時段完成海報張貼，並於發表時段在場介紹研究及回答問題；發表結束後，請依大會指示自行移除海報。</li>
         </ul>
-        <p>海報場次時間與看板編號請見<a href="#paper-sessions">論文發表場次</a>；張貼與撤除時間將另行通知。</p>
+        <p>海報場次時間與看板編號請見<a href="#paper-sessions">論文發表場次</a>。請於該場次開始前的休息時間張貼海報，並於場次結束後立即撤除，以便下一場次使用。</p>
         <p>經事先核准以遠距方式發表的作者，請見<a href="registration.html#reg-q24">報名頁 FAQ</a>。</p>
       </div>
     </div>
@@ -4286,7 +4288,7 @@
         <details class="info-card faq-item" id="prog-q12" data-faq-tags="presentation">
           <summary>Q12. 口頭發表前需要做什麼準備？</summary>
           <div class="faq-body">
-            <p>請在<a href="#paper-sessions">論文發表場次</a>確認您的場次、會議室與開始時間，並於場次開始前到場。論文依列表順序發表，建議全程參與該場次。各場次主持人確認後將列於場次資訊中。</p>
+            <p>請在<a href="#paper-sessions">論文發表場次</a>確認您的場次、會議室與開始時間，並於場次開始前到場。論文依列表順序發表，建議全程參與該場次。各場次主持人已列於場次資訊中，詳見 Q22。</p>
           </div>
         </details>
         <details class="info-card faq-item" id="prog-q13" data-faq-tags="presentation">
@@ -4310,7 +4312,7 @@
         <details class="info-card faq-item" id="prog-q16" data-faq-tags="presentation poster">
           <summary>Q16. 海報發表需要注意什麼？</summary>
           <div class="faq-body">
-            <p>每篇海報論文有固定看板編號：<strong>IP-</strong> 為國際論文、<strong>DP-</strong> 為國內論文，列在<a href="#paper-sessions">論文發表場次</a>的論文旁。海報請採 <strong>A0 直式</strong>（A1 亦可，不接受橫式）。請自行印製並攜帶海報，大會提供看板與固定用品。請於場次開始前完成張貼，並於場次期間在場說明與回答問題；張貼與撤除時間將另行通知。詳見<a href="#poster-guidelines">海報發表規範</a>。</p>
+            <p>每篇海報論文有固定看板編號：<strong>IP-</strong> 為國際論文、<strong>DP-</strong> 為國內論文，列在<a href="#paper-sessions">論文發表場次</a>的論文旁。海報請採 <strong>A0 直式</strong>（A1 亦可，不接受橫式）。請自行印製並攜帶海報，大會提供看板與固定用品。請於該場次開始前的休息時間完成張貼，場次期間在場說明與回答問題，並於場次結束後立即撤除（見 Q17）。詳見<a href="#poster-guidelines">海報發表規範</a>。</p>
           </div>
         </details>
         <details class="info-card faq-item" id="prog-q17" data-faq-tags="presentation poster">
@@ -4376,7 +4378,7 @@
         <details class="info-card faq-item" id="prog-q27" data-faq-tags="registration">
           <summary>Q27. 報名費包含哪些項目？包含晚宴嗎？</summary>
           <div class="faq-body">
-            <p>所有票種皆包含兩天研討會、主題演講與議程、咖啡與茶點時段及午餐。全程報名與發表作者另含會議資料袋，以及開幕與閉幕典禮、會議晚宴；學生與陪同人員可加購晚宴票（NT$ 2,000）。詳見<a href="registration.html#reg-q11">報名頁 FAQ Q11</a>。</p>
+            <p>所有票種皆包含兩天研討會、主題演講與議程、咖啡與茶點時段、午餐、會議資料袋，以及開幕與閉幕典禮。會議晚宴含於全程報名與發表作者；學生與陪同人員可加購晚宴票（NT$ 2,000）。詳見<a href="registration.html#reg-q11">報名頁 FAQ Q11</a>。</p>
           </div>
         </details>
         <details class="info-card faq-item" id="prog-q28" data-faq-tags="registration">
@@ -4400,7 +4402,7 @@
         <details class="info-card faq-item" id="prog-q31" data-faq-tags="awards">
           <summary>Q31. 各獎項何時公布？</summary>
           <div class="faq-body">
-            <p>最佳論文獎、最佳學生論文獎與最佳產業論文獎於<strong>歡迎晚宴</strong>中公布（第 1 天 11 月 20 日（五）18:00–20:00）；最佳口頭論文發表獎與最佳海報論文發表獎於<strong>閉幕典禮與頒獎</strong>頒發（第 2 天 11 月 21 日（六）16:30–17:00）。兩者皆在大會廳（5F 麗山廳）。詳見<a href="#awards">TAAI 2026 論文獎項</a>。</p>
+            <p>最佳論文獎、最佳學生論文獎與最佳產業論文獎於<strong>歡迎晚宴</strong>中公布（第 1 天 11 月 20 日（五）18:00–20:00）；最佳口頭論文發表獎與最佳海報論文發表獎於<strong>閉幕典禮與頒獎</strong>頒發（第 2 天 11 月 21 日（六）16:30–17:00）。歡迎晚宴於 1F 麗池廳舉行，閉幕典禮與頒獎於大會廳（5F 麗山廳）舉行。詳見<a href="#awards">TAAI 2026 論文獎項</a>。</p>
           </div>
         </details>
         <details class="info-card faq-item" id="prog-q32" data-faq-tags="awards">
@@ -4495,7 +4497,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

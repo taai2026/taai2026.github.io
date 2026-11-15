@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -115,7 +117,14 @@
         從提案投稿到研討會本身，以下是 TAAI 2026 的完整時程。除另有註明外，所有截止時間皆為 23:59 AoE（地球上任何一處時間）。
       </p>
 
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">議程</span> 投稿與線上報名截止日皆已過。<a href="program.html">正式議程</a>與<a href="program.html#handbook">大會手冊</a>已公布；11 月 20–21 日可辦理<a href="registration.html#onsite-registration">現場報名</a>。</p>
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">查詢我的論文</a>
+        <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
+        <a href="registration.html#onsite-registration" class="btn btn-ghost" data-phase="conference">現場報名</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="cfp.html" class="btn btn-primary">論文徵稿 <span class="arrow">→</span></a>
         <a href="registration.html" class="btn btn-ghost">報名</a>
       </div>
@@ -153,6 +162,11 @@
           <span class="timeline-title">論文投稿截止（高中生專題組）</span>
           <span class="timeline-tag hot">開放中</span>
         </div>
+        <div class="timeline-row" data-event="2026-10-21">
+          <span class="timeline-date">2026 年 10 月 21 日</span>
+          <span class="timeline-title">錄取通知（<a href="cfphss.html">高中生專題組</a>）</span>
+          <span class="timeline-tag">即將到來</span>
+        </div>
         <div class="timeline-row" data-event="2026-10-24">
           <span class="timeline-date">2026 年 10 月 24 日</span>
           <span class="timeline-title">論文錄取通知（原訂 2026 年 10 月 16 日）</span>
@@ -168,15 +182,35 @@
           <span class="timeline-title">早鳥報名截止（23:59 AoE）</span>
           <span class="timeline-tag hot">開放中</span>
         </div>
+        <div class="timeline-row" data-deadline="2026-11-08">
+          <span class="timeline-date">2026 年 11 月 8 日</span>
+          <span class="timeline-title">完稿與發表作者報名截止（高中生專題組；23:59 AoE）</span>
+          <span class="timeline-tag">即將到來</span>
+        </div>
+        <div class="timeline-row" data-deadline="2026-11-10">
+          <span class="timeline-date">2026 年 11 月 10 日</span>
+          <span class="timeline-title">遠距／預錄發表申請截止（須事先核准；23:59 AoE）· <a href="registration.html#reg-q24">報名頁 FAQ Q24</a></span>
+          <span class="timeline-tag">即將到來</span>
+        </div>
         <div class="timeline-row" data-deadline="2026-11-13">
           <span class="timeline-date">2026 年 11 月 13 日</span>
           <span class="timeline-title">一般報名截止（其他與會者；23:59 AoE）</span>
           <span class="timeline-tag hot">開放中</span>
         </div>
-        <div class="timeline-row">
-          <span class="timeline-date">2026 年 11 月 20–21 日</span>
-          <span class="timeline-title">研討會於新北市舉行</span>
-          <span class="timeline-tag hot">重點活動</span>
+        <div class="timeline-row" data-deadline="2026-11-16">
+          <span class="timeline-date">2026 年 11 月 16 日</span>
+          <span class="timeline-title">預錄影片繳交截止（限已核准遠距發表者；23:59 AoE）</span>
+          <span class="timeline-tag">即將到來</span>
+        </div>
+        <div class="timeline-row" data-event="2026-11-20" data-tz="+08:00">
+          <span class="timeline-date">2026 年 11 月 20 日</span>
+          <span class="timeline-title"><a href="program.html#day1">研討會第一天</a>（星期五）：開幕典禮、主題演講 I 與 II、國際座談、歡迎晚宴</span>
+          <span class="timeline-tag">即將到來</span>
+        </div>
+        <div class="timeline-row" data-event="2026-11-21" data-tz="+08:00">
+          <span class="timeline-date">2026 年 11 月 21 日</span>
+          <span class="timeline-title"><a href="program.html#day2">研討會第二天</a>（星期六）：主題演講 III 與 IV、專題教學、閉幕典禮與頒獎</span>
+          <span class="timeline-tag">即將到來</span>
         </div>
       </div>
     </div>
@@ -203,7 +237,7 @@
           <p>
             <strong>更新：</strong>論文錄取通知（原訂 2026 年 10 月 16 日）已寄出。完稿與發表作者報名截止日期為 2026 年 10 月 31 日（AoE）。
           </p>
-          <p>
+          <p data-phase="submission">
             建議您提前投稿，因為截止當天系統負載可能較重，且 AoE 代表實際截止時間比多數當地時鐘所顯示的更晚。
           </p>
         </div>
@@ -217,13 +251,15 @@
             <dt>錄取通知</dt><dd>2026 年 10 月 24 日 AoE（原訂 2026 年 10 月 16 日）</dd>
             <dt>完稿</dt><dd>2026 年 10 月 31 日 AoE · <a href="camera-ready.html">詳情</a></dd>
             <dt>早鳥報名</dt><dd>2026 年 10 月 31 日 AoE</dd>
-            <dt>研討會</dt><dd>2026 年 11 月 20-21 日</dd>
+            <dt>一般報名</dt><dd>2026 年 11 月 13 日 AoE</dd>
+            <dt>研討會</dt><dd>2026 年 11 月 20–21 日 · <a href="program.html">議程</a></dd>
           </dl>
         </aside>
       </div>
 
       <div class="tc mt-3 reveal">
-        <a href="cfp.html" class="btn btn-primary">完整論文徵稿 <span class="arrow">→</span></a>
+        <a href="program.html" class="btn btn-primary" data-phase="conference post" hidden>查看議程 <span class="arrow">→</span></a>
+        <a href="cfp.html" class="btn btn-primary" data-phase="submission earlybird regular">完整論文徵稿 <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -269,7 +305,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

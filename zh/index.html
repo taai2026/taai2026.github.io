@@ -69,7 +69,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -133,6 +135,7 @@
               <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-primary">下載大會手冊 <span class="arrow">→</span></a>
               <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>會場與交通</a>
+              <a href="venue.html#hotels" class="btn btn-ghost">入住TAAI2026會場優惠 <span class="arrow">→</span></a>
             </div>
 
             <p class="hero-secondary" data-phase="submission">已錄取或一般與會者？<a href="registration.html">前往報名</a> · <a href="keydates.html">重要日期</a> · <a href="sponsorship.html">成為贊助夥伴</a></p>
@@ -141,10 +144,10 @@
           </div>
         </div>
 
-        <aside class="hero-countdown reveal">
+        <aside class="hero-countdown reveal" data-phase="submission earlybird regular conference" data-live-day1="TAAI 2026 第一天議程進行中" data-live-day2="TAAI 2026 第二天議程進行中" data-live-link="查看今日議程">
           <span class="eyebrow">TAAI 2026 倒數計時</span>
           <div id="countdown" class="countdown"></div>
-          <p class="countdown-note">開幕 · 上午 9:00 · 2026 年 11 月 20 日 · 臺北時間</p>
+          <p class="countdown-note">開幕典禮 · 09:20 · 2026 年 11 月 20 日 · 臺北時間</p>
         </aside>
       </div>
     </div>
@@ -209,6 +212,96 @@
     </div>
   </section>
 
+  <!-- ================= PROGRAM AT A GLANCE (conference week onward) ================= -->
+  <section id="at-a-glance" data-phase="conference post" hidden>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">議程速覽</span>
+        <h2>兩天議程重點</h2>
+      </div>
+
+      <h3 class="reveal">第一天 · 2026 年 11 月 20 日（星期五）</h3>
+      <div class="timeline reveal mt-1">
+        <div class="timeline-row">
+          <span class="timeline-date">08:00</span>
+          <span class="timeline-title">報到與現場報名開放（兩天皆至 17:00）</span>
+          <span class="timeline-tag">5F 麗山廳中庭</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">09:20</span>
+          <span class="timeline-title">開幕典禮</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">09:30</span>
+          <span class="timeline-title"><a href="program.html#keynote1">主題演講 I</a>：Prof. Philip S. Yu（美國伊利諾大學芝加哥分校）</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">10:40–16:00</span>
+          <span class="timeline-title">口頭、海報、產業與特別議程平行進行</span>
+          <span class="timeline-tag">A–D 會議室</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">16:10</span>
+          <span class="timeline-title"><a href="program.html#keynote2">主題演講 II</a>：曹昱 研究員（中央研究院）</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">17:00</span>
+          <span class="timeline-title"><a href="program.html#panel">國際座談</a></span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">18:00</span>
+          <span class="timeline-title">歡迎晚宴暨公布論文獎</span>
+          <span class="timeline-tag">1F 麗池廳</span>
+        </div>
+      </div>
+
+      <h3 class="reveal mt-3">第二天 · 2026 年 11 月 21 日（星期六）</h3>
+      <div class="timeline reveal mt-1">
+        <div class="timeline-row">
+          <span class="timeline-date">09:00</span>
+          <span class="timeline-title"><a href="program.html#keynote3">主題演講 III</a>：Prof. Ljiljana Trajkovic（加拿大西門菲莎大學）</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">10:10</span>
+          <span class="timeline-title"><a href="program.html#young-woman-star">Young Woman Star Session</a>與平行論文場次</span>
+          <span class="timeline-tag">大會廳 · A–D</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">13:00</span>
+          <span class="timeline-title">Agentic AI 專題教學 2、高中生專題組、NAPAI 競賽決賽</span>
+          <span class="timeline-tag">平行場次</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">14:40</span>
+          <span class="timeline-title"><a href="program.html#physical-ai-tutorial">Physical AI 專題教學</a></span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">15:40</span>
+          <span class="timeline-title"><a href="program.html#keynote4">主題演講 IV</a>：Prof. Kazunori Komatani（日本大阪大學）</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">16:30</span>
+          <span class="timeline-title">閉幕典禮與頒獎</span>
+          <span class="timeline-tag">大會廳</span>
+        </div>
+      </div>
+
+      <p class="glance-note mt-2 reveal">所有時間皆為臺北時間（UTC+8）。大會廳為 5F 麗山廳。各場次、會議室與主持人請見完整議程。</p>
+      <div class="hero-ctas tc mt-3 reveal">
+        <a href="program.html" class="btn btn-primary">完整議程 <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">查詢我的論文</a>
+        <a href="program.html#handbook" class="btn btn-ghost">下載大會手冊</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= ANNOUNCEMENTS ================= -->
   <section id="announcements">
     <div class="wrap">
@@ -219,10 +312,9 @@
       <div id="news-home-mount" class="reveal" data-locale="zh" data-data-base="../assets/data" data-archive-href="news.html"></div>
       <noscript>
         <ul class="info-list announce-list">
-          <li><time datetime="2026-09-21">2026-09-21</time><span>國際論文組與國內論文組投稿截止日期最後延長至 2026 年 9 月 28 日 23:59 AoE。此次為最後一次延長，敬請把握投稿機會。<a href="cfp.html">查看投稿須知</a></span></li>
-          <li><time datetime="2026-09-02">2026-09-02</time><span>國內論文組 Word 範本（論文全文、延伸摘要、論文摘要、著作授權書）已上線。<a href="cfp.html#templates">下載範本</a></span></li>
-          <li><time datetime="2026-09-01">2026-09-01</time><span>報名已開放，早鳥優惠至 2026 年 10 月 31 日。<a href="registration.html">前往報名</a></span></li>
-          <li><time datetime="2026-07-10">2026-07-10</time><span>特別議程與教學課程／工作坊提案徵集已截止。</span></li>
+          <li><time datetime="2026-11-14">2026-11-14</time><span>TAAI 2026 正式議程與大會手冊公布。 <a href="program.html#handbook">議程與手冊</a></span></li>
+          <li><time datetime="2026-11-14">2026-11-14</time><span>兩天報到時間皆為 08:00–17:00，地點為 5F 麗山廳開放中庭；可現場報名，免費接駁車需線上預約。 <a href="venue.html#shuttle">接駁車時刻表</a></span></li>
+          <li><time datetime="2026-11-04">2026-11-04</time><span>主題演講講者：Philip S. Yu、曹昱、Ljiljana Trajkovic、Kazunori Komatani。 <a href="program.html#keynotes">主題演講</a></span></li>
         </ul>
       </noscript>
       <div class="tc mt-3 reveal">
@@ -293,7 +385,11 @@
           <p class="lede mt-2">
             TAAI 2026 將於新北市三峽區大板根森林溫泉酒店舉行。會場具備會議空間、住宿、餐飲與周邊森林設施，適合兩天研討會活動。
           </p>
-          <a href="venue.html" class="btn btn-ghost mt-2">探索會場 <span class="arrow">→</span></a>
+          <div class="hero-ctas mt-2">
+            <a href="venue.html" class="btn btn-ghost">探索會場 <span class="arrow">→</span></a>
+            <a href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=zh-TW&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">使用促銷代碼 TAAI2026 訂房 <span class="arrow">↗</span><span class="sr-only">（另開新分頁）</span></a>
+          </div>
+          <p class="stay-note mt-2"><strong>想入住會場？</strong>TAAI 2026 優惠房價目前尚有豪華雙人客房（每晚 TWD 6,000，含早餐，不可退款），11 月 17 日前使用促銷代碼 <strong>TAAI2026</strong> 訂房。住宿房價包含飯店的<a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">露天溫泉 SPA<span class="sr-only">（外部網站，另開新分頁）</span></a>。<a href="venue.html#hotels">房型與房價</a></p>
         </div>
 
         <aside class="venue-card reveal">
@@ -307,7 +403,7 @@
               <dt>地址</dt>
               <dd>237 新北市三峽區插角里插角 79 號<br /><a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E6%9D%BF%E6%A0%B9%E6%A3%AE%E6%9E%97%E6%BA%AB%E6%B3%89%E9%85%92%E5%BA%97%20%E6%96%B0%E5%8C%97%E5%B8%82%E4%B8%89%E5%B3%BD%E5%8D%80%E6%8F%92%E8%A7%92%E9%87%8C%E6%8F%92%E8%A7%9279%E8%99%9F" target="_blank" rel="noopener">在 Google 地圖開啟</a></dd>
               <dt>交通</dt>
-              <dd>距臺北車站約 50 分鐘車程</dd>
+              <dd>免費接駁車：板橋高鐵站（約 50 分鐘）、捷運臺北大學站（約 25 分鐘）· <a href="venue.html#shuttle">時刻表</a></dd>
             </div>
           </dl>
         </aside>
@@ -340,7 +436,7 @@
   </section>
 
   <!-- ================= IMPORTANT DATES PREVIEW ================= -->
-  <section>
+  <section data-phase="submission earlybird regular">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="num-label">4 / 重要日期</span>
@@ -702,7 +798,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

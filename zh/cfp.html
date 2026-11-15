@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -115,11 +117,19 @@
         TAAI 2026 徵求人工智慧技術與應用的全文、短文及海報。今年大會聚焦於代理式 AI（Agentic AI）與實體 AI（Physical AI）的跨域永續創新。我們特別歡迎代理式 AI 系統、具身智慧及永續創新跨領域的研究。
       </p>
 
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">議程</span> 投稿已截止。<a href="program.html">正式議程</a>與<a href="program.html#handbook">大會手冊</a>已公布，請至<a href="program.html#paper-sessions">議程頁</a>查詢論文的場次、時間與地點（海報論文請確認看板編號）。</p>
       <p class="lede hero-deadline reveal"><span class="chip">更新</span> 國際／國內論文組論文審查結果通知已寄出，寄件者為 TAAI 2026 &lt;taai2026-notifications@openreview.net&gt;。錄取論文的作者請於 <strong>2026 年 10 月 31 日 23:59 AoE</strong>（台北時間 2026 年 11 月 1 日 19:59）前完成完稿與發表作者報名，詳見<a href="camera-ready.html">論文完稿頁</a>。</p>
 
       <p class="lede reveal"><span class="chip">已確認</span> TAAI 2026 已獲 Springer 正式接受，International Track 論文集將以 <strong>Communications in Computer and Information Science（CCIS）post-proceedings</strong> 形式出版。<a href="#publication-policy">查看出版政策</a>了解詳情。</p>
 
-      <div class="hero-ctas reveal">
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">查詢我的論文</a>
+        <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
+        <a href="#publication-policy" class="btn btn-ghost">出版政策</a>
+        <a href="#faq" class="btn btn-ghost">常見問題 (FAQ)</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="https://openreview.net/group?id=TAAI.org/2026/Conference" target="_blank" rel="noopener" class="btn btn-primary">投稿系統 <span class="arrow">→</span></a>
         <a href="#submit" class="btn btn-ghost">投稿須知與格式</a>
         <a href="#topics" class="btn btn-ghost">查看徵稿主題</a>
@@ -1061,7 +1071,7 @@
       <div class="footer-base">
         <span>TAAI 2026｜2026 年 11 月 20–21 日｜大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

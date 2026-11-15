@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">住宿選擇</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">報名</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">報名</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">大會手冊</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">投稿<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -259,14 +261,15 @@
           <span class="timeline-tag">即將到來</span>
         </div>
         <div class="timeline-row">
-          <span class="timeline-date">2026 年 11 月 20–21 日</span>
-          <span class="timeline-title">研討會舉行</span>
+          <span class="timeline-date">2026 年 11 月 21 日</span>
+          <span class="timeline-title"><a href="program.html#high-school-sessions">高中生口頭場次</a>（第二天，Room C · 2F 麗泉廳 C1）：場次 1 長論文 13:00–14:20；場次 2 短論文 14:40–15:30（臺北時間）。TAAI 2026 於 2026 年 11 月 20–21 日舉行。</span>
           <span class="timeline-tag hot">大會</span>
         </div>
       </div>
 
       <div class="tc mt-3 reveal">
-        <a href="mailto:jwhuang@mail.ncku.edu.tw" class="btn btn-primary">
+        <a href="program.html#high-school-sessions" class="btn btn-primary" data-phase="conference post" hidden>查看議程中的高中生口頭場次 <span class="arrow">→</span></a>
+        <a href="mailto:jwhuang@mail.ncku.edu.tw" class="btn btn-primary" data-phase="submission earlybird regular">
           以電子郵件投稿 <span class="arrow">→</span>
         </a>
         <p class="submit-note mt-1">
@@ -318,7 +321,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · 2026 年 11 月 20–21 日 · 大板根森林溫泉酒店，臺灣新北市</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>最後更新：<time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>最後更新：<time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>
