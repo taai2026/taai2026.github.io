@@ -240,7 +240,7 @@
             </tr>
             <tr>
               <td class="g-time">14:40-16:00</td>
-              <td data-room="大會廳 · 5F 麗山廳" class="g-special"><a href="#agentic-ai-tutorial">Agentic AI 專題教學 1<span class="g-talk">Agentic AI 企業落地實戰：程式負責流程，LLM 負責判斷</span><small>崔殷豪 · 昊智未來科技</small></a></td>
+              <td data-room="大會廳 · 5F 麗山廳" class="g-special"><a href="#agentic-ai-tutorial">Agentic AI 專題教學 1<span class="g-talk">Agentic AI 企業落地實戰：確定的步驟寫成工具，判斷與生成才交給 LLM</span><small>崔殷豪 · 昊智未來科技</small></a></td>
               <td data-room="會議室 A · 2F 麗景廳 A 廳" class="g-oral"><a href="#session-io3">國際口頭場次 3</a><small class="g-chair">主持人：唐士傑</small></td>
               <td data-room="會議室 B · 2F 麗景廳 B 廳" class="g-oral"><a href="#session-do3">國內口頭場次 3</a><small class="g-chair">主持人：許子衡</small></td>
               <td data-room="會議室 C · 2F 麗泉廳 C1" class="g-room-c"><a href="#session-aisi2">跨域 AI 永續創新<small>場次 2</small></a><small class="g-chair">主持人：詹佳縈</small></td>
@@ -488,10 +488,22 @@
         <article id="agentic-ai-tutorial" class="info-card keynote-card panel-card reveal" aria-labelledby="agentic-ai-tutorial-title">
           <div class="keynote-body">
             <p class="keynote-meta"><span class="keynote-no">TAAI 2026 Agentic AI 專題教學 1</span> · 第 1 天 2026 年 11 月 20 日（週五） · <time datetime="2026-11-20T14:40+08:00">14:40</time>–<time datetime="2026-11-20T16:00+08:00">16:00</time> · 大會主廳（5F 麗山廳）</p>
-            <h3 id="agentic-ai-tutorial-title">Agentic AI 企業落地實戰：程式負責流程，LLM 負責判斷</h3>
-            <p class="ps-paper-title-alt" lang="en">Agentic AI Deployment in the Enterprise: Code Runs the Workflow, LLMs Provide Judgment</p>
+            <h3 id="agentic-ai-tutorial-title">Agentic AI 企業落地實戰：確定的步驟寫成工具，判斷與生成才交給 LLM</h3>
+            <p class="ps-paper-title-alt" lang="en">Agentic AI Deployment in the Enterprise: Tools for Deterministic Steps, LLMs for Judgment and Generation</p>
             <p class="keynote-speaker">崔殷豪（Ethan Yin-Hao Tsui）</p>
             <p class="keynote-affil">昊智未來科技有限公司 創辦人（Founder, HaoAI Future Technology Co., Ltd.）</p>
+            <details class="keynote-more" open>
+              <summary>摘要（Abstract）</summary>
+              <p>做出一個可以展示的 AI agent，和企業敢把它放進正式的作業流程，是兩回事。企業要求結果穩定、資料安全、回應快速，成本也要合理；若每一個步驟都交給大型語言模型（LLM）處理，這些要求往往難以兼顧。本演講以講者開發 AI agent 系統並導入企業，以及訓練大型企業工程團隊開發 agent 的實務經驗為基礎，介紹 Agentic AI 的開發方法與企業落地的做法。演講首先說明開發思維的轉變：過去由工程師以規則寫好每一個步驟（rule-based），現在則是提供工具與使用說明，由 AI 判斷下一步。演講將以實際例子示範同一項任務如何從傳統寫法改寫成 agentic 的寫法，並提出一套判斷方法，協助聽眾分辨自己的程式哪些部分適合改成 agentic、哪些部分維持原有寫法即可。接著探討企業落地時的設計原則：確定的步驟寫成程式工具，只有需要判斷或生成內容的環節才交給 LLM。最後以 Agentic 企業數據分析系統與能自己玩遊戲的 agent 等案例，說明這個做法如何兼顧穩定、安全、速度與成本。</p>
+            </details>
+            <details class="keynote-more" lang="en">
+              <summary lang="zh-Hant">英文摘要（English Abstract）</summary>
+              <p>Building an AI agent that works in a demo and having an enterprise trust it in production workflows are two different things. Enterprises require stable results, data security, fast responses, and reasonable cost; when every step is handed to a large language model (LLM), these requirements are hard to meet together. Drawing on the speaker's hands-on experience developing AI agent systems and deploying them in enterprises, and training engineering teams at large enterprises to build agents, this talk presents methods for developing agentic AI and practices for enterprise deployment. The talk first explains the shift in development mindset: engineers used to write every step as rules (rule-based), whereas now they provide tools and tool descriptions and let the AI decide the next step. Using practical examples, the talk demonstrates how the same task is rewritten from a conventional implementation into an agentic one, and offers a method for judging which parts of a program should become agentic and which are better left as they are. It then discusses a design principle for enterprise deployment: deterministic steps are implemented as code-based tools, and only the parts that require judgment or content generation are handed to the LLM. Finally, through cases including an agentic enterprise data analytics system and an agent that plays games on its own, the talk shows how this approach balances stability, security, speed, and cost.</p>
+            </details>
+            <details class="keynote-more" open>
+              <summary>講者簡介（Biography）</summary>
+              <p>崔殷豪現任昊智未來科技創辦人，專注於企業 Agentic AI 系統的建置、地端部署與長期營運。近年親自開發多套 Agentic AI 系統並導入企業，涵蓋企業數據分析與地端知識管理，同時擔任數家上市公司的企業 AI 導入顧問，並為大型企業的工程團隊提供 AI 開發與 agent 開發的培訓。他擁有超過 20 年的軟體工程、數據與技術治理經驗，曾任上市公司精誠資訊副總暨數據長兼資訊主管，統籌集團資訊與數據體系，並主導 ISO 27001 導入；此前擔任東森購物資深協理，帶領近 90 人的研發中心。這兩家都屬於員工超過四千人的大型企業集團。更早之前於 uitox 等公司擔任技術長，負責高流量電商的搜尋、推薦與交易系統，並曾任職於中央研究院資訊科學研究所。他發表過國際期刊論文，並為 13 項專利的發明人，畢業於元智大學資訊工程研究所碩士班。曾受邀至台灣人工智慧學校授課，並於台灣人工智慧年會、政治大學、臺北大學、陽明交通大學等場合，分享企業 AI 導入的實務經驗。</p>
+            </details>
           </div>
         </article>
         <article id="young-woman-star" class="info-card keynote-card panel-card reveal" aria-labelledby="young-woman-star-title">
