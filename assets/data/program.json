@@ -674,7 +674,7 @@
           "id": 204,
           "title": "Historical Satellite Embedding Trajectories Provide Predictive Information About the Next Observed Embedding State",
           "authors": [
-            "Vinicius Buri"
+            "Vinicius Buri Lux"
           ],
           "topic": "vision",
           "keywords": [
@@ -1195,7 +1195,7 @@
       "topics": [
         {
           "topic": "vision",
-          "count": 5
+          "count": 4
         },
         {
           "topic": "health",
@@ -1251,27 +1251,6 @@
           "end": "2026-11-20T15:00+08:00"
         },
         {
-          "id": 154,
-          "title": "What INT8 Post-Training Quantization Buys on a CPU: A Speedup, and a Code Path the Runtime Can Reprice",
-          "authors": [
-            "Yuan-Zhen Yang",
-            "Yi-Hsiang Chao"
-          ],
-          "topic": "vision",
-          "keywords": [
-            "Post-Training Quantization",
-            "INT8 Inference",
-            "CPU Inference",
-            "ONNX Runtime",
-            "Runtime Version Drift",
-            "Benchmark Validity",
-            "Reproducibility"
-          ],
-          "order": 3,
-          "start": "2026-11-20T15:00+08:00",
-          "end": "2026-11-20T15:10+08:00"
-        },
-        {
           "id": 172,
           "title": "Evidence-Grounded Dental Vision-Language Framework for Implant Detection and Marginal Bone Loss Assessment in Panoramic Radiographs",
           "authors": [
@@ -1287,9 +1266,9 @@
             "marginal bone loss",
             "multimodal artificial intelligence"
           ],
-          "order": 4,
-          "start": "2026-11-20T15:10+08:00",
-          "end": "2026-11-20T15:20+08:00"
+          "order": 3,
+          "start": "2026-11-20T15:00+08:00",
+          "end": "2026-11-20T15:10+08:00"
         },
         {
           "id": 126,
@@ -1305,9 +1284,9 @@
             "Temporal localization",
             "Subtitle grounding"
           ],
-          "order": 5,
-          "start": "2026-11-20T15:20+08:00",
-          "end": "2026-11-20T15:30+08:00"
+          "order": 4,
+          "start": "2026-11-20T15:10+08:00",
+          "end": "2026-11-20T15:20+08:00"
         },
         {
           "id": 149,
@@ -1323,9 +1302,9 @@
             "Recall-constrained retrieval",
             "Vision-language-model"
           ],
-          "order": 6,
-          "start": "2026-11-20T15:30+08:00",
-          "end": "2026-11-20T15:40+08:00"
+          "order": 5,
+          "start": "2026-11-20T15:20+08:00",
+          "end": "2026-11-20T15:30+08:00"
         },
         {
           "id": 37,
@@ -1342,9 +1321,9 @@
             "Training-free methods",
             "Image editing and inpainting"
           ],
-          "order": 7,
-          "start": "2026-11-20T15:40+08:00",
-          "end": "2026-11-20T15:50+08:00"
+          "order": 6,
+          "start": "2026-11-20T15:30+08:00",
+          "end": "2026-11-20T15:40+08:00"
         },
         {
           "id": 82,
@@ -1360,9 +1339,9 @@
             "Collaborative filtering",
             "Agent feedback"
           ],
-          "order": 8,
-          "start": "2026-11-20T15:50+08:00",
-          "end": "2026-11-20T16:00+08:00"
+          "order": 7,
+          "start": "2026-11-20T15:40+08:00",
+          "end": "2026-11-20T15:50+08:00"
         }
       ]
     },
