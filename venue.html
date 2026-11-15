@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -117,6 +119,7 @@
         Taiwanese hospitality. For two days in November, it will host TAAI 2026
         as a retreat-style venue for focused academic exchange.
       </p>
+      <p class="lede hero-deadline reveal" data-phase="conference" hidden><span class="chip">On-site</span> Check-in is open <strong>08:00&ndash;17:00</strong> on November 20 and 21 at the <strong>5F Lishan Hall open courtyard</strong>. The free conference shuttle requires online booking; see the <a href="#shuttle">shuttle timetable</a>.</p>
       <div class="hero-jump reveal">
         <a href="#campus" class="btn btn-ghost">1 / The venue <span class="arrow">↓</span></a>
         <a href="#getting-here" class="btn btn-ghost">2 / Getting here <span class="arrow">↓</span></a>
@@ -151,9 +154,9 @@
           </p>
           <p>
             The conference spaces (a 400-seat auditorium, four breakout
-            rooms, and a 5F open courtyard for coffee and posters)
+            rooms, a 5F exhibition area for coffee breaks, and a 2F exhibition area for posters)
             are purpose-built but understated, timber-framed, and open
-            to the canopy. The resort has its own hot-spring facilities; whether conference registration includes hot-spring access will be confirmed and announced on this page.
+            to the canopy. The resort has its own hot-spring facilities. <strong>Hot-spring access is not included in conference registration.</strong> Hot-spring prices and hours follow the <a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">resort&rsquo;s official page<span class="sr-only"> (external site, opens in a new tab)</span></a>.
           </p>
         </div>
 
@@ -167,8 +170,8 @@
               <dt>Address</dt><dd>No. 79, Chajiao, Chajiao Village, Sanxia District, New Taipei City 237, Taiwan<br /><span lang="zh-Hant">237 新北市三峽區插角里插角 79 號</span></dd>
               <dt>Elevation</dt><dd>~180 m</dd>
               <dt>Capacity</dt><dd>Main hall 400, breakouts 80 each</dd>
-              <dt>Facilities</dt><dd>Hot-spring facilities (access terms to be announced), forest trails, on-site dining</dd>
-              <dt>WiFi</dt><dd>Conference-grade across all sessions</dd>
+              <dt>Facilities</dt><dd>Hot-spring facilities (not included in registration; tickets at the resort), forest trails, on-site dining</dd>
+              <dt>WiFi</dt><dd>Available in all session rooms; network details at the registration desk</dd>
             </dl>
             <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Great%20Roots%20Forestry%20Spa%20Resort&amp;hl=en" target="_blank" rel="noopener" class="btn btn-ghost mt-2">Open in Google Maps <span class="arrow">→</span></a>
             <a href="https://www.thegreatroots.com/en/" target="_blank" rel="noopener" class="btn btn-ghost mt-2">Official hotel website <span class="arrow">→</span><span class="sr-only"> (external site, opens in a new tab)</span></a>
@@ -199,6 +202,7 @@
         </figure>
       </div>
       <p class="photo-credit">Photos: <a href="https://www.thegreatroots.com/en/" target="_blank" rel="noopener">The Great Roots Forestry Spa Resort<span class="sr-only"> (external site, opens in a new tab)</span></a>, used with credit.</p>
+      <p class="mt-2">Also on site: the <strong>Poster Area</strong> is the 2F Liquan Hall exhibition area; <strong>check-in</strong> is in the 5F Lishan Hall open courtyard; <strong>coffee breaks</strong> and the Day 1 lunch are in the 5F Lishan Hall exhibition area; the <strong>Welcome Banquet</strong> (Day 1) and the Day 2 luncheon are in 1F Lichi Hall.</p>
     </div>
   </section>
 
@@ -282,8 +286,8 @@
           </p>
           <div class="stay-photos">
             <figure class="stay-photo">
-              <img src="assets/images/venue/twin.jpg" width="800" height="533" alt="Twin Guest Room at The Great Roots Forestry Spa Resort" loading="lazy" decoding="async">
-              <figcaption>Twin Guest Room</figcaption>
+              <img src="assets/images/venue/twin.jpg" width="800" height="533" alt="Prince Twin Room at The Great Roots Forestry Spa Resort" loading="lazy" decoding="async">
+              <figcaption>Prince Twin Room</figcaption>
             </figure>
             <figure class="stay-photo">
               <img src="assets/images/venue/deluxe.jpg" width="800" height="533" alt="Deluxe Double Guest Room at The Great Roots Forestry Spa Resort, with two single beds and a tatami area" loading="lazy" decoding="async">
@@ -296,8 +300,8 @@
           </div>
           <p class="photo-credit">Photos: <a href="https://www.thegreatroots.com/en/" target="_blank" rel="noopener">The Great Roots Forestry Spa Resort<span class="sr-only"> (external site, opens in a new tab)</span></a>, used with credit.</p>
           <div class="rate-list">
-            <div class="rate-card">
-              <span class="rate-room">Twin Guest Room</span>
+            <div class="rate-card is-soldout">
+              <span class="rate-room">Prince Twin Room <span class="chip rate-soldout">Fully booked</span></span>
               <span class="rate-meta">2 single beds · sleeps 2 · 26 m²</span>
               <span class="rate-price">TWD 5,200 <small>/ night</small></span>
             </div>
@@ -306,8 +310,8 @@
               <span class="rate-meta">2 single beds + tatami area · sleeps 2 · 36 m²</span>
               <span class="rate-price">TWD 6,000 <small>/ night</small></span>
             </div>
-            <div class="rate-card">
-              <span class="rate-room">Prince Quad Room</span>
+            <div class="rate-card is-soldout">
+              <span class="rate-room">Prince Quad Room <span class="chip rate-soldout">Fully booked</span></span>
               <span class="rate-meta">2 tatami + 2 single beds · sleeps 4 · 36 m²</span>
               <span class="rate-price">TWD 7,600 <small>/ night</small></span>
             </div>
@@ -315,7 +319,7 @@
           <p class="rate-note">
             Per room for the night of 20 Nov. Includes breakfast, taxes and fees. Payable at booking.
             Twin and Quad rooms: a cancellation fee applies (see the hotel's policies).
-            Deluxe Double: <strong>non-refundable</strong>.
+            Deluxe Double: <strong>non-refundable</strong>. Twin and Quad rooms at the conference rate are fully booked; Deluxe Double rooms are still available. All room rates include the resort&rsquo;s outdoor hot-spring SPA, forest park entry, and the gym.
           </p>
           <a href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=en&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">Book with promo code TAAI2026 <span class="arrow">→</span></a>
         </div>
@@ -415,7 +419,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

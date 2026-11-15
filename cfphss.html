@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -259,14 +261,15 @@
           <span class="timeline-tag">Upcoming</span>
         </div>
         <div class="timeline-row">
-          <span class="timeline-date">November 20–21, 2026</span>
-          <span class="timeline-title">Conference Date</span>
+          <span class="timeline-date">November 21, 2026</span>
+          <span class="timeline-title"><a href="program.html#high-school-sessions">High School Oral Sessions</a> (Day 2, Room C · 2F Liquan Hall C1): Session 1, Long Papers, 13:00–14:20; Session 2, Short Papers, 14:40–15:30 (Asia/Taipei). TAAI 2026 runs November 20–21, 2026.</span>
           <span class="timeline-tag hot">Flagship</span>
         </div>
       </div>
 
       <div class="tc mt-3 reveal">
-        <a href="mailto:jwhuang@mail.ncku.edu.tw" class="btn btn-primary">
+        <a href="program.html#high-school-sessions" class="btn btn-primary" data-phase="conference post" hidden>High School Oral Sessions in the program <span class="arrow">→</span></a>
+        <a href="mailto:jwhuang@mail.ncku.edu.tw" class="btn btn-primary" data-phase="submission earlybird regular">
           Submit your paper by email <span class="arrow">→</span>
         </a>
         <p class="submit-note mt-1">
@@ -318,7 +321,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

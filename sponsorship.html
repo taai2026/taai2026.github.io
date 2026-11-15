@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -113,10 +115,17 @@
         TAAI 2026 <em class="grad-text">Sponsorship Program</em>
       </h1>
       <p class="lede reveal">
-        TAAI 2026, the 31st International Conference on Technologies and Applications of Artificial Intelligence, gathers 300+ researchers, graduate students, and industry technologists for two days on Agentic AI and Physical AI. Put your brand at the center of the conversation.
+        TAAI 2026, the 31st International Conference on Technologies and Applications of Artificial Intelligence, gathers 400+ researchers, graduate students, and industry technologists for two days on Agentic AI and Physical AI. Put your brand at the center of the conversation.
       </p>
       <p class="submit-note reveal">November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City · Organized by TAAI &amp; NTPU</p>
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="conference" hidden><span class="chip">Thank you</span> Thank you to our <a href="#partners">sponsors and partners</a>. The deadlines for sponsor materials (October 23, 2026) and complimentary registrations (November 6, 2026) have passed. For sponsorship inquiries, email <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a>. See you at TAAI 2026 on November 20&ndash;21.</p>
+      <p class="lede hero-deadline reveal" data-phase="post" hidden><span class="chip">Thank you</span> Thank you to our <a href="#partners">sponsors and partners</a> for supporting TAAI 2026.</p>
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a class="btn btn-primary" href="#partners">Our sponsors &amp; partners</a>
+        <a class="btn btn-ghost" href="program.html">Program</a>
+        <a class="btn btn-ghost" href="mailto:taai2026org@gmail.com?subject=TAAI%202026%20Sponsorship%20Inquiry">Contact the team</a>
+      </div>
+      <div data-phase="submission earlybird regular" class="hero-ctas reveal">
         <a class="btn btn-primary" href="#packages">View packages</a>
         <a class="btn btn-ghost" href="mailto:taai2026org@gmail.com?subject=TAAI%202026%20Sponsorship%20Inquiry">Contact the team</a>
         <a class="btn btn-ghost" href="#partners">Sponsors &amp; partners</a>
@@ -659,7 +668,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

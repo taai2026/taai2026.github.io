@@ -67,7 +67,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -463,32 +465,32 @@
         <article class="feature reveal">
           <div class="num">◦ Keynotes</div>
           <h3>Four keynote talks</h3>
-          <p>Invited speakers from agentic AI, embodied intelligence, and applied AI communities.</p>
+          <p>Prof. Philip S. Yu, Prof. Yu Tsao, Prof. Ljiljana Trajkovic, and Prof. Kazunori Komatani, all in the Plenary Hall. <a href="program.html#keynotes">Keynote abstracts</a></p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ Papers</div>
           <h3>Peer-reviewed research</h3>
-          <p>Technical sessions for accepted full papers, short papers, and posters.</p>
+          <p>Oral and poster sessions for 158 International and Domestic Track papers, plus industrial and invited sessions. <a href="program.html#paper-sessions">Paper Sessions</a></p>
         </article>
         <article class="feature reveal">
-          <div class="num">◦ Panels</div>
-          <h3>Cross-domain panels</h3>
-          <p>Researchers, industry practitioners, and policy voices in direct conversation.</p>
+          <div class="num">◦ Panel</div>
+          <h3>International panel</h3>
+          <p><a href="program.html#panel">Adaptive AI in the Real World</a>: the keynote speakers in conversation, Day 1 at 17:00.</p>
         </article>
         <article class="feature reveal">
-          <div class="num">◦ Workshops</div>
-          <h3>Targeted workshops</h3>
-          <p>Focused sessions for emerging themes, student work, and application tracks.</p>
+          <div class="num">◦ Tutorials</div>
+          <h3>Hands-on tutorials</h3>
+          <p><a href="program.html#agentic-ai-tutorial">Agentic AI Tutorials 1 and 2</a> and the <a href="program.html#physical-ai-tutorial">Physical AI Tutorial</a>.</p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ Social</div>
-          <h3>Forest banquet</h3>
-          <p>Shared meals and informal discussion in a quieter setting outside the city.</p>
+          <h3>Welcome Banquet</h3>
+          <p>Day 1, 18:00, 1F Lichi Hall, where the paper awards are announced. <a href="program.html#awards">Awards</a></p>
         </article>
         <article class="feature reveal">
           <div class="num">◦ Student track</div>
           <h3>Emerging researchers</h3>
-          <p>Opportunities for students to present, connect, and receive feedback.</p>
+          <p>The <a href="program.html#young-woman-star">Young Woman Star Session</a>, TAAI Thesis Award presentations, and the <a href="program.html#high-school-sessions">High School Oral Sessions</a>.</p>
         </article>
       </div>
     </div>
@@ -577,10 +579,18 @@
   <section class="section-soft cta-section">
     <div class="wrap tc">
       <span class="eyebrow reveal">Be part of it</span>
-      <h2 class="cta-heading mt-1 reveal">
+      <h2 class="cta-heading mt-1 reveal" data-phase="conference post" hidden>
+        Plan your two days with the <em class="grad-text">final program</em>
+      </h2>
+      <h2 class="cta-heading mt-1 reveal" data-phase="submission earlybird regular">
         Register, submit, or simply <em class="grad-text">come listen</em>
       </h2>
-      <div class="hero-ctas cta-actions reveal">
+      <div class="hero-ctas cta-actions reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
+        <a href="program.html#handbook" class="btn btn-ghost">Handbook</a>
+        <a href="venue.html" class="btn btn-ghost">Venue &amp; travel</a>
+      </div>
+      <div class="hero-ctas cta-actions reveal" data-phase="submission earlybird regular">
         <a href="registration.html" class="btn btn-primary">Register <span class="arrow">→</span></a>
         <a href="cfp.html" class="btn btn-ghost">Submit paper</a>
       </div>
@@ -627,7 +637,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

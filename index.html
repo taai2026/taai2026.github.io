@@ -69,7 +69,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -133,6 +135,7 @@
               <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-primary">Download the handbook <span class="arrow">→</span></a>
               <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>Venue &amp; travel</a>
+              <a href="venue.html#hotels" class="btn btn-ghost">TAAI 2026 venue hotel offer <span class="arrow">→</span></a>
             </div>
 
             <p class="hero-secondary" data-phase="submission">Accepted author or general attendee? <a href="registration.html">Go to registration</a> · <a href="keydates.html">Important dates</a> · <a href="sponsorship.html">Become a sponsor</a></p>
@@ -141,10 +144,10 @@
           </div>
         </div>
 
-        <aside class="hero-countdown reveal">
+        <aside class="hero-countdown reveal" data-phase="submission earlybird regular conference" data-live-day1="TAAI 2026 Day 1 is under way" data-live-day2="TAAI 2026 Day 2 is under way" data-live-link="What's on now">
           <span class="eyebrow">Countdown to TAAI 2026</span>
           <div id="countdown" class="countdown"></div>
-          <p class="countdown-note">Opening · 9:00 AM · 20 Nov 2026 · Asia/Taipei</p>
+          <p class="countdown-note">Opening ceremony · 09:20 · 20 Nov 2026 · Asia/Taipei</p>
         </aside>
       </div>
     </div>
@@ -208,6 +211,96 @@
     </div>
   </section>
 
+  <!-- ================= PROGRAM AT A GLANCE (conference week onward) ================= -->
+  <section id="at-a-glance" data-phase="conference post" hidden>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">Program at a glance</span>
+        <h2>Two days in New Taipei City</h2>
+      </div>
+
+      <h3 class="reveal">Day 1 · Friday, November 20, 2026</h3>
+      <div class="timeline reveal mt-1">
+        <div class="timeline-row">
+          <span class="timeline-date">08:00</span>
+          <span class="timeline-title">Check-in and on-site registration opens (until 17:00 both days)</span>
+          <span class="timeline-tag">5F Lishan courtyard</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">09:20</span>
+          <span class="timeline-title">Opening Ceremony</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">09:30</span>
+          <span class="timeline-title"><a href="program.html#keynote1">Keynote I</a>: Prof. Philip S. Yu (University of Illinois Chicago)</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">10:40–16:00</span>
+          <span class="timeline-title">Oral, poster, industrial, and invited sessions in parallel</span>
+          <span class="timeline-tag">Rooms A–D</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">16:10</span>
+          <span class="timeline-title"><a href="program.html#keynote2">Keynote II</a>: Prof. Yu Tsao (Academia Sinica)</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">17:00</span>
+          <span class="timeline-title"><a href="program.html#panel">International Panel Discussion</a></span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">18:00</span>
+          <span class="timeline-title">Welcome Banquet and paper awards announcement</span>
+          <span class="timeline-tag">1F Lichi Hall</span>
+        </div>
+      </div>
+
+      <h3 class="reveal mt-3">Day 2 · Saturday, November 21, 2026</h3>
+      <div class="timeline reveal mt-1">
+        <div class="timeline-row">
+          <span class="timeline-date">09:00</span>
+          <span class="timeline-title"><a href="program.html#keynote3">Keynote III</a>: Prof. Ljiljana Trajkovic (Simon Fraser University)</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">10:10</span>
+          <span class="timeline-title"><a href="program.html#young-woman-star">Young Woman Star Session</a> and parallel paper sessions</span>
+          <span class="timeline-tag">Plenary · A–D</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">13:00</span>
+          <span class="timeline-title">Agentic AI Tutorial 2, High School Session, NAPAI competition final</span>
+          <span class="timeline-tag">Parallel</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">14:40</span>
+          <span class="timeline-title"><a href="program.html#physical-ai-tutorial">Physical AI Tutorial</a></span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">15:40</span>
+          <span class="timeline-title"><a href="program.html#keynote4">Keynote IV</a>: Prof. Kazunori Komatani (The University of Osaka)</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+        <div class="timeline-row">
+          <span class="timeline-date">16:30</span>
+          <span class="timeline-title">Closing Ceremony and Awards Presentation</span>
+          <span class="timeline-tag">Plenary</span>
+        </div>
+      </div>
+
+      <p class="glance-note mt-2 reveal">All times Asia/Taipei (UTC+8). The Plenary Hall is 5F Lishan Hall. See the full program for every session, room, and chair.</p>
+      <div class="hero-ctas tc mt-3 reveal">
+        <a href="program.html" class="btn btn-primary">Full program <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">Find my paper</a>
+        <a href="program.html#handbook" class="btn btn-ghost">Download the handbook</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= ANNOUNCEMENTS ================= -->
   <section id="announcements">
     <div class="wrap">
@@ -218,10 +311,9 @@
       <div id="news-home-mount" class="reveal" data-locale="en" data-data-base="assets/data" data-archive-href="news.html"></div>
       <noscript>
         <ul class="info-list announce-list">
-          <li><time datetime="2026-09-21">2026-09-21</time><span>Final extension: the paper submission deadline for the International and Domestic Tracks is now September 28, 2026, 23:59 AoE. <a href="cfp.html">Submission guidelines</a></span></li>
-          <li><time datetime="2026-09-02">2026-09-02</time><span>Domestic Track Word templates (full paper, extended abstract, paper abstract, copyright form) are available. <a href="cfp.html#templates">Download templates</a></span></li>
-          <li><time datetime="2026-09-01">2026-09-01</time><span>Registration is open. Early-bird rates apply until October 31, 2026. <a href="registration.html">Register</a></span></li>
-          <li><time datetime="2026-07-10">2026-07-10</time><span>Special session and tutorial/workshop proposal submissions have closed.</span></li>
+          <li><time datetime="2026-11-14">2026-11-14</time><span>TAAI 2026 final program and conference handbook released. <a href="program.html#handbook">Program &amp; handbook</a></span></li>
+          <li><time datetime="2026-11-14">2026-11-14</time><span>Check-in 08:00–17:00 on both days at the 5F Lishan Hall open courtyard; on-site registration and free shuttle (online booking). <a href="venue.html#shuttle">Shuttle timetable</a></span></li>
+          <li><time datetime="2026-11-04">2026-11-04</time><span>Keynote speakers: Philip S. Yu, Yu Tsao, Ljiljana Trajkovic, and Kazunori Komatani. <a href="program.html#keynotes">Keynotes</a></span></li>
         </ul>
       </noscript>
       <div class="tc mt-3 reveal">
@@ -301,7 +393,11 @@
             rooms, accommodation, dining, and access to nearby forest
             facilities.
           </p>
-          <a href="venue.html" class="btn btn-ghost mt-2">Explore the venue <span class="arrow">→</span></a>
+          <div class="hero-ctas mt-2">
+            <a href="venue.html" class="btn btn-ghost">Explore the venue <span class="arrow">→</span></a>
+            <a href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=en&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">Book with promo code TAAI2026 <span class="arrow">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+          <p class="stay-note mt-2"><strong>Staying overnight?</strong> Deluxe Double rooms are still available at the TAAI 2026 rate (TWD 6,000 per night, breakfast included, non-refundable) until November 17 with promo code <strong>TAAI2026</strong>. The room rate includes the resort&rsquo;s <a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">outdoor hot-spring SPA<span class="sr-only"> (external site, opens in a new tab)</span></a>.  <a href="venue.html#hotels">Room rates</a></p>
         </div>
 
         <aside class="venue-card reveal">
@@ -319,7 +415,7 @@
               <dt>Address</dt>
               <dd>No. 79, Chajiao, Chajiao Village, Sanxia District, New Taipei City 237, Taiwan<br /><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Great%20Roots%20Forestry%20Spa%20Resort&amp;hl=en" target="_blank" rel="noopener">Open in Google Maps</a></dd>
               <dt>Transit</dt>
-              <dd>≈ 50 min from Taipei Main Station</dd>
+              <dd>Free conference shuttle from Banqiao HSR Station (≈ 50 min) and Taipei University Station (≈ 25 min) · <a href="venue.html#shuttle">Timetable</a></dd>
             </div>
           </dl>
         </aside>
@@ -360,7 +456,7 @@
   </section>
 
   <!-- ================= IMPORTANT DATES PREVIEW ================= -->
-  <section>
+  <section data-phase="submission earlybird regular">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="num-label">4 / Key Dates</span>
@@ -722,7 +818,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

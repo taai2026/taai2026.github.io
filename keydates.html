@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -117,7 +119,14 @@
         23:59 AoE (Anywhere on Earth).
       </p>
 
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">Program</span> All submission and online registration deadlines have passed. The <a href="program.html">final program</a> and <a href="program.html#handbook">conference handbook</a> are out; <a href="registration.html#onsite-registration">on-site registration</a> is available on November 20–21.</p>
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">Find my paper</a>
+        <a href="program.html#handbook" class="btn btn-ghost">Handbook</a>
+        <a href="registration.html#onsite-registration" class="btn btn-ghost" data-phase="conference">On-site registration</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="cfp.html" class="btn btn-primary">Call for papers <span class="arrow">→</span></a>
         <a href="registration.html" class="btn btn-ghost">Registration</a>
       </div>
@@ -155,6 +164,11 @@
           <span class="timeline-title">Paper Submission Deadline (High School Session)</span>
           <span class="timeline-tag hot">Open</span>
         </div>
+        <div class="timeline-row" data-event="2026-10-21">
+          <span class="timeline-date">October 21, 2026</span>
+          <span class="timeline-title">Notification of Acceptance (<a href="cfphss.html">High School Session</a>)</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
         <div class="timeline-row" data-event="2026-10-24">
           <span class="timeline-date">October 24, 2026</span>
           <span class="timeline-title">Notification of Paper Acceptance (was October 16, 2026)</span>
@@ -170,15 +184,35 @@
           <span class="timeline-title">Early-bird registration Deadline (23:59 AoE)</span>
           <span class="timeline-tag hot">Open</span>
         </div>
+        <div class="timeline-row" data-deadline="2026-11-08">
+          <span class="timeline-date">November 8, 2026</span>
+          <span class="timeline-title">Camera-Ready and Presenting-Author Registration Deadline (High School Session; 23:59 AoE)</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row" data-deadline="2026-11-10">
+          <span class="timeline-date">November 10, 2026</span>
+          <span class="timeline-title">Remote / Pre-recorded Presentation Application Deadline (prior approval required; 23:59 AoE) · <a href="registration.html#reg-q24">Registration FAQ Q24</a></span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
         <div class="timeline-row" data-deadline="2026-11-13">
           <span class="timeline-date">November 13, 2026</span>
           <span class="timeline-title">Regular Registration Deadline (other attendees; 23:59 AoE)</span>
           <span class="timeline-tag hot">Open</span>
         </div>
-        <div class="timeline-row">
-          <span class="timeline-date">November 20–21, 2026</span>
-          <span class="timeline-title">Conference in New Taipei City</span>
-          <span class="timeline-tag hot">Flagship</span>
+        <div class="timeline-row" data-deadline="2026-11-16">
+          <span class="timeline-date">November 16, 2026</span>
+          <span class="timeline-title">Pre-recorded Video Due (approved remote presenters only; 23:59 AoE)</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row" data-event="2026-11-20" data-tz="+08:00">
+          <span class="timeline-date">November 20, 2026</span>
+          <span class="timeline-title"><a href="program.html#day1">Conference Day 1</a> (Friday): opening ceremony, Keynotes I &amp; II, International Panel, Welcome Banquet</span>
+          <span class="timeline-tag">Upcoming</span>
+        </div>
+        <div class="timeline-row" data-event="2026-11-21" data-tz="+08:00">
+          <span class="timeline-date">November 21, 2026</span>
+          <span class="timeline-title"><a href="program.html#day2">Conference Day 2</a> (Saturday): Keynotes III &amp; IV, tutorials, Closing Ceremony &amp; Awards</span>
+          <span class="timeline-tag">Upcoming</span>
         </div>
       </div>
     </div>
@@ -207,7 +241,7 @@
           <p>
             <strong>Update:</strong> acceptance notifications (originally scheduled for October 16, 2026) have been sent. The camera-ready deadline and the presenting-author registration deadline are October 31, 2026 AoE.
           </p>
-          <p>
+          <p data-phase="submission">
             We recommend submitting ahead of the deadline: last-day system
             load can be heavy, and AoE means the cut-off is later than most
             local clocks suggest.
@@ -223,13 +257,15 @@
             <dt>Notification</dt><dd>October 24, 2026 AoE (was October 16, 2026)</dd>
             <dt>Camera-ready</dt><dd>October 31, 2026 AoE · <a href="camera-ready.html">Details</a></dd>
             <dt>Early-bird</dt><dd>October 31, 2026 AoE</dd>
-            <dt>Conference</dt><dd>November 20-21, 2026</dd>
+            <dt>Regular registration</dt><dd>November 13, 2026 AoE</dd>
+            <dt>Conference</dt><dd>November 20–21, 2026 · <a href="program.html">Program</a></dd>
           </dl>
         </aside>
       </div>
 
       <div class="tc mt-3 reveal">
-        <a href="cfp.html" class="btn btn-primary">Full call for papers <span class="arrow">→</span></a>
+        <a href="program.html" class="btn btn-primary" data-phase="conference post" hidden>Program <span class="arrow">→</span></a>
+        <a href="cfp.html" class="btn btn-primary" data-phase="submission earlybird regular">Full call for papers <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -275,7 +311,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

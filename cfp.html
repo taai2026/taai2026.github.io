@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -115,11 +117,19 @@
         TAAI 2026 invites full papers, short papers, and posters on AI technologies and applications. This year highlights Agentic AI and Physical AI for Cross-Domain Sustainable Innovation. We especially welcome research at the intersection of agentic systems, embodied AI, and sustainable innovation.
       </p>
 
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">Program</span> Submissions have closed. The <a href="program.html">final program</a> and <a href="program.html#handbook">conference handbook</a> are out: find your paper's session, time, and room (poster papers: board number) on the <a href="program.html#paper-sessions">Program page</a>.</p>
       <p class="lede hero-deadline reveal"><span class="chip">Update</span> Acceptance notifications for the International &amp; Domestic Tracks have been sent from TAAI 2026 &lt;taai2026-notifications@openreview.net&gt;. Accepted authors: camera-ready papers and presenting-author registration are due <strong>October 31, 2026, 23:59 AoE</strong> (Taipei time: November 1, 2026, 19:59); see the <a href="camera-ready.html">Camera-Ready page</a>.</p>
 
       <p class="lede reveal"><span class="chip">Confirmed</span> TAAI 2026 has been formally accepted by Springer for publication as a <strong>Communications in Computer and Information Science (CCIS) post-proceedings</strong> volume. <a href="#publication-policy">See the Publication Policy</a> for details.</p>
 
-      <div class="hero-ctas reveal">
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">Find my paper</a>
+        <a href="program.html#handbook" class="btn btn-ghost">Handbook</a>
+        <a href="#publication-policy" class="btn btn-ghost">Publication policy</a>
+        <a href="#faq" class="btn btn-ghost">FAQ</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="https://openreview.net/group?id=TAAI.org/2026/Conference" target="_blank" rel="noopener" class="btn btn-primary">Submission portal <span class="arrow">→</span></a>
         <a href="#submit" class="btn btn-ghost">Guidelines &amp; format</a>
         <a href="#topics" class="btn btn-ghost">See topics of interest</a>
@@ -1075,7 +1085,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

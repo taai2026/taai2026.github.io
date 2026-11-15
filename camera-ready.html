@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -115,13 +117,21 @@
         This page collects everything an accepted author needs to finish: what to submit, which forms to sign, and which deadlines apply. Read it together with the <a href="cfp.html#publication-policy">Publication Policy</a>.
       </p>
 
+      <p class="lede hero-deadline reveal" data-phase="conference post" hidden><span class="chip">Program</span> Camera-ready submission has closed. The <a href="program.html">final program</a> and <a href="program.html#handbook">conference handbook</a> are out: check your session, presentation time, and room (poster papers: board number) on the <a href="program.html#paper-sessions">Program page</a>.</p>
       <p class="lede hero-deadline reveal"><span class="chip">Deadline</span> Camera-ready papers (International &amp; Domestic Tracks) are due <strong>October 31, 2026, 23:59 AoE</strong> (Taipei time: November 1, 2026, 19:59). High School Session: <strong>November 8, 2026, 23:59 AoE</strong>.</p>
 
-      <p class="lede hero-deadline reveal"><span class="chip">Program</span> The tentative program is out. Please check your paper's session, presentation time, and room (poster papers: board number) under <a href="program.html#paper-sessions">Paper Sessions</a>. For corrections, or if you cannot find your paper, email <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> with your paper ID by <strong>November 9, 2026</strong>.</p>
+      <p class="lede hero-deadline reveal" data-phase="submission earlybird regular"><span class="chip">Program</span> The tentative program is out. Please check your paper's session, presentation time, and room (poster papers: board number) under <a href="program.html#paper-sessions">Paper Sessions</a>. For corrections, or if you cannot find your paper, email <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> with your paper ID by <strong>November 9, 2026</strong>.</p>
 
       <p class="lede hero-deadline reveal"><span class="chip">Update</span> Acceptance notifications have been sent from <strong>TAAI 2026 &lt;taai2026-notifications@openreview.net&gt;</strong> (please also check your spam folder), and the Camera Ready Revision form is open on OpenReview. Log in, open your paper, and click <strong>Edit &gt; Camera Ready Revision</strong>. Presenting-author registration and payment are due by the same deadline.</p>
 
-      <div class="hero-ctas reveal">
+      <div class="hero-ctas reveal" data-phase="conference post" hidden>
+        <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
+        <a href="program.html#paper-sessions" class="btn btn-ghost">Find my paper</a>
+        <a href="program.html#handbook" class="btn btn-ghost">Handbook</a>
+        <a href="#downloads" class="btn btn-ghost">Templates &amp; forms</a>
+        <a href="#faq" class="btn btn-ghost">FAQ</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="#steps" class="btn btn-primary">Steps <span class="arrow">→</span></a>
         <a href="#what-to-submit" class="btn btn-ghost">What to submit</a>
         <a href="#downloads" class="btn btn-ghost">Templates &amp; forms</a>
@@ -750,7 +760,7 @@
 <details class="info-card faq-item" id="cr-q54" data-faq-tags="format domestic-abstract">
           <summary>Q54. What are the requirements for presenting a poster at the conference?</summary>
           <div class="faq-body">
-            <p>Posters should be A0 portrait (84.1 cm &times; 118.9 cm); smaller formats such as A1 are acceptable, landscape posters are not permitted. Include the paper title, authors, affiliations, motivation and objectives, methods, results, and conclusions, with figures preferred and fonts readable from 1&ndash;2 meters. Presenters print and bring their own posters; poster boards and mounting materials are provided, and each accepted poster paper is assigned a display space. Poster session times and board numbers are listed under <a href="program.html#paper-sessions">Paper Sessions</a>; setup and removal times will be announced later. See the <a href="program.html#poster-guidelines">Poster Presentation Guidelines</a>.</p>
+            <p>Posters should be A0 portrait (84.1 cm &times; 118.9 cm); smaller formats such as A1 are acceptable, landscape posters are not permitted. Include the paper title, authors, affiliations, motivation and objectives, methods, results, and conclusions, with figures preferred and fonts readable from 1&ndash;2 meters. Presenters print and bring their own posters; poster boards and mounting materials are provided, and each accepted poster paper is assigned a display space. Poster session times and board numbers are listed under <a href="program.html#paper-sessions">Paper Sessions</a>; put up your poster during the break before your session and take it down right after it ends. See the <a href="program.html#poster-guidelines">Poster Presentation Guidelines</a>.</p>
           </div>
         </details>
 
@@ -803,7 +813,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>

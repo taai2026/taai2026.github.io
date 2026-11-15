@@ -68,7 +68,9 @@
               <li><a href="venue.html#hotels">Where to Stay</a></li>
             </ul>
           </li>
-          <li><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="submission earlybird regular"><a href="registration.html" class="nav-cta">Registration</a></li>
+          <li data-phase="conference" hidden><a href="registration.html">Registration</a></li>
+          <li data-phase="conference post" hidden><a href="program.html#handbook" class="nav-cta">Handbook</a></li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Submission<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -113,14 +115,22 @@
         TAAI 2026 <em class="grad-text">Registration</em>
       </h1>
       <p class="lede reveal">
-        All registration types include both conference days, keynotes and sessions, coffee/tea breaks, lunches, and proceedings access. The conference banquet is included with <strong>Full Registration</strong>; Student and Accompanying Person registrations can add a banquet ticket (NT$ 2,000). Rooms are booked separately.
+        All registration types include both conference days, keynotes and sessions, coffee/tea breaks, lunches, and proceedings access. The conference banquet is included with <strong>Full Registration</strong>; Student and Accompanying Person registrations can add a banquet ticket (NT$ 2,000). Accommodation and hot-spring access are not included in the registration fee; book rooms and buy hot-spring tickets directly with the resort.
       </p>
-      <p class="lede hero-deadline reveal"><span class="chip">Program</span> The tentative program is out: see <a href="program.html#paper-sessions">Paper Sessions</a>. Every accepted paper needs at least one presenting author who has completed registration and payment; otherwise the paper may be removed from the program. Please report any corrections to <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> by <strong>November 9, 2026</strong>.</p>
-      <div class="hero-ctas reveal">
+      <p class="lede hero-deadline reveal" data-phase="submission earlybird regular"><span class="chip">Program</span> The tentative program is out: see <a href="program.html#paper-sessions">Paper Sessions</a>. Every accepted paper needs at least one presenting author who has completed registration and payment; otherwise the paper may be removed from the program. Please report any corrections to <a href="mailto:taai2026org@gmail.com">taai2026org@gmail.com</a> by <strong>November 9, 2026</strong>.</p>
+      <p class="lede hero-deadline reveal" data-phase="conference" hidden><span class="chip">On-site</span> Online regular registration closed on <strong>November 13, 2026, 23:59 AoE</strong>. You can still register on-site on November 20–21 at the check-in desk in the <strong>5F Lishan Hall open courtyard</strong> (08:00–17:00 both days) at on-site rates; payment by cash (NT$) or credit card (Visa, Mastercard, JCB).</p>
+      <p class="lede hero-deadline reveal" data-phase="post" hidden><span class="chip">Closed</span> TAAI 2026 has concluded and registration is closed. Thank you for joining us.</p>
+      <div class="hero-ctas reveal" data-phase="conference" hidden>
+        <a href="#onsite-registration" class="btn btn-primary">On-site registration <span class="arrow">→</span></a>
+        <a href="program.html" class="btn btn-ghost">Program</a>
+        <a href="venue.html#shuttle" class="btn btn-ghost">Shuttle &amp; travel</a>
+        <a href="#faq" class="btn btn-ghost">FAQ</a>
+      </div>
+      <div class="hero-ctas reveal" data-phase="submission earlybird regular">
         <a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Go to online registration system <span class="arrow">→</span></a>
         <a href="#faq" class="btn btn-ghost">FAQ</a>
       </div>
-      <p class="url-note reveal">
+      <p class="url-note reveal" data-phase="submission earlybird regular">
         Attendees must register through the official <a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer">online registration system</a>:
         <a href="https://taai2026-esunbank.taai.org.tw/" target="_blank" rel="noopener noreferrer">https://taai2026-esunbank.taai.org.tw/</a>
       </p>
@@ -261,6 +271,7 @@
           <ul class="info-list">
             <li>Admission to all scientific sessions and exhibition</li>
             <li>Admission to the Opening &amp; Closing Ceremony</li>
+            <li>Conference kit (bag, badge); the Conference Handbook and abstract book are provided as digital PDFs only (no printed copies)</li>
             <li>Conference Banquet requires an additional purchase</li>
             <li>Refreshments &amp; lunch during the conference</li>
           </ul>
@@ -318,7 +329,7 @@
       </div>
 
       <div class="policy-block reveal">
-        <h3>On-site registration</h3>
+        <h3 id="onsite-registration">On-site registration</h3>
         <p>The deadline for regular registration is November 13, 2026 (presenting authors must register earlier, by the camera-ready deadline). All registrations and payments received after this date are considered on-site registration and processed on-site. On-site registration accepts payment by cash (NT$) and credit card (Visa, Mastercard, and JCB) only.</p>
       </div>
 
@@ -436,7 +447,7 @@
 <details class="info-card faq-item" id="reg-q11" data-faq-tags="fees">
           <summary>Q11. What is included in my registration?</summary>
           <div class="faq-body">
-            <p>All registration types include both conference days, keynotes and sessions, coffee/tea breaks, lunches, and proceedings access. Full Registrants / Presenting Authors also receive the conference kit and admission to the social programs (Opening &amp; Closing Ceremony and Conference Banquet). See section 3 (Entitlements) for the full table.</p>
+            <p>All registration types include both conference days, keynotes and sessions, coffee/tea breaks, lunches, proceedings access, the conference kit, and admission to the Opening &amp; Closing Ceremony. The Conference Banquet is included with Full Registration / Presenting Author; Student and Accompanying Person registrations can add a banquet ticket (NT$ 2,000). Accommodation and hot-spring access are not included (see Q28). See section 3 (Entitlements) for the full table.</p>
           </div>
         </details>
 <details class="info-card faq-item" id="reg-q12" data-faq-tags="fees students">
@@ -576,9 +587,9 @@
         </details>
 
 <details class="info-card faq-item" id="reg-q28" data-faq-tags="fees">
-          <summary>Q28. Is accommodation included in the registration fee?</summary>
+          <summary>Q28. Is accommodation or hot-spring access included in the registration fee?</summary>
           <div class="faq-body">
-            <p>No. Rooms are booked separately. See <a href="venue.html#hotels">Venue &amp; travel</a> for the conference hotel and rates.</p>
+            <p>No. Rooms are booked separately. See <a href="venue.html#hotels">Venue &amp; travel</a> for the conference hotel and rates. Hot-spring access is not included either; tickets are sold by the resort, and prices and hours follow the <a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">resort&rsquo;s official page<span class="sr-only"> (external site, opens in a new tab)</span></a>.</p>
           </div>
         </details>
 <details class="info-card faq-item" id="reg-q29" data-faq-tags="registration">
@@ -661,7 +672,7 @@
       <div class="footer-base">
         <span>TAAI 2026 · November 20–21, 2026 · The Great Roots Forestry Spa Resort, New Taipei City, Taiwan</span>
         <span><a href="https://taai2026.github.io/" target="_blank" rel="noopener">https://taai2026.github.io/</a></span>
-        <span data-updated>Last updated: <time datetime="2026-11-01">2026-11-01</time></span>
+        <span data-updated>Last updated: <time datetime="2026-11-15">2026-11-15</time></span>
       </div>
     </div>
   </footer>
