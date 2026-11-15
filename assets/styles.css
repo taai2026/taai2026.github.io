@@ -3846,3 +3846,66 @@ a.partner-card:hover .partner-name {
 .rate-card.is-soldout { opacity: 0.6; }
 .rate-card.is-soldout .rate-price { color: var(--ink-soft); text-decoration: line-through; }
 .rate-soldout { margin-left: 0.35rem; font-size: 0.72rem; vertical-align: middle; }
+
+/* Program page: on-site info and live "now / next" */
+.onsite-info,
+.now-next {
+  margin-top: 1.25rem;
+}
+.onsite-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+}
+.onsite-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+}
+.onsite-grid div { min-width: 0; }
+.onsite-grid dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.onsite-grid dd { margin: 0.1rem 0 0; font-size: 0.92rem; }
+.now-next {
+  border: 2px solid var(--green);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: 1rem 1.15rem;
+  box-shadow: var(--shadow);
+}
+.now-next .nn-kicker {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.now-next .nn-kicker::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: var(--green);
+  vertical-align: 0.05rem;
+}
+.now-next .nn-h { font-size: 1rem; margin: 0.4rem 0 0.35rem; }
+.now-next .nn-next .nn-h { color: var(--ink-soft); }
+.now-next .nn-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+.now-next .nn-list li { display: flex; flex-direction: column; min-width: 0; }
+.now-next .nn-title { font-weight: 600; overflow-wrap: anywhere; }
+.now-next .nn-meta { color: var(--ink-soft); font-size: 0.82rem; }
+.now-next .nn-empty { margin: 0; color: var(--ink-soft); }
+.now-next .nn-next { margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--line); }
+.glance td.is-now {
+  outline: 2px solid var(--green);
+  outline-offset: -2px;
+  position: relative;
+}
