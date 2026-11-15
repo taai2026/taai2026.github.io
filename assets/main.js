@@ -263,20 +263,20 @@
   /* ---- Timeline status tags: auto-update from data-deadline / data-event ----
      <div class="timeline-row" data-deadline="2026-09-14">            deadline: Open → Closed
      <div class="timeline-row" data-deadline="…" data-opens="…">     Upcoming until data-opens, then Open → Closed
-     <div class="timeline-row" data-event="2026-10-23">               Upcoming → Completed
+     <div class="timeline-row" data-event="2026-10-23">               Upcoming → In progress (that day) → Completed
      Optional data-tz="+08:00" (default is AoE, UTC-12). Rows without these attributes keep their static tag. */
   const timelineRows = document.querySelectorAll('.timeline-row[data-deadline], .timeline-row[data-event]');
   if (timelineRows.length) {
     const zhPage = /^zh/i.test(document.documentElement.lang || '') || /\/zh\//.test(location.pathname);
     const LABELS = zhPage
-      ? { upcoming: '即將到來', open: '開放中', closed: '已截止', done: '已完成' }
-      : { upcoming: 'Upcoming', open: 'Open', closed: 'Closed', done: 'Completed' };
-    const CLASSES = { upcoming: 'timeline-tag', open: 'timeline-tag hot', closed: 'timeline-tag closed', done: 'timeline-tag closed' };
+      ? { upcoming: '即將到來', live: '進行中', open: '開放中', closed: '已截止', done: '已完成' }
+      : { upcoming: 'Upcoming', live: 'In progress', open: 'Open', closed: 'Closed', done: 'Completed' };
+    const CLASSES = { upcoming: 'timeline-tag', live: 'timeline-tag hot', open: 'timeline-tag hot', closed: 'timeline-tag closed', done: 'timeline-tag closed' };
     const at = (ymd, time, tz) => {
       const t = new Date(`${ymd}T${time}${tz || '-12:00'}`).getTime();
       return Number.isNaN(t) ? null : t;
     };
-    const now = Date.now();
+    const now = Number.isNaN(previewNow) ? Date.now() : previewNow; // honors ?now= like the phases
 
     timelineRows.forEach(row => {
       const tag = row.querySelector('.timeline-tag');
@@ -284,9 +284,10 @@
       const tz = row.dataset.tz;
       let state;
       if (row.dataset.event) {
+        const start = at(row.dataset.event, '00:00:00', tz);
         const end = at(row.dataset.event, '23:59:59', tz);
         if (end === null) return;
-        state = now > end ? 'done' : 'upcoming';
+        state = now > end ? 'done' : now >= start ? 'live' : 'upcoming';
       } else {
         const end = at(row.dataset.deadline, '23:59:59', tz);
         if (end === null) return;
