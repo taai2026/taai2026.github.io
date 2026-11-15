@@ -129,6 +129,11 @@ h2 { font-size: 2.35rem; }
 h3 { font-size: 1.35rem; }
 h4 { font-size: 1rem; }
 
+/* A heading moved up a level for a correct outline keeps its old size. */
+.h2-look { font-size: 2.35rem; }
+.h3-look { font-size: 1.35rem; }
+.h4-look { font-size: 1rem; }
+
 p {
   margin: 0 0 1rem;
 }
@@ -235,7 +240,7 @@ section {
   border-bottom: 1px solid var(--line);
 }
 
-.section-head h2 {
+.section-head :is(h1, h2) {
   max-width: 24ch;
 }
 
@@ -811,7 +816,7 @@ section {
 }
 
 .feature .num,
-.committee-block h3::before,
+.committee-block :is(h2, h3)::before,
 .topic .dot {
   color: var(--green);
 }
@@ -1275,6 +1280,11 @@ section {
   border-bottom: 2px solid var(--blue);
 }
 
+@media (max-width: 640px) {
+  /* The day label sits above the date so the heading keeps a full line. */
+  .day-head { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+}
+
 .day-head h3 a {
   color: var(--blue);
   text-decoration: underline;
@@ -1483,7 +1493,7 @@ section {
 }
 
 .topic .dot,
-.committee-block h3::before {
+.committee-block :is(h2, h3)::before {
   content: '';
   width: 7px;
   height: 7px;
@@ -1552,7 +1562,7 @@ section {
   border-left: 2px solid rgba(13, 74, 158, 0.22);
 }
 
-.committee-block h3 {
+.committee-block :is(h2, h3) {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -1807,6 +1817,19 @@ a.partner-card:hover .partner-name {
   line-height: 1.5;
 }
 
+/* Phones: footer links get a taller tap area (about 36px). */
+@media (max-width: 640px) {
+  .footer-col li {
+    margin-bottom: 0;
+  }
+
+  .footer-col li > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+}
+
 .footer-base {
   display: grid;
   gap: 0.25rem;
@@ -2053,6 +2076,8 @@ a.partner-card:hover .partner-name {
   h2 { font-size: 2rem; }
   h3 { font-size: 1.25rem; }
   h4 { font-size: 1rem; }
+  .h2-look { font-size: 2rem; }
+  .h3-look { font-size: 1.25rem; }
 
   section {
     padding: 1.5rem 0;
@@ -2151,6 +2176,7 @@ a.partner-card:hover .partner-name {
 @media (max-width: 640px) {
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.7rem; }
+  .h2-look { font-size: 1.7rem; }
 
   .hero-title {
     font-size: 1.75rem;
@@ -2624,6 +2650,87 @@ a.partner-card:hover .partner-name {
 .news-clear-btn:hover {
   border-color: var(--blue);
   color: var(--blue);
+}
+
+.ps-toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Abstract mode switch (program paper sessions): 摘要 [隱藏][預覽][完整] */
+.ps-abstract-mode {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.ps-abstract-mode[hidden] {
+  display: none;
+}
+
+.ps-abstract-mode-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.7rem;
+  color: var(--ink-soft);
+}
+
+.ps-abstract-mode button {
+  min-height: 34px;
+  padding: 0.3rem 0.8rem;
+  border: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.ps-abstract-mode button:hover {
+  color: var(--blue);
+}
+
+.ps-abstract-mode button[aria-pressed="true"] {
+  background: var(--blue);
+  color: #fff;
+}
+
+.ps-abstract-mode button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: -3px;
+}
+
+/* Hidden mode: a closed abstract is just its "show abstract" button. */
+#program-sessions.ps-abstracts-hidden .ps-abstract-box.is-clamped {
+  margin-top: 0.15rem;
+  padding: 0;
+  border-left: 0;
+  background: none;
+}
+
+#program-sessions.ps-abstracts-hidden .ps-abstract-box.is-clamped > :not(.ps-abstract-toggle) {
+  display: none;
+}
+
+/* Preview mode: an abstract that fits in 3 lines needs no button. */
+#program-sessions:not(.ps-abstracts-hidden) .ps-abstract-box.is-clamped[data-fits] .ps-abstract-toggle {
+  display: none;
+}
+
+@media print {
+  .ps-abstract-mode { display: none !important; }
+  #program-sessions.ps-abstracts-hidden .ps-abstract-box.is-clamped {
+    margin-top: 0.45rem;
+    padding: 0.55rem 0.75rem;
+    border-left: 3px solid rgba(13, 74, 158, 0.22);
+  }
+  #program-sessions.ps-abstracts-hidden .ps-abstract-box.is-clamped > :not(.ps-abstract-toggle) {
+    display: block !important;
+  }
 }
 
 @media (max-width: 640px) {
@@ -3191,7 +3298,7 @@ a.partner-card:hover .partner-name {
   margin: 1.25rem 0 1rem;
 }
 
-.ps-notes h4 {
+.ps-notes :is(h3, h4) {
   margin: 0 0 0.35rem;
 }
 
