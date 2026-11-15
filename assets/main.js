@@ -165,21 +165,55 @@
   /* ---- Countdown to TAAI 2026 (Nov 20, 2026, 09:00 Asia/Taipei) ---- */
   const cdEl = document.getElementById('countdown');
   if (cdEl) {
-    // Taipei is UTC+8 — conference starts Nov 20, 2026 at 09:00 local = Nov 20 01:00 UTC
-    const target = new Date('2026-11-20T01:00:00Z').getTime();
+    // Counts down to the opening ceremony (09:20 Asia/Taipei on Day 1, per
+    // the program). Once it starts, the box switches to a "Day N is under
+    // way" link; after the conference it is hidden by its data-phase.
+    const target = Date.parse('2026-11-20T09:20:00+08:00');
+    const day2Start = Date.parse('2026-11-21T00:00:00+08:00');
+    const confEnd = Date.parse('2026-11-21T18:00:00+08:00');
+    // ?now=… preview shifts the clock (same convention as the phase logic)
+    const previewAt = Date.parse(new URLSearchParams(location.search).get('now') || '');
+    const clockOffset = Number.isNaN(previewAt) ? 0 : previewAt - Date.now();
+    const clock = () => Date.now() + clockOffset;
+    const box = cdEl.closest('.hero-countdown');
+    const zhCd = (document.documentElement.lang || '').toLowerCase().indexOf('zh') === 0;
     const pad = n => String(n).padStart(2, '0');
+    // role=timer is implicitly aria-live="off": a per-second live region
+    // would make screen readers announce every tick
     cdEl.setAttribute('role', 'timer');
-    cdEl.setAttribute('aria-live', 'polite');
-    cdEl.innerHTML = ['Days', 'Hours', 'Minutes', 'Seconds'].map(label => `
+    cdEl.innerHTML = (zhCd ? ['天', '時', '分', '秒'] : ['Days', 'Hours', 'Minutes', 'Seconds']).map(label => `
       <div class="unit">
         <span class="n">00</span>
         <span class="l">${label}</span>
       </div>
     `).join('');
     const values = cdEl.querySelectorAll('.n');
+    let timerId = null;
+
+    const showLive = (now) => {
+      if (!box || !box.dataset.liveDay1) return false;
+      const day = now >= day2Start ? 2 : 1;
+      const eyebrow = box.querySelector('.eyebrow');
+      const note = box.querySelector('.countdown-note');
+      if (eyebrow) eyebrow.textContent = box.dataset[day === 2 ? 'liveDay2' : 'liveDay1'];
+      cdEl.removeAttribute('role');
+      cdEl.textContent = '';
+      const a = document.createElement('a');
+      a.href = `program.html#day${day}`;
+      a.className = 'btn btn-primary';
+      a.textContent = box.dataset.liveLink || '';
+      cdEl.appendChild(a);
+      if (note) note.hidden = true;
+      return true;
+    };
 
     const tick = () => {
-      const now = Date.now();
+      const now = clock();
+      if (now >= target && now <= confEnd && showLive(now)) {
+        if (timerId) clearInterval(timerId);
+        timerId = null;
+        return;
+      }
       const diff = Math.max(0, target - now);
       const parts = [
         Math.floor(diff / 86400000),
@@ -191,8 +225,8 @@
         value.textContent = pad(parts[index]);
       });
     };
+    timerId = setInterval(tick, 1000);
     tick();
-    setInterval(tick, 1000);
   }
 
   /* ---- Conference phase (drives hero CTAs and start-here cards) ----
@@ -215,6 +249,15 @@
   document.querySelectorAll('[data-phase]').forEach(el => {
     if (el === document.documentElement) return;
     el.hidden = !el.dataset.phase.split(/\s+/).includes(phaseNow);
+  });
+
+  /* data-until="<ISO instant with offset>" hides an element after that
+     instant (e.g. a hotel rate held until a date). It only hides, so it
+     combines with data-phase. Honors the same ?now= preview. */
+  const untilNow = Number.isNaN(previewNow) ? Date.now() : previewNow;
+  document.querySelectorAll('[data-until]').forEach(el => {
+    const until = Date.parse(el.dataset.until);
+    if (!Number.isNaN(until) && untilNow > until) el.hidden = true;
   });
 
   /* ---- Timeline status tags: auto-update from data-deadline / data-event ----

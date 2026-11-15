@@ -3830,3 +3830,19 @@ a.partner-card:hover .partner-name {
 .shuttle-booking h3 { margin-bottom: .5rem; }
 .feature-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
 .shuttle-caption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
+
+/* Homepage venue section: short hotel-rate note */
+.stay-note {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.stay-note a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Venue: conference-rate room types that are fully booked */
+.rate-card.is-soldout { opacity: 0.6; }
+.rate-card.is-soldout .rate-price { color: var(--ink-soft); text-decoration: line-through; }
+.rate-soldout { margin-left: 0.35rem; font-size: 0.72rem; vertical-align: middle; }
