@@ -32,6 +32,10 @@ const STRINGS = {
     searchAffiliation: aff => `Show papers from ${aff}`,
     abstractMore: "Show full abstract",
     abstractLess: "Show less",
+    abstractShow: "Show abstract",
+    abstractHide: "Hide abstract",
+    abstractModeLabel: "Abstracts",
+    abstractModes: { hidden: "Hidden", preview: "Preview", full: "Full" },
     save: "Save",
     saved: "Saved",
     saveLabel: id => `Add paper #${id} to My program`,
@@ -64,6 +68,10 @@ const STRINGS = {
     searchAffiliation: aff => `顯示「${aff}」的論文`,
     abstractMore: "看完整摘要",
     abstractLess: "收合摘要",
+    abstractShow: "顯示摘要",
+    abstractHide: "隱藏摘要",
+    abstractModeLabel: "摘要",
+    abstractModes: { hidden: "隱藏", preview: "預覽", full: "完整" },
     save: "收藏",
     saved: "已收藏",
     saveLabel: id => `將論文 #${id} 加入我的議程`,
@@ -368,6 +376,19 @@ async function init() {
   }
 
   let state = { q: "", in: "", day: "", type: "", topic: "" };
+  // Abstracts in the paper list follow a page-wide mode set by the toolbar
+  // switch: hidden (the default), a 3-line preview, or full. Each paper also
+  // has its own button (and title click) that opens or closes the whole
+  // abstract. An abstract-scoped search opens its matches and closes them
+  // again when that search ends; a toggle by hand is left alone.
+  const ABSTRACT_MODES = ["hidden", "preview", "full"];
+  let abstractMode = "hidden";
+  const togglable = [];
+  const autoOpened = new Set();
+  let modeGroup = null;
+  function syncModeSwitch() {
+    if (modeGroup) modeGroup.hidden = !togglable.some(p => !p.closest("[hidden]"));
+  }
   // "My program": saved papers live in this browser only, not in the URL.
   const saved = loadSaved();
   let showMine = false;
@@ -414,6 +435,20 @@ async function init() {
       && (!showMine || saved.has(r.item.id)));
     renderOther(extras);
 
+    // An abstract-scoped search opens the matching abstracts so the hit is visible.
+    const abstractHits = state.q && state.in === "abstract" && matches ? matches : null;
+    autoOpened.forEach(paper => {
+      if (abstractHits?.has(paper)) return;
+      autoOpened.delete(paper);
+      paper.expandAbstract(false);
+    });
+    abstractHits?.forEach(paper => {
+      if (!paper.expandAbstract || paper.abstractOpen) return;
+      paper.expandAbstract(true);
+      autoOpened.add(paper);
+    });
+    syncModeSwitch();
+
     countEl.textContent = strings.count(paperCount, sessionCount) + (extras.length ? strings.extraCount(extras.length) : "");
     emptyEl.hidden = sessionCount !== 0 || extras.length > 0;
   }
@@ -443,7 +478,11 @@ async function init() {
    *  filter that would hide it is cleared first. */
   async function revealHashTarget() {
     const id = decodeURIComponent(window.location.hash || "").slice(1);
-    if (!/^(session|paper)-/.test(id)) return;
+    // A link to one invited talk shows its whole abstract.
+    if (!/^(session|paper)-/.test(id)) {
+      document.getElementById(id)?.expandAbstract?.(true);
+      return;
+    }
     const target = document.getElementById(id);
     if (!target) return;
     if (target.closest("[hidden]")) await setState({ q: "", in: "", day: "", type: "", topic: "" }, { pushHistory: false });
@@ -503,38 +542,90 @@ async function init() {
   root.querySelectorAll(".ps-aff").forEach(el => makeActionable(el, strings.searchAffiliation(el.textContent)));
   root.querySelectorAll(".ps-paper-topic").forEach(el => makeActionable(el, strings.filterTopic(el.textContent)));
 
-  // Abstracts start as a 3-line preview with a "show full abstract" button.
-  // Clicking the paper title toggles it too.
-  root.querySelectorAll(".ps-paper").forEach(paper => {
+  // Papers measure their abstract against the 3-line preview first; invited
+  // talks always use the preview (the mode switch covers the paper list).
+  [...root.querySelectorAll(".ps-paper"), ...document.querySelectorAll("#invited-sessions .ps-paper")].forEach(paper => {
     const box = paper.querySelector(".ps-abstract-box");
     if (!box) return;
+    const inList = root.contains(paper);
     const textEl = box.querySelector(".ps-abstract-text");
     box.classList.add("is-clamped");
-    if (textEl.scrollHeight <= textEl.clientHeight + 2) {
+    const fits = textEl.scrollHeight <= textEl.clientHeight + 2;
+    if (fits && !inList) {
       box.classList.remove("is-clamped"); // short enough to show in full
       return;
     }
+    if (fits) box.dataset.fits = ""; // no "show full" button needed in preview mode
     const button = document.createElement("button");
     button.type = "button";
     button.className = "ps-abstract-toggle";
     button.setAttribute("aria-controls", box.id);
+    const label = () => {
+      const open = Boolean(paper.abstractOpen);
+      button.setAttribute("aria-expanded", String(open));
+      button.textContent = inList && abstractMode === "hidden"
+        ? (open ? strings.abstractHide : strings.abstractShow)
+        : (open ? strings.abstractLess : strings.abstractMore);
+    };
     const set = expanded => {
       box.classList.toggle("is-clamped", !expanded);
-      button.setAttribute("aria-expanded", String(expanded));
-      button.textContent = expanded ? strings.abstractLess : strings.abstractMore;
+      paper.abstractOpen = expanded;
+      label();
+    };
+    const toggle = () => {
+      autoOpened.delete(paper);
+      set(!paper.abstractOpen);
     };
     set(false);
-    button.addEventListener("click", () => set(button.getAttribute("aria-expanded") !== "true"));
+    button.addEventListener("click", toggle);
     box.append(button);
     paper.expandAbstract = set;
+    if (inList) togglable.push(paper);
     const title = paper.querySelector(".ps-paper-title");
     if (!title) return;
     title.classList.add("ps-title-toggle");
     title.addEventListener("click", () => {
       if (String(window.getSelection?.() || "")) return; // leave text selection alone
-      set(button.getAttribute("aria-expanded") !== "true");
+      toggle();
     });
   });
+
+  /** Hidden / preview: every abstract closed, shown that way. Full: all open. */
+  function setAbstractMode(mode) {
+    abstractMode = mode;
+    root.classList.toggle("ps-abstracts-hidden", mode === "hidden");
+    autoOpened.clear();
+    togglable.forEach(paper => paper.expandAbstract(mode === "full"));
+    modeGroup.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+  }
+
+  if (togglable.length) {
+    modeGroup = document.createElement("div");
+    modeGroup.className = "ps-abstract-mode";
+    modeGroup.setAttribute("role", "group");
+    modeGroup.setAttribute("aria-label", strings.abstractModeLabel);
+    const caption = document.createElement("span");
+    caption.className = "ps-abstract-mode-label";
+    caption.setAttribute("aria-hidden", "true");
+    caption.textContent = strings.abstractModeLabel;
+    modeGroup.append(caption);
+    ABSTRACT_MODES.forEach(mode => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.dataset.mode = mode;
+      b.textContent = strings.abstractModes[mode];
+      b.addEventListener("click", () => {
+        setAbstractMode(mode);
+        update(); // re-open the matches of an abstract search
+      });
+      modeGroup.append(b);
+    });
+    const actions = document.createElement("div");
+    actions.className = "ps-toolbar-actions";
+    clearBtn.before(actions);
+    actions.append(modeGroup, clearBtn);
+    setAbstractMode(abstractMode);
+  }
 
   // ---------- My program and calendar files ----------
   // Every dated item on the page can be saved and exported: keynotes, the
@@ -898,10 +989,34 @@ async function init() {
 // Pure helpers, exposed for tests.
 global.TAAIProgramSearch = { normalizeSearch, createSearcher, parsePaperIdQuery, parseUrlState, sessionMatches, exactMatches };
 
+/** On phones, keynote abstracts and biographies start closed so the list
+ *  stays scannable; a link to one keynote opens the sections that are open
+ *  on larger screens. */
+function compactKeynotes() {
+  const list = document.querySelector("#keynotes .keynote-list");
+  if (!list || !window.matchMedia("(max-width: 640px)").matches) return;
+  const openByDefault = [...list.querySelectorAll("details[open]")];
+  openByDefault.forEach(d => { d.open = false; });
+  const openTarget = () => {
+    const id = decodeURIComponent(window.location.hash || "").slice(1);
+    const card = id && document.getElementById(id);
+    if (!card || !list.contains(card)) return false;
+    openByDefault.filter(d => card.contains(d)).forEach(d => { d.open = true; });
+    return true;
+  };
+  // Closing the sections above a linked keynote moved it, so land on it again.
+  if (openTarget()) document.getElementById(decodeURIComponent(window.location.hash).slice(1)).scrollIntoView({ block: "start", behavior: "instant" });
+  window.addEventListener("hashchange", openTarget);
+}
+
 if (typeof document === "undefined") return;
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", init);
-} else {
+const start = () => {
+  compactKeynotes();
   init();
+};
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", start);
+} else {
+  start();
 }
 })(globalThis);
