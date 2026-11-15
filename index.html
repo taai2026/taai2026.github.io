@@ -381,13 +381,14 @@
   <!-- ================= VENUE TEASER ================= -->
   <section>
     <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num-label">2 / Venue</span>
+        <h2>Venue: <em class="grad-text">The Great Roots Forestry Spa Resort</em>, Sanxia</h2>
+      </div>
+
       <div class="split">
         <div class="reveal">
-          <span class="eyebrow">2 / Venue</span>
-          <h2 class="mt-1">
-            Venue: <em class="grad-text">The Great Roots Forestry Spa Resort</em>, Sanxia
-          </h2>
-          <p class="lede mt-2">
+          <p class="lede">
             TAAI 2026 will be held at The Great Roots Forestry Spa Resort in
             Sanxia District, New Taipei City. The venue offers conference
             rooms, accommodation, dining, and access to nearby forest
@@ -456,14 +457,16 @@
   </section>
 
   <!-- ================= IMPORTANT DATES PREVIEW ================= -->
-  <section data-phase="submission earlybird regular">
+  <section id="key-dates">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="num-label">4 / Key Dates</span>
-        <h2>Mark your calendar</h2>
+        <h2><span data-phase="submission earlybird regular">Mark your calendar</span><span data-phase="conference post" hidden>Conference dates</span></h2>
       </div>
 
-      <div class="timeline reveal">
+      <p class="lede" data-phase="conference post" hidden>Conference dates: <strong>November 20–21, 2026</strong> · <a href="keydates.html">Full timeline <span class="arrow">→</span></a></p>
+
+      <div class="timeline reveal" data-phase="submission earlybird regular">
         <div class="timeline-row" data-deadline="2026-07-10">
           <span class="timeline-date">July 10, 2026</span>
           <span class="timeline-title">Special Session Proposal Deadline</span>
@@ -511,7 +514,7 @@
         </div>
       </div>
 
-      <div class="tc mt-3 reveal">
+      <div class="tc mt-3 reveal" data-phase="submission earlybird regular">
         <a href="cfp.html" class="btn btn-ghost">Full call for papers <span class="arrow">→</span></a>
       </div>
     </div>
