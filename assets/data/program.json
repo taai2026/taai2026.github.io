@@ -1521,8 +1521,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "凃瀞珽 教授（國立中興大學資料科學與資訊計算研究所）",
-        "en": "Prof. Ching-Ting Tu (National Chung Hsing University)"
+        "zh": "凃瀞珽 教授（國立中興大學資料科學與資訊計算研究所）、黃瀚萱 研究員（中央研究院資訊科學研究所）",
+        "en": "Prof. Ching-Ting Tu (National Chung Hsing University); Prof. Hen-Hsen Huang (Academia Sinica)"
       },
       "topics": [
         {
@@ -3418,7 +3418,6 @@
           "title": "邁向可解釋的智慧教育代理人： 基於測驗理論之大型語言模型認知對齊與異常行為評估",
           "authors": [
             "賴明如",
-            "劉安萱",
             "林裕仁"
           ],
           "topic": "education",
