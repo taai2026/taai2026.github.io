@@ -2,6 +2,55 @@
   "version": 1,
   "items": [
     {
+      "id": "shuttle-boarding-notice",
+      "type": "logistics",
+      "category": "transportation",
+      "publishedAt": "2026-11-18T12:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "[重要] 接駁車搭車須知",
+          "summary": "已預約 TAAI 接駁車的與會者，請依預約的車次，於指定時間及地點集合：車次 113 在捷運臺北大學站 1 號出口，08:30 發車；車次 123 在板橋車站北二門，08:40 發車。現場有工作人員舉牌引導，請依指示依序集合、等候上車，並預留充足時間抵達，以免錯過接駁車。",
+          "linkLabel": "查看接駁車搭車須知",
+          "tags": [
+            "接駁車",
+            "交通",
+            "集合地點",
+            "shuttle"
+          ]
+        },
+        "en": {
+          "title": "[Important] Shuttle Boarding Information",
+          "summary": "If you have booked the TAAI shuttle, please meet at the time and place for your bus: bus 113 leaves from Exit 1 of MRT Taipei University Station at 08:30, and bus 123 leaves from North Gate 2 of Banqiao Station at 08:40. Staff holding TAAI signs will guide you; please follow their directions, queue to board, and allow plenty of time so you do not miss the bus.",
+          "linkLabel": "View shuttle boarding information",
+          "tags": [
+            "shuttle",
+            "transportation",
+            "meeting point"
+          ]
+        }
+      },
+      "links": {
+        "zh": "venue.html#shuttle-boarding",
+        "en": "venue.html#shuttle-boarding"
+      },
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "pinned": true,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-18T12:00:00+08:00",
+        "until": "2026-11-21T09:00:00+08:00"
+      },
+      "audience": [
+        "attendee",
+        "author",
+        "speaker"
+      ]
+    },
+    {
       "id": "final-program-and-handbook-published",
       "type": "program-update",
       "category": "program",
@@ -58,12 +107,12 @@
       "type": "logistics",
       "category": "transportation",
       "publishedAt": "2026-11-14T08:00:00+08:00",
-      "updatedAt": null,
+      "updatedAt": "2026-11-18T15:00:00+08:00",
       "status": "published",
       "i18n": {
         "zh": {
           "title": "報到、現場報名與免費接駁車資訊",
-          "summary": "11 月 20–21 日兩天報到時間皆為 08:00–17:00，報到處位於大板根森林溫泉酒店 5F 麗山廳開放中庭。線上報名已於 11 月 13 日 23:59 AoE 截止，之後請於現場報名，適用現場費率，僅接受現金（新臺幣）及信用卡（Visa、MasterCard、JCB）。大會提供免費接駁車（需線上預約）：兩天早上由捷運臺北大學站（三鶯線）08:30 及板橋高鐵站 08:40 發車；回程第 1 天 20:20、第 2 天 17:20 由會場發車。完整時刻表與預約連結請見會場頁。",
+          "summary": "11 月 20–21 日兩天報到時間皆為 08:00–17:00，報到處位於大板根森林溫泉酒店 5F 麗山廳開放中庭。線上報名已於 11 月 13 日 23:59 AoE 截止，之後請透過現場報名線上註冊（https://taai2026-esunbank.taai.org.tw/onsite-registration）報名，至 11 月 20–21 日會議期間皆可辦理，適用現場費率，僅接受信用卡（Visa、Mastercard、JCB），不接受現金。大會提供免費接駁車（需線上預約）：兩天早上由捷運臺北大學站（三鶯線）08:30 及板橋高鐵站 08:40 發車；回程第 1 天 20:20、第 2 天 17:20 由會場發車。完整時刻表與預約連結請見會場頁。",
           "linkLabel": "查看接駁車時刻表",
           "tags": [
             "報到",
@@ -76,7 +125,7 @@
         },
         "en": {
           "title": "Check-in, On-site Registration, and Free Shuttle",
-          "summary": "Check-in is open 08:00–17:00 on both November 20 and 21 at the 5F Lishan Hall open courtyard of The Great Roots Forestry Spa Resort. Online registration closed on November 13, 23:59 AoE; after that, please register on-site at the on-site rate, payable in cash (NTD) or by credit card (Visa, MasterCard, JCB). A free conference shuttle is available with online booking: on both mornings it departs from MRT Taipei University Station (Sanying Line) at 08:30 and Banqiao HSR Station at 08:40; return buses leave the venue at 20:20 on Day 1 and 17:20 on Day 2. See the Venue page for the full timetable and booking link.",
+          "summary": "Check-in is open 08:00–17:00 on both November 20 and 21 at the 5F Lishan Hall open courtyard of The Great Roots Forestry Spa Resort. Online registration closed on November 13, 23:59 AoE; after that, please register through on-site online registration (https://taai2026-esunbank.taai.org.tw/onsite-registration), open through the conference on November 20–21, at the on-site rate; credit cards only (Visa, Mastercard, JCB), cash not accepted. A free conference shuttle is available with online booking: on both mornings it departs from MRT Taipei University Station (Sanying Line) at 08:30 and Banqiao HSR Station at 08:40; return buses leave the venue at 20:20 on Day 1 and 17:20 on Day 2. See the Venue page for the full timetable and booking link.",
           "linkLabel": "View the shuttle timetable",
           "tags": [
             "check-in",
