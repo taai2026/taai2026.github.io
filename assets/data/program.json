@@ -21,8 +21,8 @@
       "room": "room-a",
       "title": null,
       "chair": {
-        "zh": "陳建彰 教授（淡江大學資訊工程學系）",
-        "en": "Prof. Chien-Chang Chen (Tamkang University)"
+        "zh": "溫演福 教授（國立臺北大學資訊管理研究所）",
+        "en": "Prof. Yean-Fu Wen (National Taipei University)"
       },
       "topics": [
         {
@@ -935,8 +935,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "宋經天（資訊工業策進會）",
-        "en": "Jing-Tian Sung (Institute for Information Industry)"
+        "zh": "宋經天（資訊工業策進會）、林家瑜 副教授（國立中央大學資訊工程學系）",
+        "en": "Jing-Tian Sung (Institute for Information Industry); Prof. Chia-Yu Lin (National Central University)"
       },
       "topics": [
         {
@@ -2448,8 +2448,8 @@
       "room": "poster-area",
       "title": null,
       "chair": {
-        "zh": "邱德泉 教授（國立清華大學資訊工程學系）",
-        "en": "Prof. Te-Chuan Chiu (National Tsing Hua University)"
+        "zh": "邱德泉 教授（國立清華大學資訊工程學系）、陳健章 教授（國立中央大學生醫科學與工程學系）",
+        "en": "Prof. Te-Chuan Chiu (National Tsing Hua University); Prof. Chien-Chang Chen (National Central University)"
       },
       "topics": [
         {
