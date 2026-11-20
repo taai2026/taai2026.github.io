@@ -3916,6 +3916,79 @@ a.partner-card:hover .partner-name {
   font-weight: 600;
 }
 
+.award-pending {
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.award-winners {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+}
+
+.award-winner {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.award-winner p {
+  margin: 0;
+}
+
+.award-winner-level {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.award-honorable-mention .award-winner-level {
+  color: var(--ink-soft);
+}
+
+.award-winner-title {
+  margin-top: 0.2rem !important;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.award-winner-title a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-underline-offset: 3px;
+}
+
+.award-winner-authors,
+.award-winner-session {
+  margin-top: 0.2rem !important;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+.award-winner-session a,
+.ps-award-badge a {
+  color: var(--blue);
+}
+
+.ps-award-badge {
+  display: inline-block;
+  margin: 0 0 0.3rem;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(232, 168, 56, 0.18);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.ps-award-badge a {
+  text-decoration: none;
+}
+
 .award-note {
   margin-top: 0.6rem;
   padding-top: 0.6rem;
