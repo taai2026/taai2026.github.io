@@ -2,6 +2,56 @@
   "version": 1,
   "items": [
     {
+      "id": "paper-awards-announced",
+      "type": "program-update",
+      "category": "program",
+      "publishedAt": "2026-11-20T19:30:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 論文獎得獎名單公布",
+          "summary": "恭喜 TAAI 2026 論文獎得主！最佳論文獎：「LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law」（#180）、「Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models」（#37）、「Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints」（#149）。最佳學生論文獎：「Bridging Static and Agentic RAG for Taiwanese Historical Question Answering」（#69）、「SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage」（#88）、「Contextual Biasing for Streaming ASR via CTC-based Word Spotting」（#153）。最佳產業論文獎：「Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts」（#215）。各獎項已於 11 月 20 日歡迎晚宴中頒發，作者、單位與發表場次請見議程頁「論文獎」。最佳口頭與海報論文發表獎將於 11 月 21 日閉幕典禮頒發。",
+          "linkLabel": "查看得獎名單",
+          "tags": [
+            "論文獎",
+            "最佳論文獎",
+            "最佳學生論文獎",
+            "最佳產業論文獎",
+            "得獎名單",
+            "awards"
+          ]
+        },
+        "en": {
+          "title": "TAAI 2026 Paper Award Winners Announced",
+          "summary": "Congratulations to the TAAI 2026 paper award winners! Best Paper Awards: “LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law” (#180); “Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models” (#37); “Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints” (#149). Best Student Paper Awards: “Bridging Static and Agentic RAG for Taiwanese Historical Question Answering” (#69); “SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage” (#88); “Contextual Biasing for Streaming ASR via CTC-based Word Spotting” (#153). Best Industry Paper Award: “Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts” (#215). The awards were presented at the Welcome Banquet on November 20; authors, affiliations, and sessions are listed under Paper Awards on the Program page. The Best Oral and Best Poster Paper Presentation Awards will be presented at the Closing Ceremony on November 21.",
+          "linkLabel": "See the award winners",
+          "tags": [
+            "awards",
+            "best paper",
+            "best student paper",
+            "best industry paper",
+            "winners"
+          ]
+        }
+      },
+      "links": {
+        "zh": "program.html#awards-paper",
+        "en": "program.html#awards-paper"
+      },
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-20T19:30:00+08:00",
+        "until": "2026-12-31T23:59:59+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
       "id": "shuttle-boarding-notice",
       "type": "logistics",
       "category": "transportation",
@@ -11,7 +61,7 @@
       "i18n": {
         "zh": {
           "title": "[重要] 接駁車搭車須知",
-          "summary": "已預約 TAAI 接駁車的與會者，請依預約的車次，於指定時間及地點集合：車次 113 在捷運臺北大學站 1 號出口，08:30 發車；車次 123 在板橋車站北二門，08:40 發車。現場有工作人員舉牌引導，請依指示依序集合、等候上車，並預留充足時間抵達，以免錯過接駁車。",
+          "summary": "已預約 TAAI 接駁車的與會者，請依預約的車次，於指定時間及地點集合：車次 113（11/20）、213（11/21）在捷運臺北大學站 1 號出口，08:30 發車；車次 123（11/20）、223（11/21）在板橋車站北二門，08:40 發車；回程車次 131、132、231、232 在大板根接駁車上車區集合。現場有工作人員舉牌引導，請依指示依序集合、等候上車，並預留充足時間抵達，以免錯過接駁車。",
           "linkLabel": "查看接駁車搭車須知",
           "tags": [
             "接駁車",
@@ -22,7 +72,7 @@
         },
         "en": {
           "title": "[Important] Shuttle Boarding Information",
-          "summary": "If you have booked the TAAI shuttle, please meet at the time and place for your bus: bus 113 leaves from Exit 1 of MRT Taipei University Station at 08:30, and bus 123 leaves from North Gate 2 of Banqiao Station at 08:40. Staff holding TAAI signs will guide you; please follow their directions, queue to board, and allow plenty of time so you do not miss the bus.",
+          "summary": "If you have booked the TAAI shuttle, please meet at the time and place for your bus: buses 113 (Nov. 20) and 213 (Nov. 21) leave from Exit 1 of MRT Taipei University Station at 08:30; buses 123 (Nov. 20) and 223 (Nov. 21) leave from North Gate 2 of Banqiao Station at 08:40; return buses 131, 132, 231, and 232 leave from the shuttle boarding area at The Great Roots Resort. Staff holding TAAI signs will guide you; please follow their directions, queue to board, and allow plenty of time so you do not miss the bus.",
           "linkLabel": "View shuttle boarding information",
           "tags": [
             "shuttle",

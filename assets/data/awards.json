@@ -1,0 +1,28 @@
+{
+  "_comment": "Paper award winners. Keep status \"pending\" until the awards are presented at the Welcome Banquet (2026-11-20 19:30 +08:00); winners are only rendered once status is \"announced\". Each winner: {\"paper\": <program.json paper id>, \"level\": \"award\" | \"honorable-mention\"}, listed in the committee's rank order. Source: doc_resources/TAAI2026_BestPaperAwards/TAAI2026_Best_Paper_Award_20261117.xlsx. Then run: python3 -I scripts/build-program-html.py && python3 -I scripts/build-handbook.py --lang all",
+  "status": "announced",
+  "paperAwards": [
+    {
+      "id": "best-paper",
+      "winners": [
+        { "paper": 180, "level": "award" },
+        { "paper": 37, "level": "award" },
+        { "paper": 149, "level": "award" }
+      ]
+    },
+    {
+      "id": "best-student-paper",
+      "winners": [
+        { "paper": 69, "level": "award" },
+        { "paper": 88, "level": "award" },
+        { "paper": 153, "level": "award" }
+      ]
+    },
+    {
+      "id": "best-industry-paper",
+      "winners": [
+        { "paper": 215, "level": "award" }
+      ]
+    }
+  ]
+}
