@@ -3879,6 +3879,11 @@ a.partner-card:hover .partner-name {
   margin-top: 1.25rem;
 }
 
+/* Paper awards: one column on every screen size */
+.award-grid--single {
+  grid-template-columns: 1fr;
+}
+
 .award-card {
   border-top: 5px solid var(--sun);
 }
@@ -3927,6 +3932,19 @@ a.partner-card:hover .partner-name {
   list-style: none;
   margin: 0.85rem 0 0;
   padding: 0;
+}
+
+/* Track heading in the oral presentation awards card. */
+.award-track {
+  margin: 1.1rem 0 0;
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.award-track + .award-winners {
+  margin-top: 0.35rem;
 }
 
 .award-winner {
