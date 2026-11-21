@@ -1,28 +1,66 @@
 {
-  "_comment": "Paper award winners. Keep status \"pending\" until the awards are presented at the Welcome Banquet (2026-11-20 19:30 +08:00); winners are only rendered once status is \"announced\". Each winner: {\"paper\": <program.json paper id>, \"level\": \"award\" | \"honorable-mention\"}, listed in the committee's rank order. Source: doc_resources/TAAI2026_BestPaperAwards/TAAI2026_Best_Paper_Award_20261117.xlsx. Then run: python3 -I scripts/build-program-html.py && python3 -I scripts/build-handbook.py --lang all",
-  "status": "announced",
-  "paperAwards": [
-    {
-      "id": "best-paper",
-      "winners": [
-        { "paper": 180, "level": "award" },
-        { "paper": 37, "level": "award" },
-        { "paper": 149, "level": "award" }
-      ]
-    },
-    {
-      "id": "best-student-paper",
-      "winners": [
-        { "paper": 69, "level": "award" },
-        { "paper": 88, "level": "award" },
-        { "paper": 153, "level": "award" }
-      ]
-    },
-    {
-      "id": "best-industry-paper",
-      "winners": [
-        { "paper": 215, "level": "award" }
-      ]
-    }
-  ]
+  "_comment": "Award winners, rendered into program.html and zh/program.html by scripts/build-program-html.py (never into the handbook). Each section has its own status: keep it \"pending\" until those awards are presented (paper awards: Welcome Banquet, 2026-11-20; presentation awards: Closing Ceremony, 2026-11-21), then set \"announced\". Each winner: {\"paper\": <program.json paper id>, \"level\": \"award\" (default) | \"honorable-mention\"}, listed in the order to show (oral presentation awards are grouped by track automatically). Sources: doc_resources/TAAI2026_BestPaperAwards/TAAI2026_Best_Paper_Award_20261117.xlsx (paper awards); the organizers' announcement of 2026-11-21 (presentation awards, one per session). Then run: python3 -I scripts/build-program-html.py",
+  "paperAwards": {
+    "status": "announced",
+    "awards": [
+      {
+        "id": "best-paper",
+        "winners": [
+          { "paper": 180, "level": "award" },
+          { "paper": 37, "level": "award" },
+          { "paper": 149, "level": "award" }
+        ]
+      },
+      {
+        "id": "best-student-paper",
+        "winners": [
+          { "paper": 69, "level": "award" },
+          { "paper": 88, "level": "award" },
+          { "paper": 153, "level": "award" }
+        ]
+      },
+      {
+        "id": "best-industry-paper",
+        "winners": [
+          { "paper": 215, "level": "award" }
+        ]
+      }
+    ]
+  },
+  "presentationAwards": {
+    "status": "announced",
+    "awards": [
+      {
+        "id": "best-oral-presentation",
+        "winners": [
+          { "paper": 26 },
+          { "paper": 129 },
+          { "paper": 37 },
+          { "paper": 56 },
+          { "paper": 210 },
+          { "paper": 209 },
+          { "paper": 77 },
+          { "paper": 199 },
+          { "paper": 139 },
+          { "paper": 130 },
+          { "paper": 216 },
+          { "paper": 29 },
+          { "paper": 22 },
+          { "paper": 20 }
+        ]
+      },
+      {
+        "id": "best-poster-presentation",
+        "winners": [
+          { "paper": 190 },
+          { "paper": 118 },
+          { "paper": 94 },
+          { "paper": 90 },
+          { "paper": 38 },
+          { "paper": 198 },
+          { "paper": 8 }
+        ]
+      }
+    ]
+  }
 }

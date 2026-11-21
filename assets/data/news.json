@@ -2,6 +2,61 @@
   "version": 1,
   "items": [
     {
+      "id": "presentation-awards-announced",
+      "type": "program-update",
+      "category": "program",
+      "publishedAt": "2026-11-21T22:00:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 最佳論文發表獎得獎名單公布",
+          "summary": "恭喜 TAAI 2026 最佳論文發表獎得主！本屆依場次頒發：國際組最佳口頭論文發表獎 7 篇、國內組最佳口頭論文發表獎 7 篇、最佳海報論文發表獎 7 篇，已於 11 月 21 日閉幕典禮頒發。得獎論文、作者、單位與場次請見議程頁「論文發表獎」。",
+          "linkLabel": "查看得獎名單",
+          "tags": [
+            "論文發表獎",
+            "最佳口頭論文發表獎",
+            "最佳海報論文發表獎",
+            "國際組",
+            "國內組",
+            "得獎名單",
+            "閉幕典禮",
+            "awards"
+          ]
+        },
+        "en": {
+          "title": "TAAI 2026 Best Presentation Award Winners Announced",
+          "summary": "Congratulations to the winners of the TAAI 2026 Best Presentation Awards! One award was given per session: seven Best Oral Paper Presentation Awards in the International Oral Track, seven in the Domestic Oral Track, and seven Best Poster Paper Presentation Awards, presented at the Closing Ceremony on November 21. The winning papers, authors, affiliations, and sessions are listed under Presentation Awards on the Program page.",
+          "linkLabel": "See the award winners",
+          "tags": [
+            "awards",
+            "best presentation",
+            "best oral presentation",
+            "best poster presentation",
+            "international track",
+            "domestic track",
+            "winners",
+            "closing ceremony"
+          ]
+        }
+      },
+      "links": {
+        "zh": "program.html#awards-presentation",
+        "en": "program.html#awards-presentation"
+      },
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-21T22:00:00+08:00",
+        "until": "2026-12-31T23:59:59+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
       "id": "paper-awards-announced",
       "type": "program-update",
       "category": "program",
