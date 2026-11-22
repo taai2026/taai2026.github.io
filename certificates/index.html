@@ -105,23 +105,37 @@
 
   <section class="cert-index">
     <div class="wrap">
+      <div class="news-controls cert-search" data-cert-search data-count="Showing {n} of {total} certificates" hidden>
+        <div class="news-search-field">
+          <label for="cert-search-input">Search certificates</label>
+          <input type="search" id="cert-search-input" data-cert-q placeholder="Name, paper ID (e.g. 20), certificate ID, title or affiliation…" autocomplete="off" />
+        </div>
+        <div class="news-chips-row" role="group" aria-label="Filter by award" data-cert-awards><button type="button" class="news-chip-filter" data-award="" aria-pressed="true">All</button><button type="button" class="news-chip-filter" data-award="best-paper" aria-pressed="false">Best Paper Award</button><button type="button" class="news-chip-filter" data-award="best-student-paper" aria-pressed="false">Best Student Paper Award</button><button type="button" class="news-chip-filter" data-award="best-industry-paper" aria-pressed="false">Best Industry Paper Award</button><button type="button" class="news-chip-filter" data-award="best-oral-presentation" aria-pressed="false">Best Oral Paper Presentation Award</button><button type="button" class="news-chip-filter" data-award="best-poster-presentation" aria-pressed="false">Best Poster Paper Presentation Award</button></div>
+        <div class="news-toolbar">
+          <span class="news-count" data-cert-count aria-live="polite"></span>
+          <button type="button" class="news-clear-btn" data-cert-clear>Clear search</button>
+        </div>
+      </div>
+      <p class="news-empty-state" data-cert-empty hidden>No certificates match. Check the paper ID or the spelling of the name, or contact taai2026org@gmail.com.</p>
+      <section class="cert-award" data-award="best-paper" aria-labelledby="best-paper">
       <h2 id="best-paper">TAAI 2026 Best Paper Award</h2>
+      <div class="cert-track">
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="180" data-search="TAAI2026-IO6-#180-BPA #180 LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law io6 Yu-Kai Guo Wei-Cheng Lai Chen-Wei Hsu Hung-yi Lee National Taiwan University, Taiwan Best Paper Award International Oral Session 6 最佳論文獎 國際口頭場次 6">
           <a href="best-paper-award-180.html"><img src="../assets/images/certificates/taai2026-best-paper-award-180-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-paper-award-180.html">LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Yu-Kai Guo</span>, <span class="ps-author">Wei-Cheng Lai</span>, <span class="ps-author">Chen-Wei Hsu</span>, <span class="ps-author">Hung-yi Lee</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 6 · Paper #180</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="37" data-search="TAAI2026-IO3-#37-BPA #37 Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models io3 Hsuan-Fu Wang Hsuan-Tien Lin National Taiwan University, Taiwan Best Paper Award International Oral Session 3 最佳論文獎 國際口頭場次 3">
           <a href="best-paper-award-37.html"><img src="../assets/images/certificates/taai2026-best-paper-award-37-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-paper-award-37.html">Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Hsuan-Fu Wang</span>, <span class="ps-author">Hsuan-Tien Lin</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 3 · Paper #37</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="149" data-search="TAAI2026-IO3-#149-BPA #149 Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints io3 Yutaka Morino Aoyama Gakuin University, Japan Best Paper Award International Oral Session 3 最佳論文獎 國際口頭場次 3">
           <a href="best-paper-award-149.html"><img src="../assets/images/certificates/taai2026-best-paper-award-149-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-paper-award-149.html">Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Yutaka Morino</span></p>
@@ -129,23 +143,27 @@
           <p class="cert-card-meta">International Oral Session 3 · Paper #149</p>
         </li>
       </ul>
+      </div>
+      </section>
+      <section class="cert-award" data-award="best-student-paper" aria-labelledby="best-student-paper">
       <h2 id="best-student-paper">TAAI 2026 Best Student Paper Award</h2>
+      <div class="cert-track">
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="69" data-search="TAAI2026-IO7-#69-BSPA #69 Bridging Static and Agentic RAG for Taiwanese Historical Question Answering io7 Kai-Hsin Chen Wei-Yu Chen Xuanjun Chen Su-Ling Yeh Jyh-Shing Roger Jang National Taiwan University, Taiwan Best Student Paper Award International Oral Session 7 最佳學生論文獎 國際口頭場次 7">
           <a href="best-student-paper-award-69.html"><img src="../assets/images/certificates/taai2026-best-student-paper-award-69-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-student-paper-award-69.html">Bridging Static and Agentic RAG for Taiwanese Historical Question Answering</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Kai-Hsin Chen</span>, <span class="ps-author">Wei-Yu Chen</span>, <span class="ps-author">Xuanjun Chen</span>, <span class="ps-author">Su-Ling Yeh</span>, <span class="ps-author">Jyh-Shing Roger Jang</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 7 · Paper #69</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="88" data-search="TAAI2026-IO7-#88-BSPA #88 SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage io7 Mai Xuan Ha Le Chanh Thanh Tin Aquata Theodora Thyme Po-Wei Harn National Central University, Taiwan Best Student Paper Award International Oral Session 7 最佳學生論文獎 國際口頭場次 7">
           <a href="best-student-paper-award-88.html"><img src="../assets/images/certificates/taai2026-best-student-paper-award-88-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-student-paper-award-88.html">SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Mai Xuan Ha</span>, <span class="ps-author">Le Chanh Thanh Tin</span>, <span class="ps-author">Aquata Theodora Thyme</span>, <span class="ps-author">Po-Wei Harn</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Central University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 7 · Paper #88</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="153" data-search="TAAI2026-IO1-#153-BSPA #153 Contextual Biasing for Streaming ASR via CTC-based Word Spotting io1 Kai-Chen Tsai Tien-Hong Lo Yun-Ting Sun Hsueh-Wei Liao Berlin Chen National Taiwan Normal University, Taiwan Realtek, Taiwan Best Student Paper Award International Oral Session 1 最佳學生論文獎 國際口頭場次 1">
           <a href="best-student-paper-award-153.html"><img src="../assets/images/certificates/taai2026-best-student-paper-award-153-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-student-paper-award-153.html">Contextual Biasing for Streaming ASR via CTC-based Word Spotting</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Kai-Chen Tsai</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Tien-Hong Lo</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Yun-Ting Sun</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Hsueh-Wei Liao</span><sup class="ps-aff-ref">2</sup>, <span class="ps-author">Berlin Chen</span><sup class="ps-aff-ref">1</sup></p>
@@ -153,9 +171,13 @@
           <p class="cert-card-meta">International Oral Session 1 · Paper #153</p>
         </li>
       </ul>
+      </div>
+      </section>
+      <section class="cert-award" data-award="best-industry-paper" aria-labelledby="best-industry-paper">
       <h2 id="best-industry-paper">TAAI 2026 Best Industry Paper Award</h2>
+      <div class="cert-track">
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="215" data-search="TAAI2026-IO3-#215-BIPA #215 Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts io3 Jing-Tian Sung Tsan-Yu Tsai Daniel Liu Institute for Information Industry, Taiwan Best Industry Paper Award International Oral Session 3 最佳產業論文獎 國際口頭場次 3">
           <a href="best-industry-paper-award-215.html"><img src="../assets/images/certificates/taai2026-best-industry-paper-award-215-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-industry-paper-award-215.html">Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Jing-Tian Sung</span>, <span class="ps-author">Tsan-Yu Tsai</span>, <span class="ps-author">Daniel Liu</span></p>
@@ -163,52 +185,56 @@
           <p class="cert-card-meta">International Oral Session 3 · Paper #215</p>
         </li>
       </ul>
+      </div>
+      </section>
+      <section class="cert-award" data-award="best-oral-presentation" aria-labelledby="best-oral-presentation">
       <h2 id="best-oral-presentation">TAAI 2026 Best Oral Paper Presentation Award</h2>
+      <div class="cert-track">
       <h3 class="award-track">International Oral Track</h3>
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="26" data-search="TAAI2026-IO1-#26-BOPA #26 EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments io1 Zih-Sian Yang Yi-Hao Chen Yu-Te Kuan Cheng-Jui Wu Chuang-Chieh Lin Po-An Chen National Taiwan Ocean University, Taiwan National Yang Ming Chiao Tung University, Taiwan Best Oral Paper Presentation Award International Oral Session 1 最佳口頭論文發表獎 國際口頭場次 1">
           <a href="best-oral-presentation-award-26.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-26-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-26.html">EF1-Constrained Nash Social Welfare with Identical Additive Valuations: Complexity, Guarantees, and Experiments</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Zih-Sian Yang</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Yi-Hao Chen</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Yu-Te Kuan</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Cheng-Jui Wu</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Chuang-Chieh Lin</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Po-An Chen</span><sup class="ps-aff-ref">2</sup></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff-item"><sup>1</sup><span class="ps-aff">National Taiwan Ocean University, Taiwan</span></span> <span class="ps-aff-item"><sup>2</sup><span class="ps-aff">National Yang Ming Chiao Tung University, Taiwan</span></span></p>
           <p class="cert-card-meta">International Oral Session 1 · Paper #26</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="129" data-search="TAAI2026-IO2-#129-BOPA #129 Evidential Deep Learning with conditional entropy for glaucoma detection io2 Hai Siong Tan Kuancheng Wang Gryphon Center for Artificial Intelligence and Theoretical Sciences, Singapore University of California, San Diego, USA Best Oral Paper Presentation Award International Oral Session 2 最佳口頭論文發表獎 國際口頭場次 2">
           <a href="best-oral-presentation-award-129.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-129-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-129.html">Evidential Deep Learning with conditional entropy for glaucoma detection</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Hai Siong Tan</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Kuancheng Wang</span><sup class="ps-aff-ref">2</sup></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff-item"><sup>1</sup><span class="ps-aff">Gryphon Center for Artificial Intelligence and Theoretical Sciences, Singapore</span></span> <span class="ps-aff-item"><sup>2</sup><span class="ps-aff">University of California, San Diego, USA</span></span></p>
           <p class="cert-card-meta">International Oral Session 2 · Paper #129</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="37" data-search="TAAI2026-IO3-#37-BOPA #37 Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models io3 Hsuan-Fu Wang Hsuan-Tien Lin National Taiwan University, Taiwan Best Oral Paper Presentation Award International Oral Session 3 最佳口頭論文發表獎 國際口頭場次 3">
           <a href="best-oral-presentation-award-37.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-37-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-37.html">Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Hsuan-Fu Wang</span>, <span class="ps-author">Hsuan-Tien Lin</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 3 · Paper #37</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="56" data-search="TAAI2026-IO4-#56-BOPA #56 Environment Curriculum Generation via Vision-Language Models io4 Yu-Hsin Chou Kuei-Chung Chen Hsuan-Tien Lin National Taiwan University, Taiwan Best Oral Paper Presentation Award International Oral Session 4 最佳口頭論文發表獎 國際口頭場次 4">
           <a href="best-oral-presentation-award-56.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-56-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-56.html">Environment Curriculum Generation via Vision-Language Models</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Yu-Hsin Chou</span>, <span class="ps-author">Kuei-Chung Chen</span>, <span class="ps-author">Hsuan-Tien Lin</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 4 · Paper #56</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="210" data-search="TAAI2026-IO5-#210-BOPA #210 Direction Echo: Redirecting Attention Flow to Mitigate Length-Induced Representation Collapse in Repetition-Based Language Model Embeddings io5 Mu-Feng Tsai Hung-Yu Kao National Tsing Hua University, Taiwan Best Oral Paper Presentation Award International Oral Session 5 最佳口頭論文發表獎 國際口頭場次 5">
           <a href="best-oral-presentation-award-210.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-210-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-210.html">Direction Echo: Redirecting Attention Flow to Mitigate Length-Induced Representation Collapse in Repetition-Based Language Model Embeddings</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Mu-Feng Tsai</span>, <span class="ps-author">Hung-Yu Kao</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Tsing Hua University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 5 · Paper #210</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="209" data-search="TAAI2026-IO6-#209-BOPA #209 Calibrated Hierarchical Structured Decisions for SASB Compliance Evidence in Sustainability Reports io6 Wei-Chen Huang Min-Yuh Day National Taipei University, Taiwan Best Oral Paper Presentation Award International Oral Session 6 最佳口頭論文發表獎 國際口頭場次 6">
           <a href="best-oral-presentation-award-209.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-209-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-209.html">Calibrated Hierarchical Structured Decisions for SASB Compliance Evidence in Sustainability Reports</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Wei-Chen Huang</span>, <span class="ps-author">Min-Yuh Day</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taipei University, Taiwan</span></p>
           <p class="cert-card-meta">International Oral Session 6 · Paper #209</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="77" data-search="TAAI2026-IO7-#77-BOPA #77 V-ADAPT: A Verified Adversarial Discovery and Dual-Path Defense Framework for Hardening WAFs Against XSS io7 Hua-You Chen Po-Cheng Chen Chinyang Henry Tseng National Taipei University, Taiwan Taichung Municipal Dongshan Senior High School, Taiwan Best Oral Paper Presentation Award International Oral Session 7 最佳口頭論文發表獎 國際口頭場次 7">
           <a href="best-oral-presentation-award-77.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-77-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-77.html">V-ADAPT: A Verified Adversarial Discovery and Dual-Path Defense Framework for Hardening WAFs Against XSS</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Hua-You Chen</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">Po-Cheng Chen</span><sup class="ps-aff-ref">2</sup>, <span class="ps-author">Chinyang Henry Tseng</span><sup class="ps-aff-ref">1</sup></p>
@@ -216,51 +242,53 @@
           <p class="cert-card-meta">International Oral Session 7 · Paper #77</p>
         </li>
       </ul>
+      </div>
+      <div class="cert-track">
       <h3 class="award-track">Domestic Oral Track</h3>
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="199" data-search="TAAI2026-DO1-#199-BOPA #199 CoRe-QCNN：基於跨解析度學習的樣本自適應量子影像分類 do1 李洳錚 凃瀞珽 王雅書 Ru-Jheng Li Ching-Ting Tu Ya-Shu Wang 國立中興大學應用數學系 國立中興大學資料科學與資訊計算研究所 Best Oral Paper Presentation Award Domestic Oral Session 1 最佳口頭論文發表獎 國內口頭場次 1">
           <a href="best-oral-presentation-award-199.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-199-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-199.html">CoRe-QCNN：基於跨解析度學習的樣本自適應量子影像分類</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author" lang="zh-Hant">李洳錚<span class="ps-author-latin" lang="en"> (Ru-Jheng Li)</span></span><sup class="ps-aff-ref">1</sup>, <span class="ps-author" lang="zh-Hant">凃瀞珽<span class="ps-author-latin" lang="en"> (Ching-Ting Tu)</span></span><sup class="ps-aff-ref">2</sup>, <span class="ps-author" lang="zh-Hant">王雅書<span class="ps-author-latin" lang="en"> (Ya-Shu Wang)</span></span><sup class="ps-aff-ref">1</sup></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff-item"><sup>1</sup><span class="ps-aff">國立中興大學應用數學系</span></span> <span class="ps-aff-item"><sup>2</sup><span class="ps-aff">國立中興大學資料科學與資訊計算研究所</span></span></p>
           <p class="cert-card-meta">Domestic Oral Session 1 · Paper #199</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="139" data-search="TAAI2026-DO2-#139-BOPA #139 Gauge or Process? Attributing Location Shifts at a Single Inspection Station Using Bridging Re-inspection Pairs do2 Hubert Huang National Taiwan University, Taiwan Best Oral Paper Presentation Award Domestic Oral Session 2 最佳口頭論文發表獎 國內口頭場次 2">
           <a href="best-oral-presentation-award-139.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-139-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-oral-presentation-award-139.html">Gauge or Process? Attributing Location Shifts at a Single Inspection Station Using Bridging Re-inspection Pairs</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Hubert Huang</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan University, Taiwan</span></p>
           <p class="cert-card-meta">Domestic Oral Session 2 · Paper #139</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="130" data-search="TAAI2026-DO3-#130-BOPA #130 整合全域與局部基因模組之多視角遮罩自編碼器於單細胞 RNA 定序聚類之大規模跨資料驗證 do3 彭姿穎 張乃文 陳榮銘 國立臺南大學資訊工程學系 國立臺灣大學醫學院附設醫院醫學研究部 Best Oral Paper Presentation Award Domestic Oral Session 3 最佳口頭論文發表獎 國內口頭場次 3">
           <a href="best-oral-presentation-award-130.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-130-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-130.html">整合全域與局部基因模組之多視角遮罩自編碼器於單細胞 RNA 定序聚類之大規模跨資料驗證</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">彭姿穎</span><sup class="ps-aff-ref">1</sup>, <span class="ps-author">張乃文</span><sup class="ps-aff-ref">2</sup>, <span class="ps-author">陳榮銘</span><sup class="ps-aff-ref">1</sup></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff-item"><sup>1</sup><span class="ps-aff">國立臺南大學資訊工程學系</span></span> <span class="ps-aff-item"><sup>2</sup><span class="ps-aff">國立臺灣大學醫學院附設醫院醫學研究部</span></span></p>
           <p class="cert-card-meta">Domestic Oral Session 3 · Paper #130</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="216" data-search="TAAI2026-DO4-#216-BOPA #216 基於姿態估計之個人化網球教練系統：揮拍特徵組合歸納與修正建議驗證架構 do4 陳孝宗 溫演福 謝立文 Hsiao-Tsung Chen Yean-Fu Wen Li-Wen Hsieh 國立臺北大學資訊管理研究所 Best Oral Paper Presentation Award Domestic Oral Session 4 最佳口頭論文發表獎 國內口頭場次 4">
           <a href="best-oral-presentation-award-216.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-216-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-216.html">基於姿態估計之個人化網球教練系統：揮拍特徵組合歸納與修正建議驗證架構</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author" lang="zh-Hant">陳孝宗<span class="ps-author-latin" lang="en"> (Hsiao-Tsung Chen)</span></span>, <span class="ps-author" lang="zh-Hant">溫演福<span class="ps-author-latin" lang="en"> (Yean-Fu Wen)</span></span>, <span class="ps-author" lang="zh-Hant">謝立文<span class="ps-author-latin" lang="en"> (Li-Wen Hsieh)</span></span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">國立臺北大學資訊管理研究所</span></p>
           <p class="cert-card-meta">Domestic Oral Session 4 · Paper #216</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="29" data-search="TAAI2026-DO5-#29-BOPA #29 Deepfake 偵測模型於多強度影像退化下之穩健性與方向性誤判分析 do5 張祐齊 吳孟倫 Yu-Chi Chang Meng-Luen Wu 淡江大學資訊工程學系 Best Oral Paper Presentation Award Domestic Oral Session 5 最佳口頭論文發表獎 國內口頭場次 5">
           <a href="best-oral-presentation-award-29.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-29-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-29.html">Deepfake 偵測模型於多強度影像退化下之穩健性與方向性誤判分析</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author" lang="zh-Hant">張祐齊<span class="ps-author-latin" lang="en"> (Yu-Chi Chang)</span></span>, <span class="ps-author" lang="zh-Hant">吳孟倫<span class="ps-author-latin" lang="en"> (Meng-Luen Wu)</span></span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">淡江大學資訊工程學系</span></p>
           <p class="cert-card-meta">Domestic Oral Session 5 · Paper #29</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="22" data-search="TAAI2026-DO6-#22-BOPA #22 程式設計課程中大型語言模型之對抗性測資生成 do6 姜柏仰 吳宜鴻 中原大學資訊工程學系 Best Oral Paper Presentation Award Domestic Oral Session 6 最佳口頭論文發表獎 國內口頭場次 6">
           <a href="best-oral-presentation-award-22.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-22-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-22.html">程式設計課程中大型語言模型之對抗性測資生成</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">姜柏仰</span>, <span class="ps-author">吳宜鴻</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">中原大學資訊工程學系</span></p>
           <p class="cert-card-meta">Domestic Oral Session 6 · Paper #22</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="20" data-search="TAAI2026-DO7-#20-BOPA #20 基於自監督聲學表徵與大規模弱監督模型之病理語音辨識效能評估與範式對比 do7 梁文瀚 潘欣泰 Shing-Tai Pan 國立高雄大學資訊工程學系 Best Oral Paper Presentation Award Domestic Oral Session 7 最佳口頭論文發表獎 國內口頭場次 7">
           <a href="best-oral-presentation-award-20.html"><img src="../assets/images/certificates/taai2026-best-oral-presentation-award-20-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-oral-presentation-award-20.html">基於自監督聲學表徵與大規模弱監督模型之病理語音辨識效能評估與範式對比</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">梁文瀚</span>, <span class="ps-author" lang="zh-Hant">潘欣泰<span class="ps-author-latin" lang="en"> (Shing-Tai Pan)</span></span></p>
@@ -268,51 +296,55 @@
           <p class="cert-card-meta">Domestic Oral Session 7 · Paper #20</p>
         </li>
       </ul>
+      </div>
+      </section>
+      <section class="cert-award" data-award="best-poster-presentation" aria-labelledby="best-poster-presentation">
       <h2 id="best-poster-presentation">TAAI 2026 Best Poster Paper Presentation Award</h2>
+      <div class="cert-track">
       <ul class="cert-grid">
-        <li class="cert-card">
+        <li class="cert-card" data-paper="190" data-search="TAAI2026-PS1-#190-BPPA #190 A multiobjective evolutionary algorithm with adaptive mating and environmental selection for dynamic economic emission dispatch ps1 Mao-Ting Lee Thammarsat Visutarrom Tsung-Che Chiang National Taiwan Normal University, Taiwan Best Poster Paper Presentation Award Poster Session 1 (International) 最佳海報論文發表獎 海報場次 1（國際）">
           <a href="best-poster-presentation-award-190.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-190-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-poster-presentation-award-190.html">A multiobjective evolutionary algorithm with adaptive mating and environmental selection for dynamic economic emission dispatch</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Mao-Ting Lee</span>, <span class="ps-author">Thammarsat Visutarrom</span>, <span class="ps-author">Tsung-Che Chiang</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Taiwan Normal University, Taiwan</span></p>
           <p class="cert-card-meta">Poster Session 1 (International) · Paper #190</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="118" data-search="TAAI2026-PS2-#118-BPPA #118 個人化雙耳節拍音樂誘導睡眠 ps2 蘇敬堯 陳思穎 林和宇 謝宗澔 東海大學資訊工程學系 Best Poster Paper Presentation Award Poster Session 2 (Domestic) 最佳海報論文發表獎 海報場次 2（國內）">
           <a href="best-poster-presentation-award-118.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-118-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-poster-presentation-award-118.html">個人化雙耳節拍音樂誘導睡眠</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">蘇敬堯</span>, <span class="ps-author">陳思穎</span>, <span class="ps-author">林和宇</span>, <span class="ps-author">謝宗澔</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">東海大學資訊工程學系</span></p>
           <p class="cert-card-meta">Poster Session 2 (Domestic) · Paper #118</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="94" data-search="TAAI2026-PS3-#94-BPPA #94 Efficient Machine Unlearning for Vision Transformers via Weight Resetting Strategies ps3 Zhe-Yu Lin Wen-Hung Liao National Chengchi University, Taiwan Best Poster Paper Presentation Award Poster Session 3 (International) 最佳海報論文發表獎 海報場次 3（國際）">
           <a href="best-poster-presentation-award-94.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-94-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-poster-presentation-award-94.html">Efficient Machine Unlearning for Vision Transformers via Weight Resetting Strategies</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Zhe-Yu Lin</span>, <span class="ps-author">Wen-Hung Liao</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Chengchi University, Taiwan</span></p>
           <p class="cert-card-meta">Poster Session 3 (International) · Paper #94</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="90" data-search="TAAI2026-PS4-#90-BPPA #90 探討不同多模態架構於黑色素瘤預測效能之比較 ps4 蔣典宸 王翊宇 吳芷瑩 陳映瑄 鄭秋艷 李彩儀 翁政雄 Yiyu Wang 國立彰化師範大學資訊管理學系 Best Poster Paper Presentation Award Poster Session 4 (Domestic) 最佳海報論文發表獎 海報場次 4（國內）">
           <a href="best-poster-presentation-award-90.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-90-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-poster-presentation-award-90.html">探討不同多模態架構於黑色素瘤預測效能之比較</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">蔣典宸</span>, <span class="ps-author" lang="zh-Hant">王翊宇<span class="ps-author-latin" lang="en"> (Yiyu Wang)</span></span>, <span class="ps-author">吳芷瑩</span>, <span class="ps-author">陳映瑄</span>, <span class="ps-author">鄭秋艷</span>, <span class="ps-author">李彩儀</span>, <span class="ps-author">翁政雄</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">國立彰化師範大學資訊管理學系</span></p>
           <p class="cert-card-meta">Poster Session 4 (Domestic) · Paper #90</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="38" data-search="TAAI2026-PS5-#38-BPPA #38 Agentic Workflow Automation for n8n: Prompt Engineering, Domain Fine-Tuning, and a Comparative Case Study ps5 Zhi-Ying Wang Hsuan-Yu Liu Chun-Yao Lin Wen-Hsien Huang Chia-Hui Chang National Central University, Taiwan Best Poster Paper Presentation Award Poster Session 5 (International) 最佳海報論文發表獎 海報場次 5（國際）">
           <a href="best-poster-presentation-award-38.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-38-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-poster-presentation-award-38.html">Agentic Workflow Automation for n8n: Prompt Engineering, Domain Fine-Tuning, and a Comparative Case Study</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Zhi-Ying Wang</span>, <span class="ps-author">Hsuan-Yu Liu</span>, <span class="ps-author">Chun-Yao Lin</span>, <span class="ps-author">Wen-Hsien Huang</span>, <span class="ps-author">Chia-Hui Chang</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">National Central University, Taiwan</span></p>
           <p class="cert-card-meta">Poster Session 5 (International) · Paper #38</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="198" data-search="TAAI2026-PS6-#198-BPPA #198 LLM Proposals and Deterministic Adjudication for Observable Decision Tracing in Quadruped Robots ps6 Po-Yu Lu Wei-Feng Tung Fu Jen Catholic University, Taiwan Best Poster Paper Presentation Award Poster Session 6 (Domestic) 最佳海報論文發表獎 海報場次 6（國內）">
           <a href="best-poster-presentation-award-198.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-198-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="en"><a href="best-poster-presentation-award-198.html">LLM Proposals and Deterministic Adjudication for Observable Decision Tracing in Quadruped Robots</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author">Po-Yu Lu</span>, <span class="ps-author">Wei-Feng Tung</span></p>
           <p class="cert-card-meta cert-card-affils ps-paper-affils"><span class="sr-only">Affiliations: </span><span class="ps-aff">Fu Jen Catholic University, Taiwan</span></p>
           <p class="cert-card-meta">Poster Session 6 (Domestic) · Paper #198</p>
         </li>
-        <li class="cert-card">
+        <li class="cert-card" data-paper="8" data-search="TAAI2026-PS7-#8-BPPA #8 具來源追溯與人工檢核之RAG數位證物對話線索整理流程 ps7 陳勇行 鄧皓允 Yung-Sing Chen 臺北市政府警察局刑事警察大隊科技犯罪偵查隊 國立中央大學資訊管理學系 內政部警政署刑事警察局 Best Poster Paper Presentation Award Poster Session 7 (Domestic) 最佳海報論文發表獎 海報場次 7（國內）">
           <a href="best-poster-presentation-award-8.html"><img src="../assets/images/certificates/taai2026-best-poster-presentation-award-8-thumb.jpg" width="640" height="453" alt="" loading="lazy" decoding="async" /></a>
           <p class="cert-card-title" lang="zh-Hant"><a href="best-poster-presentation-award-8.html">具來源追溯與人工檢核之RAG數位證物對話線索整理流程</a></p>
           <p class="cert-card-meta cert-card-authors"><span class="ps-author" lang="zh-Hant">陳勇行<span class="ps-author-latin" lang="en"> (Yung-Sing Chen)</span></span><sup class="ps-aff-ref">1,2</sup>, <span class="ps-author">鄧皓允</span><sup class="ps-aff-ref">3</sup></p>
@@ -320,6 +352,8 @@
           <p class="cert-card-meta">Poster Session 7 (Domestic) · Paper #8</p>
         </li>
       </ul>
+      </div>
+      </section>
     </div>
   </section>
 
