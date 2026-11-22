@@ -59,7 +59,13 @@
               <li><a href="program.html#awards">論文獎項</a></li>
             </ul>
           </li>
-          <li><a href="news.html">最新消息</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">最新消息<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="news.html">最新消息</a></li>
+              <li><a href="press/index.html">新聞中心</a></li>
+            </ul>
+          </li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">會場<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -112,27 +118,36 @@
             <span class="hero-title-line"><em class="grad-text">代理式 AI</em> 與 <em class="grad-text">實體 AI</em></span>
             <span class="hero-title-line">跨域永續創新</span>
           </h1>
-          <p class="lede reveal">
+          <p class="lede reveal" data-phase="submission earlybird regular conference">
             第 31 屆人工智慧技術與應用國際研討會（TAAI 2026）由中華民國人工智慧學會（TAAI）與國立臺北大學（NTPU）共同主辦，將於 2026 年 11 月 20–21 日在臺灣新北市大板根森林溫泉酒店舉行。
+          </p>
+          <p class="lede reveal" data-phase="post" hidden>
+            第 31 屆人工智慧技術與應用國際研討會（TAAI 2026）由中華民國人工智慧學會（TAAI）與國立臺北大學（NTPU）共同主辦，已於 2026 年 11 月 20–21 日在臺灣新北市大板根森林溫泉酒店舉行。本屆共收到 205 篇投稿，157 篇論文於 21 個場次發表，450 位作者來自 13 個國家與地區，並頒發 28 項論文獎與論文發表獎。
           </p>
           <div class="hero-actions reveal">
             <p class="hero-deadline" data-phase="earlybird" hidden>早鳥報名將於 <strong>2026 年 10 月 31 日 23:59 AoE</strong>截止。論文錄取通知已寄出，錄取論文的作者須於同一截止日前完成完稿與發表作者報名。</p>
             <p class="hero-deadline" data-phase="regular" hidden>一般報名將於 <strong>2026 年 11 月 13 日 23:59 AoE</strong>截止。</p>
             <p class="hero-deadline" data-phase="conference" hidden>TAAI 2026 將於 <strong>2026 年 11 月 20–21 日</strong>舉行，議程與大會手冊已公布，期待與您相見。</p>
-            <p class="hero-deadline" data-phase="post" hidden>感謝您參與 TAAI 2026！議程、主題演講摘要與大會手冊仍可於本站查閱。</p>
+            <p class="hero-deadline" data-phase="post" hidden>感謝您參與 TAAI 2026！得獎名單與證書、閉幕新聞稿、議程與大會手冊皆可於本站查閱。</p>
 
             <div class="hero-ctas" data-phase="earlybird regular" hidden>
               <a href="registration.html" class="btn btn-primary">立即報名 <span class="arrow">→</span></a>
               <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-ghost">大會手冊</a>
             </div>
-            <div class="hero-ctas" data-phase="conference post">
+            <div class="hero-ctas" data-phase="conference" hidden>
               <a href="program.html" class="btn btn-primary">查看議程 <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-primary">下載大會手冊 <span class="arrow">→</span></a>
-              <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>會場與交通</a>
-              <a href="venue.html#hotels" class="btn btn-ghost">入住TAAI2026會場優惠 <span class="arrow">→</span></a>
+              <a href="venue.html" class="btn btn-ghost">會場與交通</a>
+              <a href="venue.html#hotels" class="btn btn-ghost" data-until="2026-11-20T12:00:00+08:00">入住TAAI2026會場優惠 <span class="arrow">→</span></a>
+            </div>
+            <div class="hero-ctas" data-phase="post" hidden>
+              <a href="press/taai2026-closing.html" class="btn btn-primary">閱讀閉幕新聞稿 <span class="arrow">→</span></a>
+              <a href="certificates/index.html" class="btn btn-primary">論文獎項證書 <span class="arrow">→</span></a>
+              <a href="press/index.html" class="btn btn-ghost">新聞中心</a>
             </div>
 
+            <p class="hero-secondary" data-phase="post" hidden><a href="program.html#awards">得獎名單</a> · <a href="program.html">議程</a> · <a href="program.html#handbook">大會手冊</a></p>
             <p class="hero-secondary" data-phase="conference" hidden><a href="program.html#paper-sessions">找我的論文</a> · <a href="venue.html#shuttle">接駁車時刻表</a> · <a href="registration.html">現場報名</a></p>
             <p class="hero-secondary" data-phase="earlybird regular" hidden><a href="keydates.html">重要日期</a> · <a href="venue.html">會場與交通</a> · <a href="sponsorship.html">成為贊助夥伴</a></p>
           </div>
@@ -156,7 +171,15 @@
       </div>
 
       <div class="feature-grid">
-        <article class="feature reveal" data-phase="regular conference post" hidden>
+        <article class="feature reveal" data-phase="post" hidden>
+          <div class="num">◦ 1</div>
+          <h3>得獎名單與證書</h3>
+          <p>論文獎 7 篇與論文發表獎 21 篇已揭曉。每張證書都有永久網址，可預覽、下載 PDF 並加入 LinkedIn；紙本獎狀僅於頒獎典禮現場頒發。</p>
+          <a href="certificates/index.html" class="btn btn-primary">論文獎項證書 <span class="arrow">→</span></a>
+          <a href="program.html#awards" class="btn btn-ghost">得獎名單</a>
+        </article>
+
+        <article class="feature reveal" data-phase="regular conference" hidden>
           <div class="num">◦ 1</div>
           <h3>我是發表作者</h3>
           <p>依論文編號、題目或作者姓名查詢您的場次、發表時間與海報看板編號。口頭發表每篇約 8 分鐘報告＋2 分鐘問答，請於場次開始前約 10 分鐘到場。海報發表者請於<a href="program.html#poster-schedule">海報場次</a>開始前的休息時間張貼海報，並於場次期間全程在看板旁介紹研究並回答問題；海報場次主持人巡場時，每篇海報有 3 分鐘報告時間。</p>
@@ -179,7 +202,9 @@
           <p data-phase="submission earlybird">報名已開放。早鳥優惠至 <strong>2026 年 10 月 31 日</strong>，一般報名至 <strong>2026 年 11 月 13 日</strong>。</p>
           <p data-phase="regular" hidden>一般報名至 <strong>2026 年 11 月 13 日 23:59 AoE</strong>，逾期將以現場報名辦理。</p>
           <p data-phase="conference" hidden>一般線上報名已截止；即日起至會議結束，現場報名請透過線上註冊辦理（僅收信用卡）。兩天報到時間皆為 <strong>08:00–17:00</strong>，地點 5F 麗山廳開放中庭；免費接駁車需線上預約。</p>
-          <p data-phase="post" hidden>TAAI 2026 已圓滿落幕，感謝所有與會者、講者與主持人。</p>
+          <p data-phase="post" hidden>TAAI 2026 已圓滿落幕，感謝所有與會者、講者與主持人。閉幕新聞稿、媒體資料與媒體報導請見新聞中心。</p>
+          <a href="press/taai2026-closing.html" class="btn btn-primary" data-phase="post" hidden>閉幕新聞稿 <span class="arrow">→</span></a>
+          <a href="press/index.html" class="btn btn-ghost" data-phase="post" hidden>新聞中心</a>
           <a href="registration.html" class="btn btn-primary" data-phase="submission earlybird regular">報名資訊 <span class="arrow">→</span></a>
           <a href="venue.html#shuttle" class="btn btn-primary" data-phase="conference" hidden>接駁車與交通 <span class="arrow">→</span></a>
           <a href="registration.html#onsite-registration" class="btn btn-ghost" data-phase="conference" hidden>現場報名</a>
@@ -189,6 +214,7 @@
           <div class="num">◦ 3</div>
           <h3>下載大會手冊</h3>
           <p>大會手冊（PDF）收錄議程總覽、主題演講摘要、論文發表場次與作者索引。為響應永續，本屆不提供紙本手冊。</p>
+          <p data-phase="post" hidden>國際組論文將由 Springer 以 Communications in Computer and Information Science（CCIS）post-proceedings 形式出版。</p>
           <a href="../assets/downloads/handbook/taai2026-conference-handbook-zh.pdf" class="btn btn-primary" target="_blank" rel="noopener">中文版 PDF <span class="arrow">↗</span><span class="sr-only">（另開新分頁）</span></a>
           <a href="../assets/downloads/handbook/taai2026-conference-handbook-en.pdf" class="btn btn-ghost" lang="en" target="_blank" rel="noopener">English PDF<span class="sr-only">（另開新分頁）</span></a>
         </article>
@@ -204,7 +230,7 @@
   </section>
 
   <!-- ================= PROGRAM AT A GLANCE (conference week onward) ================= -->
-  <section id="at-a-glance" data-phase="conference post" hidden>
+  <section id="at-a-glance" data-phase="conference" hidden>
     <div class="wrap">
       <div class="section-head reveal">
         <span class="num-label">議程速覽</span>
@@ -303,9 +329,9 @@
       <div id="news-home-mount" class="reveal" data-locale="zh" data-data-base="../assets/data" data-archive-href="news.html"></div>
       <noscript>
         <ul class="info-list announce-list">
-          <li><time datetime="2026-11-14">2026-11-14</time><span>TAAI 2026 正式議程與大會手冊公布。 <a href="program.html#handbook">議程與手冊</a></span></li>
-          <li><time datetime="2026-11-14">2026-11-14</time><span>兩天報到時間皆為 08:00–17:00，地點為 5F 麗山廳開放中庭；現場報名請透過線上註冊辦理，免費接駁車需線上預約。 <a href="venue.html#shuttle">接駁車時刻表</a></span></li>
-          <li><time datetime="2026-11-04">2026-11-04</time><span>主題演講講者：Philip S. Yu、曹昱、Ljiljana Trajkovic、Kazunori Komatani。 <a href="program.html#keynotes">主題演講</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>TAAI 2026 在新北閉幕：聚焦代理式 AI 與實體 AI跨域永續創新，28 項獎項揭曉。 <a href="press/taai2026-closing.html">閱讀新聞稿</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>TAAI 2026 得獎證書上線。 <a href="certificates/index.html">論文獎項證書</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>合作活動預告：AI Forum 2027 人工智慧論壇將於 2027 年 5 月 14 日在輔仁大學舉行。 <a href="../assets/downloads/events/ai-forum-2027-poster-zh.pdf">活動海報（PDF）</a></span></li>
         </ul>
       </noscript>
       <div class="tc mt-3 reveal">
@@ -375,13 +401,13 @@
       <div class="split">
         <div class="reveal">
           <p class="lede">
-            TAAI 2026 將於新北市三峽區大板根森林溫泉酒店舉行。會場具備會議空間、住宿、餐飲與周邊森林設施，適合兩天研討會活動。
+            TAAI 2026 <span data-phase="submission earlybird regular conference">將於</span><span data-phase="post" hidden>於</span>新北市三峽區大板根森林溫泉酒店舉行。會場具備會議空間、住宿、餐飲與周邊森林設施，適合兩天研討會活動。
           </p>
           <div class="hero-ctas mt-2">
             <a href="venue.html" class="btn btn-ghost">探索會場 <span class="arrow">→</span></a>
-            <a href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=zh-TW&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">使用促銷代碼 TAAI2026 訂房 <span class="arrow">↗</span><span class="sr-only">（另開新分頁）</span></a>
+            <a data-until="2026-11-20T12:00:00+08:00" href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=zh-TW&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">使用促銷代碼 TAAI2026 訂房 <span class="arrow">↗</span><span class="sr-only">（另開新分頁）</span></a>
           </div>
-          <p class="stay-note mt-2"><strong>想入住會場？</strong>TAAI 2026 優惠房價目前尚有豪華雙人客房（每晚 TWD 6,000，含早餐，不可退款），11 月 20 日中午 12:00 前使用促銷代碼 <strong>TAAI2026</strong> 訂房。住宿房價包含飯店的<a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">露天溫泉 SPA<span class="sr-only">（外部網站，另開新分頁）</span></a>。<a href="venue.html#hotels">房型與房價</a></p>
+          <p class="stay-note mt-2" data-until="2026-11-20T12:00:00+08:00"><strong>想入住會場？</strong>TAAI 2026 優惠房價目前尚有豪華雙人客房（每晚 TWD 6,000，含早餐，不可退款），11 月 20 日中午 12:00 前使用促銷代碼 <strong>TAAI2026</strong> 訂房。住宿房價包含飯店的<a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">露天溫泉 SPA<span class="sr-only">（外部網站，另開新分頁）</span></a>。<a href="venue.html#hotels">房型與房價</a></p>
         </div>
 
         <aside class="venue-card reveal">
@@ -418,7 +444,7 @@
           當代理式 AI 與具身的實體智慧相遇，又同時被賦予服務一個必須長久存續的世界之使命時，會迸發出什麼火花？
         </p>
         <div class="reveal theme-copy">
-          TAAI 2026 由<strong>中華民國人工智慧學會（TAAI）</strong>與<strong>國立臺北大學（NTPU）</strong>共同主辦。今年，我們邀請研究者、實務工作者與政策思考者，走出慣常的路線、步入森林，認真檢視當我們真正去建構、部署並承擔其後果時，跨領域且永續的 AI
+          TAAI 2026 由<strong>中華民國人工智慧學會（TAAI）</strong>與<strong>國立臺北大學（NTPU）</strong>共同主辦。<span data-phase="submission earlybird regular conference">今年，我們邀請</span><span data-phase="post" hidden>本屆邀請了</span>研究者、實務工作者與政策思考者，走出慣常的路線、步入森林，認真檢視當我們真正去建構、部署並承擔其後果時，跨領域且永續的 AI
           究竟是什麼模樣。<a href="about.html" class="btn btn-primary mt-2">
             閱讀完整主題 <span class="arrow">→</span>
           </a>
