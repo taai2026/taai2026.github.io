@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "_comment": "Media coverage of TAAI 2026, listed on press/index.html and zh/press/index.html. List only the outlet, date, original headline and a link to the original article (https only); never copy article text. Fields: id (unique), publishedAt (YYYY-MM-DD), outlet {zh, en}, title (headline as published), language (BCP 47, e.g. zh-Hant, en, ja), url, type (news | interview | feature | broadcast | blog | press-release-repost). Newest first is not required; the page sorts by publishedAt.",
+  "items": [
+    {
+      "id": "cna-20261121-ai-power",
+      "publishedAt": "2026-11-21",
+      "outlet": {
+        "zh": "中央社",
+        "en": "Central News Agency (CNA)"
+      },
+      "title": "AI算力競爭關鍵在電力　台灣具低碳發展優勢",
+      "language": "zh-Hant",
+      "url": "https://www.cna.com.tw/news/newsworld/20261121n002.aspx",
+      "type": "news"
+    },
+    {
+      "id": "setn-20261120-green-power",
+      "publishedAt": "2026-11-20",
+      "outlet": {
+        "zh": "三立新聞網",
+        "en": "SETN"
+      },
+      "title": "AI算力背後拼綠電！北大攜手AI學會辦研討會　金士懿：能源治理定勝負",
+      "language": "zh-Hant",
+      "url": "https://inews.setn.com/news/1942510",
+      "type": "news"
+    }
+  ]
+}

@@ -2,6 +2,132 @@
   "version": 1,
   "items": [
     {
+      "id": "ai-forum-2027-save-the-date",
+      "type": "partner-event",
+      "category": "conference",
+      "publishedAt": "2026-11-22T22:40:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "AI Forum 2027 人工智慧論壇：AI 與計算智慧的新疆界",
+          "summary": "合作活動預告：AI Forum 2027 人工智慧論壇由輔仁大學資訊工程學系與中華民國人工智慧學會（TAAI）共同主辦，主題為「AI 與計算智慧的新疆界」，將於 2027 年 5 月 14 日（五）在新北市新莊區輔仁大學國璽樓一樓國際會議廳舉行。專題演講講者包括新加坡南洋理工大學 Yew-Soon Ong 教授、香港浸會大學 Yiu-Ming Cheung 教授與美國奧克拉荷馬州立大學 Gary G. Yen 教授（皆為 IEEE Fellow），綜合座談由國立清華大學丁川康教授主持。議程暫定，更多講者與報名資訊將陸續公布，敬請預留時間。",
+          "linkLabel": "下載活動海報（PDF）",
+          "tags": [
+            "AI Forum 2027",
+            "人工智慧論壇",
+            "計算智慧",
+            "輔仁大學",
+            "TAAI",
+            "合作活動",
+            "專題演講",
+            "敬請預留時間"
+          ]
+        },
+        "en": {
+          "title": "AI Forum 2027: Frontiers of AI and Computational Intelligence",
+          "summary": "Save the date for a co-organized event: AI Forum 2027, organized by the Department of Computer Science and Information Engineering, Fu Jen Catholic University, and the Taiwanese Association for Artificial Intelligence (TAAI), takes place on Friday, May 14, 2027, at the International Conference Hall, Paul Cardinal Shan Medical Building, Fu Jen Catholic University, New Taipei City. Keynote speakers include Prof. Yew-Soon Ong (Nanyang Technological University, Singapore), Prof. Yiu-Ming Cheung (Hong Kong Baptist University) and Prof. Gary G. Yen (Oklahoma State University, USA), all IEEE Fellows; Prof. Chuan-Kang Ting (National Tsing Hua University) moderates the panel. The program is tentative; more speakers and registration details will be announced.",
+          "linkLabel": "Download the poster (PDF)",
+          "tags": [
+            "AI Forum 2027",
+            "computational intelligence",
+            "Fu Jen Catholic University",
+            "TAAI",
+            "co-organized event",
+            "keynotes",
+            "save the date"
+          ]
+        }
+      },
+      "links": {
+        "zh": "../assets/downloads/events/ai-forum-2027-poster-zh.pdf",
+        "en": "assets/downloads/events/ai-forum-2027-poster-en.pdf"
+      },
+      "relationship": {
+        "role": "co-organized",
+        "taai2026": false
+      },
+      "event": {
+        "start": "2027-05-14T08:30:00+08:00",
+        "end": "2027-05-14T20:30:00+08:00",
+        "venue": {
+          "zh": "輔仁大學國璽樓一樓國際會議廳（新北市新莊區中正路 510 號）",
+          "en": "International Conference Hall, Paul Cardinal Shan Medical Building, Fu Jen Catholic University, New Taipei City"
+        }
+      },
+      "milestones": [
+        {
+          "id": "forum-day",
+          "kind": "event",
+          "at": "2027-05-14T08:30:00+08:00",
+          "i18n": {
+            "zh": "AI Forum 2027（輔仁大學）",
+            "en": "AI Forum 2027 (Fu Jen Catholic University)"
+          }
+        }
+      ],
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-22T22:40:00+08:00",
+        "until": "2027-05-14T20:30:00+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
+      "id": "taai2026-closing-press-release",
+      "type": "conference-update",
+      "category": "general",
+      "publishedAt": "2026-11-22T22:20:00+08:00",
+      "updatedAt": null,
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 在新北閉幕：聚焦代理式 AI 與實體 AI跨域永續創新，28 項獎項揭曉",
+          "summary": "TAAI 2026 已於 11 月 21 日閉幕。兩天共有 157 篇論文於 21 個場次發表，作者來自 13 個國家與地區，並頒發 28 項論文獎與論文發表獎。感謝所有作者、講者與與會者，完整新聞稿與照片請見新聞稿頁。",
+          "linkLabel": "閱讀新聞稿",
+          "tags": [
+            "新聞稿",
+            "閉幕",
+            "得獎",
+            "主題演講",
+            "press release"
+          ]
+        },
+        "en": {
+          "title": "TAAI 2026 Closes in New Taipei with a Focus on Agentic and Physical AI for Sustainable Innovation; 28 Awards Announced",
+          "summary": "TAAI 2026 closed on November 21. Over two days, 157 papers by authors from 13 countries and regions were presented in 21 sessions, and 28 paper and presentation awards were given. Thank you to every author, speaker and participant. The full press release and photos are on the press release page.",
+          "linkLabel": "Read the press release",
+          "tags": [
+            "press release",
+            "closing",
+            "awards",
+            "keynotes"
+          ]
+        }
+      },
+      "links": {
+        "zh": "press/taai2026-closing.html",
+        "en": "press/taai2026-closing.html"
+      },
+      "priority": 100,
+      "featured": true,
+      "pinned": true,
+      "urgent": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-22T22:20:00+08:00",
+        "until": "2027-03-31T23:59:59+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
       "id": "award-certificates-published",
       "type": "program-update",
       "category": "program",
@@ -254,7 +380,7 @@
       "homepage": {
         "enabled": true,
         "from": "2026-11-14T08:00:00+08:00",
-        "until": "2026-12-31T23:59:59+08:00"
+        "until": "2026-11-21T18:00:00+08:00"
       },
       "audience": [
         "all"
