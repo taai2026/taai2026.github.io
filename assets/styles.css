@@ -4131,8 +4131,20 @@ a.partner-card:hover .partner-name {
   font-size: 1.35rem;
 }
 
-.cert-index h2:first-child {
+.cert-index .cert-award:first-of-type h2 {
   margin-top: 0;
+}
+
+.cert-search {
+  margin-bottom: 2rem;
+}
+
+.cert-search .news-search-field {
+  flex: none;
+}
+
+.cert-index [data-cert-empty] {
+  margin: 0 0 2rem;
 }
 
 .cert-grid {
