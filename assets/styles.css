@@ -4176,6 +4176,19 @@ a.partner-card:hover .partner-name {
   font-size: 0.8rem;
 }
 
+.cert-faq {
+  margin-top: 2.5rem;
+}
+
+.cert-faq h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+}
+
+.cert-faq-more {
+  margin: 1rem 0 0;
+}
+
 @media (max-width: 900px) {
   .cert-layout {
     grid-template-columns: minmax(0, 1fr);
