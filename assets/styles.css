@@ -4686,3 +4686,44 @@ a.partner-card:hover .partner-name {
     break-inside: avoid;
   }
 }
+
+/* Press release: dateline, quotes and event details */
+.press-dateline {
+  margin-bottom: 0.4rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.press-event-info {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.press-event-info div {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.press-event-info dt {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.press-event-info dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Long URLs in the release text wrap instead of widening the page. */
+.press-body a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .press-event-info div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}
