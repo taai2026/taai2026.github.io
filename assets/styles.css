@@ -4127,16 +4127,39 @@ a.partner-card:hover .partner-name {
 }
 
 .cert-index h2 {
-  margin: 2rem 0 0;
+  margin: 0;
   font-size: 1.35rem;
 }
 
-.cert-index .cert-award:first-of-type h2 {
-  margin-top: 0;
+/* Hero → search: about 40px instead of 84px (certificate index only). */
+.page-hero:has(+ .cert-index) {
+  padding-bottom: 1.25rem;
+}
+
+.page-hero:has(+ .cert-index) .wrap > :last-child {
+  margin-bottom: 0;
+}
+
+.cert-index {
+  padding-top: 1.25rem;
+}
+
+/* Award groups are <section>s; drop the global section padding and space
+   the groups with a single margin instead. */
+.cert-index .cert-award {
+  padding: 0;
+}
+
+.cert-index .cert-award + .cert-award {
+  margin-top: 2.25rem;
+}
+
+.cert-index .cert-track + .cert-track {
+  margin-top: 1.5rem;
 }
 
 .cert-search {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .cert-search .news-search-field {
@@ -4144,7 +4167,7 @@ a.partner-card:hover .partner-name {
 }
 
 .cert-index [data-cert-empty] {
-  margin: 0 0 2rem;
+  margin: 0 0 1.75rem;
 }
 
 .cert-grid {
@@ -4189,7 +4212,7 @@ a.partner-card:hover .partner-name {
 }
 
 .cert-faq {
-  margin-top: 2.5rem;
+  margin-top: 0;
 }
 
 .cert-faq h2 {
