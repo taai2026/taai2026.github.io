@@ -2,16 +2,69 @@
   "version": 1,
   "items": [
     {
+      "id": "award-certificates-published",
+      "type": "program-update",
+      "category": "program",
+      "publishedAt": "2026-11-22T14:50:00+08:00",
+      "updatedAt": "2026-11-22T16:12:00+08:00",
+      "status": "published",
+      "i18n": {
+        "zh": {
+          "title": "TAAI 2026 得獎證書上線",
+          "summary": "TAAI 2026 論文獎與論文發表獎共 28 張得獎證書已上線。每張證書都有專屬的官方證書頁與永久網址，可預覽證書、下載單張 PDF、加入 LinkedIn 個人檔案，或分享連結。證書下方的 QR Code 也會連到該證書的官方頁面，方便查核。紙本獎狀僅於頒獎典禮現場頒發給上台領獎的得獎者，未出席者恕不補發。電子證書可隨時下載。",
+          "linkLabel": "查看得獎證書",
+          "tags": [
+            "得獎證書",
+            "證書",
+            "論文獎",
+            "論文發表獎",
+            "PDF 下載",
+            "LinkedIn",
+            "certificates",
+            "awards"
+          ]
+        },
+        "en": {
+          "title": "TAAI 2026 Award Certificates Now Online",
+          "summary": "All 28 certificates of the TAAI 2026 paper and presentation awards are now online. Each certificate has its own official page at a permanent link, where you can preview it, download it as a PDF, add it to your LinkedIn profile, or share the link. The QR code on each certificate opens its official page for verification. Printed certificates are presented only at the award ceremony and are not reissued to winners who were absent. The electronic certificate can be downloaded at any time.",
+          "linkLabel": "See the award certificates",
+          "tags": [
+            "certificates",
+            "awards",
+            "best paper",
+            "best presentation",
+            "PDF download",
+            "LinkedIn"
+          ]
+        }
+      },
+      "links": {
+        "zh": "certificates/index.html",
+        "en": "certificates/index.html"
+      },
+      "priority": 100,
+      "featured": true,
+      "urgent": false,
+      "homepage": {
+        "enabled": true,
+        "from": "2026-11-22T14:50:00+08:00",
+        "until": "2026-12-31T23:59:59+08:00"
+      },
+      "audience": [
+        "all"
+      ]
+    },
+    {
       "id": "presentation-awards-announced",
       "type": "program-update",
       "category": "program",
       "publishedAt": "2026-11-21T22:00:00+08:00",
-      "updatedAt": null,
+      "updatedAt": "2026-11-22T16:12:00+08:00",
       "status": "published",
       "i18n": {
         "zh": {
           "title": "TAAI 2026 最佳論文發表獎得獎名單公布",
-          "summary": "恭喜 TAAI 2026 最佳論文發表獎得主！本屆依場次頒發：國際組最佳口頭論文發表獎 7 篇、國內組最佳口頭論文發表獎 7 篇、最佳海報論文發表獎 7 篇，已於 11 月 21 日閉幕典禮頒發。得獎論文、作者、單位與場次請見議程頁「論文發表獎」。",
+          "summary": "恭喜 TAAI 2026 最佳論文發表獎得主！本屆依場次頒發：國際組最佳口頭論文發表獎 7 篇、國內組最佳口頭論文發表獎 7 篇、最佳海報論文發表獎 7 篇，已於 11 月 21 日閉幕典禮頒發。得獎論文、作者、單位與場次請見議程頁「論文發表獎」，得獎證書可於證書頁下載。紙本獎狀僅於頒獎典禮現場頒發給上台領獎的得獎者，未出席者恕不補發。",
           "linkLabel": "查看得獎名單",
           "tags": [
             "論文發表獎",
@@ -26,7 +79,7 @@
         },
         "en": {
           "title": "TAAI 2026 Best Presentation Award Winners Announced",
-          "summary": "Congratulations to the winners of the TAAI 2026 Best Presentation Awards! One award was given per session: seven Best Oral Paper Presentation Awards in the International Oral Track, seven in the Domestic Oral Track, and seven Best Poster Paper Presentation Awards, presented at the Closing Ceremony on November 21. The winning papers, authors, affiliations, and sessions are listed under Presentation Awards on the Program page.",
+          "summary": "Congratulations to the winners of the TAAI 2026 Best Presentation Awards! One award was given per session: seven Best Oral Paper Presentation Awards in the International Oral Track, seven in the Domestic Oral Track, and seven Best Poster Paper Presentation Awards, presented at the Closing Ceremony on November 21. The winning papers, authors, affiliations, and sessions are listed under Presentation Awards on the Program page, and each award certificate can be downloaded from its certificate page. Printed certificates are presented only at the award ceremony and are not reissued to winners who were absent.",
           "linkLabel": "See the award winners",
           "tags": [
             "awards",
@@ -61,12 +114,12 @@
       "type": "program-update",
       "category": "program",
       "publishedAt": "2026-11-20T19:30:00+08:00",
-      "updatedAt": null,
+      "updatedAt": "2026-11-22T16:12:00+08:00",
       "status": "published",
       "i18n": {
         "zh": {
           "title": "TAAI 2026 論文獎得獎名單公布",
-          "summary": "恭喜 TAAI 2026 論文獎得主！最佳論文獎：「LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law」（#180）、「Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models」（#37）、「Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints」（#149）。最佳學生論文獎：「Bridging Static and Agentic RAG for Taiwanese Historical Question Answering」（#69）、「SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage」（#88）、「Contextual Biasing for Streaming ASR via CTC-based Word Spotting」（#153）。最佳產業論文獎：「Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts」（#215）。各獎項已於 11 月 20 日歡迎晚宴中頒發，作者、單位與發表場次請見議程頁「論文獎」。最佳口頭與海報論文發表獎將於 11 月 21 日閉幕典禮頒發。",
+          "summary": "恭喜 TAAI 2026 論文獎得主！最佳論文獎：「LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law」（#180）、「Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models」（#37）、「Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints」（#149）。最佳學生論文獎：「Bridging Static and Agentic RAG for Taiwanese Historical Question Answering」（#69）、「SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage」（#88）、「Contextual Biasing for Streaming ASR via CTC-based Word Spotting」（#153）。最佳產業論文獎：「Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts」（#215）。各獎項已於 11 月 20 日歡迎晚宴中頒發，作者、單位與發表場次請見議程頁「論文獎」，得獎證書可於證書頁下載。紙本獎狀僅於頒獎典禮現場頒發給上台領獎的得獎者，未出席者恕不補發。最佳口頭與海報論文發表獎將於 11 月 21 日閉幕典禮頒發。",
           "linkLabel": "查看得獎名單",
           "tags": [
             "論文獎",
@@ -79,7 +132,7 @@
         },
         "en": {
           "title": "TAAI 2026 Paper Award Winners Announced",
-          "summary": "Congratulations to the TAAI 2026 paper award winners! Best Paper Awards: “LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law” (#180); “Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models” (#37); “Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints” (#149). Best Student Paper Awards: “Bridging Static and Agentic RAG for Taiwanese Historical Question Answering” (#69); “SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage” (#88); “Contextual Biasing for Streaming ASR via CTC-based Word Spotting” (#153). Best Industry Paper Award: “Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts” (#215). The awards were presented at the Welcome Banquet on November 20; authors, affiliations, and sessions are listed under Paper Awards on the Program page. The Best Oral and Best Poster Paper Presentation Awards will be presented at the Closing Ceremony on November 21.",
+          "summary": "Congratulations to the TAAI 2026 paper award winners! Best Paper Awards: “LAWRENCE: A Benchmark for Adversarial Lawyering in Taiwanese Criminal Law” (#180); “Training-free Conditional Object Composition for Multi-object Image Generation with Diffusion Models” (#37); “Evaluating Cluster-Based Noise Exclusion in Disaster Social Media Imagery under Recall Constraints” (#149). Best Student Paper Awards: “Bridging Static and Agentic RAG for Taiwanese Historical Question Answering” (#69); “SAFE-T: A Safe Agentic Framework for Evidence-Grounded Malware Triage” (#88); “Contextual Biasing for Streaming ASR via CTC-based Word Spotting” (#153). Best Industry Paper Award: “Hierarchy-Guided Question Generation and Adaptive Testing for Agent Preference Shifts” (#215). The awards were presented at the Welcome Banquet on November 20; authors, affiliations, and sessions are listed under Paper Awards on the Program page, and each award certificate can be downloaded from its certificate page. Printed certificates are presented only at the award ceremony and are not reissued to winners who were absent. The Best Oral and Best Poster Paper Presentation Awards will be presented at the Closing Ceremony on November 21.",
           "linkLabel": "See the award winners",
           "tags": [
             "awards",
