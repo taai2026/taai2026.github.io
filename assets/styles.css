@@ -4636,3 +4636,53 @@ a.partner-card:hover .partner-name {
     font-size: 0.8em;
   }
 }
+
+/* Press release photos */
+.press-figure {
+  margin: 0;
+}
+
+.press-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.press-figure a:focus-visible img {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.press-figure figcaption {
+  margin-top: 0.45rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.press-lead {
+  margin-bottom: 1.6rem;
+}
+
+.press-gallery-note {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.press-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem 1rem;
+  align-items: start;
+}
+
+@media print {
+  body:has(.press-release) .press-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body:has(.press-release) .press-figure {
+    break-inside: avoid;
+  }
+}
