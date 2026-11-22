@@ -59,7 +59,13 @@
               <li><a href="program.html#awards">Awards</a></li>
             </ul>
           </li>
-          <li><a href="news.html">News</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-drop-btn" aria-expanded="false">News<span class="caret" aria-hidden="true"></span></button>
+            <ul class="nav-drop">
+              <li><a href="news.html">News</a></li>
+              <li><a href="press/index.html">Newsroom</a></li>
+            </ul>
+          </li>
           <li class="nav-group">
             <button type="button" class="nav-drop-btn" aria-expanded="false">Venue<span class="caret" aria-hidden="true"></span></button>
             <ul class="nav-drop">
@@ -112,27 +118,36 @@
             <span class="hero-title-line"><em class="grad-text">Agentic AI</em> and <em class="grad-text">Physical AI</em></span>
             <span class="hero-title-line">for Cross-Domain Sustainable Innovation</span>
           </h1>
-          <p class="lede reveal">
+          <p class="lede reveal" data-phase="submission earlybird regular conference">
             The 31st International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2026), hosted by Taiwanese Association for AI (TAAI) and National Taipei University (NTPU), will be held on November 20–21, 2026, at The Great Roots Forestry Spa Resort, New Taipei City, Taiwan.
+          </p>
+          <p class="lede reveal" data-phase="post" hidden>
+            The 31st International Conference on Technologies and Applications of Artificial Intelligence (TAAI 2026), hosted by Taiwanese Association for AI (TAAI) and National Taipei University (NTPU), was held on November 20–21, 2026, at The Great Roots Forestry Spa Resort, New Taipei City, Taiwan. It received 205 submissions and featured 157 papers in 21 sessions by 450 authors from 13 countries and regions, and presented 28 paper and presentation awards.
           </p>
           <div class="hero-actions reveal">
             <p class="hero-deadline" data-phase="earlybird" hidden>Early-bird registration closes <strong>October 31, 2026, 23:59 AoE</strong>. Acceptance notifications have been sent; accepted authors must submit camera-ready papers and complete presenting-author registration by the same deadline.</p>
             <p class="hero-deadline" data-phase="regular" hidden>Regular registration closes <strong>November 13, 2026, 23:59 AoE</strong>.</p>
             <p class="hero-deadline" data-phase="conference" hidden>The program and conference handbook are out. See you at TAAI 2026, <strong>November 20–21, 2026</strong>.</p>
-            <p class="hero-deadline" data-phase="post" hidden>Thank you for joining TAAI 2026! The program, keynote abstracts, and conference handbook remain available on this site.</p>
+            <p class="hero-deadline" data-phase="post" hidden>Thank you for joining TAAI 2026! The award winners and certificates, the closing press release, the program, and the conference handbook remain available on this site.</p>
 
             <div class="hero-ctas" data-phase="earlybird regular" hidden>
               <a href="registration.html" class="btn btn-primary">Register now <span class="arrow">→</span></a>
               <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-ghost">Conference handbook</a>
             </div>
-            <div class="hero-ctas" data-phase="conference post">
+            <div class="hero-ctas" data-phase="conference" hidden>
               <a href="program.html" class="btn btn-primary">Program <span class="arrow">→</span></a>
               <a href="program.html#handbook" class="btn btn-primary">Download the handbook <span class="arrow">→</span></a>
-              <a href="venue.html" class="btn btn-ghost" data-phase="conference" hidden>Venue &amp; travel</a>
-              <a href="venue.html#hotels" class="btn btn-ghost">TAAI 2026 venue hotel offer <span class="arrow">→</span></a>
+              <a href="venue.html" class="btn btn-ghost">Venue &amp; travel</a>
+              <a href="venue.html#hotels" class="btn btn-ghost" data-until="2026-11-20T12:00:00+08:00">TAAI 2026 venue hotel offer <span class="arrow">→</span></a>
+            </div>
+            <div class="hero-ctas" data-phase="post" hidden>
+              <a href="press/taai2026-closing.html" class="btn btn-primary">Read the closing press release <span class="arrow">→</span></a>
+              <a href="certificates/index.html" class="btn btn-primary">Award certificates <span class="arrow">→</span></a>
+              <a href="press/index.html" class="btn btn-ghost">Newsroom</a>
             </div>
 
+            <p class="hero-secondary" data-phase="post" hidden><a href="program.html#awards">Award winners</a> · <a href="program.html">Program</a> · <a href="program.html#handbook">Conference handbook</a></p>
             <p class="hero-secondary" data-phase="conference" hidden><a href="program.html#paper-sessions">Find my paper</a> · <a href="venue.html#shuttle">Shuttle timetable</a> · <a href="registration.html">On-site registration</a></p>
             <p class="hero-secondary" data-phase="earlybird regular" hidden><a href="keydates.html">Important dates</a> · <a href="venue.html">Venue &amp; travel</a> · <a href="sponsorship.html">Become a sponsor</a></p>
           </div>
@@ -156,7 +171,15 @@
       </div>
 
       <div class="feature-grid">
-        <article class="feature reveal" data-phase="regular conference post" hidden>
+        <article class="feature reveal" data-phase="post" hidden>
+          <div class="num">◦ 1</div>
+          <h3>Award winners and certificates</h3>
+          <p>The 7 paper awards and 21 presentation awards have been announced. Each certificate has a permanent link where you can preview it, download it as a PDF, and add it to LinkedIn; printed certificates were presented only at the award ceremony.</p>
+          <a href="certificates/index.html" class="btn btn-primary">Award certificates <span class="arrow">→</span></a>
+          <a href="program.html#awards" class="btn btn-ghost">Award winners</a>
+        </article>
+
+        <article class="feature reveal" data-phase="regular conference" hidden>
           <div class="num">◦ 1</div>
           <h3>I am a presenting author</h3>
           <p>Look up your session, presentation time, and poster board number by paper ID, title, or author. Oral talks are about 8 minutes plus 2 minutes of Q&amp;A; please arrive about 10 minutes before your session starts. Poster presenters: put up your poster in the break before your <a href="program.html#poster-schedule">poster session</a> and stay at your board for the whole session to present your work and answer questions; each poster has a 3-minute presentation when the poster session chair(s) visit.</p>
@@ -179,7 +202,9 @@
           <p data-phase="submission earlybird">Registration is open. Early-bird rates until <strong>October 31, 2026</strong>; regular registration until <strong>November 13, 2026</strong>.</p>
           <p data-phase="regular" hidden>Regular registration until <strong>November 13, 2026, 23:59 AoE</strong>. Later registrations are handled on-site.</p>
           <p data-phase="conference" hidden>Regular online registration has closed; until the end of the conference, register on-site through the on-site online registration (credit card only). Check-in is open <strong>08:00–17:00</strong> on both days at the 5F Lishan Hall open courtyard. The free shuttle requires online booking.</p>
-          <p data-phase="post" hidden>TAAI 2026 has concluded. Thank you to all attendees, speakers, and session chairs.</p>
+          <p data-phase="post" hidden>TAAI 2026 has concluded. Thank you to all attendees, speakers, and session chairs. The closing press release, media resources, and media coverage are in the newsroom.</p>
+          <a href="press/taai2026-closing.html" class="btn btn-primary" data-phase="post" hidden>Closing press release <span class="arrow">→</span></a>
+          <a href="press/index.html" class="btn btn-ghost" data-phase="post" hidden>Newsroom</a>
           <a href="registration.html" class="btn btn-primary" data-phase="submission earlybird regular">Registration <span class="arrow">→</span></a>
           <a href="venue.html#shuttle" class="btn btn-primary" data-phase="conference" hidden>Shuttle &amp; travel <span class="arrow">→</span></a>
           <a href="registration.html#onsite-registration" class="btn btn-ghost" data-phase="conference" hidden>On-site registration</a>
@@ -189,6 +214,7 @@
           <div class="num">◦ 3</div>
           <h3>Download the handbook</h3>
           <p>The conference handbook (PDF) includes the program at a glance, keynote abstracts, paper sessions, and an author index. To support sustainability, no printed handbook is provided.</p>
+          <p data-phase="post" hidden>International Track papers will be published by Springer as post-proceedings in Communications in Computer and Information Science (CCIS).</p>
           <a href="assets/downloads/handbook/taai2026-conference-handbook-en.pdf" class="btn btn-primary" target="_blank" rel="noopener">English PDF <span class="arrow">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
           <a href="assets/downloads/handbook/taai2026-conference-handbook-zh.pdf" class="btn btn-ghost" target="_blank" rel="noopener"><span lang="zh-Hant">中文版 PDF</span><span class="sr-only"> (opens in a new tab)</span></a>
         </article>
@@ -204,7 +230,7 @@
   </section>
 
   <!-- ================= PROGRAM AT A GLANCE (conference week onward) ================= -->
-  <section id="at-a-glance" data-phase="conference post" hidden>
+  <section id="at-a-glance" data-phase="conference" hidden>
     <div class="wrap">
       <div class="section-head reveal">
         <span class="num-label">Program at a glance</span>
@@ -303,9 +329,9 @@
       <div id="news-home-mount" class="reveal" data-locale="en" data-data-base="assets/data" data-archive-href="news.html"></div>
       <noscript>
         <ul class="info-list announce-list">
-          <li><time datetime="2026-11-14">2026-11-14</time><span>TAAI 2026 final program and conference handbook released. <a href="program.html#handbook">Program &amp; handbook</a></span></li>
-          <li><time datetime="2026-11-14">2026-11-14</time><span>Check-in 08:00–17:00 on both days at the 5F Lishan Hall open courtyard; on-site registration through online registration, and free shuttle (online booking). <a href="venue.html#shuttle">Shuttle timetable</a></span></li>
-          <li><time datetime="2026-11-04">2026-11-04</time><span>Keynote speakers: Philip S. Yu, Yu Tsao, Ljiljana Trajkovic, and Kazunori Komatani. <a href="program.html#keynotes">Keynotes</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>TAAI 2026 closes in New Taipei with a focus on agentic and physical AI for sustainable innovation; 28 awards announced. <a href="press/taai2026-closing.html">Read the press release</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>TAAI 2026 award certificates are now online. <a href="certificates/index.html">Award certificates</a></span></li>
+          <li><time datetime="2026-11-22">2026-11-22</time><span>Co-organized event: AI Forum 2027 takes place on May 14, 2027, at Fu Jen Catholic University. <a href="assets/downloads/events/ai-forum-2027-poster-en.pdf">Poster (PDF)</a></span></li>
         </ul>
       </noscript>
       <div class="tc mt-3 reveal">
@@ -381,16 +407,16 @@
       <div class="split">
         <div class="reveal">
           <p class="lede">
-            TAAI 2026 will be held at The Great Roots Forestry Spa Resort in
+            TAAI 2026 <span data-phase="submission earlybird regular conference">will be held</span><span data-phase="post" hidden>was held</span> at The Great Roots Forestry Spa Resort in
             Sanxia District, New Taipei City. The venue offers conference
             rooms, accommodation, dining, and access to nearby forest
             facilities.
           </p>
           <div class="hero-ctas mt-2">
             <a href="venue.html" class="btn btn-ghost">Explore the venue <span class="arrow">→</span></a>
-            <a href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=en&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">Book with promo code TAAI2026 <span class="arrow">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            <a data-until="2026-11-20T12:00:00+08:00" href="https://book-directonline.com/properties/greatrootsforestrysparesortdirect?locale=en&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;items[0][rateId]=818103&amp;currency=TWD&amp;checkInDate=2026-11-20&amp;checkOutDate=2026-11-21&amp;trackPage=yes&amp;selected=0&amp;promocode=TAAI2026" target="_blank" rel="noopener" class="btn btn-primary">Book with promo code TAAI2026 <span class="arrow">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
           </div>
-          <p class="stay-note mt-2"><strong>Staying overnight?</strong> Deluxe Double rooms are still available at the TAAI 2026 rate (TWD 6,000 per night, breakfast included, non-refundable) until 12:00 noon on November 20 with promo code <strong>TAAI2026</strong>. The room rate includes the resort&rsquo;s <a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">outdoor hot-spring SPA<span class="sr-only"> (external site, opens in a new tab)</span></a>.  <a href="venue.html#hotels">Room rates</a></p>
+          <p class="stay-note mt-2" data-until="2026-11-20T12:00:00+08:00"><strong>Staying overnight?</strong> Deluxe Double rooms are still available at the TAAI 2026 rate (TWD 6,000 per night, breakfast included, non-refundable) until 12:00 noon on November 20 with promo code <strong>TAAI2026</strong>. The room rate includes the resort&rsquo;s <a href="https://www.thegreatroots.com/forest-hotspring/outdoor-spa/" target="_blank" rel="noopener">outdoor hot-spring SPA<span class="sr-only"> (external site, opens in a new tab)</span></a>.  <a href="venue.html#hotels">Room rates</a></p>
         </div>
 
         <aside class="venue-card reveal">
@@ -436,7 +462,7 @@
         <div class="reveal theme-copy">
           TAAI 2026 is jointly hosted by the <strong>Taiwanese Association for Artificial Intelligence (TAAI)</strong>
           and <strong>National Taipei University (NTPU)</strong>.
-          This year we're inviting researchers, practitioners, and policy minds
+          <span data-phase="submission earlybird regular conference">This year we're inviting</span><span data-phase="post" hidden>This year we invited</span> researchers, practitioners, and policy minds
           to step off the usual circuit and into a forest, to look hard at
           what cross-domain, sustainable AI actually looks like when you
           build it, deploy it, and live with its consequences.
