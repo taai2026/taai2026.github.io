@@ -18,3 +18,14 @@
     }
   });
 })();
+
+/* Certificate index: open an FAQ item when a link or the URL targets it. */
+(() => {
+  const openTarget = () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const el = id && document.getElementById(id);
+    if (el && el.tagName === 'DETAILS') el.open = true;
+  };
+  openTarget();
+  window.addEventListener('hashchange', openTarget);
+})();
