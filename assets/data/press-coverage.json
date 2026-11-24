@@ -3,6 +3,18 @@
   "_comment": "Media coverage of TAAI 2026, listed on press/index.html and zh/press/index.html. List only the outlet, date, original headline and a link to the original article (https only); never copy article text. Fields: id (unique), publishedAt (YYYY-MM-DD), outlet {zh, en}, title (headline as published), language (BCP 47, e.g. zh-Hant, en, ja), url, type (news | interview | feature | broadcast | blog | press-release-repost). Newest first is not required; the page sorts by publishedAt.",
   "items": [
     {
+      "id": "udn-money-20261123-energy-governance",
+      "publishedAt": "2026-11-23",
+      "outlet": {
+        "zh": "經濟日報",
+        "en": "Economic Daily News"
+      },
+      "title": "TAAI 2026聚焦Agentic與Physical AI 金士懿博士：AI算力競爭關鍵在能源治理",
+      "language": "zh-Hant",
+      "url": "https://money.udn.com/money/story/5723/9894652",
+      "type": "interview"
+    },
+    {
       "id": "cna-20261121-ai-power",
       "publishedAt": "2026-11-21",
       "outlet": {
