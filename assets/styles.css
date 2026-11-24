@@ -4687,6 +4687,120 @@ a.partner-card:hover .partner-name {
   }
 }
 
+/* Press videos: click-to-play YouTube (press-video.js) */
+.press-video {
+  margin: 0 0 1.25rem;
+}
+
+.press-video figcaption {
+  margin-top: 0.5rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.press-video-player {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  background: #000;
+}
+
+.press-video-player.is-short {
+  aspect-ratio: 9 / 16;
+}
+
+.press-video-player img,
+.press-video-player iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+.press-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.72);
+  transform: translate(-50%, -50%);
+  transition: background 0.15s;
+}
+
+.press-video-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  border-style: solid;
+  border-width: 11px 0 11px 19px;
+  border-color: transparent transparent transparent #fff;
+  transform: translate(-50%, -50%);
+}
+
+.press-video-player:hover .press-video-play,
+.press-video-player:focus-visible .press-video-play {
+  background: #c00;
+}
+
+.press-video-player:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.press-video-len {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.press-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.press-shorts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 440px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.press-videos .press-video,
+.press-shorts .press-video {
+  margin: 0;
+}
+
+.press-shorts {
+  margin-top: 1.25rem;
+}
+
+@media print {
+  .press-video-play,
+  .press-video-len {
+    display: none;
+  }
+  body:has(.press-release) .press-video {
+    break-inside: avoid;
+  }
+}
+
 /* Press release: dateline, quotes and event details */
 .press-dateline {
   margin-bottom: 0.4rem;
